@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'averia';
+	src: url( 'fonts/AveriaSerifLibre-Regular.ttf');
+	src: local( 'averia' ), , url( 'fonts/AveriaSerifLibre-Regular.ttf' ) format( 'truetype' );
+}
+@font-face {
+	font-family: 'averiaLight';
+	src: url( 'fonts/AveriaSerifLibre-Light.ttf');
+	src: local( 'averiaLight' ), url( 'fonts/AveriaSerifLibre-Light.ttf' ) format( 'truetype' );
+}
+@font-face {
+	font-family: 'averiaBold';
+	src: url( 'fonts/AveriaSerifLibre-Bold.ttf');
+	src: local( 'averiaBold' ), url( 'fonts/AveriaSerifLibre-Bold.ttf' ) format( 'truetype' );
+}

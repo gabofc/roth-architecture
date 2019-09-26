@@ -9,17 +9,17 @@
 	$urlSinPage = explode( '&', $url )[0];
 ?>
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 	<head>
 		<title>Roth Architecture</title>
 		<base href="<?php echo $base; ?>" />
 		<meta name="viewport" content="width=device-width">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="author" content="Junkyard">
+		<meta name="author" content="Roth Architecture">
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<link rel="stylesheet" href="css/general.css">
-		<link rel="stylesheet" href="css/estilo.css?v=<?php echo time(); ?>">
+		<link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		<script type="text/javascript">
 			var urlActual = "<?php echo $url; ?>";

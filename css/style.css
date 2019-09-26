@@ -1,5 +1,5 @@
-@import url( 'colores.css' );
-@import url( 'fuentes.css' );
+@import url( 'colors.css' );
+@import url( 'fonts.css' );
 body, html { height: 100%; }
 body {
 	margin: 0;
@@ -25,17 +25,17 @@ body {
 	text-align: center;
 }
 #wheel-image {
-	width: 600px;
-	height: 600px;
+	width: 450px;
+	height: 450px;
 }
-.garabato {
+.link-icon {
 	position: absolute;
 	width: 200px;
 	height: 80px;
 	top: 0;
 	left: 0;
 }
-.garabato a {
+.link-icon a {
 	display: block;
 	width: 100%;
 	height: 80px;
