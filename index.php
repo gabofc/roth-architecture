@@ -1,30 +1,23 @@
 <?php include( 'header.php' ); ?>
+<?php include( 'lib/icons.php' ); ?>
 	<img src="images/logo.png" class="logo">
 	<div id="wheel">
 		<?php
-			$path = 'images/icons/';
-			$files = array_values(
-				array_filter(
-					scandir( $path ),
-					function( $file ) use ( $path ) {
-    					return !is_dir( $path . '/' . $file );
-					}
-				)
-			);
-			$icono = 1;
-			foreach( $files as $file ) {
-				echo
-				'<div class="link-icon" id="link-icon-' . $icono . '">
-					<a class="box-link" href="#">
-						<img src="' . $path . $file . '" class="iconoLista">
-						<div class="commingSoon">Comming Soon</div>
-					</a>
-				</div>';
-				$icono++;
-			}
+		$count = 1;
+		$path = 'images/icons/';
+		foreach( $iconsLinks as $icons ){
+			echo
+			'<div class="link-icon" id="link-icon-' . $count . '">
+				<a class="box-link" href="' . $icons[2] . '">
+					<img src="' . $path . $icons[1] . '" class="iconoLista" alt="' . $icons[0] . '">
+					<div class="commingSoon">Comming Soon</div>
+				</a>
+			</div>';
+			$count ++;
+		}
 		?>
 	</div>
 	<div class="contenidoCentro">
-		<img src="images/ants.png">
+		<img src="images/ants.png" id="intro-image">
 	</div>
 <?php include( 'footer.php' ); ?>

@@ -34,6 +34,7 @@ body {
 	height: 80px;
 	top: 0;
 	left: 0;
+	display:none;
 }
 .link-icon a {
 	display: block;

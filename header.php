@@ -13,7 +13,7 @@
 	<head>
 		<title>Roth Architecture</title>
 		<base href="<?php echo $base; ?>" />
-		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1, user-scalable=no">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="author" content="Roth Architecture">
 		<meta name="description" content="">
@@ -21,6 +21,7 @@
 		<link rel="stylesheet" href="css/general.css">
 		<link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
 		<script type="text/javascript">
 			var urlActual = "<?php echo $url; ?>";
 			var archivoUsado = "<?php echo $nombreArchivo; ?>";

@@ -17,6 +17,11 @@ var total = symbols.length;
 var slice = 2 * Math.PI / total;
 $( document ).ready(function($) {
 	symbols.each( function( i, icons ) {
+		var newIndex = i + 1;
+		var delay = 200*newIndex;
+		$("#link-icon-" + newIndex).delay( delay ).fadeIn( 2000 );
+	} );
+	symbols.each( function( i, icons ) {
 		var angle = i * slice;
 		var x = center + radius * Math.sin( angle );
 		var y = center - radius * Math.cos( angle );

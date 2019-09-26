@@ -45,22 +45,6 @@ function validaEmail( email ) {
 		return true;
 	}
 }
-function validaRfc( rfcStr ) {
-	var strCorrecta;
-	strCorrecta = rfcStr;
-	if ( rfcStr.length == 12 ) {
-		var valid = '^(([A-Z]|[a-z]){3})([0-9]{6})((([A-Z]|[a-z]|[0-9]){3}))';
-	} else {
-		var valid = '^(([A-Z]|[a-z]|\s){1})(([A-Z]|[a-z]){3})([0-9]{6})((([A-Z]|[a-z]|[0-9]){3}))';
-	}
-	var validRfc = new RegExp( valid );
-	var matchArray = strCorrecta.match( validRfc );
-	if ( matchArray == null ) {
-		return false;
-	} else {
-		return true;
-	}
-}
 function validaTodo( cual ) {
 	desmarca( cual );
 	var mal = 0;
