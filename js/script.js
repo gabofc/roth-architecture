@@ -57,7 +57,7 @@ function acomodaIconos() {
 			rotation: 360
 		} );
 	} );
-	
+
 }
 function iniciaAnimacion() {
 	$( '.contenidoCentro.mostrado' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
@@ -127,7 +127,7 @@ function contactUs() {
 function enviar() {
 	if ( validaTodo( 'contacto' ) ) {
 		var parametros = { 'nombre': $( '#nombre' ).val(), 'email': $( '#email' ).val(), 'mensaje': $( '#mensaje' ).val() };
-		var respuesta = ajaxRequest( parametros, 'lib/enviar.php', respuestaEnviar );
+		var respuesta = ajaxRequest( parametros, 'lib/send.php', respuestaEnviar );
 	}
 }
 function respuestaEnviar( respuesta ) {
