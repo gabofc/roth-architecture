@@ -18,6 +18,7 @@ body {
 	top: 20px;
 	display: none;
 	cursor: pointer;
+	z-index: 2;
 }
 #wheel {
 	position: relative;
@@ -77,10 +78,24 @@ body {
 	left: 50%;
 	transform: translate( -50%, -50% );
 	border-radius: 50%;
-	z-index: 1;
+	z-index: 2;
 	transition: all 1.5s;
 	text-align: center;
 	overflow: hidden;
+}
+.redondeado::before {
+	content: '';
+	height: 100%;
+	width: 50%;
+	float: left;
+	shape-outside: polygon(0 0, 100% 0, 60% 4%, 40% 10%, 20% 20%, 10% 28.2%, 5% 34.4%, 0 50%, 5% 65.6%, 10% 71.8%, 20% 80%, 40% 90%, 60% 96%, 100% 100%, 0% 100%);
+}
+.contenidoCentro > span.dentroCirculo::before {
+	content: '';
+	height: 100%;
+	width: 50%;
+	float: right;
+	shape-outside: polygon(100% 0, 0 0, 40% 4%, 60% 10%, 80% 20%, 90% 28.2%, 95% 34.4%, 100% 50%, 95% 65.6%, 90% 71.8%, 80% 80%, 60% 90%, 40% 96%, 0 100%, 100% 100%);
 }
 .contenidoCentro.mostrado { width: 400px; height: 400px; max-width: 90%; }
 .contenidoCentro img {
@@ -98,48 +113,59 @@ body {
 	padding-top: 40%;
 	box-sizing: border-box;
 }
-.contactDiv {
-	text-align: left !important;
-	font-size: 3px;
-    line-height: 1.6;
+.contactDiv { text-align: left; }
+.contactDiv h3 {
+	text-align: center;
+	font-weight: normal;
+	font-size: 15px;
+	margin: 0 auto;
+	margin-top: 20px;
 }
-.contactDiv h3 { text-align: center; font-weight: normal; font-size: 3px; line-height: 1.6; margin: 1px; }
+.contactDiv label { display: block; margin: 0 auto; padding-left: 10px; box-sizing: border-box; }
+.contactDiv .input {
+	width: 100%;
+	margin: 0 auto;
+	border-bottom: 1px dashed var( --negro );
+	border-top: 1px dashed var( --negro );
+	margin-bottom: 5px;
+	text-align: center;
+}
 .contactDiv input, .contactDiv textarea {
-	width: 70%;
-	height: 8px;
+	width: 100%;
+	padding: 8px;
 	box-sizing: border-box;
 	border: none;
 	background: transparent;
-	border-bottom: 0.5px dashed var( --negro );
-	border-top: 0.5px dashed var( --negro );
-	margin: 1px 0;
-	font-size: 2px;
+	outline: none;
+	margin: 0 auto;
+	text-align: left;
 }
-.contactDiv textarea { width: 50%; height: 15px; resize: none; }
 .vacio {
-	border-bottom: 0.5px dashed var( --rojo ) !important;
-	border-top: 0.5px dashed var( --rojo ) !important;
+	border-bottom: 1px dashed var( --rojo ) !important;
+	border-top: 1px dashed var( --rojo ) !important;
 }
 .error {
 	text-align: center;
 	color: var( --rojo );
-    margin-top: -1px;
-    font-size: 2px;
+	margin: 0;
+    margin-top: -5px;
+    font-size: 12px;
 }
 .contactDiv a {
 	text-decoration: none;
 	color: var( --negro );
-	font-size: 4px;
-	text-align: right !important;
+	font-size: 18px;
+	text-align: center;
 	display: block;
 }
-.tCenter { text-align: center !important; }
+.rellenoLeft { float: left; clear: left; height: 16px; line-height: 16px; background-color: var( --rojo ); }
+.rellenoRight { float: right; clear: right; height: 16px; line-height: 16px; background-color: var( --rojo ); }
 svg {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate( -50%, -50% );
-	z-index: 1;
+	z-index: 2;
 	transition: all 1.5s;
     margin: auto;
     width: 50%;

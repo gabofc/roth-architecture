@@ -30,23 +30,6 @@
 			</div>
 		</foreignObject>
 	</svg>
-	<svg viewBox="0 0 100 100" id="formContact">
-		<circle r="48" cx="50" cy="50"/>
-		<foreignObject id="text" width="100" height="100">
-			<div class="shape shape-left"></div>
-			<div class="shape shape-right"></div>
-			<div class="text contactDiv" id="contacto">
-				<h3>Dreamers, do not hesitate to contact us</h3>
-				<label for="nombre">Name:</label>
-				<div class="tCenter"><input type="text" id="nombre" class="obligatorio"></div>
-				<label for="email">Email:</label>
-				<div class="tCenter"><input type="email" id="email" class="obligatorio email"></div>
-				<label for="mensaje">Message:</label>
-				<div class="tCenter"><textarea id="mensaje" class="obligatorio" spellcheck="false"></textarea></div>
-				<a href="#" class="enviaForm" onclick="enviar()">Send</a>
-			</div>
-		</foreignObject>
-	</svg>
 	<div class="contenidoCentro">
 		<img src="images/ants.png" id="intro-image">
 	</div>

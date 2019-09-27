@@ -100,9 +100,29 @@ function aboutUs() {
 	} );
 }
 function contactUs() {
-	$( 'svg#textCircle' ).fadeOut( 'slow', function() {
-		$( 'svg#formContact' ).fadeIn( 'slow' );
-	} );
+	var contenidoContact = '<div class="contactDiv" id="contacto">';
+	contenidoContact += '<h3>Dreamers, do not hesitate to contact us</h3>';
+	contenidoContact += '<label for="nombre">Name:</label>';
+	contenidoContact += '<div class="input"><input type="text" id="nombre" class="obligatorio"></div>';
+	contenidoContact += '<label for="email">Email:</label>';
+	contenidoContact += '<div class="input"><input type="email" id="email" class="obligatorio email"></div>';
+	contenidoContact += '<label for="mensaje">Message:</label>';
+	contenidoContact += '<div class="input"><textarea style="height: ' + textArea + '" id="mensaje" class="obligatorio"></textarea></div>';
+	contenidoContact += '<a href="#" class="enviaForm" onclick="enviar()">Send</a>';
+	contenidoContact += '</div>';
+	if ( $( 'svg#textCircle' ).is( ':visible' ) ) {
+		$( 'svg#textCircle' ).fadeOut( 'slow', function() {
+			$( '.contenidoCentro' ).html( contenidoContact );
+			ajustaContacto();
+			$( '.contenidoCentro' ).fadeIn( 'slow' );
+		} );
+	} else {
+		$( '.contenidoCentro' ).fadeOut( 'slow', function() {
+			$( '.contenidoCentro' ).html( contenidoContact );
+			ajustaContacto();
+			$( '.contenidoCentro' ).fadeIn( 'slow' );
+		} );
+	}
 }
 function enviar() {
 	if ( validaTodo( 'contacto' ) ) {
@@ -120,24 +140,37 @@ function respuestaEnviar( respuesta ) {
 		errorCallback();
 	}
 }
-function addingDivsPush() {
-	var html = '';
-	html += '<div class="rellenoLeft" style="width: ' + ( contenidoSize / 2 ) + 'px;"></div>';
-	html += '<div class="rellenoRight" style="width: ' + ( contenidoSize / 2 ) + 'px;"></div>';
-	for( var i = 1; i <= posiciones; i++ ) {
-		var agregadoWidth = getSpecificWidth( i );
-		html += '<div class="rellenoLeft" style="width: ' + agregadoWidth + 'px;"></div>';
-		html += '<div class="rellenoRight" style="width: ' + agregadoWidth + 'px;"></div>';
-	}
-	html += '<div class="rellenoLeft" style="width: ' + ( contenidoSize / 2 ) + 'px;"></div>';
-	html += '<div class="rellenoRight" style="width: ' + ( contenidoSize / 2 ) + 'px;"></div>';
-	return html
+function ajustaContacto() {
+	var altura = 30;
+	$( '.contactDiv h3' ).css( 'width', getSpecificWidth( altura ) + 'px' );
+	altura = 80;
+	$( '.contactDiv' ).children().each( function() {
+		var tipoElemento = $( this )[0].nodeName;
+		console.log( 'Tipo de elemento = ' + tipoElemento );
+		console.log( 'Altura a setear = ' + altura );
+		if ( tipoElemento == 'DIV' ) {
+			var nuevoTipo = $( this ).children()[0].nodeName;
+			if ( nuevoTipo == 'INPUT' ) {
+				console.log( 'Tipo de elemento hijo = ' + nuevoTipo );
+				$( this ).children().css( 'width', getSpecificWidth( altura ) + 'px' );
+				altura = altura + 33;
+			}
+		} else if ( tipoElemento == 'LABEL' ) {
+			$( this ).css( 'width', getSpecificWidth( altura ) + 'px' );
+			altura = altura + 16;
+		}
+		console.log( 'Altura despues = ' + altura );
+		console.log( '-----------' );
+	} );
 }
-function getSpecificWidth( posicion ) {
+function getSpecificWidth( altura ) {
 	var hipotenusa = contenidoSize / 2;
-	var cateto = hipotenusa - ( posicion * 16 );
+	var cateto = hipotenusa - altura;
 	var c = Math.sqrt( Math.pow( hipotenusa, 2 ) - Math.pow( cateto, 2 ) );
-	c = ( c * 2 ) + 10;
-	var width = ( contenidoSize - c ) / 2;
-	return width;
+	c = ( c * 2 ) - 30;
+	return c;
+}
+function getDistance( element ) {
+	var distancia = element.offset().top - element.parent().offset().top - element.parent().scrollTop()
+	return distancia;
 }
