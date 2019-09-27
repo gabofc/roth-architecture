@@ -93,17 +93,17 @@ function iniciaRueda() {
 	} );
 }
 function aboutUs() {
-	var contenidoAbout = '<p>Roth architecture is rooted in the unique combination of three fundamental pillars: nature, ancestry and art.</p>';
-	contenidoAbout += '<p>It distinguishes itself through an idiosyncratic process which embraces the intelligence of the millenary ecological fabric of life and incorporates human technologies from the ancestral wisdom of the hand of the indigenous communities to artificial intelligence.</p>';
-	contenidoAbout += '<p>From the unconditional presence to the inspiration of the moment as a collective and the creative flow of nature itself we develop unseen structures akin to living sculptures which prolong the curvature of the earth and open up pathways to new forms of living.</p>';
-	contenidoAbout += '<p>Transcending the dichotomy between interior and exterior these interfaces allow for a deep reconnection with oneself, the other and the environment and the search for the significance of being human.</p>';
+	var contenidoAbout = '<div class="content">Roth architecture is rooted in the unique combination of three fundamental pillars: nature, ancestry and art.<br><br>';
+	contenidoAbout += 'It distinguishes itself through an idiosyncratic process which embraces the intelligence of the millenary ecological fabric of life and incorporates human technologies from the ancestral wisdom of the hand of the indigenous communities to artificial intelligence.<br><br>';
+	contenidoAbout += 'From the unconditional presence to the inspiration of the moment as a collective and the creative flow of nature itself we develop unseen structures akin to living sculptures which prolong the curvature of the earth and open up pathways to new forms of living.<br><br>';
+	contenidoAbout += 'Transcending the dichotomy between interior and exterior these interfaces allow for a deep reconnection with oneself, the other and the environment and the search for the significance of being human.</div>';
 	$( '.contenidoCentro' ).fadeOut( 'slow', function() {
 		$( '.contenidoCentro' ).html( contenidoAbout );
 		$( '.contenidoCentro' ).fadeIn( 'slow' );
 	} );
 }
 function contactUs() {
-	var contenidoContact = '<div class="contactDiv" id="contacto">';
+	var contenidoContact = '<div class="contactDiv content" id="contacto">';
 	contenidoContact += '<h3>Dreamers, do not hesitate to contact us</h3>';
 	contenidoContact += '<label for="nombre">Name:</label>';
 	contenidoContact += '<input type="text" id="nombre" class="obligatorio">';

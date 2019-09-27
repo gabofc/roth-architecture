@@ -61,11 +61,9 @@ function desmarca( cual ) {
 }
 function cargando( status ) {
 	if ( !status ) {
-		$( '.cargando' ).fadeOut( "slow" );
-		$( '.capaNegra' ).fadeOut( 'slow' );
+		$( '.contactDiv a' ).html( 'Send' );
 	} else {
-		$( '.cargando' ).fadeIn( 'slow' );
-		$( '.capaNegra' ).fadeIn( 'slow' );
+		$( '.contactDiv a' ).html( 'Sending ...' );
 	}
 }
 function ajaxRequest( parametros, urlCall, successCallback ) {

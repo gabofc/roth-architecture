@@ -28,7 +28,3 @@
 		</script>
 	</head>
 	<body>
-		<div class="capaNegra" onclick="cierraPop()"></div>
-		<div class="cargando">
-			<h3>SENDING ...</h3>
-		</div>
