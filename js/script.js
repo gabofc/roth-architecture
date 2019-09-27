@@ -136,8 +136,10 @@ function respuestaEnviar( respuesta ) {
 	if ( datos.status == 'Success' ) {
 		alerta( 'Sent, Thank you for your message' )
 		vacia( 'contactForm' );
+		setTimeout( function() { aboutUs(); }, 3000 );
 	} else {
 		errorCallback();
+		setTimeout( function() { contactUs(); }, 3000 );
 	}
 }
 function ajustaContacto() {
@@ -169,8 +171,4 @@ function getSpecificWidth( altura ) {
 	var c = Math.sqrt( Math.pow( hipotenusa, 2 ) - Math.pow( cateto, 2 ) );
 	c = ( c * 2 ) - 30;
 	return c;
-}
-function getDistance( element ) {
-	var distancia = element.offset().top - element.parent().offset().top - element.parent().scrollTop()
-	return distancia;
 }
