@@ -12,8 +12,11 @@ body {
 	margin: 0 auto;
 	left: 0;
 	right: 0;
-	width: 100px;
-	top: 50px;
+	width: auto;
+	height: 58px;
+	top: 20px;
+	display: none;
+	cursor: pointer;
 }
 #wheel {
 	position: relative;
@@ -34,7 +37,7 @@ body {
 	height: 80px;
 	top: 0;
 	left: 0;
-	display:none;
+	display: none;
 }
 .link-icon a {
 	display: block;
@@ -67,16 +70,20 @@ body {
 }
 .contenidoCentro {
 	position: absolute;
-	width: 400px;
+	width: 1px;
 	max-width: 90%;
-	height: 400px;
+	height: 1px;
 	top: 50%;
 	left: 50%;
 	transform: translate( -50%, -50% );
 	border-radius: 50%;
 	overflow: hidden;
 	z-index: 1;
+	transition: all 1.5s;
+	text-align: center;
+	word-wrap: break-word;
 }
+.contenidoCentro.mostrado { width: 400px; height: 400px; }
 .contenidoCentro img {
 	position: relative;
 	width: 80%;
@@ -84,4 +91,59 @@ body {
 	top: 50%;
 	transform: translateY( -55% );
 	box-sizing: border-box;
+}
+.contenidoCentro p.centrado {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 40%;
+	box-sizing: border-box;
+}
+.contactDiv h3 { text-align: center; font-weight: normal; }
+.contactDiv input, .contactDiv textarea {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border: none;
+	background: transparent;
+	border-bottom: 1px dashed var( --negro );
+	border-top: 1px dashed var( --negro );
+	margin: 5px 0;
+}
+.vacio {
+	border-bottom: 1px dashed var( --rojo ) !important;
+	border-top: 1px dashed var( --rojo ) !important;
+}
+.error {
+	text-align: center;
+	color: var( --rojo );
+	margin: 0;
+    margin-top: -5px;
+    font-size: 11px;
+}
+.contactDiv a { text-decoration: none; color: var( --negro ); }
+.cargando {
+	z-index: 9999999;
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	top: 40%;
+	left: 0;
+	display: none;
+	text-align: center;
+	color: var( --blanco );
+}
+.cargando h3 { color: var( --blanco ); }
+.capaNegra {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10001;
+	background-color: #000;
+	opacity: 0.7;
+	display: none;
 }

@@ -18,7 +18,6 @@
 		<meta name="author" content="Roth Architecture">
 		<meta name="description" content="">
 		<meta name="keywords" content="">
-		<link rel="stylesheet" href="css/general.css">
 		<link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
@@ -29,3 +28,7 @@
 		</script>
 	</head>
 	<body>
+		<div class="capaNegra" onclick="cierraPop()"></div>
+		<div class="cargando">
+			<h3>SENDING ...</h3>
+		</div>
