@@ -10,7 +10,7 @@
 				'<div class="link-icon" id="link-icon-' . $count . '">
 					<a class="box-link" href="' . $icons[2] . '">
 						<img src="' . $path . $icons[1] . '" class="iconoLista" alt="' . $icons[0] . '">
-						<div class="commingSoon">Coming Soon</div>
+						<div class="comingSoon">Coming Soon</div>
 					</a>
 				</div>';
 				$count ++;
