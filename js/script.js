@@ -9,6 +9,7 @@ var total = symbols.length;
 var slice = 2 * Math.PI / total;
 var textArea = 130;
 var contenidoSize = 400;
+var posiciones = 25;
 $( document ).ready( function() {
 	calculaSize();
 	setTimeout( function() {
@@ -31,15 +32,17 @@ function calculaSize() {
 	var iconosHeight = ventanaSize * 0.08;
 	var iconosWidth = iconosHeight * 2.5;
 	var ruedaSize = ventanaSize * 0.65;
-	contenidoSize = ruedaSize * 0.70;
-	contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
+	contenidoSize = ruedaSize * 0.80;
+	contenidoSize = ( contenidoSize > 500 ) ? 500 : contenidoSize;
 	wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
 	symbols.css( { 'width': iconosWidth, 'height': iconosHeight } );
 	$( '.logo' ).css( 'height', logoSize + 'px' );
-	$( '.contenidoCentro.mostrado' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
+	$( 'svg' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
+	$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
 	center = ruedaSize / 2;
 	radius = ruedaSize * 0.533;
 	textArea = contenidoSize * 0.40;
+	posiciones = Math.ceil( contenidoSize / 16 );
 }
 function acomodaIconos() {
 	symbols.each( function( i, icons ) {
@@ -57,7 +60,6 @@ function acomodaIconos() {
 	
 }
 function iniciaAnimacion() {
-	$( '.contenidoCentro' ).addClass( 'mostrado' );
 	$( '.contenidoCentro.mostrado' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
 	$( '.logo' ).fadeIn();
 	symbols.each( function( i, icons ) {
@@ -93,29 +95,13 @@ function iniciaRueda() {
 	} );
 }
 function aboutUs() {
-	var contenidoAbout = '<div class="content">Roth architecture is rooted in the unique combination of three fundamental pillars: nature, ancestry and art.<br><br>';
-	contenidoAbout += 'It distinguishes itself through an idiosyncratic process which embraces the intelligence of the millenary ecological fabric of life and incorporates human technologies from the ancestral wisdom of the hand of the indigenous communities to artificial intelligence.<br><br>';
-	contenidoAbout += 'From the unconditional presence to the inspiration of the moment as a collective and the creative flow of nature itself we develop unseen structures akin to living sculptures which prolong the curvature of the earth and open up pathways to new forms of living.<br><br>';
-	contenidoAbout += 'Transcending the dichotomy between interior and exterior these interfaces allow for a deep reconnection with oneself, the other and the environment and the search for the significance of being human.</div>';
 	$( '.contenidoCentro' ).fadeOut( 'slow', function() {
-		$( '.contenidoCentro' ).html( contenidoAbout );
-		$( '.contenidoCentro' ).fadeIn( 'slow' );
+		$( 'svg#textCircle' ).fadeIn( 'slow' );
 	} );
 }
 function contactUs() {
-	var contenidoContact = '<div class="contactDiv content" id="contacto">';
-	contenidoContact += '<h3>Dreamers, do not hesitate to contact us</h3>';
-	contenidoContact += '<label for="nombre">Name:</label>';
-	contenidoContact += '<input type="text" id="nombre" class="obligatorio">';
-	contenidoContact += '<label for="email">Email:</label>';
-	contenidoContact += '<input type="email" id="email" class="obligatorio email">';
-	contenidoContact += '<label for="mensaje">Message:</label>';
-	contenidoContact += '<textarea style="height: ' + textArea + '" id="mensaje" class="obligatorio"></textarea>';
-	contenidoContact += '<a href="#" class="enviaForm" onclick="enviar()">Send</a>';
-	contenidoContact += '</div>';
-	$( '.contenidoCentro' ).fadeOut( 'slow', function() {
-		$( '.contenidoCentro' ).html( contenidoContact );
-		$( '.contenidoCentro' ).fadeIn( 'slow' );
+	$( 'svg#textCircle' ).fadeOut( 'slow', function() {
+		$( 'svg#formContact' ).fadeIn( 'slow' );
 	} );
 }
 function enviar() {
@@ -133,4 +119,25 @@ function respuestaEnviar( respuesta ) {
 	} else {
 		errorCallback();
 	}
+}
+function addingDivsPush() {
+	var html = '';
+	html += '<div class="rellenoLeft" style="width: ' + ( contenidoSize / 2 ) + 'px;"></div>';
+	html += '<div class="rellenoRight" style="width: ' + ( contenidoSize / 2 ) + 'px;"></div>';
+	for( var i = 1; i <= posiciones; i++ ) {
+		var agregadoWidth = getSpecificWidth( i );
+		html += '<div class="rellenoLeft" style="width: ' + agregadoWidth + 'px;"></div>';
+		html += '<div class="rellenoRight" style="width: ' + agregadoWidth + 'px;"></div>';
+	}
+	html += '<div class="rellenoLeft" style="width: ' + ( contenidoSize / 2 ) + 'px;"></div>';
+	html += '<div class="rellenoRight" style="width: ' + ( contenidoSize / 2 ) + 'px;"></div>';
+	return html
+}
+function getSpecificWidth( posicion ) {
+	var hipotenusa = contenidoSize / 2;
+	var cateto = hipotenusa - ( posicion * 16 );
+	var c = Math.sqrt( Math.pow( hipotenusa, 2 ) - Math.pow( cateto, 2 ) );
+	c = ( c * 2 ) + 10;
+	var width = ( contenidoSize - c ) / 2;
+	return width;
 }

@@ -77,11 +77,10 @@ body {
 	left: 50%;
 	transform: translate( -50%, -50% );
 	border-radius: 50%;
-	overflow: hidden;
 	z-index: 1;
 	transition: all 1.5s;
 	text-align: center;
-	word-wrap: break-word;
+	overflow: hidden;
 }
 .contenidoCentro.mostrado { width: 400px; height: 400px; max-width: 90%; }
 .contenidoCentro img {
@@ -92,7 +91,6 @@ body {
 	transform: translateY( -55% );
 	box-sizing: border-box;
 }
-.contenidoCentro div.content { overflow-wrap: break-word; }
 .contenidoCentro p.centrado {
 	width: 100%;
 	height: 100%;
@@ -100,58 +98,76 @@ body {
 	padding-top: 40%;
 	box-sizing: border-box;
 }
-.contactDiv { text-align: left; }
-.contactDiv h3 { text-align: center; font-weight: normal; font-size: 18px; }
+.contactDiv {
+	text-align: left !important;
+	font-size: 3px;
+    line-height: 1.6;
+}
+.contactDiv h3 { text-align: center; font-weight: normal; font-size: 3px; line-height: 1.6; margin: 1px; }
 .contactDiv input, .contactDiv textarea {
-	width: 100%;
-	padding: 10px;
+	width: 70%;
+	height: 8px;
 	box-sizing: border-box;
 	border: none;
 	background: transparent;
-	border-bottom: 1px dashed var( --negro );
-	border-top: 1px dashed var( --negro );
-	margin: 5px 0;
+	border-bottom: 0.5px dashed var( --negro );
+	border-top: 0.5px dashed var( --negro );
+	margin: 1px 0;
+	font-size: 2px;
 }
+.contactDiv textarea { width: 50%; height: 15px; resize: none; }
 .vacio {
-	border-bottom: 1px dashed var( --rojo ) !important;
-	border-top: 1px dashed var( --rojo ) !important;
+	border-bottom: 0.5px dashed var( --rojo ) !important;
+	border-top: 0.5px dashed var( --rojo ) !important;
 }
 .error {
 	text-align: center;
 	color: var( --rojo );
-	margin: 0;
-    margin-top: -5px;
-    font-size: 12px;
+    margin-top: -1px;
+    font-size: 2px;
 }
 .contactDiv a {
 	text-decoration: none;
 	color: var( --negro );
-	font-size: 18px;
-	text-align: right;
+	font-size: 4px;
+	text-align: right !important;
 	display: block;
 }
-.cargando {
-	z-index: 9999999;
-	position: fixed;
-	width: 100%;
-	text-align: center;
-	top: 40%;
-	left: 0;
-	display: none;
-	text-align: center;
-	color: var( --blanco );
+.tCenter { text-align: center !important; }
+svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+	z-index: 1;
+	transition: all 1.5s;
+    margin: auto;
+    width: 50%;
+    width: 500px;
+    height: 500px;
+    fill: var( --blanco );
+    display: none;
 }
-.cargando h3 { color: var( --blanco ); }
-.capaNegra {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 10001;
-	background-color: #000;
-	opacity: 0.7;
-	display: none;
+svg circle { mix-blend-mode: multiply; }
+.shape {
+    height: 100%;
+    width: 50px;
+    shape-margin: 2.6px;
+}
+.shape-left {
+    float: left;
+    shape-outside: url( '../circle-left.svg' );
+}
+.shape-right {
+    float: right;
+    shape-outside: url( '../circle-right.svg' );
+}
+.text {
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    color: var( --negro );
+    hyphens: auto;
+    font-size: 3px;
+    line-height: 1.6;
 }

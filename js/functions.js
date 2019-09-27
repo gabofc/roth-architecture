@@ -16,14 +16,14 @@ function validaTodo( cual ) {
 		var clase = $( this ).attr( 'class' );
 		if ( '' === $( this ).val() ) {
 			$( this ).addClass( 'vacio' );
-			$( this ).after( '<p class="error">Please fill this field</p>' );
+			$( this ).parent().before( '<label class="error">Please fill this field</label>' );
 			mal++;
 		} else {
 			lleno = true;
 			if ( clase.indexOf( 'email' ) != -1 ) {
 				if ( !validaEmail( $( this ).val() ) ) {
 					$( this ).addClass( 'vacio' );
-					$( this ).after( '<p class="error">Please add a valid email address</p>' );
+					$( this ).parent().before( '<label class="error">Please add a valid email address</label>' );
 					mal++;
 				}
 			}
