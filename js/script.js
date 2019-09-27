@@ -102,12 +102,12 @@ function aboutUs() {
 function contactUs() {
 	var contenidoContact = '<div class="contactDiv" id="contacto">';
 	contenidoContact += '<h3>Dreamers, do not hesitate to contact us</h3>';
-	contenidoContact += '<label for="nombre">Name:</label>';
-	contenidoContact += '<div class="input"><input type="text" id="nombre" class="obligatorio"></div>';
+	contenidoContact += '<label for="name">Name:</label>';
+	contenidoContact += '<div class="input"><input type="text" id="name" class="obligatorio"></div>';
 	contenidoContact += '<label for="email">Email:</label>';
 	contenidoContact += '<div class="input"><input type="email" id="email" class="obligatorio email"></div>';
-	contenidoContact += '<label for="mensaje">Message:</label>';
-	contenidoContact += '<div class="input"><textarea style="height: ' + textArea + '" id="mensaje" class="obligatorio"></textarea></div>';
+	contenidoContact += '<label for="message">Message:</label>';
+	contenidoContact += '<div class="input"><textarea style="height: ' + textArea + '" id="message" class="obligatorio"></textarea></div>';
 	contenidoContact += '<a href="#" class="enviaForm" onclick="enviar()">Send</a>';
 	contenidoContact += '</div>';
 	if ( $( 'svg#textCircle' ).is( ':visible' ) ) {
@@ -126,7 +126,7 @@ function contactUs() {
 }
 function enviar() {
 	if ( validaTodo( 'contacto' ) ) {
-		var parametros = { 'nombre': $( '#nombre' ).val(), 'email': $( '#email' ).val(), 'mensaje': $( '#mensaje' ).val() };
+		var parametros = { 'name': $( '#nombre' ).val(), 'email': $( '#email' ).val(), 'message': $( '#mensaje' ).val() };
 		var respuesta = ajaxRequest( parametros, 'lib/send.php', respuestaEnviar );
 	}
 }
@@ -148,12 +148,9 @@ function ajustaContacto() {
 	altura = 80;
 	$( '.contactDiv' ).children().each( function() {
 		var tipoElemento = $( this )[0].nodeName;
-		console.log( 'Tipo de elemento = ' + tipoElemento );
-		console.log( 'Altura a setear = ' + altura );
 		if ( tipoElemento == 'DIV' ) {
 			var nuevoTipo = $( this ).children()[0].nodeName;
 			if ( nuevoTipo == 'INPUT' ) {
-				console.log( 'Tipo de elemento hijo = ' + nuevoTipo );
 				$( this ).children().css( 'width', getSpecificWidth( altura ) + 'px' );
 				altura = altura + 33;
 			}
@@ -161,8 +158,6 @@ function ajustaContacto() {
 			$( this ).css( 'width', getSpecificWidth( altura ) + 'px' );
 			altura = altura + 16;
 		}
-		console.log( 'Altura despues = ' + altura );
-		console.log( '-----------' );
 	} );
 }
 function getSpecificWidth( altura ) {
