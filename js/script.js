@@ -8,6 +8,7 @@ var radius = 320;
 var total = symbols.length;
 var slice = 2 * Math.PI / total;
 var textArea = 130;
+var contenidoSize = 400;
 $( document ).ready( function() {
 	calculaSize();
 	setTimeout( function() {
@@ -30,7 +31,8 @@ function calculaSize() {
 	var iconosHeight = ventanaSize * 0.08;
 	var iconosWidth = iconosHeight * 2.5;
 	var ruedaSize = ventanaSize * 0.65;
-	var contenidoSize = ruedaSize * 0.52;
+	contenidoSize = ruedaSize * 0.70;
+	contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
 	wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
 	symbols.css( { 'width': iconosWidth, 'height': iconosHeight } );
 	$( '.logo' ).css( 'height', logoSize + 'px' );
@@ -56,6 +58,7 @@ function acomodaIconos() {
 }
 function iniciaAnimacion() {
 	$( '.contenidoCentro' ).addClass( 'mostrado' );
+	$( '.contenidoCentro.mostrado' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
 	$( '.logo' ).fadeIn();
 	symbols.each( function( i, icons ) {
 		var newIndex = i + 1;
