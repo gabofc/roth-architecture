@@ -82,20 +82,8 @@ body {
 	transition: all 1.5s;
 	text-align: center;
 	overflow: hidden;
-}
-.redondeado::before {
-	content: '';
-	height: 100%;
-	width: 50%;
-	float: left;
-	shape-outside: polygon(0 0, 100% 0, 60% 4%, 40% 10%, 20% 20%, 10% 28.2%, 5% 34.4%, 0 50%, 5% 65.6%, 10% 71.8%, 20% 80%, 40% 90%, 60% 96%, 100% 100%, 0% 100%);
-}
-.contenidoCentro > span.dentroCirculo::before {
-	content: '';
-	height: 100%;
-	width: 50%;
-	float: right;
-	shape-outside: polygon(100% 0, 0 0, 40% 4%, 60% 10%, 80% 20%, 90% 28.2%, 95% 34.4%, 100% 50%, 95% 65.6%, 90% 71.8%, 80% 80%, 60% 90%, 40% 96%, 0 100%, 100% 100%);
+	padding: 10px;
+	box-sizing: border-box;
 }
 .contenidoCentro.mostrado { width: 400px; height: 400px; max-width: 90%; }
 .contenidoCentro img {
@@ -194,6 +182,6 @@ svg circle { mix-blend-mode: multiply; }
     text-align: center;
     color: var( --negro );
     hyphens: auto;
-    font-size: 3px;
+    font-size: 2.6px;
     line-height: 1.6;
 }

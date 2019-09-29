@@ -1,6 +1,6 @@
 <?php include( 'header.php' ); ?>
 <?php include( 'lib/icons.php' ); ?>
-	<img src="images/logo.png" class="logo" onclick="contactUs()">
+	<img src="images/logo.png" class="logo" onclick="abrePagina()">
 	<div id="wheel">
 		<?php
 			$count = 1;

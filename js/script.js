@@ -9,6 +9,7 @@ var total = symbols.length;
 var slice = 2 * Math.PI / total;
 var textArea = 130;
 var contenidoSize = 400;
+var textoRueda = 500;
 var posiciones = 25;
 $( document ).ready( function() {
 	calculaSize();
@@ -28,20 +29,29 @@ $( document ).ready( function() {
 } );
 function calculaSize() {
 	var ventanaSize = $( window ).height();
-	var logoSize = ventanaSize * 0.06;
+	var logoSize = ventanaSize * 0.05;
 	var iconosHeight = ventanaSize * 0.08;
 	var iconosWidth = iconosHeight * 2.5;
-	var ruedaSize = ventanaSize * 0.65;
-	contenidoSize = ruedaSize * 0.80;
-	contenidoSize = ( contenidoSize > 500 ) ? 500 : contenidoSize;
+	var ruedaSize = ventanaSize * 0.60;
+	textoRueda = ruedaSize * 0.85;
+	console.log( $( window ).width() );
+	if ( $( window ).width() > 768 ) {
+		contenidoSize = ruedaSize * 0.80;
+		contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
+		textArea = contenidoSize * 0.30;
+	} else {
+		contenidoSize = ruedaSize * 0.85;
+		contenidoSize = ( contenidoSize > 500 ) ? 500 : contenidoSize;
+		textArea = contenidoSize * 0.20;
+	}
+	textoRueda = ( textoRueda > 500 ) ? 500 : textoRueda;
 	wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
 	symbols.css( { 'width': iconosWidth, 'height': iconosHeight } );
 	$( '.logo' ).css( 'height', logoSize + 'px' );
-	$( 'svg' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
+	$( 'svg' ).css( { 'width': textoRueda, 'height': textoRueda } );
 	$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
 	center = ruedaSize / 2;
 	radius = ruedaSize * 0.533;
-	textArea = contenidoSize * 0.40;
 	posiciones = Math.ceil( contenidoSize / 16 );
 }
 function acomodaIconos() {
@@ -107,7 +117,7 @@ function contactUs() {
 	contenidoContact += '<label for="email">Email:</label>';
 	contenidoContact += '<div class="input"><input type="email" id="email" class="obligatorio email"></div>';
 	contenidoContact += '<label for="message">Message:</label>';
-	contenidoContact += '<div class="input"><textarea style="height: ' + textArea + '" id="message" class="obligatorio"></textarea></div>';
+	contenidoContact += '<div class="input"><textarea style="height: ' + textArea + 'px" id="message" class="obligatorio"></textarea></div>';
 	contenidoContact += '<a href="#" class="enviaForm" onclick="enviar()">Send</a>';
 	contenidoContact += '</div>';
 	if ( $( 'svg#textCircle' ).is( ':visible' ) ) {
@@ -127,7 +137,7 @@ function contactUs() {
 function enviar() {
 	if ( validaTodo( 'contacto' ) ) {
 		var parametros = { 'name': $( '#nombre' ).val(), 'email': $( '#email' ).val(), 'message': $( '#mensaje' ).val() };
-		var respuesta = ajaxRequest( parametros, 'lib/send.php', respuestaEnviar );
+		ajaxRequest( parametros, 'lib/send.php', respuestaEnviar );
 	}
 }
 function respuestaEnviar( respuesta ) {
@@ -166,4 +176,11 @@ function getSpecificWidth( altura ) {
 	var c = Math.sqrt( Math.pow( hipotenusa, 2 ) - Math.pow( cateto, 2 ) );
 	c = ( c * 2 ) - 30;
 	return c;
+}
+function abrePagina() {
+	if ( !$( '.contenidoCentro' ).is( ':visible' ) ) {
+		contactUs();
+	} else {
+		aboutUs();
+	}
 }
