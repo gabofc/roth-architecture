@@ -43,6 +43,8 @@ function calculaSize() {
 		contenidoSize = ruedaSize * 0.85;
 		contenidoSize = ( contenidoSize > 500 ) ? 500 : contenidoSize;
 		textArea = contenidoSize * 0.20;
+		$( 'svg' ).css( { 'margin-top': '15px' } );
+		$( '.contenidoCentro' ).css( { 'margin-top': '15px' } );
 	}
 	textoRueda = ( textoRueda > 500 ) ? 500 : textoRueda;
 	wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
