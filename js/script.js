@@ -78,7 +78,8 @@ function iniciaAnimacion() {
 	$( '.logo' ).fadeIn();
 	symbols.each( function( i, icons ) {
 		var newIndex = i + 1;
-		var delay = 200 * newIndex;
+		//var delay = 200 * newIndex;
+		var delay = 600 * 1;
 		$( '#link-icon-' + newIndex ).delay( delay ).fadeIn( 2000 );
 	} );
 }
