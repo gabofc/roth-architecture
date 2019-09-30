@@ -11,6 +11,7 @@ var textArea = 130;
 var contenidoSize = 400;
 var textoRueda = 500;
 var posiciones = 25;
+var tl = new TimelineLite();
 $( document ).ready( function() {
 	calculaSize();
 	setTimeout( function() {
@@ -59,7 +60,6 @@ function calculaSize() {
 	posiciones = Math.ceil( contenidoSize / 16 );
 }
 function acomodaIconos() {
-	var tl = new TimelineLite();
 	symbols.each( function( i, icons ) {
 		var angle = i * slice;
 		var x = center + radius * Math.sin( angle );
@@ -73,11 +73,11 @@ function acomodaIconos() {
 			visibility: 'visible'
 		} );
 	} );
-	tl.from( symbols, 0.7, { scale: .5, autoAlpha: 0, }, '+=0.5' );
 }
 function iniciaAnimacion() {
-	$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
-	$( '.logo' ).fadeIn();
+	tl.from( $( '.logo' ), 0.5, { scale: 1.5, autoAlpha: 0, opacity: 0 }, '-=0.5' );
+	tl.from( symbols, 0.7, { scale: .5, autoAlpha: 0 }, '+=0.5' );
+	tl.from( $( '.contenidoCentro' ), 1, { width: contenidoSize, height: contenidoSize, display: 'block' } );
 }
 function ajustaElementos() {
 	var nuevaRotacion = 360 - rotacionActual;
@@ -107,6 +107,7 @@ function iniciaRueda() {
 }
 function aboutUs() {
 	$( '.contenidoCentro' ).fadeOut( 'slow', function() {
+		$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
 		$( 'svg#textCircle' ).fadeIn( 'slow' );
 	} );
 }
@@ -122,6 +123,7 @@ function contactUs() {
 	contenidoContact += '<a href="#" class="enviaForm italic" onclick="enviar()">Send</a>';
 	contenidoContact += '</div>';
 	if ( $( 'svg#textCircle' ).is( ':visible' ) ) {
+		$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
 		$( 'svg#textCircle' ).fadeOut( 'slow', function() {
 			$( '.contenidoCentro' ).html( contenidoContact );
 			ajustaContacto();

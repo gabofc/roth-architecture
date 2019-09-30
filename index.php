@@ -1,7 +1,7 @@
 <?php include( 'header.php' ); ?>
 <?php include( 'lib/icons.php' ); ?>
 <div class="mainContainer">
-	<img src="images/logo.png" class="logo" onclick="abrePagina()">
+	<img src="images/logo.png" class="logo agrandado" onclick="abrePagina()">
 	<div id="wheel">
 		<?php
 			$count = 1;
