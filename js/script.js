@@ -29,36 +29,37 @@ $( document ).ready( function() {
 } );
 function calculaSize() {
 	var ventanaSize = $( window ).height();
-	var logoSize = ventanaSize * 0.05;
+	var logoSize = ventanaSize * 0.045;
 	var iconosHeight = ventanaSize * 0.08;
 	var iconosWidth = iconosHeight * 2.5;
-	var ruedaSize = ventanaSize * 0.60;
 	console.log( $( window ).width() );
 	if ( $( window ).width() > 768 ) {
+		var ruedaSize = ventanaSize * 0.65;
 		contenidoSize = ruedaSize * 0.80;
 		contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
 		textArea = contenidoSize * 0.30;
-		textoRueda = ( textoRueda > 500 ) ? 500 : textoRueda;
+		textoRueda = ( textoRueda > 600 ) ? 600 : textoRueda;
 		textoRueda = ruedaSize * 0.85;
 	} else {
+		var ruedaSize = ventanaSize * 0.60;
 		textoRueda = ruedaSize * 0.95;
 		contenidoSize = ruedaSize * 0.85;
 		contenidoSize = ( contenidoSize > 500 ) ? 500 : contenidoSize;
 		textArea = contenidoSize * 0.20;
-		$( 'svg' ).css( { 'margin-top': '15px' } );
-		$( '.contenidoCentro' ).css( { 'margin-top': '15px' } );
+		$( 'svg' ).css( { 'margin-top': '20px' } );
+		$( '.contenidoCentro' ).css( { 'margin-top': '10px' } );
 		textoRueda = ( textoRueda > 600 ) ? 600 : textoRueda;
 	}
 	wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
 	symbols.css( { 'width': iconosWidth, 'height': iconosHeight } );
 	$( '.logo' ).css( 'height', logoSize + 'px' );
 	$( 'svg' ).css( { 'width': textoRueda, 'height': textoRueda } );
-	$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
 	center = ruedaSize / 2;
 	radius = ruedaSize * 0.533;
 	posiciones = Math.ceil( contenidoSize / 16 );
 }
 function acomodaIconos() {
+	var tl = new TimelineLite();
 	symbols.each( function( i, icons ) {
 		var angle = i * slice;
 		var x = center + radius * Math.sin( angle );
@@ -68,20 +69,15 @@ function acomodaIconos() {
 			yPercent: -50,
 			x: x,
 			y: y,
-			rotation: 360
+			rotation: 360,
+			visibility: 'visible'
 		} );
 	} );
-
+	tl.from( symbols, 0.7, { scale: .5, autoAlpha: 0, }, '+=0.5' );
 }
 function iniciaAnimacion() {
-	$( '.contenidoCentro.mostrado' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
+	$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
 	$( '.logo' ).fadeIn();
-	symbols.each( function( i, icons ) {
-		var newIndex = i + 1;
-		//var delay = 200 * newIndex;
-		var delay = 600 * 1;
-		$( '#link-icon-' + newIndex ).delay( delay ).fadeIn( 2000 );
-	} );
 }
 function ajustaElementos() {
 	var nuevaRotacion = 360 - rotacionActual;
@@ -117,13 +113,13 @@ function aboutUs() {
 function contactUs() {
 	var contenidoContact = '<div class="contactDiv" id="contacto">';
 	contenidoContact += '<h3><span class="bold">Dreamers</span>, do not hesitate to contact us</h3>';
-	contenidoContact += '<label for="name">Name:</label>';
+	contenidoContact += '<label for="name" class="italic">Name:</label>';
 	contenidoContact += '<div class="input"><input type="text" id="name" class="obligatorio"></div>';
-	contenidoContact += '<label for="email">Email:</label>';
+	contenidoContact += '<label for="email" class="italic">Email:</label>';
 	contenidoContact += '<div class="input"><input type="email" id="email" class="obligatorio email"></div>';
-	contenidoContact += '<label for="message">Message:</label>';
+	contenidoContact += '<label for="message" class="italic">Message:</label>';
 	contenidoContact += '<div class="input"><textarea style="height: ' + textArea + 'px" id="message" class="obligatorio"></textarea></div>';
-	contenidoContact += '<a href="#" class="enviaForm" onclick="enviar()">Send</a>';
+	contenidoContact += '<a href="#" class="enviaForm italic" onclick="enviar()">Send</a>';
 	contenidoContact += '</div>';
 	if ( $( 'svg#textCircle' ).is( ':visible' ) ) {
 		$( 'svg#textCircle' ).fadeOut( 'slow', function() {

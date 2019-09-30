@@ -1,5 +1,6 @@
 <?php include( 'header.php' ); ?>
 <?php include( 'lib/icons.php' ); ?>
+<div class="mainContainer">
 	<img src="images/logo.png" class="logo" onclick="abrePagina()">
 	<div id="wheel">
 		<?php
@@ -33,4 +34,5 @@
 	<div class="contenidoCentro">
 		<img src="images/ants.png" id="intro-image">
 	</div>
+</div>
 <?php include( 'footer.php' ); ?>

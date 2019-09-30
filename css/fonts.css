@@ -13,3 +13,8 @@
 	src: url( 'fonts/AveriaSerifLibre-Bold.ttf');
 	src: local( 'averiaBold' ), url( 'fonts/AveriaSerifLibre-Bold.ttf' ) format( 'truetype' );
 }
+@font-face {
+	font-family: 'averiaItalic';
+	src: url( 'fonts/AveriaSerifLibre-RegularItalic.ttf');
+	src: local( 'averiaItalic' ), url( 'fonts/AveriaSerifLibre-RegularItalic.ttf' ) format( 'truetype' );
+}
