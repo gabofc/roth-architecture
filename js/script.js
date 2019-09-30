@@ -33,20 +33,22 @@ function calculaSize() {
 	var iconosHeight = ventanaSize * 0.08;
 	var iconosWidth = iconosHeight * 2.5;
 	var ruedaSize = ventanaSize * 0.60;
-	textoRueda = ruedaSize * 0.85;
 	console.log( $( window ).width() );
 	if ( $( window ).width() > 768 ) {
 		contenidoSize = ruedaSize * 0.80;
 		contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
 		textArea = contenidoSize * 0.30;
+		textoRueda = ( textoRueda > 500 ) ? 500 : textoRueda;
+		textoRueda = ruedaSize * 0.85;
 	} else {
+		textoRueda = ruedaSize * 0.95;
 		contenidoSize = ruedaSize * 0.85;
 		contenidoSize = ( contenidoSize > 500 ) ? 500 : contenidoSize;
 		textArea = contenidoSize * 0.20;
 		$( 'svg' ).css( { 'margin-top': '15px' } );
 		$( '.contenidoCentro' ).css( { 'margin-top': '15px' } );
+		textoRueda = ( textoRueda > 600 ) ? 600 : textoRueda;
 	}
-	textoRueda = ( textoRueda > 500 ) ? 500 : textoRueda;
 	wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
 	symbols.css( { 'width': iconosWidth, 'height': iconosHeight } );
 	$( '.logo' ).css( 'height', logoSize + 'px' );
