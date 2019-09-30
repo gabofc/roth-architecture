@@ -117,10 +117,17 @@ body {
 	margin-top: 20px;
 }
 .contactDiv label { display: block; margin: 0 auto; padding-left: 10px; box-sizing: border-box; }
-.contactDiv .input {
+.contactDiv .input{
 	width: 100%;
 	margin: 0 auto;
 	border-bottom: 1px dashed var( --negro );
+	border-top: 1px dashed var( --negro );
+	margin-bottom: 5px;
+	text-align: center;
+}
+.contactDiv .textarea{
+	width: 100%;
+	margin: 0 auto;
 	border-top: 1px dashed var( --negro );
 	margin-bottom: 5px;
 	text-align: center;
@@ -135,6 +142,11 @@ body {
 	margin: 0 auto;
 	text-align: left;
 	font-family: 'averia', sans-serif;
+}
+.contactDiv textarea {
+	background-image:url('/images/textarea-bg.gif');
+	line-height:26px;
+	background-attachment: local;
 }
 .vacio {
 	border-bottom: 1px dashed var( --rojo ) !important;

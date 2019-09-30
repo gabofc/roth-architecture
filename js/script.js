@@ -116,7 +116,7 @@ function contactUs() {
 	contenidoContact += '<label for="email" class="italic">Email:</label>';
 	contenidoContact += '<div class="input"><input type="email" id="email" class="obligatorio email"></div>';
 	contenidoContact += '<label for="message" class="italic">Message:</label>';
-	contenidoContact += '<div class="input"><textarea style="height: ' + textArea + 'px" id="message" class="obligatorio"></textarea></div>';
+	contenidoContact += '<div class="textarea"><textarea style="height: ' + textArea + 'px" id="message" class="obligatorio"></textarea></div>';
 	contenidoContact += '<a href="#" class="enviaForm italic" onclick="enviar()">Send</a>';
 	contenidoContact += '</div>';
 	if ( $( 'svg#textCircle' ).is( ':visible' ) ) {
