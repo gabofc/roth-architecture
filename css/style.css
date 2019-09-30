@@ -203,3 +203,6 @@ i, .italic { font-family: 'averiaItalic', sans-serif; }
     top: 50px;
     left: 80px;
 }
+@media screen and ( max-width : 767px ) {
+	.link-icon, .link-icon a { height: 70px; }
+}

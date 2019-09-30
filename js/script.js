@@ -37,20 +37,17 @@ function calculaSize() {
 	if ( $( window ).width() > 768 ) {
 		var ruedaSize = ventanaSize * 0.65;
 		contenidoSize = ruedaSize * 0.80;
-		contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
 		textArea = contenidoSize * 0.30;
 		textoRueda = ( textoRueda > 600 ) ? 600 : textoRueda;
 		textoRueda = ruedaSize * 0.85;
 	} else {
 		var ruedaSize = ventanaSize * 0.60;
 		textoRueda = ruedaSize * 0.95;
-		contenidoSize = ruedaSize * 0.85;
-		contenidoSize = ( contenidoSize > 500 ) ? 500 : contenidoSize;
+		contenidoSize = ruedaSize * 0.80;
 		textArea = contenidoSize * 0.20;
-		$( 'svg' ).css( { 'margin-top': '20px' } );
-		$( '.contenidoCentro' ).css( { 'margin-top': '10px' } );
 		textoRueda = ( textoRueda > 600 ) ? 600 : textoRueda;
 	}
+	contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
 	wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
 	symbols.css( { 'width': iconosWidth, 'height': iconosHeight } );
 	$( '.logo' ).css( 'height', logoSize + 'px' );
