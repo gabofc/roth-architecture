@@ -37,14 +37,14 @@ function calculaSize() {
 	if ( $( window ).width() > 768 ) {
 		var ruedaSize = ventanaSize * 0.65;
 		contenidoSize = ruedaSize * 0.80;
-		textArea = contenidoSize * 0.30;
+		textArea = contenidoSize * 0.25;
 		textoRueda = ( textoRueda > 600 ) ? 600 : textoRueda;
 		textoRueda = ruedaSize * 0.85;
 	} else {
 		var ruedaSize = ventanaSize * 0.60;
 		textoRueda = ruedaSize * 0.95;
 		contenidoSize = ruedaSize * 0.80;
-		textArea = contenidoSize * 0.20;
+		textArea = contenidoSize * 0.10;
 		textoRueda = ( textoRueda > 600 ) ? 600 : textoRueda;
 	}
 	contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
