@@ -116,7 +116,7 @@ function aboutUs() {
 }
 function contactUs() {
 	var contenidoContact = '<div class="contactDiv" id="contacto">';
-	contenidoContact += '<h3>Dreamers, do not hesitate to contact us</h3>';
+	contenidoContact += '<h3><span class="bold">Dreamers</span>, do not hesitate to contact us</h3>';
 	contenidoContact += '<label for="name">Name:</label>';
 	contenidoContact += '<div class="input"><input type="text" id="name" class="obligatorio"></div>';
 	contenidoContact += '<label for="email">Email:</label>';
@@ -149,7 +149,7 @@ function respuestaEnviar( respuesta ) {
 	cargando( false );
 	datos = JSON.parse( respuesta );
 	if ( datos.status == 'Success' ) {
-		alerta( 'Sent, Thank you for your message' )
+		alerta( '<span class="bold">Sent</span>, Thank you for your message' )
 		vacia( 'contactForm' );
 		setTimeout( function() { aboutUs(); }, 3000 );
 	} else {

@@ -23,10 +23,10 @@
 			<div class="shape shape-left"></div>
 			<div class="shape shape-right"></div>
 			<div class="text">
-				Roth architecture is rooted in the unique combination of three fundamental pillars: nature, ancestry and art.<br>
-				It distinguishes itself through an idiosyncratic process which embraces the intelligence of the millenary ecological fabric of life and incorporates human technologies from the ancestral wisdom of the hand of the indigenous communities to artificial intelligence.<br>
-				From the unconditional presence to the inspiration of the moment as a collective and the creative flow of nature itself we develop unseen structures akin to living sculptures which prolong the curvature of the earth and open up pathways to new forms of living.<br>
-				Transcending the dichotomy between interior and exterior these interfaces allow for a deep reconnection with oneself, the other and the environment and the search for the significance of being human.
+				<p><span class="bold">Roth Architecture</span> is rooted in the unique combination of three fundamental pillars: <i>nature, ancestry and art</i>.</p>
+				<p>It distinguishes itself through an idiosyncratic process which embraces the intelligence of the millenary ecological fabric of life and incorporates human technologies from the ancestral wisdom of the hand of the indigenous communities to artificial intelligence.</p>
+				<p>From the unconditional presence to the inspiration of the moment as a collective and the creative flow of nature itself we develop unseen structures akin to living sculptures which prolong the curvature of the earth and open up pathways to new forms of living.</p>
+				<p>Transcending the dichotomy between interior and exterior these <i>interfaces</i> allow for a deep reconnection with oneself, the other and the environment and the search for the significance of being human.</p>
 			</div>
 		</foreignObject>
 	</svg>

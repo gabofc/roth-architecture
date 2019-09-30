@@ -176,12 +176,20 @@ svg circle { mix-blend-mode: multiply; }
     float: right;
     shape-outside: url( '../circle-right.svg' );
 }
+span.bold{
+	font-family: 'averiaBold', sans-serif;
+}
 .text {
     width: 100px;
     height: 100%;
     text-align: center;
     color: var( --negro );
     hyphens: auto;
-    font-size: 2.5px;
+    font-size: 2.1px;
     line-height: 1.6;
+    /* display: table-cell; */
+    padding: 20% 0;
+}
+.text p{
+	margin:0 0 5px 0;
 }
