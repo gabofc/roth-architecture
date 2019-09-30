@@ -147,7 +147,7 @@ function respuestaEnviar( respuesta ) {
 	cargando( false );
 	datos = JSON.parse( respuesta );
 	if ( datos.status == 'Success' ) {
-		alerta( '<span class="bold">Sent</span>, Thank you for your message' )
+		alerta( '<span class="bold arriba">Sent</span> Thank you for your message' );
 		vacia( 'contactForm' );
 		setTimeout( function() { aboutUs(); }, 3000 );
 	} else {

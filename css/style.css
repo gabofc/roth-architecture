@@ -198,3 +198,8 @@ svg circle { mix-blend-mode: multiply; }
 span.bold { font-family: 'averiaBold', sans-serif; font-weight: 700; }
 i, .italic { font-family: 'averiaItalic', sans-serif; }
 .text p { margin:0 0 5px 0; }
+.arriba {
+	position: absolute;
+    top: 50px;
+    left: 80px;
+}
