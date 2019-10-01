@@ -15,15 +15,13 @@ function validaTodo( cual ) {
 	$( '#' + cual + ' .obligatorio' ).each( function() {
 		var clase = $( this ).attr( 'class' );
 		if ( '' === $( this ).val() ) {
-			$( this ).addClass( 'vacio' );
-			$( this ).parent().after( '<label class="error">Please fill this field</label>' );
+			$( 'label[for="' + $( this ).attr( 'id' ) + '"]' ).addClass( 'vacio' );
 			mal++;
 		} else {
 			lleno = true;
 			if ( clase.indexOf( 'email' ) != -1 ) {
 				if ( !validaEmail( $( this ).val() ) ) {
-					$( this ).addClass( 'vacio' );
-					$( this ).parent().after( '<label class="error">Please add a valid email address</label>' );
+					$( 'label[for="' + $( this ).attr( 'id' ) + '"]' ).addClass( 'vacio' );
 					mal++;
 				}
 			}

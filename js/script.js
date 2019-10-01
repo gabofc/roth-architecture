@@ -27,6 +27,13 @@ $( document ).ready( function() {
 		e.preventDefault();
 		return false;
 	} );
+	$( document ).keydown( function( event ) {
+		console.log( event.which );
+		if ( event.ctrlKey == true && ( event.which == '107' || event.which == '109' || event.which == '173' || event.which == '61' || event.which == '187' || event.which == '189' ) ) {
+			console.log( 'disabling zooming ! ' );
+			event.preventDefault();
+		}
+	} );
 } );
 function calculaSize() {
 	var ventanaSize = $( window ).height();
@@ -37,17 +44,18 @@ function calculaSize() {
 	if ( $( window ).width() > 768 ) {
 		var ruedaSize = ventanaSize * 0.65;
 		contenidoSize = ruedaSize * 0.80;
-		textArea = contenidoSize * 0.25;
-		textoRueda = ( textoRueda > 600 ) ? 600 : textoRueda;
-		textoRueda = ruedaSize * 0.85;
+		textArea = contenidoSize * 0.38;
+		textoRueda = ruedaSize * 0.90;
+		textoRueda = ( textoRueda > 650 ) ? 650 : textoRueda;
+		contenidoSize = ( contenidoSize > 450 ) ? 450 : contenidoSize;
 	} else {
 		var ruedaSize = ventanaSize * 0.60;
-		textoRueda = ruedaSize * 0.95;
 		contenidoSize = ruedaSize * 0.80;
-		textArea = contenidoSize * 0.10;
+		textArea = contenidoSize * 0.30;
+		textoRueda = ruedaSize * 0.95;
 		textoRueda = ( textoRueda > 600 ) ? 600 : textoRueda;
+		contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
 	}
-	contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
 	wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
 	symbols.css( { 'width': iconosWidth, 'height': iconosHeight } );
 	$( '.logo' ).css( 'height', logoSize + 'px' );
@@ -163,10 +171,14 @@ function ajustaContacto() {
 			if ( nuevoTipo == 'INPUT' ) {
 				$( this ).children().css( 'width', getSpecificWidth( altura ) + 'px' );
 				altura = altura + 33;
+			} else if ( nuevoTipo == 'TEXTAREA' ) {
+				altura = altura + textArea;
 			}
 		} else if ( tipoElemento == 'LABEL' ) {
 			$( this ).css( 'width', getSpecificWidth( altura ) + 'px' );
 			altura = altura + 16;
+		} else if ( tipoElemento == 'A' ) {
+			$( this ).css( 'width', getSpecificWidth( altura ) + 'px' );
 		}
 	} );
 }

@@ -21,9 +21,9 @@ body {
 	right: 0;
 	width: auto;
 	height: 58px;
-	top: 30px;
+	top: 45px;
 	cursor: pointer;
-	z-index: 2;
+	z-index: 15;
 	visibility: hidden;
 }
 #wheel {
@@ -70,6 +70,7 @@ body {
 	width: 100%;
 	margin-top: -25%;
 	transition: all 0.6s;
+	font-family: 'averiaItalic', sans-serif;
 }
 .box-link:hover > .iconoLista {
 	opacity: 0;
@@ -112,11 +113,18 @@ body {
 .contactDiv h3 {
 	text-align: center;
 	font-weight: normal;
-	font-size: 14px;
+	font-size: 13px;
 	margin: 0 auto;
 	margin-top: 20px;
 }
-.contactDiv label { display: block; margin: 0 auto; padding-left: 10px; box-sizing: border-box; }
+.contactDiv label {
+	font-size: 13px;
+	display: block;
+	margin: 0 auto;
+	box-sizing: border-box;
+	margin-top: 10px;
+	color: var( --negro );
+}
 .contactDiv .input{
 	width: 100%;
 	margin: 0 auto;
@@ -134,7 +142,7 @@ body {
 }
 .contactDiv input, .contactDiv textarea {
 	width: 100%;
-	padding: 8px;
+	padding: 5px;
 	box-sizing: border-box;
 	border: none;
 	background: transparent;
@@ -142,16 +150,14 @@ body {
 	margin: 0 auto;
 	text-align: left;
 	font-family: 'averia', sans-serif;
+	font-size: 13px;
 }
 .contactDiv textarea {
 	background-image:url('/images/textarea-bg.gif');
 	line-height:26px;
 	background-attachment: local;
 }
-.vacio {
-	border-bottom: 1px dashed var( --rojo ) !important;
-	border-top: 1px dashed var( --rojo ) !important;
-}
+.vacio { color: var( --rojo ) !important; }
 .error {
 	text-align: center;
 	color: var( --rojo );
@@ -163,8 +169,10 @@ body {
 	text-decoration: none;
 	color: var( --negro );
 	font-size: 16px;
-	text-align: center;
+	text-align: right;
 	display: block;
+	margin: 0 auto;
+	margin-top: -25px;
 }
 .rellenoLeft { float: left; clear: left; height: 16px; line-height: 16px; background-color: var( --rojo ); }
 .rellenoRight { float: right; clear: right; height: 16px; line-height: 16px; background-color: var( --rojo ); }
@@ -177,8 +185,8 @@ svg {
 	transition: all 1.5s;
     margin: auto;
     width: 50%;
-    width: 500px;
-    height: 500px;
+    width: 550px;
+    height: 550px;
     fill: var( --blanco );
     display: none;
 }
@@ -198,14 +206,15 @@ svg circle { mix-blend-mode: multiply; }
 }
 .bold{ font-family: 'averiaBold', sans-serif; }
 .text {
+    font-family: 'averiaLight', sans-serif;
     width: 100px;
     height: 100%;
     text-align: center;
     color: var( --negro );
     hyphens: auto;
-    font-size: 2.1px;
+    font-size: 2.15px;
     line-height: 1.6;
-    padding: 22% 0;
+    padding: 23% 0;
 }
 span.bold { font-family: 'averiaBold', sans-serif; font-weight: 700; }
 i, .italic { font-family: 'averiaItalic', sans-serif; }
@@ -217,4 +226,6 @@ i, .italic { font-family: 'averiaItalic', sans-serif; }
 }
 @media screen and ( max-width : 767px ) {
 	.link-icon, .link-icon a { height: 70px; }
+	.contactDiv h3, .contactDiv label, .contactDiv input, .contactDiv textarea { font-size: 10px; }
+	.contactDiv a { margin-top: -10px; }
 }

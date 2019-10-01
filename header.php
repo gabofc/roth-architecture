@@ -13,7 +13,7 @@
 	<head>
 		<title>Roth Architecture</title>
 		<base href="<?php echo $base; ?>" />
-		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1, user-scalable=no">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="author" content="Roth Architecture">
 		<meta name="description" content="">
