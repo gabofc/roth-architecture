@@ -172,7 +172,7 @@ body {
 	text-align: right;
 	display: block;
 	margin: 0 auto;
-	margin-top: -25px;
+	padding-right: 25px;
 }
 .rellenoLeft { float: left; clear: left; height: 16px; line-height: 16px; background-color: var( --rojo ); }
 .rellenoRight { float: right; clear: right; height: 16px; line-height: 16px; background-color: var( --rojo ); }
@@ -227,5 +227,5 @@ i, .italic { font-family: 'averiaItalic', sans-serif; }
 @media screen and ( max-width : 767px ) {
 	.link-icon, .link-icon a { height: 70px; }
 	.contactDiv h3, .contactDiv label, .contactDiv input, .contactDiv textarea { font-size: 10px; }
-	.contactDiv a { margin-top: -10px; }
+	.contactDiv a { padding-right: 0; }
 }
