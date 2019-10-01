@@ -175,7 +175,11 @@ function ajustaContacto() {
 				altura = altura + textArea;
 			}
 		} else if ( tipoElemento == 'LABEL' ) {
-			$( this ).css( 'width', getSpecificWidth( altura ) + 'px' );
+			var nuevoAncho = getSpecificWidth( altura );
+			if ( $( window ).width() > 768 ) {
+				nuevoAncho = nuevoAncho + 25;
+			}
+			$( this ).css( 'width', nuevoAncho + 'px' );
 			altura = altura + 16;
 		} else if ( tipoElemento == 'A' ) {
 			var nuevoAncho = getSpecificWidth( altura );
