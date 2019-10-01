@@ -152,7 +152,7 @@ body {
 }
 .contactDiv textarea {
 	background-image:url('/images/textarea-bg.gif');
-	line-height:26px;
+	line-height:22px;
 	background-attachment: local;
 }
 .vacio { color: var( --rojo ) !important; }
