@@ -216,7 +216,6 @@ svg circle { mix-blend-mode: multiply; }
     padding: 23% 0;
 }
 span.bold {
-	font-family: 'averiaBold', sans-serif;
 	font-weight: 700;
 	letter-spacing: 0;
 }
