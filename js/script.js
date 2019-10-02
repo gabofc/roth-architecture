@@ -36,6 +36,7 @@ $( document ).ready( function() {
 		if ( $( window ).width() > 768 ) {
 			$( '.mainContainer' ).fadeOut( 'slow', function() {
 				calculaSize();
+				ajustaContacto();
 				acomodaIconos();
 				iniciaRueda();
 				$( '.mainContainer' ).fadeIn();
@@ -51,7 +52,7 @@ function calculaSize() {
 		var iconosWidth = iconosHeight * 2.5;
 		var ruedaSize = ventanaSize * 0.60;
 		contenidoSize = ruedaSize * 0.80;
-		textArea = contenidoSize * 0.26;
+		textArea = contenidoSize * 0.25;
 		textoRueda = ruedaSize * 0.95;
 		textoRueda = ( textoRueda > 600 ) ? 600 : textoRueda;
 		contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
@@ -65,7 +66,7 @@ function calculaSize() {
 		var ruedaSize = ventanaSize * 0.65;
 		ruedaSize = ( ruedaSize > maximoSize ) ? maximoSize : ruedaSize;
 		contenidoSize = ruedaSize * 0.80;
-		textArea = contenidoSize * 0.32;
+		textArea = contenidoSize * 0.30;
 		textoRueda = ruedaSize * 0.90;
 		textoRueda = ( textoRueda > 650 ) ? 650 : textoRueda;
 		contenidoSize = ( contenidoSize > 450 ) ? 450 : contenidoSize;
