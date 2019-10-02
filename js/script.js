@@ -51,7 +51,7 @@ function calculaSize() {
 		var iconosWidth = iconosHeight * 2.5;
 		var ruedaSize = ventanaSize * 0.60;
 		contenidoSize = ruedaSize * 0.80;
-		textArea = contenidoSize * 0.30;
+		textArea = contenidoSize * 0.26;
 		textoRueda = ruedaSize * 0.95;
 		textoRueda = ( textoRueda > 600 ) ? 600 : textoRueda;
 		contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
@@ -62,7 +62,7 @@ function calculaSize() {
 		var iconosWidth = iconosHeight * 2.5;
 		var ruedaSize = ventanaSize * 0.65;
 		contenidoSize = ruedaSize * 0.80;
-		textArea = contenidoSize * 0.38;
+		textArea = contenidoSize * 0.32;
 		textoRueda = ruedaSize * 0.90;
 		textoRueda = ( textoRueda > 650 ) ? 650 : textoRueda;
 		contenidoSize = ( contenidoSize > 450 ) ? 450 : contenidoSize;

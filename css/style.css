@@ -129,7 +129,9 @@ body {
 .contactDiv .input{
 	width: 100%;
 	margin: 0 auto;
+	border-top: 1px dashed var( --negro );
 	border-bottom: 1px dashed var( --negro );
+	margin-top: 18px;
 	margin-bottom: 5px;
 	text-align: center;
 }
@@ -214,10 +216,6 @@ svg circle { mix-blend-mode: multiply; }
     font-size: 2.15px;
     line-height: 1.6;
     padding: 23% 0;
-}
-span.bold {
-	font-weight: 700;
-	letter-spacing: 0;
 }
 i, .italic { font-family: 'averiaItalic', sans-serif; }
 .text p { margin:0 0 5px 0; }
