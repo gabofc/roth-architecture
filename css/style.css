@@ -215,10 +215,6 @@ svg circle { mix-blend-mode: multiply; }
     line-height: 1.6;
     padding: 23% 0;
 }
-span.bold {
-	font-weight: 700;
-	letter-spacing: 0;
-}
 i, .italic { font-family: 'averiaItalic', sans-serif; }
 .text p { margin:0 0 5px 0; }
 .arriba {
