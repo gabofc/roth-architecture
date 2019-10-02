@@ -52,13 +52,14 @@ function calculaSize() {
 		var iconosHeight = ventanaSize * 0.08;
 		var iconosWidth = iconosHeight * 2.5;
 		var ruedaSize = ventanaSize * 0.60;
-		contenidoSize = ruedaSize * 0.80;
+		contenidoSize = ruedaSize * 0.78;
 		textArea = contenidoSize * 0.25;
 		textoRueda = ruedaSize * 0.95;
 		textoRueda = ( textoRueda > 600 ) ? 600 : textoRueda;
 		contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
 		$( '.contenidoPrincipal' ).css( { 'width': '100%', 'height': ruedaSize } );
-		$( '.contenidoPrincipal' ).addClass( 'movil' )
+		$( '.contenidoPrincipal, .link-icon' ).addClass( 'movil' );
+		wheel.addClass( 'movil' );
 	} else {
 		var ventanaHeight = $( window ).height();
 		var maximoSize = ventanaHeight * 0.7;

@@ -239,6 +239,9 @@ i, .italic { font-style: italic; }
 	.contactDiv.movil h3, .contactDiv.movil label, .contactDiv.movil input, .contactDiv.movil textarea { font-size: 10px; }
 	.contactDiv.movil .input { margin-top: 10px; }
 	.contactDiv.movil label[for="name"]{ padding-left :8px; }
+	.link-icon.movil, .link-icon.movil a { height: 70px; }
+	#wheel.movil { left: -10px; }
+	.contenidoPrincipal.movil .shape { shape-margin: 2.4px; }
 }
 @media screen and ( max-width : 450px ) {
 	.contactDiv.movil h3, .contactDiv.movil label, .contactDiv.movil input, .contactDiv.movil textarea { font-size: 9px; }
