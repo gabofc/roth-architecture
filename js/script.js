@@ -11,6 +11,7 @@ var textArea = 130;
 var contenidoSize = 400;
 var textoRueda = 500;
 var posiciones = 25;
+var ventanaSize = 0;
 var tl = new TimelineLite();
 $( document ).ready( function() {
 	calculaSize();
@@ -20,7 +21,6 @@ $( document ).ready( function() {
 		iniciaRueda();
 	}, 500 );
 	setTimeout( function() {
-		$( '.contenidoCentro' ).css( 'transition', 'initial' );
 		aboutUs();
 	}, 3200 );
 	$( 'a' ).click( function( e ) {
@@ -28,34 +28,46 @@ $( document ).ready( function() {
 		return false;
 	} );
 	$( document ).keydown( function( event ) {
-		console.log( event.which );
 		if ( event.ctrlKey == true && ( event.which == '107' || event.which == '109' || event.which == '173' || event.which == '61' || event.which == '187' || event.which == '189' ) ) {
-			console.log( 'disabling zooming ! ' );
 			event.preventDefault();
+		}
+	} );
+	$( window ).resize( function() {
+		if ( $( window ).width() > 768 ) {
+			$( '.mainContainer' ).fadeOut( 'slow', function() {
+				calculaSize();
+				acomodaIconos();
+				iniciaRueda();
+				$( '.mainContainer' ).fadeIn();
+			} );
 		}
 	} );
 } );
 function calculaSize() {
-	var ventanaSize = $( window ).height();
-	var logoSize = ventanaSize * 0.045;
-	var iconosHeight = ventanaSize * 0.08;
-	var iconosWidth = iconosHeight * 2.5;
-	console.log( $( window ).width() );
-	if ( $( window ).width() > 768 ) {
-		var ruedaSize = ventanaSize * 0.65;
-		contenidoSize = ruedaSize * 0.80;
-		textArea = contenidoSize * 0.38;
-		textoRueda = ruedaSize * 0.90;
-		textoRueda = ( textoRueda > 650 ) ? 650 : textoRueda;
-		contenidoSize = ( contenidoSize > 450 ) ? 450 : contenidoSize;
-	} else {
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
+		ventanaSize = $( window ).height();
+		var logoSize = ventanaSize * 0.045;
+		var iconosHeight = ventanaSize * 0.08;
+		var iconosWidth = iconosHeight * 2.5;
 		var ruedaSize = ventanaSize * 0.60;
 		contenidoSize = ruedaSize * 0.80;
 		textArea = contenidoSize * 0.30;
 		textoRueda = ruedaSize * 0.95;
 		textoRueda = ( textoRueda > 600 ) ? 600 : textoRueda;
 		contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
+	} else {
+		ventanaSize = ( $( window ).width() > 768 ) ? $( window ).height() : ( window.screen.height - 105 );
+		var logoSize = ventanaSize * 0.045;
+		var iconosHeight = ventanaSize * 0.08;
+		var iconosWidth = iconosHeight * 2.5;
+		var ruedaSize = ventanaSize * 0.65;
+		contenidoSize = ruedaSize * 0.80;
+		textArea = contenidoSize * 0.38;
+		textoRueda = ruedaSize * 0.90;
+		textoRueda = ( textoRueda > 650 ) ? 650 : textoRueda;
+		contenidoSize = ( contenidoSize > 450 ) ? 450 : contenidoSize;
 	}
+	$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
 	wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
 	symbols.css( { 'width': iconosWidth, 'height': iconosHeight } );
 	$( '.logo' ).css( 'height', logoSize + 'px' );
@@ -65,6 +77,7 @@ function calculaSize() {
 	posiciones = Math.ceil( contenidoSize / 16 );
 }
 function acomodaIconos() {
+	TweenMax.killAll();
 	symbols.each( function( i, icons ) {
 		var angle = i * slice;
 		var x = center + radius * Math.sin( angle );
@@ -80,9 +93,10 @@ function acomodaIconos() {
 	} );
 }
 function iniciaAnimacion() {
+	var hormigaSize = contenidoSize * 0.7;
 	tl.from( $( '.logo' ), 0.5, { scale: 1.5, autoAlpha: 0, opacity: 0 }, '-=0.5' );
 	tl.from( symbols, 0.7, { scale: .5, autoAlpha: 0 }, '+=0.5' );
-	tl.from( $( '.contenidoCentro' ), 1, { width: contenidoSize, height: contenidoSize, display: 'block' } );
+	tl.from( $( '#intro-image' ), 1, { width: hormigaSize } );
 }
 function ajustaElementos() {
 	var nuevaRotacion = 360 - rotacionActual;
@@ -112,7 +126,6 @@ function iniciaRueda() {
 }
 function aboutUs() {
 	$( '.contenidoCentro' ).fadeOut( 'slow', function() {
-		$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
 		$( 'svg#textCircle' ).fadeIn( 'slow' );
 	} );
 }
@@ -128,7 +141,6 @@ function contactUs() {
 	contenidoContact += '<a href="#" class="enviaForm italic" onclick="enviar()">Send</a>';
 	contenidoContact += '</div>';
 	if ( $( 'svg#textCircle' ).is( ':visible' ) ) {
-		$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
 		$( 'svg#textCircle' ).fadeOut( 'slow', function() {
 			$( '.contenidoCentro' ).html( contenidoContact );
 			ajustaContacto();
