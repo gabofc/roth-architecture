@@ -56,11 +56,14 @@ function calculaSize() {
 		textoRueda = ( textoRueda > 600 ) ? 600 : textoRueda;
 		contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
 	} else {
+		var ventanaHeight = $( window ).height();
+		var maximoSize = ventanaHeight * 0.7;
 		ventanaSize = ( $( window ).width() > 768 ) ? $( window ).height() : ( window.screen.height - 105 );
 		var logoSize = ventanaSize * 0.045;
 		var iconosHeight = ventanaSize * 0.08;
 		var iconosWidth = iconosHeight * 2.5;
 		var ruedaSize = ventanaSize * 0.65;
+		ruedaSize = ( ruedaSize > maximoSize ) ? maximoSize : ruedaSize;
 		contenidoSize = ruedaSize * 0.80;
 		textArea = contenidoSize * 0.32;
 		textoRueda = ruedaSize * 0.90;
