@@ -45,8 +45,8 @@ $( document ).ready( function() {
 	} );
 } );
 function calculaSize() {
-
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
+		var anchoVentana = $( window ).width();
 		ventanaSize = $( window ).height();
 		var logoSize = ventanaSize * 0.045;
 		var iconosHeight = ventanaSize * 0.08;
@@ -57,9 +57,17 @@ function calculaSize() {
 		textoRueda = ruedaSize * 0.95;
 		textoRueda = ( textoRueda > 600 ) ? 600 : textoRueda;
 		contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
+		wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
 		$( '.contenidoPrincipal' ).css( { 'width': '100%', 'height': ruedaSize } );
 		$( '.contenidoPrincipal, .link-icon' ).addClass( 'movil' );
 		wheel.addClass( 'movil' );
+		var margenCirculo = Math.abs( anchoVentana - ruedaSize ) / 2;
+		console.log( margenCirculo );
+		wheel.css( 'left', '-' + margenCirculo + 'px' );
+		if ( ventanaSize > 720 ) {
+			var margenSVG = margenCirculo * 0.65;
+			$( 'svg' ).css( 'left', '-' + margenSVG + 'px' );
+		}
 	} else {
 		var ventanaHeight = $( window ).height();
 		var maximoSize = ventanaHeight * 0.7;
@@ -74,10 +82,11 @@ function calculaSize() {
 		textoRueda = ruedaSize * 0.90;
 		textoRueda = ( textoRueda > 650 ) ? 650 : textoRueda;
 		contenidoSize = ( contenidoSize > 450 ) ? 450 : contenidoSize;
-		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize } );
+		var minimoTop = 130 + logoSize;
+		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px', 'bottom': 'initial' } );
 	}
+	wheel.css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px' } );
 	$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
-	wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
 	symbols.css( { 'width': iconosWidth, 'height': iconosHeight } );
 	$( '.logo' ).css( 'height', logoSize + 'px' );
 	$( 'svg' ).css( { 'width': textoRueda, 'height': textoRueda } );
