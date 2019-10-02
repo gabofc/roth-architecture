@@ -141,7 +141,7 @@ body {
 	border-top: 1px dashed var( --negro );
 	border-bottom: 1px dashed var( --negro );
 	margin-top: 10px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	text-align: center;
 }
 .contactDiv .textarea{
@@ -238,6 +238,7 @@ i, .italic { font-style: italic; }
 	.contactDiv.movil a { padding-right: 0; }
 	.contactDiv.movil h3, .contactDiv.movil label, .contactDiv.movil input, .contactDiv.movil textarea { font-size: 10px; }
 	.contactDiv.movil .input { margin-top: 10px; }
+	.contactDiv.movil label[for="name"]{ padding-left :8px; }
 }
 @media screen and ( max-width : 450px ) {
 	.contactDiv.movil h3, .contactDiv.movil label, .contactDiv.movil input, .contactDiv.movil textarea { font-size: 9px; }
