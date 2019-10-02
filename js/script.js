@@ -45,6 +45,7 @@ $( document ).ready( function() {
 	} );
 } );
 function calculaSize() {
+
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
 		ventanaSize = $( window ).height();
 		var logoSize = ventanaSize * 0.045;
@@ -56,6 +57,8 @@ function calculaSize() {
 		textoRueda = ruedaSize * 0.95;
 		textoRueda = ( textoRueda > 600 ) ? 600 : textoRueda;
 		contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
+		$( '.contenidoPrincipal' ).css( { 'width': '100%', 'height': ruedaSize } );
+		$( '.contenidoPrincipal' ).addClass( 'movil' )
 	} else {
 		var ventanaHeight = $( window ).height();
 		var maximoSize = ventanaHeight * 0.7;
@@ -70,6 +73,7 @@ function calculaSize() {
 		textoRueda = ruedaSize * 0.90;
 		textoRueda = ( textoRueda > 650 ) ? 650 : textoRueda;
 		contenidoSize = ( contenidoSize > 450 ) ? 450 : contenidoSize;
+		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize } );
 	}
 	$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
 	wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
@@ -134,7 +138,11 @@ function aboutUs() {
 	} );
 }
 function contactUs() {
-	var contenidoContact = '<div class="contactDiv" id="contacto">';
+	var extraClass = '';
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
+		extraClass = ' movil';
+	}
+	var contenidoContact = '<div class="contactDiv ' + extraClass + '" id="contacto">';
 	contenidoContact += '<h3><span class="bold">Dreamers</span>, do not hesitate to contact us</h3>';
 	contenidoContact += '<label for="name" class="italic">Name:</label>';
 	contenidoContact += '<div class="input"><input type="text" id="name" name="name" class="obligatorio"></div>';

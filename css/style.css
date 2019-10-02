@@ -26,6 +26,15 @@ body {
 	z-index: 15;
 	visibility: hidden;
 }
+.contenidoPrincipal {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	right: 0;
+	left: 0;
+	bottom: 15%;
+}
 #wheel {
 	position: absolute;
 	width: 600px;
@@ -92,7 +101,7 @@ body {
 	margin: 0 auto;
 	right: 0;
 	left: 0;
-	bottom: 24%;
+	margin-top: 15%;
 }
 .contenidoCentro img {
 	position: relative;
@@ -131,7 +140,7 @@ body {
 	margin: 0 auto;
 	border-top: 1px dashed var( --negro );
 	border-bottom: 1px dashed var( --negro );
-	margin-top: 18px;
+	margin-top: 10px;
 	margin-bottom: 5px;
 	text-align: center;
 }
@@ -140,6 +149,7 @@ body {
 	margin: 0 auto;
 	margin-bottom: 5px;
 	text-align: center;
+	margin-top: 10px;
 }
 .contactDiv input, .contactDiv textarea {
 	width: 100%;
@@ -179,8 +189,6 @@ svg {
 	position: absolute;
 	z-index: 2;
 	transition: all 1.5s;
-    margin: auto;
-    width: 50%;
     width: 550px;
     height: 550px;
     fill: var( --blanco );
@@ -188,7 +196,7 @@ svg {
     margin: 0 auto;
     right: 0;
     left: 0;
-    bottom: 18%;
+    margin-top: 5%;
 }
 svg circle { mix-blend-mode: multiply; }
 .shape {
@@ -226,13 +234,11 @@ i, .italic { font-style: italic; }
 	.contactDiv a { padding-right: 15%; }
 }
 @media screen and ( max-width : 767px ) {
-	.link-icon, .link-icon a { height: 70px; }
-	.contactDiv h3, .contactDiv label, .contactDiv input, .contactDiv textarea { font-size: 10px; }
-	.contactDiv a { padding-right: 0; }
-	.contenidoCentro { bottom: 20%; }
-	svg { bottom: 16%; }
-	.contactDiv .input { margin-top: 10px; }
+	.link-icon.movil, .link-icon.movil a { height: 70px; }
+	.contactDiv.movil a { padding-right: 0; }
+	.contactDiv.movil h3, .contactDiv.movil label, .contactDiv.movil input, .contactDiv.movil textarea { font-size: 10px; }
+	.contactDiv.movil .input { margin-top: 10px; }
 }
 @media screen and ( max-width : 450px ) {
-	.contactDiv h3, .contactDiv label, .contactDiv input, .contactDiv textarea { font-size: 9px; }
+	.contactDiv.movil h3, .contactDiv.movil label, .contactDiv.movil input, .contactDiv.movil textarea { font-size: 9px; }
 }
