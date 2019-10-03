@@ -5,14 +5,15 @@ var wheel = $( '#wheel' );
 var symbols = $( '.link-icon' );
 var center = 300;
 var radius = 320;
-var total = symbols.length;
-var slice = 2 * Math.PI / total;
+const total = symbols.length;
+const slice = 2 * Math.PI / total;
 var textArea = 130;
 var contenidoSize = 400;
 var textoRueda = 500;
 var posiciones = 25;
 var ventanaSize = 0;
 var tl = new TimelineLite();
+var rotacionTween;
 $( document ).ready( function() {
 	calculaSize();
 	setTimeout( function() {
@@ -95,12 +96,17 @@ function calculaSize() {
 	posiciones = Math.ceil( contenidoSize / 16 );
 }
 function acomodaIconos() {
-	TweenMax.killAll();
+	if ( typeof rotacionTween != 'undefined' ) {
+		rotacionTween.kill();
+		setTimeout( function() {
+			wheel.css( 'transform', 'initial' );
+		}, 100 );
+	}
 	symbols.each( function( i, icons ) {
 		var angle = i * slice;
 		var x = center + radius * Math.sin( angle );
 		var y = center - radius * Math.cos( angle );
-		TweenLite.set( icons, {
+		rotacionTween = TweenLite.set( icons, {
 			xPercent: -50,
 			yPercent: -50,
 			x: x,
