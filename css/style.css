@@ -157,16 +157,18 @@ body {
 	background: transparent;
 	outline: none;
 	margin: 0 auto;
-	text-align: left;
 	font-size: 13px;
 	font-family: 'Averia Serif Libre', cursive;
 }
 .contactDiv textarea {
+	width: 102%;
 	background-image:url('/images/textarea-bg-dotted.gif');
 	line-height:22px;
 	background-attachment: local;
-	padding-left:10px;
-	padding-right:10px;
+	padding-left:20px;
+	padding-right:20px;
+	margin-left:-2%;
+	text-align: left;
 }
 .contactDiv a {
 	text-decoration: none;
