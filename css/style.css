@@ -29,6 +29,7 @@ body {
 .contenidoPrincipal {
 	position: absolute;
 	width: 100%;
+	max-width: 100%;
 	height: auto;
 	margin: 0 auto;
 	right: 0;

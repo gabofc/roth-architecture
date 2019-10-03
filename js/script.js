@@ -14,6 +14,7 @@ var posiciones = 25;
 var ventanaSize = 0;
 var tl = new TimelineLite();
 $( document ).ready( function() {
+	screen.orientation.lock( 'landscape' );
 	calculaSize();
 	setTimeout( function() {
 		acomodaIconos();
@@ -58,7 +59,7 @@ function calculaSize() {
 		textoRueda = ( textoRueda > 600 ) ? 600 : textoRueda;
 		contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
 		wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
-		$( '.contenidoPrincipal' ).css( { 'width': '100%', 'height': ruedaSize } );
+		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize } );
 		$( '.contenidoPrincipal, .link-icon' ).addClass( 'movil' );
 		wheel.addClass( 'movil' );
 		var margenCirculo = Math.abs( anchoVentana - ruedaSize ) / 2;
