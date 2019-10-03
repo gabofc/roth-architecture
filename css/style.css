@@ -138,7 +138,9 @@ body {
 .contactDiv .input {
 	width: 100%;
 	margin: 0 auto;
-	border-bottom: 1px dashed var( --negro );
+	border-top: 1px dotted var( --negro );
+	border-bottom: 1px dotted var( --negro );
+	margin-top: 10px;
 	margin-bottom: 10px;
 	text-align: center;
 }
@@ -165,14 +167,6 @@ body {
 	line-height:22px;
 	background-attachment: local;
 }
-.vacio { color: var( --rojo ) !important; }
-.error {
-	text-align: center;
-	color: var( --rojo );
-	margin: 0;
-    margin-top: -5px;
-    font-size: 12px;
-}
 .contactDiv a {
 	text-decoration: none;
 	color: var( --negro );
@@ -180,7 +174,16 @@ body {
 	text-align: right;
 	display: block;
 	margin: 0 auto;
-	padding-right: 10%;
+	padding-right: 5%;
+	font-size: 13px;
+}
+.vacio { color: var( --rojo ) !important; }
+.error {
+	text-align: center;
+	color: var( --rojo );
+	margin: 0;
+    margin-top: -5px;
+    font-size: 12px;
 }
 .rellenoLeft { float: left; clear: left; height: 16px; line-height: 16px; background-color: var( --rojo ); }
 .rellenoRight { float: right; clear: right; height: 16px; line-height: 16px; background-color: var( --rojo ); }
