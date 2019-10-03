@@ -14,6 +14,7 @@
 		<title>Roth Architecture</title>
 		<base href="<?php echo $base; ?>" />
 		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="author" content="Roth Architecture">
 		<meta name="description" content="">

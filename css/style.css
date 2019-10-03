@@ -29,6 +29,7 @@ body {
 .contenidoPrincipal {
 	position: absolute;
 	width: 100%;
+	max-width: 100%;
 	height: auto;
 	margin: 0 auto;
 	right: 0;
@@ -167,14 +168,6 @@ body {
 	line-height:22px;
 	background-attachment: local;
 }
-.vacio { color: var( --rojo ) !important; }
-.error {
-	text-align: center;
-	color: var( --rojo );
-	margin: 0;
-    margin-top: -5px;
-    font-size: 12px;
-}
 .contactDiv a {
 	text-decoration: none;
 	color: var( --negro );
@@ -182,7 +175,16 @@ body {
 	text-align: right;
 	display: block;
 	margin: 0 auto;
-	padding-right: 10%;
+	padding-right: 5%;
+	font-size: 13px;
+}
+.vacio { color: var( --rojo ) !important; }
+.error {
+	text-align: center;
+	color: var( --rojo );
+	margin: 0;
+    margin-top: -5px;
+    font-size: 12px;
 }
 .rellenoLeft { float: left; clear: left; height: 16px; line-height: 16px; background-color: var( --rojo ); }
 .rellenoRight { float: right; clear: right; height: 16px; line-height: 16px; background-color: var( --rojo ); }
