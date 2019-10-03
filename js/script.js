@@ -14,7 +14,6 @@ var posiciones = 25;
 var ventanaSize = 0;
 var tl = new TimelineLite();
 $( document ).ready( function() {
-	screen.orientation.lock( 'landscape' );
 	calculaSize();
 	setTimeout( function() {
 		acomodaIconos();
@@ -79,7 +78,7 @@ function calculaSize() {
 		var ruedaSize = ventanaSize * 0.65;
 		ruedaSize = ( ruedaSize > maximoSize ) ? maximoSize : ruedaSize;
 		contenidoSize = ruedaSize * 0.80;
-		textArea = contenidoSize * 0.30;
+		textArea = contenidoSize * 0.25;
 		textoRueda = ruedaSize * 0.90;
 		textoRueda = ( textoRueda > 650 ) ? 650 : textoRueda;
 		contenidoSize = ( contenidoSize > 450 ) ? 450 : contenidoSize;
@@ -196,7 +195,7 @@ function respuestaEnviar( respuesta ) {
 	}
 }
 function ajustaContacto() {
-	var altura = 30;
+	var altura = 45;
 	$( '.contactDiv h3' ).css( 'width', getSpecificWidth( altura ) + 'px' );
 	altura = 80;
 	$( '.contactDiv' ).children().each( function() {
