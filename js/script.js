@@ -218,6 +218,8 @@ function ajustaContacto() {
 			var nuevoAncho = getSpecificWidth( altura );
 			if ( $( window ).width() > 768 ) {
 				nuevoAncho = nuevoAncho + 25;
+			} else {
+				nuevoAncho = nuevoAncho + 20;
 			}
 			$( this ).css( 'width', nuevoAncho + 'px' );
 			altura = altura + 16;
