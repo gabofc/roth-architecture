@@ -160,6 +160,7 @@ body {
 	margin: 0 auto;
 	text-align: left;
 	font-size: 13px;
+	font-family: 'Averia Serif Libre', cursive;
 }
 .contactDiv textarea {
 	background-image:url('/images/textarea-bg-dotted.gif');
@@ -221,6 +222,7 @@ svg circle { mix-blend-mode: multiply; }
     font-size: 2.15px;
     line-height: 1.6;
     padding: 23% 0;
+		hyphens:none;
 }
 i, .italic { font-style: italic; }
 .text p { margin:0 0 5px 0; }
@@ -236,7 +238,7 @@ i, .italic { font-style: italic; }
 @media screen and ( max-width : 767px ) {
 	.link-icon.movil, .link-icon.movil a { height: 70px; }
 	.contactDiv.movil a { padding-right: 0; }
-	.contactDiv.movil h3, .contactDiv.movil label, .contactDiv.movil input, .contactDiv.movil textarea { font-size: 10px; }
+	.contactDiv.movil h3, .contactDiv.movil label, .contactDiv.movil input, .contactDiv.movil textarea, .contactDiv.movil a { font-size: 10px; }
 	.contactDiv.movil .input { margin-top: 10px; }
 	.contactDiv.movil label[for="name"]{ padding-left :8px; }
 	.link-icon.movil, .link-icon.movil a { height: 70px; }
