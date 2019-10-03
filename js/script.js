@@ -54,7 +54,11 @@ function calculaSize() {
 		var iconosWidth = iconosHeight * 2.5;
 		var ruedaSize = ventanaSize * 0.60;
 		contenidoSize = ruedaSize * 0.78;
-		textArea = contenidoSize * 0.25;
+		if ( ventanaSize > 580 ) {
+			textArea = contenidoSize * 0.25;
+		} else {
+			textArea = contenidoSize * 0.20;
+		}
 		textoRueda = ruedaSize * 0.95;
 		textoRueda = ( textoRueda > 600 ) ? 600 : textoRueda;
 		contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
@@ -69,6 +73,7 @@ function calculaSize() {
 			var margenSVG = margenCirculo * 0.65;
 			$( 'svg' ).css( 'left', '-' + margenSVG + 'px' );
 		}
+		/*$( '.logo' ).after( anchoVentana + ' X ' + ventanaSize );*/
 	} else {
 		var ventanaHeight = $( window ).height();
 		var maximoSize = ventanaHeight * 0.7;
