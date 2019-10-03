@@ -161,7 +161,7 @@ body {
 	font-family: 'Averia Serif Libre', cursive;
 }
 .contactDiv textarea {
-	background-image:url('/images/textarea-bg.gif');
+	background-image:url('/images/textarea-bg-dotted.gif');
 	line-height:22px;
 	background-attachment: local;
 }
