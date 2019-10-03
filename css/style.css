@@ -248,5 +248,9 @@ i, .italic { font-style: italic; }
 	.contenidoPrincipal.movil .shape { shape-margin: 2.4px; }
 }
 @media screen and ( max-width : 450px ) {
-	.contactDiv.movil h3, .contactDiv.movil label, .contactDiv.movil input, .contactDiv.movil textarea { font-size: 9px; }
+	.contactDiv.movil h3, .contactDiv.movil label, .contactDiv.movil input, .contactDiv.movil textarea { font-size: 9px; }.contactDiv textarea {
+		padding-left:25px;
+		padding-right:25px;
+		background-image:url('/images/textarea-bg-dotted-mobile.gif');
+	}
 }
