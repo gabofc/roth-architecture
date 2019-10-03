@@ -138,8 +138,8 @@ body {
 .contactDiv .input {
 	width: 100%;
 	margin: 0 auto;
-	border-top: 1px dashed var( --negro );
-	border-bottom: 1px dashed var( --negro );
+	border-top: 1px dotted var( --negro );
+	border-bottom: 1px dotted var( --negro );
 	margin-top: 10px;
 	margin-bottom: 10px;
 	text-align: center;
@@ -162,7 +162,7 @@ body {
 	font-size: 13px;
 }
 .contactDiv textarea {
-	background-image:url('/images/textarea-bg.gif');
+	background-image:url('/images/textarea-bg-dotted.gif');
 	line-height:22px;
 	background-attachment: local;
 }
