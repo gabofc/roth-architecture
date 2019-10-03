@@ -139,9 +139,7 @@ body {
 .contactDiv .input {
 	width: 100%;
 	margin: 0 auto;
-	/* border-top: 1px dotted var( --negro ); */
 	border-bottom: 1px dotted var( --negro );
-	margin-top: 10px;
 	margin-bottom: 10px;
 	text-align: center;
 }
@@ -245,12 +243,9 @@ i, .italic { font-style: italic; }
 	.link-icon.movil, .link-icon.movil a { height: 70px; }
 	.contactDiv.movil a { padding-right: 0; }
 	.contactDiv.movil h3, .contactDiv.movil label, .contactDiv.movil input, .contactDiv.movil textarea, .contactDiv.movil a { font-size: 10px; }
-	.contactDiv.movil .input { margin-top: 10px; }
 	.contactDiv.movil label[for="name"]{ padding-left :8px; }
 	.link-icon.movil, .link-icon.movil a { height: 70px; }
-	#wheel.movil { left: -10px; }
 	.contenidoPrincipal.movil .shape { shape-margin: 2.4px; }
-	.contenidoPrincipal.movil svg { margin-left: -5px; }
 }
 @media screen and ( max-width : 450px ) {
 	.contactDiv.movil h3, .contactDiv.movil label, .contactDiv.movil input, .contactDiv.movil textarea { font-size: 9px; }
