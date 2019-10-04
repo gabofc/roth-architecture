@@ -15,17 +15,25 @@ var ventanaSize = 0;
 var tl = new TimelineLite();
 var rotacionTween;
 window.addEventListener( 'orientationchange', function() {
-	console.log( screen.orientation.angle );
 	if ( screen.orientation.angle == 90 || screen.orientation.angle == 270 ) {
-		rotate( $( '.mainContainer' ), 90 );
-		$( '.mainContainer' ).width( $( window ).width() );
-		$( '.mainContainer' ).height( $( window ).height() );
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
+			$( 'body' ).addClass( 'horizontal' );
+		}
 	} else {
-		rotate( $( '.mainContainer' ), 0 );
-		$( '.mainContainer' ).css( { 'width': '100%', 'height': '100%' } );
+		$( 'body' ).removeClass( 'horizontal' );
 	}
 } );
 $( document ).ready( function() {
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
+		$( 'body' ).addClass( 'movil' );
+		$( 'body' ).removeClass( 'horizontal' );
+		if ( screen.orientation.angle == 90 || screen.orientation.angle == 270 ) {
+			$( 'body' ).addClass( 'horizontal' );
+		}
+	} else {
+		$( 'body' ).removeClass( 'movil' );
+		$( 'body' ).removeClass( 'horizontal' );
+	}
 	calculaSize();
 	setTimeout( function() {
 		acomodaIconos();
@@ -58,7 +66,6 @@ $( document ).ready( function() {
 } );
 function calculaSize() {
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
-		$( 'body' ).addClass( 'movil' );
 		var anchoVentana = $( window ).width();
 		ventanaSize = $( window ).height();
 		var logoSize = ventanaSize * 0.045;
@@ -76,8 +83,6 @@ function calculaSize() {
 		contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
 		wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
 		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize } );
-		$( '.contenidoPrincipal, .link-icon' ).addClass( 'movil' );
-		wheel.addClass( 'movil' );
 		if ( ventanaSize > 550 && ventanaSize < 650 ) {
 			var mergenInicial = Math.abs( anchoVentana - ruedaSize ) / 2;
 			var margenCirculo = Math.abs( mergenInicial - 20 );
@@ -186,11 +191,7 @@ function aboutUs() {
 	} );
 }
 function contactUs() {
-	var extraClass = '';
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
-		extraClass = ' movil';
-	}
-	var contenidoContact = '<div class="contactDiv ' + extraClass + '" id="contacto">';
+	var contenidoContact = '<div class="contactDiv" id="contacto">';
 	contenidoContact += '<h3><span class="bold">Dreamers</span>, do not hesitate to contact us</h3>';
 	contenidoContact += '<label for="name" class="italic">Name:</label>';
 	contenidoContact += '<div class="input"><input type="text" id="name" name="name" autocomplete="off" class="obligatorio"></div>';
@@ -277,25 +278,4 @@ function abrePagina() {
 	} else {
 		aboutUs();
 	}
-}
-function rotate(el, degs) {
-	iedegs = degs/90;
-	if (iedegs < 0) {
-		iedegs += 4;
-	}
-	if ( degs == 0 ) {
-		transform = 'rotate(' + degs + 'deg)';
-	} else {
-		transform = 'rotate(' + degs + 'deg) translate( -40%, -20% )';
-	}
-	iefilter = 'progid:DXImageTransform.Microsoft.BasicImage(rotation='+iedegs+')';
-	styles = {
-		transform: transform,
-		'-webkit-transform': transform,
-		'-moz-transform': transform,
-		'-o-transform': transform,
-		filter: iefilter,
-		'-ms-filter': iefilter
-	};
-	$( el ).css( styles );
 }

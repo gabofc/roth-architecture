@@ -39,7 +39,7 @@ body {
 	left: 0;
 	bottom: 15%;
 }
-.contenidoPrincipal.movil { max-width: 100%; }
+body.movil .contenidoPrincipal { max-width: 100%; }
 #wheel {
 	position: absolute;
 	width: 600px;
@@ -249,18 +249,21 @@ i, .italic { font-style: italic; }
 	.contactDiv a { padding-right: 15%; }
 }
 @media screen and ( max-width : 767px ) {
-	.link-icon.movil, .link-icon.movil a { height: 70px; }
-	.contactDiv.movil a { padding-right: 0; }
-	.contactDiv.movil h3, .contactDiv.movil label, .contactDiv.movil input, .contactDiv.movil textarea, .contactDiv.movil a { font-size: 10px; }
-	.contactDiv.movil label[for="name"]{ padding-left :8px; }
-	.link-icon.movil, .link-icon.movil a { height: 70px; }
-	.contenidoPrincipal.movil .shape { shape-margin: 2.4px; }
+	body.movil .link-icon, body.movil .link-icon a { height: 70px; }
+	body.movil .contactDiv a { padding-right: 0; }
+	body.movil .contactDiv h3, body.movil .contactDiv label,
+	body.movil .contactDiv input, body.movil .contactDiv textarea,
+	body.movil .contactDiv a { font-size: 10px; }
+	body.movil .contactDiv label[for="name"] { padding-left :8px; }
+	body.movil .link-icon, body.movil .link-icon a { height: 70px; }
+	body.movil .contenidoPrincipal .shape { shape-margin: 2.4px; }
 	.contactDiv .textarea { margin-top: 0; }
 }
 @media screen and ( max-width : 450px ) {
-	.contactDiv.movil h3, .contactDiv.movil label, .contactDiv.movil input, .contactDiv.movil textarea { font-size: 9px; }.contactDiv textarea {
-		padding-left:25px;
-		padding-right:25px;
-		background-image:url( '/images/textarea-bg-dotted-mobile.gif' );
+	body.movil .contactDiv h3, body.movil .contactDiv label, body.movil .contactDiv input, body.movil .contactDiv textarea { font-size: 9px; }
+	.contactDiv textarea {
+		padding-left: 25px;
+		padding-right: 25px;
+		background-image: url( '/images/textarea-bg-dotted-mobile.gif' );
 	}
 }
