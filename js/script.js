@@ -85,12 +85,12 @@ function calculaSize() {
 		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize } );
 		var margenInicial = Math.abs( anchoVentana - ruedaSize ) / 2;
 		var margenTexto = Math.abs( margenInicial - 12 );
-		$( '.contenidoCentro' ).css( 'left', '-' + margenTexto + 'px' );
 		$( 'svg' ).css( 'left', '-' + margenTexto + 'px' );
 		if ( ventanaSize > 550 && ventanaSize < 650 ) {
 			var margenCirculo = Math.abs( margenInicial - 20 );
 			wheel.css( 'left', '-' + margenCirculo + 'px' );
 			$( '.dLogo' ).css( 'left', '-' + margenCirculo + 'px' );
+			$( '.contenidoCentro' ).css( 'left', '-' + margenTexto + 'px' );
 		} else if ( ventanaSize >= 650 ) {
 			wheel.css( 'left', '-' + margenInicial + 'px' );
 			$( '.dLogo' ).css( 'left', '-' + margenInicial + 'px' );
@@ -99,6 +99,7 @@ function calculaSize() {
 			var margenSVG = margenCirculo * 0.65;
 			$( 'svg' ).css( 'left', '-' + margenSVG + 'px' );
 		}
+		$( '.dLogo' ).after( $( window ).width() + ' x ' + $( window ).height() );
 	} else {
 		var ventanaHeight = $( window ).height();
 		const maximoSize = ventanaHeight * 0.7;
