@@ -144,7 +144,7 @@ body.movil .contenidoPrincipal { max-width: 100%; }
 	width: 100%;
 	margin: 0 auto;
 	background-image:url( '/images/textarea-bg-dot.gif' );
-	 background-position: bottom right;
+	background-position: bottom right;
 	background-attachment: local;
 	margin-bottom: 10px;
 	text-align: center;
