@@ -143,7 +143,9 @@ body.movil .contenidoPrincipal { max-width: 100%; }
 .contactDiv .input {
 	width: 100%;
 	margin: 0 auto;
-	border-bottom: 1px dotted var( --negro );
+	background-image:url( '/images/textarea-bg-dotted-mobile.gif' );
+	 background-position: bottom right;
+	background-attachment: local;
 	margin-bottom: 10px;
 	text-align: center;
 }
@@ -152,7 +154,7 @@ body.movil .contenidoPrincipal { max-width: 100%; }
 	margin: 0 auto;
 	margin-bottom: 5px;
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 0px;
 }
 .contactDiv input, .contactDiv textarea {
 	width: 100%;
@@ -165,13 +167,8 @@ body.movil .contenidoPrincipal { max-width: 100%; }
 	font-family: 'Averia Serif Libre', cursive;
 }
 .contactDiv textarea {
-<<<<<<< HEAD
 	width: 106%;
-	background-image:url('/images/textarea-bg-dotted.gif');
-=======
-	width: 102%;
-	background-image:url( '/images/textarea-bg-dotted.gif' );
->>>>>>> 0d0843ccb81af73ba6a6b7208c337f374c2579fe
+	background-image:url( '/images/textarea-bg-dotted-mobile.gif' );
 	line-height:22px;
 	background-attachment: local;
 	padding-left: 20px;
