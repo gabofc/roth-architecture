@@ -14,6 +14,23 @@ var posiciones = 25;
 var ventanaSize = 0;
 var tl = new TimelineLite();
 var rotacionTween;
+var supportsOrientationChange = "onorientationchange" in window;
+var orientationEvent = supportsOrientationChange ? 'orientationchange' : 'resize';
+window.addEventListener( orientationEvent, function() {
+	if ( window.orientation == 90 ) {
+		rotate( $( '.mainContainer' ), 90 );
+		/*$( '.mainContainer' ).css( 'overflow', 'initial' );*/
+	} else {
+		rotate( $( '.mainContainer' ), 0 );
+		/*$( '.mainContainer' ).css( 'overflow', 'hidden' );*/
+	}
+	$( '.mainContainer' ).width( $( window ).width() );
+	$( '.mainContainer' ).height( $( window ).height() );
+	$( '.mainContainer' ).css( 'top', 0 );
+	$( '.mainContainer' ).css( 'right', 0 );
+	$( '.mainContainer' ).css( 'bottom', 0 );
+	$( '.mainContainer' ).css( 'left', 0 );
+} );
 $( document ).ready( function() {
 	calculaSize();
 	setTimeout( function() {
@@ -47,6 +64,7 @@ $( document ).ready( function() {
 } );
 function calculaSize() {
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
+		$( 'body' ).addClass( 'movil' );
 		var anchoVentana = $( window ).width();
 		ventanaSize = $( window ).height();
 		var logoSize = ventanaSize * 0.045;
@@ -265,4 +283,21 @@ function abrePagina() {
 	} else {
 		aboutUs();
 	}
+}
+function rotate(el, degs) {
+	iedegs = degs/90;
+	if (iedegs < 0) {
+		iedegs += 4;
+	}
+	transform = 'rotate('+degs+'deg)';
+	iefilter = 'progid:DXImageTransform.Microsoft.BasicImage(rotation='+iedegs+')';
+	styles = {
+		transform: transform,
+		'-webkit-transform': transform,
+		'-moz-transform': transform,
+		'-o-transform': transform,
+		filter: iefilter,
+		'-ms-filter': iefilter
+	};
+	$( el ).css( styles );
 }
