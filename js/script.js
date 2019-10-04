@@ -15,7 +15,7 @@ var ventanaSize = 0;
 var tl = new TimelineLite();
 var rotacionTween;
 window.addEventListener( 'orientationchange', function() {
-	if ( screen.orientation.angle == 90 || screen.orientation.angle == 270 ) {
+	if ( window.orientation == 90 || window.orientation == 270 ) {
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
 			$( 'body' ).addClass( 'horizontal' );
 		}
@@ -27,7 +27,7 @@ $( document ).ready( function() {
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
 		$( 'body' ).addClass( 'movil' );
 		$( 'body' ).removeClass( 'horizontal' );
-		if ( screen.orientation.angle == 90 || screen.orientation.angle == 270 ) {
+		if ( window.orientation == 90 || window.orientation == 270 ) {
 			$( 'body' ).addClass( 'horizontal' );
 		}
 	} else {
@@ -230,9 +230,8 @@ function respuestaEnviar( respuesta ) {
 	}
 }
 function ajustaContacto() {
-	var altura = 45;
-	$( '.contactDiv h3' ).css( 'width', getSpecificWidth( altura ) + 'px' );
-	altura = 80;
+	var altura = 80;
+	$( '.contactDiv h3' ).css( 'width', getSpecificWidth( 45 ) + 'px' );
 	$( '.contactDiv' ).children().each( function() {
 		var tipoElemento = $( this )[0].nodeName;
 		if ( tipoElemento == 'DIV' ) {
