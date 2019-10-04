@@ -251,6 +251,9 @@ function ajustaContacto() {
 			}
 			$( this ).css( 'width', nuevoAncho + 'px' );
 			altura = altura + 16;
+			if ( ventanaSize >= 650 ) {
+				$( this ).css( 'padding-left', '5px' );
+			}
 		} else if ( tipoElemento == 'A' ) {
 			var nuevoAncho = getSpecificWidth( altura );
 			if ( $( window ).width() > 770 ) {
