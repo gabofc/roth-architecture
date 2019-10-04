@@ -14,28 +14,31 @@ body {
 	overflow: hidden;
 	position: fixed;
 }
-.logo {
+.dLogo {
 	position: absolute;
 	margin: 0 auto;
+	top: 45px;
 	left: 0;
 	right: 0;
+	z-index: 15;
+	text-align: center;
+}
+.logo {
 	width: auto;
 	height: 58px;
-	top: 45px;
 	cursor: pointer;
-	z-index: 15;
 	visibility: hidden;
 }
 .contenidoPrincipal {
 	position: absolute;
 	width: 100%;
-	max-width: 100%;
 	height: auto;
 	margin: 0 auto;
 	right: 0;
 	left: 0;
 	bottom: 15%;
 }
+.contenidoPrincipal.movil { max-width: 100%; }
 #wheel {
 	position: absolute;
 	width: 600px;
@@ -247,7 +250,6 @@ i, .italic { font-style: italic; }
 	.link-icon.movil, .link-icon.movil a { height: 70px; }
 	.contenidoPrincipal.movil .shape { shape-margin: 2.4px; }
 	.contactDiv .textarea { margin-top: 0; }
-	.contenidoPrincipal.movil .shape-left { shape-margin: 2.2px; }
 }
 @media screen and ( max-width : 450px ) {
 	.contactDiv.movil h3, .contactDiv.movil label, .contactDiv.movil input, .contactDiv.movil textarea { font-size: 9px; }.contactDiv textarea {
