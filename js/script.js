@@ -19,17 +19,12 @@ var orientationEvent = supportsOrientationChange ? 'orientationchange' : 'resize
 window.addEventListener( orientationEvent, function() {
 	if ( window.orientation == 90 ) {
 		rotate( $( '.mainContainer' ), 90 );
-		/*$( '.mainContainer' ).css( 'overflow', 'initial' );*/
+		$( '.mainContainer' ).width( $( window ).width() );
+		$( '.mainContainer' ).height( $( window ).height() );
 	} else {
 		rotate( $( '.mainContainer' ), 0 );
-		/*$( '.mainContainer' ).css( 'overflow', 'hidden' );*/
+		$( '.mainContainer' ).css( { 'width': '100%', 'height': '100%' } );
 	}
-	$( '.mainContainer' ).width( $( window ).width() );
-	$( '.mainContainer' ).height( $( window ).height() );
-	$( '.mainContainer' ).css( 'top', 0 );
-	$( '.mainContainer' ).css( 'right', 0 );
-	$( '.mainContainer' ).css( 'bottom', 0 );
-	$( '.mainContainer' ).css( 'left', 0 );
 } );
 $( document ).ready( function() {
 	calculaSize();
