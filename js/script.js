@@ -99,7 +99,6 @@ function calculaSize() {
 			var margenSVG = margenCirculo * 0.65;
 			$( 'svg' ).css( 'left', '-' + margenSVG + 'px' );
 		}
-		$( '.dLogo' ).after( $( window ).width() + ' x ' + $( window ).height() );
 	} else {
 		var ventanaHeight = $( window ).height();
 		const maximoSize = ventanaHeight * 0.7;
