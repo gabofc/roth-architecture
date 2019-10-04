@@ -14,10 +14,9 @@ var posiciones = 25;
 var ventanaSize = 0;
 var tl = new TimelineLite();
 var rotacionTween;
-var supportsOrientationChange = "onorientationchange" in window;
-var orientationEvent = supportsOrientationChange ? 'orientationchange' : 'resize';
-window.addEventListener( orientationEvent, function() {
-	if ( window.orientation == 90 ) {
+window.addEventListener( 'orientationchange', function() {
+	console.log( screen.orientation.angle );
+	if ( screen.orientation.angle == 90 || screen.orientation.angle == 270 ) {
 		rotate( $( '.mainContainer' ), 90 );
 		$( '.mainContainer' ).width( $( window ).width() );
 		$( '.mainContainer' ).height( $( window ).height() );
@@ -284,7 +283,11 @@ function rotate(el, degs) {
 	if (iedegs < 0) {
 		iedegs += 4;
 	}
-	transform = 'rotate('+degs+'deg)';
+	if ( degs == 0 ) {
+		transform = 'rotate(' + degs + 'deg)';
+	} else {
+		transform = 'rotate(' + degs + 'deg) translate( -40%, -20% )';
+	}
 	iefilter = 'progid:DXImageTransform.Microsoft.BasicImage(rotation='+iedegs+')';
 	styles = {
 		transform: transform,
