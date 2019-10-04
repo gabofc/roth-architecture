@@ -83,21 +83,17 @@ function calculaSize() {
 		contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
 		wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
 		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize } );
+		var margenInicial = Math.abs( anchoVentana - ruedaSize ) / 2;
+		var margenTexto = Math.abs( margenInicial - 12 );
+		$( '.contenidoCentro' ).css( 'left', '-' + margenTexto + 'px' );
+		$( 'svg' ).css( 'left', '-' + margenTexto + 'px' );
 		if ( ventanaSize > 550 && ventanaSize < 650 ) {
-			var mergenInicial = Math.abs( anchoVentana - ruedaSize ) / 2;
-			var margenCirculo = Math.abs( mergenInicial - 20 );
+			var margenCirculo = Math.abs( margenInicial - 20 );
 			wheel.css( 'left', '-' + margenCirculo + 'px' );
 			$( '.dLogo' ).css( 'left', '-' + margenCirculo + 'px' );
-			var margenTexto = Math.abs( mergenInicial - 12 );
-			$( '.contenidoCentro' ).css( 'left', '-' + margenTexto + 'px' );
-			$( 'svg' ).css( 'left', '-' + margenTexto + 'px' );
 		} else if ( ventanaSize >= 650 ) {
-			var mergenInicial = Math.abs( anchoVentana - ruedaSize ) / 2;
-			wheel.css( 'left', '-' + mergenInicial + 'px' );
-			$( '.dLogo' ).css( 'left', '-' + mergenInicial + 'px' );
-			var margenTexto = Math.abs( mergenInicial - 12 );
-			$( '.contenidoCentro' ).css( 'left', '-' + margenTexto + 'px' );
-			$( 'svg' ).css( 'left', '-' + margenTexto + 'px' );
+			wheel.css( 'left', '-' + margenInicial + 'px' );
+			$( '.dLogo' ).css( 'left', '-' + margenInicial + 'px' );
 		}
 		if ( ventanaSize > 720 ) {
 			var margenSVG = margenCirculo * 0.65;
