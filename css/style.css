@@ -143,7 +143,7 @@ body.movil .contenidoPrincipal { max-width: 100%; }
 .contactDiv .input {
 	width: 100%;
 	margin: 0 auto;
-	background-image:url( '/images/textarea-bg-dot.gif' );
+	background-image:url( '/images/textarea-bg-dot.png' );
 	background-position: bottom right;
 	background-attachment: local;
 	margin-bottom: 10px;
@@ -168,7 +168,7 @@ body.movil .contenidoPrincipal { max-width: 100%; }
 }
 .contactDiv textarea {
 	width: 106%;
-	background-image:url( '/images/textarea-bg-dot.gif' );
+	background-image:url( '/images/textarea-bg-dot.png' );
 	line-height:22px;
 	background-attachment: local;
 	padding-left: 20px;
@@ -263,6 +263,6 @@ i, .italic { font-style: italic; }
 	.contactDiv textarea {
 		padding-left: 25px;
 		padding-right: 25px;
-		background-image: url( '/images/textarea-bg-dot.gif' );
+		background-image: url( '/images/textarea-bg-dot.png' );
 	}
 }
