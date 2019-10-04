@@ -13,6 +13,7 @@ body {
 	height: 100%;
 	overflow: hidden;
 	position: fixed;
+	object-fit: cover;
 }
 .dLogo {
 	position: absolute;
@@ -165,7 +166,7 @@ body {
 }
 .contactDiv textarea {
 	width: 102%;
-	background-image:url('/images/textarea-bg-dotted.gif');
+	background-image:url( '/images/textarea-bg-dotted.gif' );
 	line-height:22px;
 	background-attachment: local;
 	padding-left:20px;
@@ -255,11 +256,6 @@ i, .italic { font-style: italic; }
 	.contactDiv.movil h3, .contactDiv.movil label, .contactDiv.movil input, .contactDiv.movil textarea { font-size: 9px; }.contactDiv textarea {
 		padding-left:25px;
 		padding-right:25px;
-		background-image:url('/images/textarea-bg-dotted-mobile.gif');
+		background-image:url( '/images/textarea-bg-dotted-mobile.gif' );
 	}
-}
-@media only screen and (orientation:landscape){
-  body {
-    transform: rotate(90deg);
-  }
 }
