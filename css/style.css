@@ -165,13 +165,8 @@ body {
 	font-family: 'Averia Serif Libre', cursive;
 }
 .contactDiv textarea {
-<<<<<<< HEAD
 	width: 106%;
 	background-image:url('/images/textarea-bg-dotted.gif');
-=======
-	width: 102%;
-	background-image:url( '/images/textarea-bg-dotted.gif' );
->>>>>>> 0d0843ccb81af73ba6a6b7208c337f374c2579fe
 	line-height:22px;
 	background-attachment: local;
 	padding-left: 20px;
