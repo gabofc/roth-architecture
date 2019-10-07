@@ -277,7 +277,6 @@ function cuadroContacto() {
 	$( '.contactDiv input, .contactDiv textarea, .contactDiv label, .contactDiv h3, .contactDiv a' ).css( 'width', '100%' );
 	$( '.contactDiv label' ).css( 'padding-left', 0 );
 	$( '.contactDiv textarea' ).css( { 'padding': 0, 'margin': 0 } );
-	$( 'body.movil .contactDiv h3' ).css( 'margin-top', '15px' );
 }
 function getSpecificWidth( altura ) {
 	var hipotenusa = contenidoSize / 2;

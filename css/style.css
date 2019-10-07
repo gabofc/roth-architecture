@@ -132,6 +132,7 @@ body.movil .contenidoPrincipal { max-width: 100%; }
 	margin: 0 auto;
 	margin-top: 35px;
 }
+body.movil .contactDiv h3 { margin-top: 15px; }
 .contactDiv label {
 	font-size: 13px;
 	display: block;
