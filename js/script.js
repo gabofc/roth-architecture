@@ -73,12 +73,14 @@ function calculaSize() {
 		var iconosWidth = iconosHeight * 2.5;
 		var ruedaSize = ventanaSize * 0.60;
 		contenidoSize = ruedaSize * 0.78;
-		if ( ventanaSize > 580 ) {
-			textArea = contenidoSize * 0.25;
-		} else {
-			textArea = contenidoSize * 0.20;
-		}
 		textoRueda = ruedaSize * 0.95;
+		if ( ventanaSize < 550 ) {
+			contenidoSize = ruedaSize * 0.82;
+			textoRueda = ruedaSize * 0.98;
+			$( '.contenidoCentro' ).css( 'margin-top', '10%' );
+			$( 'svg' ).css( 'margin-top', '3%' );
+		}
+		textArea = contenidoSize * 0.25;
 		textoRueda = ( textoRueda > 600 ) ? 600 : textoRueda;
 		contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
 		wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );

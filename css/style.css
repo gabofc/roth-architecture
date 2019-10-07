@@ -258,7 +258,7 @@ i, .italic { font-style: italic; }
 	body.horizontal #wheel { bottom: initial; top: 120px; }
 	body.horizontal .contenidoPrincipal { bottom: initial; top: 110px; }
 }
-@media screen and ( max-width : 450px ) {
+@media screen and ( max-width: 450px ) {
 	body.movil .contactDiv h3, body.movil .contactDiv label, body.movil .contactDiv input, body.movil .contactDiv textarea { font-size: 9px; }
 	.contactDiv textarea {
 		padding-left: 25px;
