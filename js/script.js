@@ -106,6 +106,7 @@ function calculaSize() {
 		const maximoSize = ventanaHeight * 0.7;
 		ventanaSize = $( window ).height();
 		var logoSize = ventanaSize * 0.045;
+		logoSize = ( logoSize < 40 ) ? 40 : logoSize;
 		var iconosHeight = ventanaSize * 0.08;
 		var iconosWidth = iconosHeight * 2.5;
 		var ruedaSize = ventanaSize * 0.65;
