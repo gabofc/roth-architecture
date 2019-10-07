@@ -183,6 +183,7 @@ function iniciaRueda() {
 }
 function aboutUs() {
 	$( '.contenidoCentro' ).fadeOut( 'slow', function() {
+		$( '.contenidoCentro' ).css( 'border-radius', '50%' );
 		$( 'svg#textCircle' ).fadeIn( 'slow' );
 	} );
 }
@@ -199,17 +200,22 @@ function contactUs() {
 	contenidoContact += '</div>';
 	if ( $( 'svg#textCircle' ).is( ':visible' ) ) {
 		$( 'svg#textCircle' ).fadeOut( 'slow', function() {
+			$( '.contenidoCentro' ).css( 'border-radius', '50%' );
 			$( '.contenidoCentro' ).html( contenidoContact );
 			ajustaContacto();
 			$( '.contenidoCentro' ).fadeIn( 'slow' );
 		} );
 	} else {
 		$( '.contenidoCentro' ).fadeOut( 'slow', function() {
+			$( '.contenidoCentro' ).css( 'border-radius', '50%' );
 			$( '.contenidoCentro' ).html( contenidoContact );
 			ajustaContacto();
 			$( '.contenidoCentro' ).fadeIn( 'slow' );
 		} );
 	}
+	setTimeout( function() {
+		cuadroContacto();
+	}, 1000 );
 }
 function enviar() {
 	if ( validaTodo( 'contacto' ) ) {
@@ -262,6 +268,13 @@ function ajustaContacto() {
 			$( this ).css( 'width', nuevoAncho + 'px' );
 		}
 	} );
+}
+function cuadroContacto() {
+	$( '.contenidoCentro' ).css( 'border-radius', '0' );
+	$( '.contactDiv input, .contactDiv textarea, .contactDiv label, .contactDiv h3, .contactDiv a' ).css( 'transition', 'all 0.6s' );
+	$( '.contactDiv input, .contactDiv textarea, .contactDiv label, .contactDiv h3, .contactDiv a' ).css( 'width', '100%' );
+	$( '.contactDiv label' ).css( 'padding-left', 0 );
+	$( '.contactDiv textarea' ).css( { 'padding': 0, 'margin': 0 } );
 }
 function getSpecificWidth( altura ) {
 	var hipotenusa = contenidoSize / 2;
