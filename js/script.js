@@ -56,7 +56,6 @@ $( document ).ready( function() {
 		if ( $( window ).width() >= 770 && $( window ).height() >= 700 ) {
 			$( '.mainContainer' ).fadeOut( 'slow', function() {
 				calculaSize();
-				ajustaContacto();
 				acomodaIconos();
 				iniciaRueda();
 				$( '.mainContainer' ).fadeIn();
