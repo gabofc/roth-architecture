@@ -261,6 +261,10 @@ i, .italic { font-style: italic; }
 }
 @media screen and ( max-width: 450px ) {
 	body.movil .contactDiv h3, body.movil .contactDiv label, body.movil .contactDiv input, body.movil .contactDiv textarea { font-size: 9px; }
+	body.movil .contactDiv textarea {
+		line-height: 15px;
+		background-image: url( '/images/textarea-bg-dot-lg15.png' );
+	}
 	.contactDiv textarea {
 		padding-left: 25px;
 		padding-right: 25px;
