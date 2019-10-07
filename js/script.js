@@ -75,9 +75,9 @@ function calculaSize() {
 		contenidoSize = ruedaSize * 0.78;
 		textoRueda = ruedaSize * 0.95;
 		if ( ventanaSize < 550 ) {
-			contenidoSize = ruedaSize * 0.82;
+			contenidoSize = ruedaSize * 0.83;
 			textoRueda = ruedaSize * 0.98;
-			$( '.contenidoCentro' ).css( 'margin-top', '10%' );
+			$( '.contenidoCentro' ).css( 'margin-top', '8%' );
 			$( 'svg' ).css( 'margin-top', '3%' );
 		}
 		textArea = contenidoSize * 0.25;
@@ -277,6 +277,7 @@ function cuadroContacto() {
 	$( '.contactDiv input, .contactDiv textarea, .contactDiv label, .contactDiv h3, .contactDiv a' ).css( 'width', '100%' );
 	$( '.contactDiv label' ).css( 'padding-left', 0 );
 	$( '.contactDiv textarea' ).css( { 'padding': 0, 'margin': 0 } );
+	$( 'body.movil .contactDiv h3' ).css( 'margin-top', '15px' );
 }
 function getSpecificWidth( altura ) {
 	var hipotenusa = contenidoSize / 2;
