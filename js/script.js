@@ -239,7 +239,7 @@ function respuestaEnviar( respuesta ) {
 }
 function ajustaContacto() {
 	var altura = 80;
-	$( '.contactDiv h3' ).css( 'width', getSpecificWidth( 45 ) + 'px' );
+	$( '.contactDiv h3' ).css( 'width', getSpecificWidth( 50 ) + 'px' );
 	$( '.contactDiv' ).children().each( function() {
 		var tipoElemento = $( this )[0].nodeName;
 		if ( tipoElemento == 'DIV' ) {
