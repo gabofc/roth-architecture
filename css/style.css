@@ -252,6 +252,19 @@ i, .italic { font-style: italic; }
     top: 50px;
     left: 80px;
 }
+/*Animations*/
+.animation_symbol_container{
+	margin: 100px auto 0;
+	border: 1px solid #CCC;
+}
+.animation_symbol_container svg {
+    fill: var( --negro );
+		display:block;
+		position: static;
+		margin:0 auto;
+		width: 200px !important;
+		height: 200px !important;
+}
 @media screen and ( max-width : 865px ) { .contactDiv a { padding-right: 15%; } }
 @media screen and ( max-width : 767px ) {
 	body.movil .link-icon, body.movil .link-icon a { height: 70px; }

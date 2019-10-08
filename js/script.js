@@ -326,9 +326,40 @@ function rotate(el, degs) {
 		'-ms-filter': iefilter
 	};
 	$( el ).css( styles );
-	/*if ( degs == 0 ) {
-		$( '.mainContainer' ).css( { 'width': $( window ).width() + 'px', 'height': $( window ).height() + 'px' } );
-	} else {
-		$( '.mainContainer' ).css( { 'width': $( window ).height() + 'px', 'height': $( window ).width() + 'px' } );
-	}*/
 }
+//Animations
+var azulik_cuisine = lottie.loadAnimation({
+	wrapper: document.getElementById('azulik_cuisine'),
+	renderer: 'svg',
+	loop: false,
+	autoplay: true,
+	path: 'animations/azulik_cuisine.json'
+});
+var azulik_hotel = lottie.loadAnimation({
+	wrapper: document.getElementById('azulik_hotel'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: true,
+	path: 'animations/azulik_hotel.json'
+});
+var cenote = lottie.loadAnimation({
+	wrapper: document.getElementById('cenote'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: true,
+	path: 'animations/cenote.json'
+});
+var zak_ik = lottie.loadAnimation({
+	wrapper: document.getElementById('zak_ik'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: true,
+	path: 'animations/zak_ik.json'
+});
+var example = lottie.loadAnimation({
+	wrapper: document.getElementById('example'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: true,
+	path: 'animations/example.json'
+});
