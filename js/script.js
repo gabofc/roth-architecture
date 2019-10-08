@@ -15,20 +15,34 @@ var ventanaSize = 0;
 var tl = new TimelineLite();
 var rotacionTween;
 window.addEventListener( 'orientationchange', function() {
-	if ( window.orientation == 90 || window.orientation == 270 ) {
+	if ( window.orientation == 90 || window.orientation == 270 || window.orientation == -90 ) {
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
 			$( 'body' ).addClass( 'horizontal' );
+			rotate( $( '.mainContainer' ), Math.abs( window.orientation ) );
+			setTimeout( function() {
+				$( '.mainContainer' ).css( { 'width': $( window ).height() + 'px', 'height': $( window ).width() + 'px' } );
+			}, 100 );
 		}
 	} else {
-		$( 'body' ).removeClass( 'horizontal' );
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
+			$( 'body' ).removeClass( 'horizontal' );
+			rotate( $( '.mainContainer' ), 0 );
+			setTimeout( function() {
+				$( '.mainContainer' ).css( { 'width': $( window ).width() + 'px', 'height': $( window ).height() + 'px' } );
+			}, 100 );
+		}
 	}
 } );
 $( document ).ready( function() {
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
 		$( 'body' ).addClass( 'movil' );
 		$( 'body' ).removeClass( 'horizontal' );
-		if ( window.orientation == 90 || window.orientation == 270 ) {
+		if ( window.orientation == 90 || window.orientation == 270 || window.orientation == -90 ) {
 			$( 'body' ).addClass( 'horizontal' );
+			rotate( $( '.mainContainer' ), Math.abs( window.orientation ) );
+			setTimeout( function() {
+				$( '.mainContainer' ).css( { 'width': $( window ).height() + 'px', 'height': $( window ).width() + 'px' } );
+			}, 100 );
 		}
 	} else {
 		$( 'body' ).removeClass( 'movil' );
@@ -295,4 +309,26 @@ function abrePagina() {
 	} else {
 		aboutUs();
 	}
+}
+function rotate(el, degs) {
+	iedegs = degs/90;
+	if (iedegs < 0) {
+		iedegs += 4;
+	}
+	transform = ( degs == 0 ) ? ( 'rotate(' + degs + 'deg)' ) : ( 'rotate(' + degs + 'deg) translate( -40%, -20% )' );
+	iefilter = 'progid:DXImageTransform.Microsoft.BasicImage(rotation='+iedegs+')';
+	styles = {
+		transform: transform,
+		'-webkit-transform': transform,
+		'-moz-transform': transform,
+		'-o-transform': transform,
+		filter: iefilter,
+		'-ms-filter': iefilter
+	};
+	$( el ).css( styles );
+	/*if ( degs == 0 ) {
+		$( '.mainContainer' ).css( { 'width': $( window ).width() + 'px', 'height': $( window ).height() + 'px' } );
+	} else {
+		$( '.mainContainer' ).css( { 'width': $( window ).height() + 'px', 'height': $( window ).width() + 'px' } );
+	}*/
 }
