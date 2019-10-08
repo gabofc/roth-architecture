@@ -270,7 +270,7 @@ function contactUs() {
 	contenidoContact += '<div class="input"><input type="email" id="email" name="email" autocomplete="off" class="obligatorio email"></div>';
 	contenidoContact += '<label for="message" class="italic">Message:</label>';
 	contenidoContact += '<div class="textarea"><textarea style="height: ' + textArea + 'px" id="message" name="message" autocomplete="off" class="obligatorio" maxlength="500"></textarea></div>';
-	contenidoContact += '<div class="botonContainer"><a href="#" class="enviaForm italic" onclick="enviar()">Send</a></div>';
+	contenidoContact += '<div class="botonContainer"><a class="enviaForm italic" onclick="enviar()">Send</a></div>';
 	contenidoContact += '</div>';
 	if ( $( 'svg#textCircle' ).is( ':visible' ) ) {
 		$( 'svg#textCircle' ).fadeOut( 'slow', function() {
