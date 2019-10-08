@@ -292,3 +292,40 @@ function abrePagina() {
 		aboutUs();
 	}
 }
+
+//Animations
+var azulik_cuisine = lottie.loadAnimation({
+	wrapper: document.getElementById('azulik_cuisine'),
+	renderer: 'svg',
+	loop: false,
+	autoplay: true,
+	path: 'animations/azulik_cuisine.json'
+});
+var azulik_hotel = lottie.loadAnimation({
+	wrapper: document.getElementById('azulik_hotel'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: true,
+	path: 'animations/azulik_hotel.json'
+});
+var cenote = lottie.loadAnimation({
+	wrapper: document.getElementById('cenote'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: true,
+	path: 'animations/cenote.json'
+});
+var zak_ik = lottie.loadAnimation({
+	wrapper: document.getElementById('zak_ik'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: true,
+	path: 'animations/zak_ik.json'
+});
+var example = lottie.loadAnimation({
+	wrapper: document.getElementById('example'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: true,
+	path: 'animations/example.json'
+});
