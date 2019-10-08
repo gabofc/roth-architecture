@@ -331,7 +331,7 @@ function rotate( el, degs ) {
 var azulik_cuisine = lottie.loadAnimation({
 	wrapper: document.getElementById('azulik_cuisine'),
 	renderer: 'svg',
-	loop: false,
+	loop: true,
 	autoplay: true,
 	path: 'animations/azulik_cuisine.json'
 });
