@@ -21,7 +21,7 @@ window.addEventListener( 'orientationchange', function() {
 			rotate( $( '.mainContainer' ), Math.abs( window.orientation ) );
 			setTimeout( function() {
 				$( '.mainContainer' ).css( { 'width': $( window ).height() + 'px', 'height': $( window ).width() + 'px' } );
-			}, 100 );
+			}, 200 );
 		}
 	} else {
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
@@ -29,7 +29,7 @@ window.addEventListener( 'orientationchange', function() {
 			rotate( $( '.mainContainer' ), 0 );
 			setTimeout( function() {
 				$( '.mainContainer' ).css( { 'width': $( window ).width() + 'px', 'height': $( window ).height() + 'px' } );
-			}, 100 );
+			}, 200 );
 		}
 	}
 } );
@@ -42,7 +42,7 @@ $( document ).ready( function() {
 			rotate( $( '.mainContainer' ), Math.abs( window.orientation ) );
 			setTimeout( function() {
 				$( '.mainContainer' ).css( { 'width': $( window ).height() + 'px', 'height': $( window ).width() + 'px' } );
-			}, 100 );
+			}, 200 );
 		}
 	} else {
 		$( 'body' ).removeClass( 'movil' );
@@ -310,13 +310,13 @@ function abrePagina() {
 		aboutUs();
 	}
 }
-function rotate(el, degs) {
+function rotate( el, degs ) {
 	iedegs = degs/90;
-	if (iedegs < 0) {
+	if ( iedegs < 0 ) {
 		iedegs += 4;
 	}
 	transform = ( degs == 0 ) ? ( 'rotate(' + degs + 'deg)' ) : ( 'rotate(' + degs + 'deg) translate( -40%, -20% )' );
-	iefilter = 'progid:DXImageTransform.Microsoft.BasicImage(rotation='+iedegs+')';
+	iefilter = 'progid:DXImageTransform.Microsoft.BasicImage(rotation=' + iedegs + ')';
 	styles = {
 		transform: transform,
 		'-webkit-transform': transform,
