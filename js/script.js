@@ -76,6 +76,31 @@ $( document ).ready( function() {
 			} );
 		}
 	} );
+	$( '.box-link-animado' ).on( 'mouseover', function( e ) {
+		var imgAnimada = $( this ).find( '.iconoLista' ).attr( 'animada' );
+		if ( imgAnimada == '' ) {
+			$( this ).find( '.iconoLista' ).css( 'opacity', 0 );
+			$( this ).find( '.comingSoon' ).css( 'opacity', 1 );
+		} else {
+			console.log( imgAnimada );
+			$( this ).find( '.iconoLista' ).fadeOut( 'fast', function() {
+				$( this ).attr( 'src', imgAnimada );
+				$( this ).fadeIn( 'fast' );
+			} );
+		}
+	} ).on( 'mouseout', function( e ) {
+		var imgAnimada = $( this ).find( '.iconoLista' ).attr( 'animada' );
+		if ( imgAnimada == '' ) {
+			$( this ).find( '.iconoLista' ).css( 'opacity', 1 );
+			$( this ).find( '.comingSoon' ).css( 'opacity', 0 );
+		} else {
+			var imgNormal = $( this ).find( '.iconoLista' ).attr( 'normal' );
+			$( this ).find( '.iconoLista' ).fadeOut( 'fast', function() {
+				$( this ).attr( 'src', imgNormal );
+				$( this ).fadeIn( 'fast' );
+			} );
+		}
+	} );
 } );
 function calculaSize() {
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
@@ -328,38 +353,38 @@ function rotate( el, degs ) {
 	$( el ).css( styles );
 }
 //Animations
-var azulik_cuisine = lottie.loadAnimation({
+var azulik_cuisine = lottie.loadAnimation( {
 	wrapper: document.getElementById('azulik_cuisine'),
 	renderer: 'svg',
 	loop: false,
 	autoplay: true,
 	path: 'animations/azulik_cuisine.json'
-});
-var azulik_hotel = lottie.loadAnimation({
+} );
+var azulik_hotel = lottie.loadAnimation( {
 	wrapper: document.getElementById('azulik_hotel'),
 	renderer: 'svg',
 	loop: true,
 	autoplay: true,
 	path: 'animations/azulik_hotel.json'
-});
-var cenote = lottie.loadAnimation({
+} );
+var cenote = lottie.loadAnimation( {
 	wrapper: document.getElementById('cenote'),
 	renderer: 'svg',
 	loop: true,
 	autoplay: true,
 	path: 'animations/cenote.json'
-});
-var zak_ik = lottie.loadAnimation({
+} );
+var zak_ik = lottie.loadAnimation( {
 	wrapper: document.getElementById('zak_ik'),
 	renderer: 'svg',
 	loop: true,
 	autoplay: true,
 	path: 'animations/zak_ik.json'
-});
-var example = lottie.loadAnimation({
+} );
+var example = lottie.loadAnimation( {
 	wrapper: document.getElementById('example'),
 	renderer: 'svg',
 	loop: true,
 	autoplay: true,
 	path: 'animations/example.json'
-});
+} );
