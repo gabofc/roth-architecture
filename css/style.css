@@ -89,6 +89,7 @@ body.movil .contenidoPrincipal { max-width: 100%; }
 	transition: all 0.6s;
 	font-style: italic;
 }
+.box-link-animado { z-index: 999; }
 .box-link:hover > .iconoLista {
 	opacity: 0;
 }

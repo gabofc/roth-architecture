@@ -35,7 +35,7 @@
 		<meta name="twitter:image" content="https://www.indiewire.com/wp-content/uploads/2019/01/samuel-l-jackson-body-measurements-religion-horoscope-net-worth.jpg?w=1024" />
 		<meta name="twitter:creator" content="@RothArchitecture" />
 		<link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
-		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<script type="text/javascript">
 			var urlActual = "<?php echo $url; ?>";
 			var archivoUsado = "<?php echo $nombreArchivo; ?>";

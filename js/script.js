@@ -37,6 +37,7 @@ window.addEventListener( 'orientationchange', function() {
 $( document ).ready( function() {
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
 		$( 'body' ).addClass( 'movil' );
+		$( 'body' ).removeClass( 'pc' );
 		$( 'body' ).removeClass( 'horizontal' );
 		if ( window.orientation == 90 || window.orientation == 270 || window.orientation == -90 ) {
 			$( 'body' ).addClass( 'horizontal' );
@@ -47,6 +48,7 @@ $( document ).ready( function() {
 		}
 	} else {
 		$( 'body' ).removeClass( 'movil' );
+		$( 'body' ).addClass( 'pc' );
 		$( 'body' ).removeClass( 'horizontal' );
 	}
 	calculaSize();
@@ -78,7 +80,7 @@ $( document ).ready( function() {
 			} );
 		}
 	} );
-	$( '.box-link-animado' ).mouseenter( function() {
+	$( 'body.pc .box-link-animado' ).mouseenter( function() {
 		if ( activeHover != $( this ).attr( 'id' ) ) {
 			animacionGarabato( '#' + $( this ).attr( 'id' ), 1 );
 		}
@@ -86,13 +88,10 @@ $( document ).ready( function() {
 		quitaAnimacion( '#' + $( this ).attr( 'id' ) );
 		activeHover = '';
 	} );
-	$( 'body.movil .box-link-animado' ).mouseover( function() {
+	$( 'body.movil .box-link-animado' ).on( 'click touchend', function() {
 		if ( activeHover != $( this ).attr( 'id' ) ) {
-			animacionGarabato( '#' + $( this ).attr( 'id' ), 1 );
+			animacionGarabato( '#' + $( this ).attr( 'id' ), 2 );
 		}
-	} ).mouseout( function() {
-		quitaAnimacion( '#' + $( this ).attr( 'id' ) );
-		activeHover = '';
 	} );
 } );
 function animacionGarabato( elemento, tipo ) {
@@ -111,8 +110,8 @@ function animacionGarabato( elemento, tipo ) {
 		}, 1200 );
 	}
 	if ( tipo == 2 ) {
-		if ( ( '#' + activeHover ) != elemento ) {
-			quitaAnimacion( elemento );
+		if ( activeHover != elemento ) {
+			quitaAnimacion( activeHover );
 		}
 		activeHover = elemento;
 	}
