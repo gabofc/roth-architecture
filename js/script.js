@@ -197,8 +197,8 @@ function contactUs() {
 	contenidoContact += '<label for="email" class="italic">Email:</label>';
 	contenidoContact += '<div class="input"><input type="email" id="email" name="email" autocomplete="off" class="obligatorio email"></div>';
 	contenidoContact += '<label for="message" class="italic">Message:</label>';
-	contenidoContact += '<div class="textarea"><textarea style="height: ' + textArea + 'px" id="message" name="message" autocomplete="off" class="obligatorio"></textarea></div>';
-	contenidoContact += '<a href="#" class="enviaForm italic" onclick="enviar()">Send</a>';
+	contenidoContact += '<div class="textarea"><textarea style="height: ' + textArea + 'px" id="message" name="message" autocomplete="off" class="obligatorio" maxlength="500"></textarea></div>';
+	contenidoContact += '<div class="botonContainer"><a href="#" class="enviaForm italic" onclick="enviar()">Send</a></div>';
 	contenidoContact += '</div>';
 	if ( $( 'svg#textCircle' ).is( ':visible' ) ) {
 		$( 'svg#textCircle' ).fadeOut( 'slow', function() {
@@ -249,6 +249,12 @@ function ajustaContacto() {
 				altura = altura + 33;
 			} else if ( nuevoTipo == 'TEXTAREA' ) {
 				altura = altura + textArea;
+			} else if ( nuevoTipo == 'A' ) {
+				var nuevoAncho = getSpecificWidth( altura );
+				if ( $( window ).width() > 770 ) {
+					nuevoAncho = nuevoAncho - 30;
+				}
+				$( this ).css( 'width', nuevoAncho + 'px' );
 			}
 		} else if ( tipoElemento == 'LABEL' ) {
 			var nuevoAncho = getSpecificWidth( altura );
@@ -262,19 +268,14 @@ function ajustaContacto() {
 			if ( ventanaSize >= 650 ) {
 				$( this ).css( 'padding-left', '5px' );
 			}
-		} else if ( tipoElemento == 'A' ) {
-			var nuevoAncho = getSpecificWidth( altura );
-			if ( $( window ).width() > 770 ) {
-				nuevoAncho = nuevoAncho - 30;
-			}
-			$( this ).css( 'width', nuevoAncho + 'px' );
 		}
 	} );
 }
 function cuadroContacto() {
 	$( '.contenidoCentro' ).css( 'border-radius', '0' );
-	$( '.contactDiv input, .contactDiv textarea, .contactDiv label, .contactDiv h3, .contactDiv a' ).css( 'transition', 'all 0.6s' );
-	$( '.contactDiv input, .contactDiv textarea, .contactDiv label, .contactDiv h3, .contactDiv a' ).css( 'width', '100%' );
+	$( '.contactDiv input, .contactDiv textarea, .contactDiv label, .contactDiv h3, .contactDiv .botonContainer' ).css( 'transition', 'all 0.6s' );
+	$( '.contactDiv input, .contactDiv textarea, .contactDiv label, .contactDiv h3, .contactDiv .botonContainer' ).css( 'width', '100%' );
+	$( '.contactDiv .botonContainer' ).css( 'padding-right', 0 );
 	$( '.contactDiv label' ).css( 'padding-left', 0 );
 	$( '.contactDiv textarea' ).css( { 'padding': 0, 'margin': 0 } );
 }

@@ -101,7 +101,6 @@ body.movil .contenidoPrincipal { max-width: 100%; }
 	z-index: 20;
 	text-align: center;
 	overflow: hidden;
-	padding: 10px;
 	box-sizing: border-box;
 	margin: 0 auto;
 	right: 0;
@@ -124,7 +123,12 @@ body.movil .contenidoPrincipal { max-width: 100%; }
 	padding-top: 40%;
 	box-sizing: border-box;
 }
-.contactDiv { text-align: left; }
+.contactDiv {
+	text-align: left;
+	padding-top: 35px;
+	box-sizing: border-box;
+}
+body.movil .contactDiv { padding-top: 25px; }
 .contactDiv h3 {
 	text-align: center;
 	font-weight: normal;
@@ -178,15 +182,16 @@ body.movil .contactDiv h3 { margin-top: 15px; }
 	text-align: left;
 	resize: none;
 }
-.contactDiv a {
-	text-decoration: none;
-	color: var( --negro );
-	font-size: 16px;
+.contactDiv .botonContainer {
+	width: 100%;
 	text-align: right;
-	display: block;
-	margin: 0 auto;
 	padding-right: 5%;
 	font-size: 13px;
+	box-sizing: border-box;
+}
+.contactDiv .botonContainer a {
+	text-decoration: none;
+	color: var( --negro );
 }
 .vacio { color: var( --rojo ) !important; }
 .error {
@@ -234,19 +239,18 @@ svg circle { mix-blend-mode: multiply; }
     font-size: 2.15px;
     line-height: 1.6;
     padding: 23% 0;
-		hyphens:none;
+	hyphens: none;
 }
+body.movil .text { font-size: 2.35px; }
+.bold, b { font-weight: 700; }
 i, .italic { font-style: italic; }
-.text p { margin:0 0 5px 0; }
+.text p { margin: 0 0 5px 0; }
 .arriba {
 	position: absolute;
     top: 50px;
     left: 80px;
 }
-.bold, b { font-weight: 700; }
-@media screen and ( max-width : 865px ) {
-	.contactDiv a { padding-right: 15%; }
-}
+@media screen and ( max-width : 865px ) { .contactDiv a { padding-right: 15%; } }
 @media screen and ( max-width : 767px ) {
 	body.movil .link-icon, body.movil .link-icon a { height: 70px; }
 	body.movil .contactDiv a { padding-right: 0; }
@@ -272,3 +276,5 @@ i, .italic { font-style: italic; }
 		background-image: url( '/images/textarea-bg-dot.png' );
 	}
 }
+@media screen and ( max-height: 580px ) { body.movil .contactDiv { padding-top: 15px; } }
+@media screen and ( max-height: 560px ) { body.movil .contactDiv { padding-top: 10px; } }
