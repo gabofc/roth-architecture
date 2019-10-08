@@ -60,6 +60,7 @@ $( document ).ready( function() {
 	}, 3200 );
 	$( 'a' ).click( function( e ) {
 		e.preventDefault();
+		e.stopPropagation();
 		return false;
 	} );
 	$( document ).keydown( function( event ) {
@@ -79,34 +80,58 @@ $( document ).ready( function() {
 	} );
 	$( '.box-link-animado' ).mouseenter( function() {
 		if ( activeHover != $( this ).attr( 'id' ) ) {
-			activeHover = $( this ).attr( 'id' );
-			var imgAnimada = $( this ).find( '.iconoLista' ).attr( 'animada' );
-			if ( imgAnimada == '' ) {
-				$( this ).find( '.iconoLista' ).css( 'opacity', 0 );
-				$( this ).find( '.comingSoon' ).css( 'opacity', 1 );
-			} else {
-				console.log( imgAnimada );
-				$( this ).find( '.iconoLista' ).fadeOut( 'fast', function() {
-					$( this ).attr( 'src', imgAnimada );
-					$( this ).fadeIn( 'fast' );
-				} );
-			}
+			animacionGarabato( '#' + $( this ).attr( 'id' ), 1 );
 		}
 	} ).mouseleave( function() {
+		quitaAnimacion( '#' + $( this ).attr( 'id' ) );
 		activeHover = '';
-		var imgAnimada = $( this ).find( '.iconoLista' ).attr( 'animada' );
-		if ( imgAnimada == '' ) {
-			$( this ).find( '.iconoLista' ).css( 'opacity', 1 );
-			$( this ).find( '.comingSoon' ).css( 'opacity', 0 );
-		} else {
-			var imgNormal = $( this ).find( '.iconoLista' ).attr( 'normal' );
-			$( this ).find( '.iconoLista' ).fadeOut( 'fast', function() {
-				$( this ).attr( 'src', imgNormal );
-				$( this ).fadeIn( 'fast' );
-			} );
+	} );
+	$( 'body.movil .box-link-animado' ).mouseover( function() {
+		if ( activeHover != $( this ).attr( 'id' ) ) {
+			animacionGarabato( '#' + $( this ).attr( 'id' ), 1 );
 		}
+	} ).mouseout( function() {
+		quitaAnimacion( '#' + $( this ).attr( 'id' ) );
+		activeHover = '';
 	} );
 } );
+function animacionGarabato( elemento, tipo ) {
+	var imgAnimada = $( elemento ).find( '.iconoLista' ).attr( 'animada' );
+	if ( imgAnimada == '' ) {
+		$( elemento ).find( '.iconoLista' ).css( 'opacity', 0 );
+		$( elemento ).find( '.comingSoon' ).css( 'opacity', 1 );
+	} else {
+		$( elemento ).find( '.iconoLista' ).fadeOut( 'fast', function() {
+			$( this ).attr( 'src', imgAnimada );
+			$( this ).fadeIn( 'fast' );
+		} );
+		setTimeout( function() {
+			$( elemento ).find( '.iconoLista' ).css( 'opacity', 0 );
+			$( elemento ).find( '.comingSoon' ).css( 'opacity', 1 );
+		}, 1200 );
+	}
+	if ( tipo == 2 ) {
+		if ( ( '#' + activeHover ) != elemento ) {
+			quitaAnimacion( elemento );
+		}
+		activeHover = elemento;
+	}
+}
+function quitaAnimacion( elemento ) {
+	var imgAnimada = $( elemento ).find( '.iconoLista' ).attr( 'animada' );
+	if ( imgAnimada == '' ) {
+		$( elemento ).find( '.iconoLista' ).css( 'opacity', 1 );
+		$( elemento ).find( '.comingSoon' ).css( 'opacity', 0 );
+	} else {
+		var imgNormal = $( elemento ).find( '.iconoLista' ).attr( 'normal' );
+		$( elemento ).find( '.iconoLista' ).css( 'opacity', 1 );
+		$( elemento ).find( '.comingSoon' ).css( 'opacity', 0 );
+		$( elemento ).find( '.iconoLista' ).fadeOut( 'fast', function() {
+			$( this ).attr( 'src', imgNormal );
+			$( this ).fadeIn( 'fast' );
+		} );
+	}
+}
 function calculaSize() {
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
 		var anchoVentana = $( window ).width();
