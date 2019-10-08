@@ -67,10 +67,10 @@ function calculaSize() {
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
 		var anchoVentana = $( window ).width();
 		ventanaSize = $( window ).height();
-		var logoSize = ventanaSize * 0.045;
+		var logoSize = ventanaSize * 0.05;
 		var iconosHeight = ventanaSize * 0.08;
 		var iconosWidth = iconosHeight * 2.5;
-		var ruedaSize = ventanaSize * 0.60;
+		var ruedaSize = ventanaSize * 0.65;
 		contenidoSize = ruedaSize * 0.78;
 		textoRueda = ruedaSize * 0.95;
 		if ( ventanaSize < 550 ) {
@@ -87,18 +87,21 @@ function calculaSize() {
 		var margenInicial = Math.abs( anchoVentana - ruedaSize ) / 2;
 		var margenTexto = Math.abs( margenInicial - 12 );
 		$( 'svg' ).css( 'left', '-' + margenTexto + 'px' );
-		if ( ventanaSize > 550 && ventanaSize < 650 ) {
-			var margenCirculo = Math.abs( margenInicial - 20 );
+		if ( ventanaSize > 551 && ventanaSize < 650 ) {
+			var margenCirculo = Math.abs( margenInicial - 50 );
+			margenTexto = margenTexto - 18;
 			wheel.css( 'left', '-' + margenCirculo + 'px' );
 			$( '.dLogo' ).css( 'left', '-' + margenCirculo + 'px' );
 			$( '.contenidoCentro' ).css( 'left', '-' + margenTexto + 'px' );
 		} else if ( ventanaSize >= 650 ) {
 			wheel.css( 'left', '-' + margenInicial + 'px' );
 			$( '.dLogo' ).css( 'left', '-' + margenInicial + 'px' );
-		}
-		if ( ventanaSize > 720 ) {
-			var margenSVG = margenCirculo * 0.65;
-			$( 'svg' ).css( 'left', '-' + margenSVG + 'px' );
+			if ( ventanaSize > 750 ) {
+				textoRueda = ( textoRueda > 450 ) ? 450 : textoRueda;
+				var margenSVG = margenTexto - 25;
+				console.log( margenSVG );
+				$( 'svg' ).css( 'left', '-' + margenSVG + 'px' );
+			}
 		}
 	} else {
 		var ventanaHeight = $( window ).height();
@@ -197,8 +200,8 @@ function contactUs() {
 	contenidoContact += '<label for="email" class="italic">Email:</label>';
 	contenidoContact += '<div class="input"><input type="email" id="email" name="email" autocomplete="off" class="obligatorio email"></div>';
 	contenidoContact += '<label for="message" class="italic">Message:</label>';
-	contenidoContact += '<div class="textarea"><textarea style="height: ' + textArea + 'px" id="message" name="message" autocomplete="off" class="obligatorio"></textarea></div>';
-	contenidoContact += '<a href="#" class="enviaForm italic" onclick="enviar()">Send</a>';
+	contenidoContact += '<div class="textarea"><textarea style="height: ' + textArea + 'px" id="message" name="message" autocomplete="off" class="obligatorio" maxlength="500"></textarea></div>';
+	contenidoContact += '<div class="botonContainer"><a href="#" class="enviaForm italic" onclick="enviar()">Send</a></div>';
 	contenidoContact += '</div>';
 	if ( $( 'svg#textCircle' ).is( ':visible' ) ) {
 		$( 'svg#textCircle' ).fadeOut( 'slow', function() {
@@ -249,6 +252,12 @@ function ajustaContacto() {
 				altura = altura + 33;
 			} else if ( nuevoTipo == 'TEXTAREA' ) {
 				altura = altura + textArea;
+			} else if ( nuevoTipo == 'A' ) {
+				var nuevoAncho = getSpecificWidth( altura );
+				if ( $( window ).width() > 770 ) {
+					nuevoAncho = nuevoAncho - 30;
+				}
+				$( this ).css( 'width', nuevoAncho + 'px' );
 			}
 		} else if ( tipoElemento == 'LABEL' ) {
 			var nuevoAncho = getSpecificWidth( altura );
@@ -262,19 +271,14 @@ function ajustaContacto() {
 			if ( ventanaSize >= 650 ) {
 				$( this ).css( 'padding-left', '5px' );
 			}
-		} else if ( tipoElemento == 'A' ) {
-			var nuevoAncho = getSpecificWidth( altura );
-			if ( $( window ).width() > 770 ) {
-				nuevoAncho = nuevoAncho - 30;
-			}
-			$( this ).css( 'width', nuevoAncho + 'px' );
 		}
 	} );
 }
 function cuadroContacto() {
 	$( '.contenidoCentro' ).css( 'border-radius', '0' );
-	$( '.contactDiv input, .contactDiv textarea, .contactDiv label, .contactDiv h3, .contactDiv a' ).css( 'transition', 'all 0.6s' );
-	$( '.contactDiv input, .contactDiv textarea, .contactDiv label, .contactDiv h3, .contactDiv a' ).css( 'width', '100%' );
+	$( '.contactDiv input, .contactDiv textarea, .contactDiv label, .contactDiv h3, .contactDiv .botonContainer' ).css( 'transition', 'all 0.6s' );
+	$( '.contactDiv input, .contactDiv textarea, .contactDiv label, .contactDiv h3, .contactDiv .botonContainer' ).css( 'width', '100%' );
+	$( '.contactDiv .botonContainer' ).css( 'padding-right', 0 );
 	$( '.contactDiv label' ).css( 'padding-left', 0 );
 	$( '.contactDiv textarea' ).css( { 'padding': 0, 'margin': 0 } );
 }
