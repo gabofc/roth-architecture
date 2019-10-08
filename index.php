@@ -8,8 +8,8 @@
 			$path = 'images/icons/';
 			foreach( $iconsLinks as $icons ) {
 				echo
-				'<div class="link-icon" id="link-icon-' . $count . '">
-					<a class="box-link" href="' . $icons[2] . '">
+				'<div class="link-icon">
+					<a class="box-link" href="' . $icons[3] . '" id="link-icon-' . $count . '">
 						<img src="' . $path . $icons[1] . '" class="iconoLista" alt="' . $icons[0] . '">
 						<div class="comingSoon">coming soon</div>
 					</a>

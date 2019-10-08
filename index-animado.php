@@ -9,8 +9,8 @@
 			foreach( $iconsLinks as $icons ) {
 				$imgAnimada = ( $icons[2] != '' ) ? $path . $icons[2] : '';
 				echo
-				'<div class="link-icon" id="link-icon-' . $count . '">
-					<a class="box-link-animado" href="' . $icons[3] . '">
+				'<div class="link-icon">
+					<a class="box-link-animado" href="' . $icons[3] . '" id="link-icon-' . $count . '">
 						<img src="' . $path . $icons[1] . '" normal="' . $path . $icons[1] . '" animada="' . $imgAnimada . '" class="iconoLista" alt="' . $icons[0] . '">
 						<div class="comingSoon">coming soon</div>
 					</a>

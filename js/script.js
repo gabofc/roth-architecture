@@ -14,6 +14,7 @@ var posiciones = 25;
 var ventanaSize = 0;
 var tl = new TimelineLite();
 var rotacionTween;
+var activeHover = '';
 window.addEventListener( 'orientationchange', function() {
 	if ( window.orientation == 90 || window.orientation == 270 || window.orientation == -90 ) {
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
@@ -76,19 +77,23 @@ $( document ).ready( function() {
 			} );
 		}
 	} );
-	$( '.box-link-animado' ).on( 'mouseover', function( e ) {
-		var imgAnimada = $( this ).find( '.iconoLista' ).attr( 'animada' );
-		if ( imgAnimada == '' ) {
-			$( this ).find( '.iconoLista' ).css( 'opacity', 0 );
-			$( this ).find( '.comingSoon' ).css( 'opacity', 1 );
-		} else {
-			console.log( imgAnimada );
-			$( this ).find( '.iconoLista' ).fadeOut( 'fast', function() {
-				$( this ).attr( 'src', imgAnimada );
-				$( this ).fadeIn( 'fast' );
-			} );
+	$( '.box-link-animado' ).mouseenter( function() {
+		if ( activeHover != $( this ).attr( 'id' ) ) {
+			activeHover = $( this ).attr( 'id' );
+			var imgAnimada = $( this ).find( '.iconoLista' ).attr( 'animada' );
+			if ( imgAnimada == '' ) {
+				$( this ).find( '.iconoLista' ).css( 'opacity', 0 );
+				$( this ).find( '.comingSoon' ).css( 'opacity', 1 );
+			} else {
+				console.log( imgAnimada );
+				$( this ).find( '.iconoLista' ).fadeOut( 'fast', function() {
+					$( this ).attr( 'src', imgAnimada );
+					$( this ).fadeIn( 'fast' );
+				} );
+			}
 		}
-	} ).on( 'mouseout', function( e ) {
+	} ).mouseleave( function() {
+		activeHover = '';
 		var imgAnimada = $( this ).find( '.iconoLista' ).attr( 'animada' );
 		if ( imgAnimada == '' ) {
 			$( this ).find( '.iconoLista' ).css( 'opacity', 1 );
@@ -148,7 +153,7 @@ function calculaSize() {
 		ventanaSize = $( window ).height();
 		var logoSize = ventanaSize * 0.045;
 		logoSize = ( logoSize < 40 ) ? 40 : logoSize;
-		var iconosHeight = ventanaSize * 0.08;
+		var iconosHeight = ventanaSize * 0.10;
 		var iconosWidth = iconosHeight * 2.5;
 		var ruedaSize = ventanaSize * 0.65;
 		ruedaSize = ( ruedaSize > maximoSize ) ? maximoSize : ruedaSize;
