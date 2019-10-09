@@ -158,7 +158,7 @@ function calculaSize() {
 		}
 		textArea = contenidoSize * 0.25;
 		textoRueda = ( textoRueda > 450 ) ? 450 : textoRueda;
-		contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
+		contenidoSize = ( contenidoSize > 330 ) ? 330 : contenidoSize;
 		wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
 		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize } );
 		var minimoTop = 100 + logoSize;
