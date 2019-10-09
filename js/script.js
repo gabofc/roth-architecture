@@ -186,14 +186,22 @@ function calculaSize() {
 		ruedaSize = ( ruedaSize > maximoSize ) ? maximoSize : ruedaSize;
 		ruedaSize = ( ruedaSize < 490 ) ? 490 : ruedaSize;
 		contenidoSize = ruedaSize * 0.80;
-		contenidoSize = ( contenidoSize > 430 ) ? 430 : contenidoSize;
+		if ( ventanaSize < 980 ) {
+			contenidoSize = ( contenidoSize > 430 ) ? 430 : contenidoSize;
+		}
 		textArea = contenidoSize * 0.25;
 		textoRueda = contenidoSize + 120;
-		textoRueda = ( textoRueda > 650 ) ? 650 : textoRueda;
+		if ( ventanaSize < 980 ) {
+			textoRueda = ( textoRueda > 650 ) ? 650 : textoRueda;
+		}
 		var minimoTop = 150 + logoSize;
 		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px', 'bottom': 'initial' } );
 		$( '.dLogo' ).css( 'width', ruedaSize );
-		$( 'svg' ).css( 'margin-top', '2%' );
+		if ( ventanaSize > 750 ) {
+			$( 'svg' ).css( 'margin-top', '2%' );
+		} else {
+			$( 'svg' ).css( 'margin-top', '1%' );
+		}
 	}
 	wheel.css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px' } );
 	$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
