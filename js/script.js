@@ -187,13 +187,15 @@ function calculaSize() {
 		ruedaSize = ( ruedaSize < 490 ) ? 490 : ruedaSize;
 		contenidoSize = ruedaSize * 0.80;
 		textArea = contenidoSize * 0.25;
-		textoRueda = ruedaSize * 0.90;
+		textoRueda = contenidoSize + 120;
+		console.log( contenidoSize );
+		console.log( textoRueda );
 		textoRueda = ( textoRueda > 650 ) ? 650 : textoRueda;
-		contenidoSize = ( contenidoSize > 450 ) ? 450 : contenidoSize;
 		contenidoSize = ( contenidoSize < 390 ) ? 390 : contenidoSize;
 		var minimoTop = 150 + logoSize;
 		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px', 'bottom': 'initial' } );
 		$( '.dLogo' ).css( 'width', ruedaSize );
+		$( 'svg' ).css( 'margin-top', '1%' );
 	}
 	wheel.css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px' } );
 	$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
