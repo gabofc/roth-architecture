@@ -176,6 +176,7 @@ function calculaSize() {
 			$( '.contenidoCentro' ).css( 'margin-top', '18%' );
 			$( 'svg' ).css( 'margin-top', '3%' );
 		}
+		$( 'svg' ).css( { 'width': textoRueda, 'height': textoRueda } );
 	} else {
 		const maximoSize = ventanaSize * 0.7;
 		var logoSize = ventanaSize * 0.045;
@@ -197,17 +198,12 @@ function calculaSize() {
 		var minimoTop = 150 + logoSize;
 		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px', 'bottom': 'initial' } );
 		$( '.dLogo' ).css( 'width', ruedaSize );
-		if ( ventanaSize > 750 ) {
-			$( 'svg' ).css( 'margin-top', '2%' );
-		} else {
-			$( 'svg' ).css( 'margin-top', '1%' );
-		}
+		$( 'svg' ).css( 'width', textoRueda );
 	}
 	wheel.css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px' } );
 	$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
 	symbols.css( { 'width': iconosWidth, 'height': iconosHeight } );
 	$( '.logo' ).css( 'height', logoSize + 'px' );
-	$( 'svg' ).css( { 'width': textoRueda, 'height': textoRueda } );
 	center = ruedaSize / 2;
 	radius = ruedaSize * 0.533;
 }
