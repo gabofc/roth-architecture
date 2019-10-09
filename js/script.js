@@ -81,7 +81,7 @@ $( document ).ready( function() {
 			} );
 		}
 	} );
-	$( 'body.pc .box-link-animado' ).mouseenter( function() {
+	$( 'body.pc .box-link-animated' ).mouseenter( function() {
 		if ( activeHover != $( this ).attr( 'id' ) ) {
 			animacionGarabato( '#' + $( this ).attr( 'id' ), 1 );
 		}
@@ -89,7 +89,7 @@ $( document ).ready( function() {
 		quitaAnimacion( '#' + $( this ).attr( 'id' ) );
 		activeHover = '';
 	} );
-	$( 'body.movil .box-link-animado' ).on( 'click touchend', function() {
+	$( 'body.movil .box-link-animated' ).on( 'click touchend', function() {
 		if ( activeHover != $( this ).attr( 'id' ) ) {
 			animacionGarabato( '#' + $( this ).attr( 'id' ), 2 );
 		}

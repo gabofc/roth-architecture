@@ -7,10 +7,11 @@
 			$count = 1;
 			$path = 'images/icons/';
 			foreach( $iconsLinks as $icons ) {
+				$imgAnimada = ( $icons[2] != '' ) ? $path . $icons[2] : '';
 				echo
 				'<div class="link-icon">
-					<a class="box-link" href="' . $icons[3] . '" id="link-icon-' . $count . '">
-						<img src="' . $path . $icons[1] . '" class="iconoLista" alt="' . $icons[0] . '">
+					<a class="box-link-animated" id="link-icon-' . $count . '">
+						<img src="' . $path . $icons[1] . '" normal="' . $path . $icons[1] . '" animada="' . $imgAnimada . '" class="iconoLista" alt="' . $icons[0] . '">
 						<div class="comingSoon">coming soon</div>
 					</a>
 				</div>';
