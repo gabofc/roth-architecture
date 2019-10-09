@@ -65,8 +65,8 @@ body.movil .contenidoPrincipal { max-width: 100%; }
 	position: relative;
 	width: 600px;
 	height: 600px;
-	margin: 0 auto;
 	text-align: center;
+	padding-top: 30px;
 	z-index: 1000;
 }
 #wheel-image {
