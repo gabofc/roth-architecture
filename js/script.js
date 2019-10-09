@@ -193,6 +193,7 @@ function calculaSize() {
 		var minimoTop = 150 + logoSize;
 		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px', 'bottom': 'initial' } );
 		$( '.dLogo' ).css( 'width', ruedaSize );
+		$( 'svg' ).css( 'margin-top', '2%' );
 	}
 	wheel.css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px' } );
 	$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
@@ -224,7 +225,7 @@ function acomodaIconos() {
 	} );
 }
 function iniciaAnimacion() {
-	var hormigaSize = contenidoSize * 0.6;
+	var hormigaSize = contenidoSize * 0.5;
 	tl.from( $( '.logo' ), 0.5, { scale: 1.5, autoAlpha: 0, opacity: 0 }, '-=0.5' );
 	tl.from( symbols, 0.7, { scale: .5, autoAlpha: 0 }, '+=0.5' );
 	tl.from( $( '#intro-image' ), 1, { width: hormigaSize } );
