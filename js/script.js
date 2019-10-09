@@ -171,6 +171,11 @@ function calculaSize() {
 			var margenLeft = ( textoRueda - anchoVentana ) / 2;
 			$( 'svg' ).css( 'left', '-' + margenLeft + 'px' );
 		}
+		if ( ventanaSize > 700 ) {
+			var minimoTop = 120 + logoSize;
+			$( '.contenidoCentro' ).css( 'margin-top', '18%' );
+			$( 'svg' ).css( 'margin-top', '3%' );
+		}
 	} else {
 		const maximoSize = ventanaSize * 0.7;
 		var logoSize = ventanaSize * 0.045;
