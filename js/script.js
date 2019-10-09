@@ -218,7 +218,7 @@ function acomodaIconos() {
 	} );
 }
 function iniciaAnimacion() {
-	var hormigaSize = contenidoSize * 0.7;
+	var hormigaSize = contenidoSize * 0.6;
 	tl.from( $( '.logo' ), 0.5, { scale: 1.5, autoAlpha: 0, opacity: 0 }, '-=0.5' );
 	tl.from( symbols, 0.7, { scale: .5, autoAlpha: 0 }, '+=0.5' );
 	tl.from( $( '#intro-image' ), 1, { width: hormigaSize } );
