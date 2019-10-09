@@ -106,16 +106,18 @@ function animacionGarabato( elemento, tipo ) {
 			$( this ).fadeIn( 'fast' );
 		} );
 		setTimeout( function() {
-			$( elemento ).find( '.iconoLista' ).css( 'opacity', 0 );
-			$( elemento ).find( '.comingSoon' ).css( 'opacity', 1 );
+			if ( activeHover == elemento ) {
+				$( elemento ).find( '.iconoLista' ).css( 'opacity', 0 );
+				$( elemento ).find( '.comingSoon' ).css( 'opacity', 1 );
+			}
 		}, 1200 );
 	}
 	if ( tipo == 2 ) {
 		if ( activeHover != elemento ) {
 			quitaAnimacion( activeHover );
 		}
-		activeHover = elemento;
 	}
+	activeHover = elemento;
 }
 function quitaAnimacion( elemento ) {
 	var imgAnimada = $( elemento ).find( '.iconoLista' ).attr( 'animada' );
@@ -156,7 +158,7 @@ function calculaSize() {
 		}
 		textArea = contenidoSize * 0.25;
 		textoRueda = ( textoRueda > 450 ) ? 450 : textoRueda;
-		contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
+		contenidoSize = ( contenidoSize > 330 ) ? 330 : contenidoSize;
 		wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
 		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize } );
 		var minimoTop = 100 + logoSize;

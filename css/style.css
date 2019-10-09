@@ -88,6 +88,7 @@ body.movil .contenidoPrincipal { max-width: 100%; }
 	margin-top: -25%;
 	transition: all 0.6s;
 	font-style: italic;
+	font-size: 11px;
 }
 .box-link:hover > .iconoLista {
 	opacity: 0;
@@ -248,7 +249,7 @@ svg circle { mix-blend-mode: multiply; }
 }
 body.movil .text { font-size: 2.35px; }
 .bold, b { font-weight: 700; }
-i, .italic { font-style: italic; }
+i, .italic { font-style: italic; font-weight: 400; }
 .text p { margin: 0 0 5px 0; }
 .arriba {
 	position: absolute;
