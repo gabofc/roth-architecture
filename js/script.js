@@ -156,7 +156,8 @@ function calculaSize() {
 		var margenTexto = Math.abs( margenInicial - 12 );
 		$( 'svg' ).css( 'left', '-' + margenTexto + 'px' );
 		if ( ventanaSize > 551 && ventanaSize < 650 ) {
-			var margenCirculo = Math.abs( margenInicial - 50 );
+			var quitarMargen = ( ventanaSize < 560 ) ? 20 : 50;
+			var margenCirculo = Math.abs( margenInicial - quitarMargen );
 			margenTexto = margenTexto - 18;
 			wheel.css( 'left', '-' + margenCirculo + 'px' );
 			$( '.dLogo' ).css( 'left', '-' + margenCirculo + 'px' );
