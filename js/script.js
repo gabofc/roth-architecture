@@ -10,11 +10,12 @@ const slice = 2 * Math.PI / total;
 var textArea = 130;
 var contenidoSize = 400;
 var textoRueda = 500;
-var posiciones = 25;
+var ruedaSize = 600;
 var ventanaSize = 0;
 var tl = new TimelineLite();
 var rotacionTween;
 var activeHover = '';
+var anchoVentana = 600;
 window.addEventListener( 'orientationchange', function() {
 	if ( window.orientation == 90 || window.orientation == 270 || window.orientation == -90 ) {
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
@@ -132,49 +133,49 @@ function quitaAnimacion( elemento ) {
 	}
 }
 function calculaSize() {
+	anchoVentana = $( window ).width();
+	ventanaSize = $( window ).height();
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) ) {
-		var anchoVentana = $( window ).width();
-		ventanaSize = $( window ).height();
 		var logoSize = ventanaSize * 0.05;
 		var iconosHeight = ventanaSize * 0.08;
 		var iconosWidth = iconosHeight * 2.5;
-		var ruedaSize = ventanaSize * 0.65;
+		ruedaSize = ventanaSize * 0.65;
 		contenidoSize = ruedaSize * 0.78;
 		textoRueda = ruedaSize * 0.95;
 		if ( ventanaSize < 550 ) {
 			contenidoSize = ruedaSize * 0.83;
 			textoRueda = ruedaSize * 0.98;
-			$( '.contenidoCentro' ).css( 'margin-top', '8%' );
-			$( 'svg' ).css( 'margin-top', '3%' );
+			$( '.contenidoCentro' ).css( 'margin-top', '21%' );
+			$( 'svg' ).css( 'margin-top', '12%' );
+		} else if ( ventanaSize < 650 ) {
+			$( '.contenidoCentro' ).css( 'margin-top', '20%' );
+			$( 'svg' ).css( 'margin-top', '8%' );
+		} else if ( ventanaSize < 700 ) {
+			$( '.contenidoCentro' ).css( 'margin-top', '18%' );
+			$( 'svg' ).css( 'margin-top', '2%' );
 		}
 		textArea = contenidoSize * 0.25;
-		textoRueda = ( textoRueda > 600 ) ? 600 : textoRueda;
+		textoRueda = ( textoRueda > 450 ) ? 450 : textoRueda;
 		contenidoSize = ( contenidoSize > 400 ) ? 400 : contenidoSize;
 		wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
 		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize } );
-		var margenInicial = Math.abs( anchoVentana - ruedaSize ) / 2;
-		var margenTexto = Math.abs( margenInicial - 12 );
-		if ( ventanaSize > 551 && ventanaSize < 650 ) {
-			var quitarMargen = ( ventanaSize < 560 ) ? 20 : 50;
-			var margenCirculo = Math.abs( margenInicial - quitarMargen );
-			margenTexto = margenTexto - 18;
-		} else if ( ventanaSize >= 650 ) {
-			if ( ventanaSize > 750 ) {
-				textoRueda = ( textoRueda > 450 ) ? 450 : textoRueda;
-				var margenSVG = margenTexto - 25;
-				console.log( margenSVG );
-				
-			}
+		var minimoTop = 100 + logoSize;
+		$( '.dLogo' ).css( 'width', '100%' );
+		if ( ruedaSize > anchoVentana ) {
+			var margenLeft = ( ruedaSize - anchoVentana ) / 2;
+			$( wheel ).css( 'left', '-' + margenLeft + 'px' );
+		}
+		if ( textoRueda > anchoVentana ) {
+			var margenLeft = ( textoRueda - anchoVentana ) / 2;
+			$( 'svg' ).css( 'left', '-' + margenLeft + 'px' );
 		}
 	} else {
-		var ventanaHeight = $( window ).height();
-		const maximoSize = ventanaHeight * 0.7;
-		ventanaSize = $( window ).height();
+		const maximoSize = ventanaSize * 0.7;
 		var logoSize = ventanaSize * 0.045;
 		logoSize = ( logoSize < 40 ) ? 40 : logoSize;
 		var iconosHeight = ventanaSize * 0.10;
 		var iconosWidth = iconosHeight * 2.5;
-		var ruedaSize = ventanaSize * 0.65;
+		ruedaSize = ventanaSize * 0.65;
 		ruedaSize = ( ruedaSize > maximoSize ) ? maximoSize : ruedaSize;
 		ruedaSize = ( ruedaSize < 490 ) ? 490 : ruedaSize;
 		contenidoSize = ruedaSize * 0.80;
@@ -184,17 +185,16 @@ function calculaSize() {
 		contenidoSize = ( contenidoSize > 450 ) ? 450 : contenidoSize;
 		contenidoSize = ( contenidoSize < 390 ) ? 390 : contenidoSize;
 		var minimoTop = 170 + logoSize;
-		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize } );
+		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px', 'bottom': 'initial' } );
+		$( '.dLogo' ).css( 'width', ruedaSize );
 	}
-	wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
-	$( '.dLogo' ).css( 'width', ruedaSize );
+	wheel.css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px' } );
 	$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
 	symbols.css( { 'width': iconosWidth, 'height': iconosHeight } );
 	$( '.logo' ).css( 'height', logoSize + 'px' );
 	$( 'svg' ).css( { 'width': textoRueda, 'height': textoRueda } );
 	center = ruedaSize / 2;
 	radius = ruedaSize * 0.533;
-	posiciones = Math.ceil( contenidoSize / 16 );
 }
 function acomodaIconos() {
 	if ( typeof rotacionTween != 'undefined' ) {
