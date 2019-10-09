@@ -224,17 +224,12 @@ body.movil .contactDiv h3 { margin-top: 15px; }
 .rellenoLeft { float: left; clear: left; height: 16px; line-height: 16px; background-color: var( --rojo ); }
 .rellenoRight { float: right; clear: right; height: 16px; line-height: 16px; background-color: var( --rojo ); }
 svg {
-	position: absolute;
 	z-index: 2;
 	transition: all 1.5s;
     width: 550px;
     height: 550px;
     fill: var( --blanco );
     display: none;
-    margin: 0 auto;
-    right: 0;
-    left: 0;
-    margin-top: 5%;
 }
 svg circle { mix-blend-mode: multiply; }
 .shape {
