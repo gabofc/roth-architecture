@@ -191,7 +191,7 @@ function calculaSize() {
 		textoRueda = ( textoRueda > 650 ) ? 650 : textoRueda;
 		contenidoSize = ( contenidoSize > 450 ) ? 450 : contenidoSize;
 		contenidoSize = ( contenidoSize < 390 ) ? 390 : contenidoSize;
-		var minimoTop = 170 + logoSize;
+		var minimoTop = 150 + logoSize;
 		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px', 'bottom': 'initial' } );
 		$( '.dLogo' ).css( 'width', ruedaSize );
 	}
