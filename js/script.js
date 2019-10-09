@@ -106,16 +106,18 @@ function animacionGarabato( elemento, tipo ) {
 			$( this ).fadeIn( 'fast' );
 		} );
 		setTimeout( function() {
-			$( elemento ).find( '.iconoLista' ).css( 'opacity', 0 );
-			$( elemento ).find( '.comingSoon' ).css( 'opacity', 1 );
+			if ( activeHover == elemento ) {
+				$( elemento ).find( '.iconoLista' ).css( 'opacity', 0 );
+				$( elemento ).find( '.comingSoon' ).css( 'opacity', 1 );
+			}
 		}, 1200 );
 	}
 	if ( tipo == 2 ) {
 		if ( activeHover != elemento ) {
 			quitaAnimacion( activeHover );
 		}
-		activeHover = elemento;
 	}
+	activeHover = elemento;
 }
 function quitaAnimacion( elemento ) {
 	var imgAnimada = $( elemento ).find( '.iconoLista' ).attr( 'animada' );
