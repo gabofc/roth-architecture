@@ -154,22 +154,16 @@ function calculaSize() {
 		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize } );
 		var margenInicial = Math.abs( anchoVentana - ruedaSize ) / 2;
 		var margenTexto = Math.abs( margenInicial - 12 );
-		$( 'svg' ).css( 'left', '-' + margenTexto + 'px' );
 		if ( ventanaSize > 551 && ventanaSize < 650 ) {
 			var quitarMargen = ( ventanaSize < 560 ) ? 20 : 50;
 			var margenCirculo = Math.abs( margenInicial - quitarMargen );
 			margenTexto = margenTexto - 18;
-			wheel.css( 'left', '-' + margenCirculo + 'px' );
-			$( '.dLogo' ).css( 'left', '-' + margenCirculo + 'px' );
-			$( '.contenidoCentro' ).css( 'left', '-' + margenTexto + 'px' );
 		} else if ( ventanaSize >= 650 ) {
-			wheel.css( 'left', '-' + margenInicial + 'px' );
-			$( '.dLogo' ).css( 'left', '-' + margenInicial + 'px' );
 			if ( ventanaSize > 750 ) {
 				textoRueda = ( textoRueda > 450 ) ? 450 : textoRueda;
 				var margenSVG = margenTexto - 25;
 				console.log( margenSVG );
-				$( 'svg' ).css( 'left', '-' + margenSVG + 'px' );
+				
 			}
 		}
 	} else {
@@ -189,10 +183,10 @@ function calculaSize() {
 		textoRueda = ( textoRueda > 650 ) ? 650 : textoRueda;
 		contenidoSize = ( contenidoSize > 450 ) ? 450 : contenidoSize;
 		contenidoSize = ( contenidoSize < 390 ) ? 390 : contenidoSize;
-		var minimoTop = 130 + logoSize;
-		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px', 'bottom': 'initial' } );
+		var minimoTop = 170 + logoSize;
+		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize } );
 	}
-	wheel.css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px' } );
+	wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
 	$( '.dLogo' ).css( 'width', ruedaSize );
 	$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
 	symbols.css( { 'width': iconosWidth, 'height': iconosHeight } );

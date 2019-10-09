@@ -5,8 +5,6 @@
 	}
 	$url = $http . '://' . $_SERVER[ 'HTTP_HOST' ] . $_SERVER[ 'REQUEST_URI' ];
 	$base = $http . '://' . $_SERVER[ 'HTTP_HOST' ];
-	$nombreArchivo = basename( $_SERVER[ 'PHP_SELF' ] );
-	$urlSinPage = explode( '&', $url )[0];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,10 +34,5 @@
 		<meta name="twitter:creator" content="@RothArchitecture" />
 		<link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-		<script type="text/javascript">
-			var urlActual = "<?php echo $url; ?>";
-			var archivoUsado = "<?php echo $nombreArchivo; ?>";
-			var urlSinPage = "<?php echo $urlSinPage; ?>";
-		</script>
 	</head>
 	<body>
