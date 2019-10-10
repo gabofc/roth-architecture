@@ -24,13 +24,13 @@
 		<meta property="og:description" content="Roth Architecture - AZULIK" />
 		<meta property="og:url" content="<?php echo $base ?>" />
 		<meta property="og:site_name" content="Roth Architecture" />
-		<meta property="og:image" content="https://www.indiewire.com/wp-content/uploads/2019/01/samuel-l-jackson-body-measurements-religion-horoscope-net-worth.jpg?w=1024" />
-		<meta property="og:image:secure_url" content="https://www.indiewire.com/wp-content/uploads/2019/01/samuel-l-jackson-body-measurements-religion-horoscope-net-worth.jpg?w=1024" />
+		<meta property="og:image" content="images/shared-image.jpg" />
+		<meta property="og:image:secure_url" content="images/shared-image.jpg" />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:description" content="Roth Architecture - AZULIK" />
 		<meta name="twitter:title" content="Roth Architecture - AZULIK" />
 		<meta name="twitter:site" content="@RothArchitecture" />
-		<meta name="twitter:image" content="https://www.indiewire.com/wp-content/uploads/2019/01/samuel-l-jackson-body-measurements-religion-horoscope-net-worth.jpg?w=1024" />
+		<meta name="twitter:image" content="images/shared-image.jpg" />
 		<meta name="twitter:creator" content="@RothArchitecture" />
 		<link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
 		<?php if( isset( $_GET[ 'grid' ] ) && $_GET[ 'grid' ] == 'on' ) { ?><link rel="stylesheet" href="css/grid.css?v=<?php echo time(); ?>"><?php } ?>
