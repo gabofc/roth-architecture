@@ -255,6 +255,18 @@ i, .italic { font-style: italic; font-weight: 400; }
     top: 50px;
     left: 80px;
 }
+.linkAbout {
+	position: absolute;
+	width: 100px;
+	z-index: 20;
+	margin: 0 auto;
+	right: 0;
+	left: 0;
+	text-align: center;
+	cursor: pointer;
+	display: none;
+}
+body.movil .linkAbout { font-size: 11px; }
 /*Animations*/
 .animation_symbol_container{
 	margin: 100px auto 0;

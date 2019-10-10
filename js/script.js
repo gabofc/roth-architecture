@@ -94,6 +94,9 @@ $( document ).ready( function() {
 			animacionGarabato( '#' + $( this ).attr( 'id' ), 2 );
 		}
 	} );
+	$( '.linkAbout' ).click( function() {
+		contactUs();
+	} );
 } );
 function animacionGarabato( elemento, tipo ) {
 	var imgAnimada = $( elemento ).find( '.iconoLista' ).attr( 'animada' );
@@ -165,6 +168,10 @@ function calculaSize() {
 		}
 		var minimoTop = ( ventanaSize > 700 ) ? ( 120 + logoSize ) : ( 100 + logoSize );
 		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop } );
+		$( '.linkAbout' ).css( 'margin-top', ( textoRueda * 0.9 ) + 'px' );
+		if ( ventanaSize > 780 ) {
+			$( '.linkAbout' ).css( 'margin-top', ( textoRueda * 0.95 ) + 'px' );
+		}
 	} else {
 		const maximoSize = ventanaSize * 0.7;
 		var logoSize = ventanaSize * 0.045;
@@ -187,6 +194,10 @@ function calculaSize() {
 		var minimoTop = 150 + logoSize;
 		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px', 'bottom': 'initial' } );
 		$( '.dLogo' ).css( 'width', ruedaSize );
+		$( '.linkAbout' ).css( 'margin-top', ( textoRueda * 0.85 ) + 'px' );
+		if ( ventanaSize > 880 ) {
+			$( '.linkAbout' ).css( 'margin-top', ( textoRueda * 0.9 ) + 'px' );
+		}
 	}
 	wheel.css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px' } );
 	$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
@@ -253,6 +264,7 @@ function aboutUs() {
 	$( '.contenidoCentro' ).fadeOut( 'slow', function() {
 		$( '.contenidoCentro' ).css( 'border-radius', '50%' );
 		$( 'svg#textCircle' ).fadeIn( 'slow' );
+		$( '.linkAbout' ).fadeIn( 'slow' );
 	} );
 }
 function contactUs() {
@@ -266,6 +278,7 @@ function contactUs() {
 	contenidoContact += '<div class="textarea"><textarea style="height: ' + textArea + 'px" id="message" name="message" autocomplete="off" class="obligatorio" maxlength="500"></textarea></div>';
 	contenidoContact += '<div class="botonContainer"><a class="enviaForm italic" onclick="enviar()">Send</a></div>';
 	contenidoContact += '</div>';
+	$( '.linkAbout' ).fadeOut( 'slow' );
 	if ( $( 'svg#textCircle' ).is( ':visible' ) ) {
 		$( 'svg#textCircle' ).fadeOut( 'slow', function() {
 			$( '.contenidoCentro' ).css( 'border-radius', '50%' );

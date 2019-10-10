@@ -36,6 +36,7 @@
 		<div class="contenidoCentro">
 			<img src="images/ants.svg" id="intro-image">
 		</div>
+		<a class="linkAbout">Contact Us</a>
 	</div>
 </div>
 <?php include( 'footer.php' ); ?>
