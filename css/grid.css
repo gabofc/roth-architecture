@@ -1,0 +1,16 @@
+body{
+  background-color:#ededed;
+}
+.dLogo{
+  border: 1px solid #000;
+  background-color:#FFF;
+}
+#wheel {
+  border: 1px solid #000;
+}
+svg {
+  fill: #ff9702;
+}
+.contactDiv {
+  background-color:#ff9702;
+}

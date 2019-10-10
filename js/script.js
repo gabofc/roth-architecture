@@ -101,16 +101,16 @@ function animacionGarabato( elemento, tipo ) {
 		$( elemento ).find( '.iconoLista' ).css( 'opacity', 0 );
 		$( elemento ).find( '.comingSoon' ).css( 'opacity', 1 );
 	} else {
-		$( elemento ).find( '.iconoLista' ).fadeOut( 'fast', function() {
+		$( elemento ).find( '.iconoLista' ).fadeOut( 'slow', function() {
 			$( this ).attr( 'src', imgAnimada );
-			$( this ).fadeIn( 'fast' );
+			$( this ).fadeIn( 'slow' );
 		} );
 		setTimeout( function() {
 			if ( activeHover == elemento ) {
 				$( elemento ).find( '.iconoLista' ).css( 'opacity', 0 );
-				$( elemento ).find( '.comingSoon' ).css( 'opacity', 1 );
+				$( elemento ).find( '.comingSoon' ).delay(3000).css( 'opacity', 1 );
 			}
-		}, 1200 );
+		}, 2000 );
 	}
 	if ( tipo == 2 ) {
 		if ( activeHover != elemento ) {
@@ -387,95 +387,3 @@ function rotate( el, degs ) {
 	};
 	$( el ).css( styles );
 }
-//Animations
-var azulik_cuisine = lottie.loadAnimation( {
-	wrapper: document.getElementById('azulik_cuisine'),
-	renderer: 'svg',
-	loop: true,
-	autoplay: true,
-	path: 'animations/azulik_cuisine.json'
-} );
-var azulik_hotel = lottie.loadAnimation( {
-	wrapper: document.getElementById('azulik_hotel'),
-	renderer: 'svg',
-	loop: true,
-	autoplay: true,
-	path: 'animations/azulik_hotel.json'
-} );
-var cenote = lottie.loadAnimation( {
-	wrapper: document.getElementById('cenote'),
-	renderer: 'svg',
-	loop: true,
-	autoplay: true,
-	path: 'animations/cenote.json'
-} );
-var ikraum = lottie.loadAnimation( {
-	wrapper: document.getElementById('ikraum'),
-	renderer: 'svg',
-	loop: true,
-	autoplay: true,
-	path: 'animations/ikraum.json'
-} );
-var kin_toh = lottie.loadAnimation( {
-	wrapper: document.getElementById('kin_toh'),
-	renderer: 'svg',
-	loop: true,
-	autoplay: true,
-	path: 'animations/kin_toh.json'
-} );
-var maya_spa = lottie.loadAnimation( {
-	wrapper: document.getElementById('maya_spa'),
-	renderer: 'svg',
-	loop: true,
-	autoplay: true,
-	path: 'animations/maya_spa.json'
-} );
-var roth_house = lottie.loadAnimation( {
-	wrapper: document.getElementById('roth_house'),
-	renderer: 'svg',
-	loop: true,
-	autoplay: true,
-	path: 'animations/roth_house.json'
-} );
-var sferik_uhmay = lottie.loadAnimation( {
-	wrapper: document.getElementById('sferik_uhmay'),
-	renderer: 'svg',
-	loop: true,
-	autoplay: true,
-	path: 'animations/sferik_uhmay.json'
-} );
-var sferik = lottie.loadAnimation( {
-	wrapper: document.getElementById('sferik'),
-	renderer: 'svg',
-	loop: true,
-	autoplay: true,
-	path: 'animations/sferik.json'
-} );
-var tseen_ja = lottie.loadAnimation( {
-	wrapper: document.getElementById('tseen_ja'),
-	renderer: 'svg',
-	loop: true,
-	autoplay: true,
-	path: 'animations/tseen_ja.json'
-} );
-var zak_ik = lottie.loadAnimation( {
-	wrapper: document.getElementById('zak_ik'),
-	renderer: 'svg',
-	loop: true,
-	autoplay: true,
-	path: 'animations/zak_ik.json'
-} );
-var zakik_jewelry = lottie.loadAnimation( {
-	wrapper: document.getElementById('zakik_jewelry'),
-	renderer: 'svg',
-	loop: true,
-	autoplay: true,
-	path: 'animations/zakik_jewelry.json'
-} );
-var example = lottie.loadAnimation( {
-	wrapper: document.getElementById('example'),
-	renderer: 'svg',
-	loop: true,
-	autoplay: true,
-	path: 'animations/example.json'
-} );
