@@ -306,5 +306,6 @@ body.movil .linkAbout { font-size: 11px; }
 		background-image: url( '/images/textarea-bg-dot.png' );
 	}
 }
+@media screen and ( min-height: 700px ) { body.movil .contenidoCentro img { margin-top: 10%; } }
 @media screen and ( max-height: 580px ) { body.movil .contactDiv { padding-top: 20px; } }
 @media screen and ( max-height: 560px ) { body.movil .contactDiv { padding-top: 15px; } }
