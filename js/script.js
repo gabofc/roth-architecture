@@ -53,14 +53,6 @@ $( document ).ready( function() {
 		$( 'body' ).removeClass( 'horizontal' );
 	}
 	calculaSize();
-	setTimeout( function() {
-		acomodaIconos();
-		iniciaAnimacion();
-		iniciaRueda();
-	}, 500 );
-	setTimeout( function() {
-		aboutUs();
-	}, 3200 );
 	$( 'a' ).click( function( e ) {
 		e.preventDefault();
 		e.stopPropagation();
@@ -97,6 +89,16 @@ $( document ).ready( function() {
 	$( '.linkAbout' ).click( function() {
 		contactUs();
 	} );
+} );
+$( window ).on( 'load', function() {
+	setTimeout( function() {
+		acomodaIconos();
+		iniciaAnimacion();
+		iniciaRueda();
+	}, 500 );
+	setTimeout( function() {
+		aboutUs();
+	}, 3200 );
 } );
 function animacionGarabato( elemento, tipo ) {
 	var imgAnimada = $( elemento ).find( '.iconoLista' ).attr( 'animada' );
@@ -199,6 +201,8 @@ function calculaSize() {
 			$( '.linkAbout' ).css( 'margin-top', ( textoRueda * 0.9 ) + 'px' );
 		}
 	}
+	var hormigaSize = contenidoSize * 0.5;
+	$( '#intro-image' ).css( 'width', hormigaSize + 'px' );
 	wheel.css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px' } );
 	$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
 	$( 'svg' ).css( 'width', textoRueda );
@@ -229,10 +233,8 @@ function acomodaIconos() {
 	} );
 }
 function iniciaAnimacion() {
-	var hormigaSize = contenidoSize * 0.5;
 	tl.from( $( '.logo' ), 0.5, { scale: 1.5, autoAlpha: 0, opacity: 0 }, '-=0.5' );
 	tl.from( symbols, 0.7, { scale: .5, autoAlpha: 0 }, '+=0.5' );
-	tl.from( $( '#intro-image' ), 1, { width: hormigaSize } );
 }
 function ajustaElementos() {
 	var nuevaRotacion = 360 - rotacionActual;
@@ -270,12 +272,12 @@ function aboutUs() {
 function contactUs() {
 	var contenidoContact = '<div class="contactDiv" id="contacto">';
 	contenidoContact += '<h3><span class="bold">Dreamers</span>, do not hesitate to contact us</h3>';
-	contenidoContact += '<label for="name" class="italic">Name:</label>';
-	contenidoContact += '<div class="input"><input type="text" id="name" name="name" autocomplete="off" class="obligatorio"></div>';
+	contenidoContact += '<label for="nombre" class="italic">Name:</label>';
+	contenidoContact += '<div class="input"><input type="text" id="nombre" name="name" autocomplete="off" class="obligatorio"></div>';
 	contenidoContact += '<label for="email" class="italic">Email:</label>';
 	contenidoContact += '<div class="input"><input type="email" id="email" name="email" autocomplete="off" class="obligatorio email"></div>';
-	contenidoContact += '<label for="message" class="italic">Message:</label>';
-	contenidoContact += '<div class="textarea"><textarea style="height: ' + textArea + 'px" id="message" name="message" autocomplete="off" class="obligatorio" maxlength="500"></textarea></div>';
+	contenidoContact += '<label for="mensaje" class="italic">Message:</label>';
+	contenidoContact += '<div class="textarea"><textarea style="height: ' + textArea + 'px" id="mensaje" name="message" autocomplete="off" class="obligatorio" maxlength="500"></textarea></div>';
 	contenidoContact += '<div class="botonContainer"><a class="enviaForm italic" onclick="enviar()">Send</a></div>';
 	contenidoContact += '</div>';
 	$( '.linkAbout' ).fadeOut( 'slow' );
