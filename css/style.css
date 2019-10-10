@@ -265,6 +265,7 @@ i, .italic { font-style: italic; font-weight: 400; }
 	text-align: center;
 	cursor: pointer;
 	display: none;
+	font-size: 13px;
 }
 body.movil .linkAbout { font-size: 11px; }
 /*Animations*/
