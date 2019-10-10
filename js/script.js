@@ -53,14 +53,6 @@ $( document ).ready( function() {
 		$( 'body' ).removeClass( 'horizontal' );
 	}
 	calculaSize();
-	setTimeout( function() {
-		acomodaIconos();
-		iniciaAnimacion();
-		iniciaRueda();
-	}, 500 );
-	setTimeout( function() {
-		aboutUs();
-	}, 3200 );
 	$( 'a' ).click( function( e ) {
 		e.preventDefault();
 		e.stopPropagation();
@@ -97,6 +89,16 @@ $( document ).ready( function() {
 	$( '.linkAbout' ).click( function() {
 		contactUs();
 	} );
+} );
+$( window ).on( 'load', function() {
+	setTimeout( function() {
+		acomodaIconos();
+		iniciaAnimacion();
+		iniciaRueda();
+	}, 500 );
+	setTimeout( function() {
+		aboutUs();
+	}, 3200 );
 } );
 function animacionGarabato( elemento, tipo ) {
 	var imgAnimada = $( elemento ).find( '.iconoLista' ).attr( 'animada' );
@@ -199,6 +201,8 @@ function calculaSize() {
 			$( '.linkAbout' ).css( 'margin-top', ( textoRueda * 0.9 ) + 'px' );
 		}
 	}
+	var hormigaSize = contenidoSize * 0.5;
+	$( '#intro-image' ).css( 'width', hormigaSize + 'px' );
 	wheel.css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px' } );
 	$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
 	$( 'svg' ).css( 'width', textoRueda );
@@ -229,10 +233,8 @@ function acomodaIconos() {
 	} );
 }
 function iniciaAnimacion() {
-	var hormigaSize = contenidoSize * 0.5;
 	tl.from( $( '.logo' ), 0.5, { scale: 1.5, autoAlpha: 0, opacity: 0 }, '-=0.5' );
 	tl.from( symbols, 0.7, { scale: .5, autoAlpha: 0 }, '+=0.5' );
-	tl.from( $( '#intro-image' ), 1, { width: hormigaSize } );
 }
 function ajustaElementos() {
 	var nuevaRotacion = 360 - rotacionActual;

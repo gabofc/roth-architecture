@@ -113,12 +113,11 @@ body.movil .contenidoPrincipal { max-width: 100%; }
 body.movil .contenidoCentro { max-width: 98%; }
 .contenidoCentro img {
 	position: relative;
-	width: 1px;
+	width: 215px;
 	height: auto;
 	top: 50%;
 	transform: translateY( -55% );
 	box-sizing: border-box;
-	transition: all 1.5s;
 }
 .contenidoCentro p.centrado {
 	width: 100%;
