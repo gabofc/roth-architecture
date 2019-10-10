@@ -110,7 +110,7 @@ function animacionGarabato( elemento, tipo ) {
 				$( elemento ).find( '.iconoLista' ).css( 'opacity', 0 );
 				$( elemento ).find( '.comingSoon' ).delay(3000).css( 'opacity', 1 );
 			}
-		}, 2000 );
+		}, 2500 );
 	}
 	if ( tipo == 2 ) {
 		if ( activeHover != elemento ) {
