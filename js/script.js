@@ -271,11 +271,11 @@ function contactUs() {
 	var contenidoContact = '<div class="contactDiv" id="contacto">';
 	contenidoContact += '<h3><span class="bold">Dreamers</span>, do not hesitate to contact us</h3>';
 	contenidoContact += '<label for="name" class="italic">Name:</label>';
-	contenidoContact += '<div class="input"><input type="text" id="name" name="name" autocomplete="off" class="obligatorio"></div>';
+	contenidoContact += '<div class="input"><input type="text" id="nombre" name="name" autocomplete="off" class="obligatorio"></div>';
 	contenidoContact += '<label for="email" class="italic">Email:</label>';
 	contenidoContact += '<div class="input"><input type="email" id="email" name="email" autocomplete="off" class="obligatorio email"></div>';
 	contenidoContact += '<label for="message" class="italic">Message:</label>';
-	contenidoContact += '<div class="textarea"><textarea style="height: ' + textArea + 'px" id="message" name="message" autocomplete="off" class="obligatorio" maxlength="500"></textarea></div>';
+	contenidoContact += '<div class="textarea"><textarea style="height: ' + textArea + 'px" id="mensaje" name="message" autocomplete="off" class="obligatorio" maxlength="500"></textarea></div>';
 	contenidoContact += '<div class="botonContainer"><a class="enviaForm italic" onclick="enviar()">Send</a></div>';
 	contenidoContact += '</div>';
 	$( '.linkAbout' ).fadeOut( 'slow' );
