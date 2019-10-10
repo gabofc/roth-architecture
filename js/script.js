@@ -147,20 +147,12 @@ function calculaSize() {
 		if ( ventanaSize < 550 ) {
 			contenidoSize = ruedaSize * 0.83;
 			textoRueda = ruedaSize * 0.98;
-			$( '.contenidoCentro' ).css( 'margin-top', '21%' );
-			$( 'svg' ).css( 'margin-top', '12%' );
-		} else if ( ventanaSize < 650 ) {
-			$( '.contenidoCentro' ).css( 'margin-top', '20%' );
-			$( 'svg' ).css( 'margin-top', '8%' );
-		} else if ( ventanaSize < 700 ) {
-			$( '.contenidoCentro' ).css( 'margin-top', '18%' );
-			$( 'svg' ).css( 'margin-top', '2%' );
 		}
 		textArea = contenidoSize * 0.25;
 		textoRueda = ( textoRueda > 450 ) ? 450 : textoRueda;
 		contenidoSize = ( contenidoSize > 320 ) ? 320 : contenidoSize;
+		textoRueda = ( ruedaSize < textoRueda ) ? ruedaSize : textoRueda;
 		wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
-		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize } );
 		var minimoTop = 100 + logoSize;
 		$( '.dLogo' ).css( 'width', '100%' );
 		if ( ruedaSize > anchoVentana ) {
@@ -171,12 +163,8 @@ function calculaSize() {
 			var margenLeft = ( textoRueda - anchoVentana ) / 2;
 			$( 'svg' ).css( 'left', '-' + margenLeft + 'px' );
 		}
-		if ( ventanaSize > 700 ) {
-			var minimoTop = 120 + logoSize;
-			$( '.contenidoCentro' ).css( 'margin-top', '18%' );
-			$( 'svg' ).css( 'margin-top', '3%' );
-		}
-		$( 'svg' ).css( { 'width': textoRueda, 'height': textoRueda } );
+		var minimoTop = ( ventanaSize > 700 ) ? ( 120 + logoSize ) : ( 100 + logoSize );
+		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop } );
 	} else {
 		const maximoSize = ventanaSize * 0.7;
 		var logoSize = ventanaSize * 0.045;
@@ -199,10 +187,10 @@ function calculaSize() {
 		var minimoTop = 150 + logoSize;
 		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px', 'bottom': 'initial' } );
 		$( '.dLogo' ).css( 'width', ruedaSize );
-		$( 'svg' ).css( 'width', textoRueda );
 	}
 	wheel.css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px' } );
 	$( '.contenidoCentro' ).css( { 'width': contenidoSize, 'height': contenidoSize } );
+	$( 'svg' ).css( 'width', textoRueda );
 	symbols.css( { 'width': iconosWidth, 'height': iconosHeight } );
 	$( '.logo' ).css( 'height', logoSize + 'px' );
 	center = ruedaSize / 2;

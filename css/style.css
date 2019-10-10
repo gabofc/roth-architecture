@@ -244,8 +244,8 @@ svg circle { mix-blend-mode: multiply; }
     font-size: 2.15px;
     line-height: 1.6;
     padding: 23% 0;
-	hyphens: none;
 }
+body.movil .text { padding: 23% 0; }
 body.movil .text { font-size: 2.35px; }
 .bold, b { font-weight: 700; }
 i, .italic { font-style: italic; font-weight: 400; }
