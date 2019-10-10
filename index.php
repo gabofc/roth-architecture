@@ -1,7 +1,7 @@
 <?php include( 'header.php' ); ?>
 <?php include( 'lib/icons.php' ); ?>
 <div class="mainContainer">
-	<div class="dLogo"><img src="images/logo.png" class="logo agrandado" onclick="abrePagina()"></div>
+	<div class="dLogo"><img src="images/roth.svg" class="logo agrandado" onclick="abrePagina()"></div>
 	<div id="wheel">
 		<?php
 			$count = 1;
@@ -34,7 +34,7 @@
 			</foreignObject>
 		</svg>
 		<div class="contenidoCentro">
-			<img src="images/ants.png" id="intro-image">
+			<img src="images/ants.svg" id="intro-image">
 		</div>
 	</div>
 </div>
