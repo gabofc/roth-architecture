@@ -159,6 +159,8 @@ function calculaSize() {
 		textArea = contenidoSize * 0.25;
 		textoRueda = ( textoRueda > 450 ) ? 450 : textoRueda;
 		contenidoSize = ( contenidoSize > 320 ) ? 320 : contenidoSize;
+		wheel.css( { 'width': ruedaSize, 'height': ruedaSize } );
+		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize } );
 		var minimoTop = 100 + logoSize;
 		$( '.dLogo' ).css( 'width', '100%' );
 		if ( ruedaSize > anchoVentana ) {
