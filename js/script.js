@@ -52,6 +52,7 @@ $( document ).ready( function() {
 		$( 'body' ).addClass( 'pc' );
 		$( 'body' ).removeClass( 'horizontal' );
 	}
+	$( '#intro-image' ).addClass( 'mostradaImg' );
 	calculaSize();
 	$( 'a' ).click( function( e ) {
 		e.preventDefault();

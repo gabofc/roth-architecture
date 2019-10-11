@@ -16,7 +16,7 @@
 	$mail->From = 'no-reply@' . $dominio;
 	$mail->FromName = 'ROTH\'s WEB';
 	$mail->Subject = $asunto;
-	$mail->AddAddress( 'contacto@roth-architecture.com', 'Contacto' );
+	$mail->AddAddress( 'contacto@roth-architecture.com', 'Contacto Azulik' );
 	$mail->Body = $body;
 	$mail->IsHTML( true );
 	$mail->CharSet = 'UTF-8';
