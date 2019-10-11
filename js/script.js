@@ -108,7 +108,7 @@ function animacionGarabato( elemento, tipo ) {
 	} else {
 		$( elemento ).find( '.iconoLista' ).fadeOut( 'fast', function() {
 			$( this ).attr( 'src', imgAnimada );
-			$( this ).fadeIn( 'slow' );
+			$( this ).fadeIn( 'fast' );
 		} );
 		setTimeout( function() {
 			if ( activeHover == elemento ) {
