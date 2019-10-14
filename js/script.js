@@ -86,6 +86,9 @@ $( document ).ready( function() {
 		if ( activeHover != $( this ).attr( 'id' ) ) {
 			animacionGarabato( '#' + $( this ).attr( 'id' ), 2 );
 		}
+		setTimeout( function() {
+			quitaAnimacion( activeHover );
+		}, 6000 );
 	} );
 	$( '.linkAbout' ).click( function() {
 		contactUs();
