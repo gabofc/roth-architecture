@@ -243,7 +243,7 @@ svg circle { mix-blend-mode: multiply; }
     color: var( --negro );
     hyphens: auto;
     font-size: 2.15px;
-    line-height: 1.6;
+    line-height: 3px;
     padding: 23% 0;
 }
 body.movil .text { padding: 23% 0; }
