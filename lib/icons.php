@@ -11,6 +11,6 @@
 		array( 'Zak Ik Jewelry', '09_zak_ik_jewelry.png', '09_zak_ik_jewelry.gif', '#' ),
 		array( 'Azulik Cuisine', '10_azulik_cuisine.png', '10_azulik_cuisine.gif', '#' ),
 		array( 'Azulik Hotel', '11_azulik_hotel.png', '11_azulik_hotel.gif', '#' ),
-		array( 'Maya Spa', '12_maya_spa.svg', '12_maya_spa.gif', '#' ),
+		array( 'Maya Spa', '12_maya_spa.png', '12_maya_spa.gif', '#' ),
 	);
 ?>
