@@ -174,7 +174,7 @@ function calculaSize() {
 		}
 		var minimoTop = ( ventanaSize > 700 ) ? ( 120 + logoSize ) : ( 100 + logoSize );
 		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop } );
-		$( '.linkAbout' ).css( 'margin-top', ( textoRueda * 0.9 ) + 'px' );
+		$( '.linkAbout' ).css( 'margin-top', ( textoRueda * 0.85 ) + 'px' );
 		if ( ventanaSize > 780 ) {
 			$( '.linkAbout' ).css( 'margin-top', ( textoRueda * 0.95 ) + 'px' );
 		}
@@ -187,12 +187,12 @@ function calculaSize() {
 		ruedaSize = ventanaSize * 0.65;
 		ruedaSize = ( ruedaSize > maximoSize ) ? maximoSize : ruedaSize;
 		ruedaSize = ( ruedaSize < 490 ) ? 490 : ruedaSize;
-		contenidoSize = ruedaSize * 0.80;
+		contenidoSize = ruedaSize * 0.60;
 		if ( ventanaSize < 980 ) {
 			contenidoSize = ( contenidoSize > 430 ) ? 430 : contenidoSize;
 		}
 		textArea = contenidoSize * 0.25;
-		textoRueda = contenidoSize + 120;
+		textoRueda = contenidoSize + 20;
 		textoRueda = ( ruedaSize < textoRueda ) ? ruedaSize : textoRueda;
 		if ( ventanaSize < 980 ) {
 			textoRueda = ( textoRueda > 650 ) ? 650 : textoRueda;
@@ -200,9 +200,9 @@ function calculaSize() {
 		var minimoTop = 150 + logoSize;
 		$( '.contenidoPrincipal' ).css( { 'width': ruedaSize, 'height': ruedaSize, 'top': minimoTop + 'px', 'bottom': 'initial' } );
 		$( '.dLogo' ).css( 'width', ruedaSize );
-		$( '.linkAbout' ).css( 'margin-top', ( textoRueda * 0.85 ) + 'px' );
+		$( '.linkAbout' ).css( 'margin-top', ( textoRueda * 1.1 ) + 'px' );
 		if ( ventanaSize > 880 ) {
-			$( '.linkAbout' ).css( 'margin-top', ( textoRueda * 0.9 ) + 'px' );
+			$( '.linkAbout' ).css( 'margin-top', ( textoRueda + 60 ) + 'px' );
 		}
 	}
 	var hormigaSize = contenidoSize * 0.5;

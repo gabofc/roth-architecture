@@ -241,7 +241,7 @@ svg circle { mix-blend-mode: multiply; }
     height: 100%;
     text-align: justify;
     color: var( --negro );
-    hyphens: auto;
+    hyphens: none;
     font-size: 2.15px;
     line-height: 3px;
     padding: 23% 0;
@@ -266,7 +266,7 @@ i, .italic { font-style: italic; font-weight: 400; }
 	text-align: center;
 	cursor: pointer;
 	display: none;
-	font-size: 13px;
+	font-size: 11px;
 }
 body.movil .linkAbout { font-size: 11px; }
 /*Animations*/
@@ -306,6 +306,9 @@ body.movil .linkAbout { font-size: 11px; }
 		padding-left: 25px;
 		padding-right: 25px;
 		background-image: url( '/images/textarea-bg-dot.png' );
+	}
+	.comingSoon {
+		margin-top: -35%;
 	}
 }
 @media screen and ( min-height: 700px ) { body.movil .contenidoCentro img { margin-top: 10%; } }
