@@ -9,7 +9,7 @@
 			$countPreload = 0;
 			foreach( $iconsLinks as $icons ) {
 				$imgAnimada = ( $icons[2] != '' ) ? $path . $icons[2] : '';
-				echo ( $icons[2] != '' ) ? 'preloadImages['.$countPreload.'] = "' . $path . $icons[1] . '";' : '';
+				echo ( $icons[2] != '' ) ? 'preloadImages['.$countPreload.'] = "' . $path . $icons[2] . '";' : '';
 				$countPreload ++;
 			}
 		?>
