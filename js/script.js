@@ -303,9 +303,12 @@ function contactUs() {
 }
 function enviar() {
 	if ( validaTodo( 'contacto' ) ) {
-		var parametros = { 'name': $( '#nombre' ).val(), 'email': $( '#email' ).val(), 'message': $( '#mensaje' ).val() };
-		ajaxRequest( parametros, 'lib/send.php', respuestaEnviar );
+		grecaptcha.execute();
 	}
+}
+function onSubmit( token ) {
+	var parametros = { 'name': $( '#nombre' ).val(), 'email': $( '#email' ).val(), 'message': $( '#mensaje' ).val() };
+	ajaxRequest( parametros, 'lib/send.php', respuestaEnviar );
 }
 function respuestaEnviar( respuesta ) {
 	cargando( false );

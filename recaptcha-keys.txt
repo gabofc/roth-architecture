@@ -1,0 +1,8 @@
+Recaptcha Keys
+
+Clave de Sitio
+6LfaHr8UAAAAAEcyBt1PQgWnAjAToorilpe3IiCQ
+6LcqH78UAAAAADigT_0ogxZb7-fGLjQXZKeP9zbX //Invisible
+Clave Secreta
+6LfaHr8UAAAAAExMDOXBOnryUEFpgY8t5sCyHBrI
+6LcqH78UAAAAAKyGMViwoiV9WBKQs2U7RTAQkMDd //Invisible
