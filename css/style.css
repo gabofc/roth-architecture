@@ -282,6 +282,7 @@ body.movil .linkAbout { font-size: 11px; }
 		width: 200px !important;
 		height: 200px !important;
 }
+.grecaptcha-badge { opacity:0;}
 @media screen and ( max-width : 865px ) { .contactDiv a { padding-right: 15%; } }
 @media screen and ( max-width : 767px ) {
 	body.movil .link-icon, body.movil .link-icon a { height: 70px; }
