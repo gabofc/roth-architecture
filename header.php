@@ -50,5 +50,13 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122073720-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-122073720-1');
+		</script>
 	</head>
 	<body>
