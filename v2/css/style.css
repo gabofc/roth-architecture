@@ -271,22 +271,27 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	max-width: 100%;
 	margin: 100px auto;
 }
-.awardItem .contenido { display: flex; margin-bottom: 30px; }
+.awardItem .contenido { display: flex; margin-bottom: 50px; }
 .awardItem .contenido .titulos { width: 350px; max-width: 40%; box-sizing: border-box; margin-right: 50px; }
-.awardItem .contenido .titulos h3 { font-size: 40px; text-transform: uppercase; }
+.awardItem .contenido .titulos h3 { font-size: 40px; text-transform: uppercase; line-height: 1.25; letter-spacing: -0.09px; }
 .awardItem .contenido .titulos h4 {
 	font-family: 'Roboto Mono', monospace;
-	font-size: 16px;
+	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: 300;
+	line-height: normal;
+	letter-spacing: 1.32px;
+	margin-top: 11px;
 }
 .awardItem .contenido .descripcion { width: 700px; max-width: 60%; box-sizing: border-box; }
 .awardItem .contenido .descripcion b { display: block; font-size: 16px; margin: 8px 0; }
-.awardItem .contenido .descripcion span { display: block; width: 30px; height: 2px; background-color: var( --negro ); margin: 20px 0; }
+.awardItem .contenido .descripcion span { display: block; width: 25px; height: 2px; background-color: var( --negro ); margin: 20px 0; }
 .awardItem .contenido .descripcion p {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 16px;
 	font-weight: 300;
+	line-height: 1.75;
+	letter-spacing: 1.4px;
 }
 .awardItem .awardImg {
 	display: block;
@@ -305,7 +310,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 }
 .awardItem .awardImg a {
 	position: absolute;
-	font-size: 22px;
+	font-size: 25px;
 	line-height: 1.55;
 	letter-spacing: -0.05px;
 	top: 30%;
@@ -316,6 +321,8 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	color: var( --blanco );
 	transition: all 0.7s;
 	opacity: 0;
+	line-height: 1.36;
+	letter-spacing: -0.06px;
 }
 .awardItem .awardImg .linea {
 	position: absolute;
