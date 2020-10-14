@@ -9,5 +9,4 @@
 	}
 ?>
 </ul>
-<a href="#" class="botonAgenda noHref">Schedule a call</a>
 <?php include 'footer.php'; ?>
