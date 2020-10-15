@@ -35,7 +35,7 @@
 						</div>
 					</div>
 					<div class="tercerColumna">
-						<p>"...an architecture that promotes sustainable ways of life that allow nature to breathe" -Roth</p>
+						<p>“…an architecture that considers sustainable ways of life that allow nature to breathe."</p>
 						<div class="tCenter"><img src="images/footer.png"></div>
 					</div>
 				</div>
