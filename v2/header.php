@@ -1,8 +1,8 @@
 <?php
 	$http = ( isset( $_SERVER[ 'HTTPS' ] ) ) ? 'https' : 'http';
 	$url = $http . '://' . $_SERVER[ 'HTTP_HOST' ] . $_SERVER[ 'REQUEST_URI' ];
-	$base = $http . '://' . $_SERVER[ 'HTTP_HOST' ];
-	//$base = $http . '://' . $_SERVER[ 'HTTP_HOST' ] . '/v2/';
+	//$base = $http . '://' . $_SERVER[ 'HTTP_HOST' ];
+	$base = $http . '://' . $_SERVER[ 'HTTP_HOST' ] . '/v2/';
 	$nombreArchivo = basename( $_SERVER[ 'PHP_SELF' ] );
 	$bodyClass = 'general';
 	switch ( $nombreArchivo ) {
