@@ -28,7 +28,7 @@ header .menu {
 	display: flex;
 	list-style: none;
 	font-size: 16px;
-	width: 480px;
+	width: 555px;
 	float: right;
 	margin: 39px 0;
 }
@@ -629,13 +629,7 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.imgContact { width: 58%; }
 	footer .footerContent .tercerColumna { margin-left: 180px; }
 }
-@media screen and ( max-width: 1100px ) {
-	.pressItem .pressImg { margin-right: 25px; }
-	footer .footerContent .primerColumna,
-	footer .footerContent .segundaColumna,
-	footer .footerContent .tercerColumna { margin-left: 80px; }
-}
-@media screen and ( max-width: 985px ) {
+@media screen and ( max-width: 1165px ) {
 	header { text-align: center; }
 	.home header:hover { background-color: transparent; }
 	header .menu {
@@ -660,6 +654,14 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	header .menu li a { font-size: 24px; }
 	.botonAgenda { right: 0; left: 0; margin: 0 auto; }
 	.bMobileCierra, .bMobile { display: block; }
+}
+@media screen and ( max-width: 1100px ) {
+	.pressItem .pressImg { margin-right: 25px; }
+	footer .footerContent .primerColumna,
+	footer .footerContent .segundaColumna,
+	footer .footerContent .tercerColumna { margin-left: 80px; }
+}
+@media screen and ( max-width: 985px ) {
 	.imgContact { display: none; }
 	.scheduleBoton { color: var( --negro ); border-bottom: 1px solid var( --negro ); }
 	.textContent.contacto {
