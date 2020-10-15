@@ -251,7 +251,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	margin-top: -20px;
 }
 .scrollBarPosition {
-	position: absolute;
+	position: fixed;
 	height: 500px;
 	width: 3px;
 	border-left: 1px solid var( --negro );
@@ -263,6 +263,8 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	height: 130px;
 	width: 2px;
 	background-color: var( --negro );
+	position: absolute;
+	top: 0;
 }
 .aboutItem { margin: 100px 0; display: flex; }
 .aboutItem.vertical { align-items: center; justify-content: center; }

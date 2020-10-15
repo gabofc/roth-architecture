@@ -46,6 +46,13 @@ $( document ).ready( function() {
 			pager: false,
 			mode: 'fade'
 		} );
+	} else if ( archivoUsado == 'about.php' ) {
+		$( window ).scroll( function () {
+			var posicion = $( this ).scrollTop();
+			var alturaTotal = $( document ).height();
+			var porcentajeActual = ( posicion * 100 ) / alturaTotal;
+			$( '.scrollBarPosition span' ).css( 'top', porcentajeActual + '%' );
+		} );
 	}
 	$( '#busquedaInput' ).keyup( function() {
 		if ( $( this ).val() != '' ) {
