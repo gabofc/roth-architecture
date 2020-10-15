@@ -6,7 +6,7 @@
 				<h1 class="scrollAnimation">Press</h1>
 				<h2 class="scrollAnimation">Studio Mentions</h2>
 			</div>
-			<div class="busquedaDiv scrollAnimation">
+			<div class="busquedaDiv">
 				<i class="fas fa-search"></i>
 				<input type="text" id="busquedaInput">
 			</div>

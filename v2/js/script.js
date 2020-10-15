@@ -78,10 +78,11 @@ function respuestaEnviar( respuesta ) {
 function buscadorGeneralSobreHtml( busca ) {
 	console.log( 'Busqueda de ' + busca );
 	if ( busca != '' ) {
-		console.log( 'no vacio' );
-		$.each( $( '.awardItem' ), function( indiceTR, datoTR ) {
+		var destruye = false;
+		$.each( $( '.pressItem' ), function( indiceTR, datoTR ) {
+			var elementoThis = $( this );
 			var oculta = true;
-			$.each( $( this ).find( 'div.contenido' ), function( indice, dato ) {
+			$.each( $( this ).find( 'span, h3, p' ), function( indice, dato ) {
 				var query = dato.innerHTML;
 				query = query.toUpperCase();
 				if ( query.indexOf( busca.toUpperCase() ) != -1 ) {
@@ -89,16 +90,35 @@ function buscadorGeneralSobreHtml( busca ) {
 				}
 			} ) ;
 			if ( oculta ) {
-				$( this ).hide();
+				elementoThis.hide();
 			} else {
-				$( this ).show();
+				elementoThis.show();
+				destruye = true;
 			}
 		} );
+		if ( destruye ) {
+			console.log( 'destruyendo' )
+			ScrollReveal().destroy();
+		}
 	} else {
 		console.log( 'vacio reseteando' );
 		reseteaBusqueda( elemento );
 	}
 }
 function reseteaBusqueda( elemento ) {
-	$( '#' + elemento + ' tr' ).show();
+	$( '.pressItem' ).show();
+	ScrollReveal().reveal(
+		'.scrollAnimation',
+		{
+			delay: 200,
+			distance: '20%',
+			origin: 'bottom',
+			opacity: 0,
+			reset: true,
+			useDelay: 'always',
+			viewFactor: 0.1,
+			interval: 200,
+			scale: 1.02
+		}
+	);
 }

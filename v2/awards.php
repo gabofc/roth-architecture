@@ -3,7 +3,7 @@
 	<div class="textContent">
 		<h1>Awards</h1>
 		<h2>Prices & Participation</h2>
-		<div class="awardItem ">
+		<div class="awardItem">
 			<div class="contenido">
 				<div class="titulos">
 					<h3 class="scrollAnimation">IDEA TOPS AWARDS 2019</h3>
