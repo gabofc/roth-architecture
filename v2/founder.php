@@ -11,6 +11,6 @@
 			<p class="scrollAnimation">This effort converges with the urge to explore, through art, the conceptualization of the human essence and our connection with the planet.</p>
 		</div>
 	</div>
-	<img src="images/founder/founder-2.jpg" class="founderImgTmp">
+	<img src="images/founder/founder-02.jpg" class="founderImgTmp">
 </div>
 <?php include 'footer.php'; ?>
