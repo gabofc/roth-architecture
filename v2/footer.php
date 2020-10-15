@@ -8,8 +8,8 @@
 						<h1>Projects</h1>
 						<span class="linea"></span>
 						<ul class="menuFooter italico">
-							<li><a href="https://www.azulik.com" target="_blank">Azulik Tulum</a></li>
-							<li><a href="https://www.azulik.com/uh-may" target="_blank">Azulik Uh May</a></li>
+							<li><a href="https://www.azulik.com" target="_blank">AZULIK Tulum</a></li>
+							<li><a href="https://www.azulik.com/uh-may" target="_blank">AZULIK Uh May</a></li>
 							<li><a href="https://www.azulik.com/gastronomy/kin-toh" target="_blank">Kin Toh by AZULIK</a></li>
 							<li><a href="https://www.azulik.com/gastronomy/tseen-ja" target="_blank">Tseen Ja by AZULIK</a></li>
 							<li><a href="https://www.azulik.com/fashion/zak-ik" target="_blank">ZAK IK by AZULIK</a></li>
@@ -35,7 +35,7 @@
 						</div>
 					</div>
 					<div class="tercerColumna">
-						<p>“…An architecture that considers sustainable forms of living that allow nature to breathe” -Roth</p>
+						<p>"...an architecture that promotes sustainable ways of life that allow nature to breathe" -Roth</p>
 						<div class="tCenter"><img src="images/footer.png"></div>
 					</div>
 				</div>
