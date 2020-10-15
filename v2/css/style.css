@@ -481,7 +481,7 @@ body.general footer { width: 100%; margin-top: 150px; height: 1px; }
 	.awardItem .contenido .titulos, .awardItem .contenido .descripcion { width: 100%; max-width: initial; }
 }
 @media screen and ( max-width: 610px ) {
-	.busquedaDiv { display: none; }
+	.busquedaDiv { float: none; max-width: 100%; width: 250px; margin: 0 auto; }
 	.titulos { float: none; width: 100%; text-align: center; }
 	.pressItem .pressContent { margin-top: 20px; }
 	.contactoDiv .mitad { display: block; }
