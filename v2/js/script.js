@@ -79,7 +79,7 @@ $( document ).ready( function() {
 } );
 function enviar() {
 	if ( validaTodo( 'contactoForm' ) ) {
-		var parametros = { 'nombre': $( '#nombre' ).val(), 'email': $( '#email' ).val(), 'telefono': $( '#telefono' ).val(), 'mensaje': $( '#mensaje' ).val() };
+		var parametros = { 'name': $( '#name' ).val(), 'email': $( '#email' ).val(), 'phone': $( '#phone' ).val(), 'company': $( '#company' ).val(), 'message': $( '#message' ).val() };
 		ajaxRequest( 'POST', parametros, 'contact-send', respuestaEnviar );
 	}
 }
@@ -152,6 +152,10 @@ function agendaCita( paso ) {
 		}
 	} else {
 		console.log( 'finalizando a paso 2' );
+		if ( validaTodo( 'agendaForm' ) ) {
+			var parametros = { 'date': $( '#fechaElegida' ).val(), 'time': $( '#horaElegida' ).val(), 'name': $( '#nameAgenda' ).val(), 'email': $( '#emailAgenda' ).val(), 'phone': $( '#phoneAgenda' ).val(), 'company': $( '#companyAgenda' ).val(), 'message': $( '#messageAgenda' ).val() };
+			ajaxRequest( 'POST', parametros, 'contact-send', respuestaAgenda );
+		}
 	}
 }
 function regresaFecha() {
@@ -162,4 +166,18 @@ function regresaFecha() {
 		$( '#fechaElegida' ).val( '' );
 		$( '.horaElige' ).removeClass( 'marcada' );
 	} );
+}
+function respuestaAgenda( respuesta ) {
+	cargando( false );
+	datos = JSON.parse( respuesta );
+	if ( datos.status == 'Success' ) {
+		var titulo = ( idiomaActual == 'ES' ) ? 'Éxito' : 'Success';
+		var mensaje = ( idiomaActual == 'ES' ) ? 'Agendado con exito, en breve te contactaremos' : 'Successfully scheduled, we will contact you shortly';
+		alerta( titulo, mensaje, 'success' )
+		popup( 'agendaPopup', false );
+		vacia( 'agendaForm' );
+		regresaFecha();
+	} else {
+		alerta( 'Error', datos.mensaje, 'error' )
+	}
 }
