@@ -403,6 +403,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	top: 0;
 	right: 0;
 	margin-top: -75px;
+	width: 50%;
 }
 .founderImgTmp {
 	position: absolute;
