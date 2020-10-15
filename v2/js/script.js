@@ -51,9 +51,20 @@ $( document ).ready( function() {
 			var posicion = $( this ).scrollTop();
 			var alturaTotal = $( document ).height();
 			var porcentajeActual = ( posicion * 100 ) / alturaTotal;
-			$( '.scrollBarPosition span' ).css( 'top', porcentajeActual + '%' );
-			/*var alturaTope = $( document ).height() - $( document ).height();
-			if ( $())*/
+			$( '.scrollBarPosition span' ).css( 'height', porcentajeActual + '%' );
+			var alturaTope = 96 + $( 'main' ).height() - $( 'footer' ).height();
+			var topInicial = $( '.scrollBarPosition' ).css( 'top' );
+			var topNuevo = alturaTope + $( '.scrollBarPosition' ).height();
+			console.log( 'topInicial ' + topInicial )
+			console.log( alturaTope + ' - ' + $( '.scrollBarPosition' ).css( 'height' ) );
+			console.log( 'topNuevo ' + topNuevo )
+			if ( posicion >= alturaTope ) {
+				$( '.scrollBarPosition' ).css( 'position', 'absolute' );
+				$( '.scrollBarPosition' ).css( 'top', ( alturaTope + 280 ) + 'px' );
+			} else {
+				$( '.scrollBarPosition' ).css( 'position', 'fixed' );
+				$( '.scrollBarPosition' ).css( 'top', '280px' );
+			}
 		} );
 	}
 	$( '#busquedaInput' ).keyup( function() {

@@ -260,7 +260,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 }
 .scrollBarPosition span {
 	display: block;
-	height: 130px;
+	height: 2px;
 	width: 2px;
 	background-color: var( --negro );
 	position: absolute;
