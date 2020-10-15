@@ -14,8 +14,8 @@
 			<div class="aboutItem">
 				<div class="aboutContent">
 					<h3 class="scrollAnimation">We build to unite.<span></span></h3>
-					<p class="scrollAnimation">Our purpose is to generate spaces of possibility that confirm the link of human creation and nature, taking up ancestral techniques and knowledge.</p>
-					<p class="scrollAnimation">With deep respect for the environment, we co-create spaces for coexistence and elevation.</p>
+					<p class="scrollAnimation">Our purpose is to generate spaces of possibility that confirm the link between human creation and nature, taking up ancestral techniques and knowledge.</p>
+					<p class="scrollAnimation">With a deep respect for the environment, we co-create spaces for coexistence and elevation.</p>
 				</div>
 				<div class="aboutImg scrollAnimation"><img src="images/about/About2.jpg" class="mainImg"><span class="caption">AZULIK Residence</span></div>
 			</div>
