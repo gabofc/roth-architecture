@@ -49,15 +49,12 @@ $( document ).ready( function() {
 	} else if ( archivoUsado == 'about.php' ) {
 		$( window ).scroll( function () {
 			var posicion = $( this ).scrollTop();
-			var alturaTotal = $( document ).height();
+			var alturaTotal = $( document ).height() - $( 'footer' ).height() - 100 - 50;
 			var porcentajeActual = ( posicion * 100 ) / alturaTotal;
-			$( '.scrollBarPosition span' ).css( 'height', porcentajeActual + '%' );
+			$( '.scrollBarPosition span' ).css( 'height', ( porcentajeActual + 5 ) + '%' );
 			var alturaTope = 96 + $( 'main' ).height() - $( 'footer' ).height();
 			var topInicial = $( '.scrollBarPosition' ).css( 'top' );
 			var topNuevo = alturaTope + $( '.scrollBarPosition' ).height();
-			console.log( 'topInicial ' + topInicial )
-			console.log( alturaTope + ' - ' + $( '.scrollBarPosition' ).css( 'height' ) );
-			console.log( 'topNuevo ' + topNuevo )
 			if ( posicion >= alturaTope ) {
 				$( '.scrollBarPosition' ).css( 'position', 'absolute' );
 				$( '.scrollBarPosition' ).css( 'top', ( alturaTope + 280 ) + 'px' );

@@ -332,6 +332,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	width: 100%;
 	height: auto;
 	margin: 0;
+	margin-bottom: -5px;
 }
 .awardItem .awardImg a {
 	position: absolute;
@@ -407,8 +408,10 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	padding: 8px 22px;
 	border: 1px solid var( --negro );
 	margin-top: 15px;
+	transition: all 0.5s;
 	color: var( --negro );
 }
+.contactoDiv .boton:hover { background-color: var( --negro ); color: var( --blanco ); }
 .contactoDivPop .boton { border: 1px solid var( --blanco ); color: var( --blanco ); width: 190px; }
 .vacio { border-bottom: 1px solid #ff0000 !important; }
 .linea.contacto {
@@ -420,7 +423,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 }
 .regresa { color: var( --blanco ); }
 .infoContacto { width: 100%; padding-bottom: 50px; }
-.infoContacto h3 { font-size: 20px; letter-spacing: 1.65px; margin-bottom: 15px; }
+.infoContacto h3 { font-size: 20px; letter-spacing: 1.65px; margin-bottom: 15px; text-transform: uppercase; }
 .infoContacto p {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 16px;
