@@ -5,21 +5,21 @@
 		<h2 class="scrollAnimation">Let's Talk</h2>
 		<div class="contactoDiv scrollAnimation" id="contactoForm">
 			<label for="name">Name</label>
-			<input type="text" id="name" class="obligatorio">
+			<input type="text" id="name" name="name" class="obligatorio">
 			<label for="email">Email</label>
-			<input type="text" id="email" class="obligatorio email">
+			<input type="text" id="email" name="email" class="obligatorio email">
 			<div class="mitad">
 				<div class="campo">
 					<label for="phone">Phone</label>
-					<input type="text" id="phone" class="obligatorio telefono">
+					<input type="text" id="phone" name="phone" class="obligatorio telefono">
 				</div>
 				<div class="campo">
 					<label for="company">Company</label>
-					<input type="company" id="name">
+					<input type="company" name="company" id="name">
 				</div>
 			</div>
 			<label for="message">Your Message</label>
-			<input type="text" id="message" class="obligatorio">
+			<input type="text" id="message"  name="message" class="obligatorio">
 			<a href="#" class="boton noHref" onclick="enviar()">Send message</a>
 		</div>
 		<span class="linea contacto"></span>
