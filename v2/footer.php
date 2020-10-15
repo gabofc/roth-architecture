@@ -8,19 +8,19 @@
 						<h1>Projects</h1>
 						<span class="linea"></span>
 						<ul class="menuFooter italico">
-							<li><a href="#">Azulik Tulum</a></li>
-							<li><a href="#">Azulik Uh May</a></li>
-							<li><a href="#">Kin Toh by AZULIK</a></li>
-							<li><a href="#">Tseen Ja by AZULIK</a></li>
-							<li><a href="#">ZAK IK by AZULIK</a></li>
-							<li><a href="#">AZULIK Residence</a></li>
-							<li><a href="#">SFER IK Tulum</a></li>
-							<li><a href="#">SFER IK Uh May</a></li>
-							<li><a href="#">IK_RAUM</a></li>
+							<li><a href="https://www.azulik.com" target="_blank">Azulik Tulum</a></li>
+							<li><a href="https://www.azulik.com/uh-may" target="_blank">Azulik Uh May</a></li>
+							<li><a href="https://www.azulik.com/gastronomy/kin-toh" target="_blank">Kin Toh by AZULIK</a></li>
+							<li><a href="https://www.azulik.com/gastronomy/tseen-ja" target="_blank">Tseen Ja by AZULIK</a></li>
+							<li><a href="https://www.azulik.com/fashion/zak-ik" target="_blank">ZAK IK by AZULIK</a></li>
+							<li><a href="http://www.instagram.com/Roth.azulik" target="_blank">AZULIK Residence</a></li>
+							<li><a href="https://www.sferik.art" target="_blank">SFER IK</a></li>
+							<li><a href="https://www.azulik.com/fashion/ik-raum" target="_blank">IK_RAUM</a></li>
 						</ul>
 					</div>
 					<div class="segundaColumna">
 						<ul class="menuFooter">
+							<li><a href="/">HOME</a></li>
 							<li><a href="about">ABOUT</a></li>
 							<li><a href="founder">FOUNDER</a></li>
 							<li><a href="awards">AWARDS</a></li>
