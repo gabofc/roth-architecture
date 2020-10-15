@@ -383,6 +383,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	margin-top: 15px;
 	color: var( --negro );
 }
+.vacio { border-bottom: 1px solid #ff0000 !important; }
 .linea.contacto {
 	width: 30px;
 	height: 1px;
