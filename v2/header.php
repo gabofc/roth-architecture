@@ -21,18 +21,18 @@
 		<meta property="og:description" content="Roth Architecture is rooted in the unique combination of three fundamental pillars: nature, ancestry and art" />
 		<meta property="og:url" content="<?php echo $base ?>" />
 		<meta property="og:site_name" content="Roth Architecture" />
-		<meta property="og:image" content="images/logo.png" />
-		<meta property="og:image:secure_url" content="images/logo.png" />
+		<meta property="og:image" content="images/logo.svg" />
+		<meta property="og:image:secure_url" content="images/logo.svg" />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:description" content="Roth Architecture is rooted in the unique combination of three fundamental pillars: nature, ancestry and art" />
 		<meta name="twitter:title" content="Roth Architecture - AZULIK" />
 		<meta name="twitter:site" content="@RothArchitecture" />
-		<meta name="twitter:image" content="images/logo.png" />
+		<meta name="twitter:image" content="images/logo.svg" />
 		<meta name="twitter:creator" content="@RothArchitecture" />
-		<link rel="shortcut icon" href="images/logo.png" />
+		<link rel="shortcut icon" href="images/logo.svg" />
 		<link rel="canonical" href="<?php echo $url; ?>" />
 		<link href="css/fonts/fontawesome/css/all.min.css" rel="stylesheet">
-		<link href="css/jquery.bxslider.min.css" rel="stylesheet" />
+		<link href="css/jquery.bxslider.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<script>
@@ -50,6 +50,7 @@
 					<li><a href="founder">Founder<span></span></a></li>
 					<li><a href="awards">Awards<span></span></a></li>
 					<li><a href="press">Press<span></span></a></li>
+					<li><a href="contact">Contact<span></span></a></li>
 				</ul>
 				<a href="#" class="bMobileCierra"><i class="fas fa-times"></i></a>
 				<a href="#" class="bMobile"><i class="fas fa-bars"></i></a>

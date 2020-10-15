@@ -28,7 +28,7 @@ header .menu {
 	display: flex;
 	list-style: none;
 	font-size: 16px;
-	width: 350px;
+	width: 480px;
 	float: right;
 	margin: 39px 0;
 }
@@ -176,6 +176,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	border-bottom: 1px solid var( --bordePress );
 	padding: 63px 0;
 }
+.pressItem:last-child { border-bottom: none; }
 .pressItem .principal { display: flex; }
 .pressItem .pressImg {
 	width: 800px;
@@ -338,28 +339,86 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 .awardItem .awardImg:hover > img { opacity: 0.4; }
 .awardItem .awardImg:hover > a { opacity: 1; top: 50%; }
 .awardItem .awardImg:hover > .linea { width: 100%; opacity: 1; }
+.textContent.contacto { max-width: 45%; }
+.contactoDiv { margin: 60px 0; width: 100%; }
+.contactoDiv label {
+	margin: 0;
+	display: block;
+	width: 580px;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 1.59px;
+	margin-bottom: 10px;
+	max-width: 98%;
+}
+.contactoDiv input {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 16px;
+	letter-spacing: 1.41px;
+	padding: 4px 0;
+	text-transform: uppercase;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid var( --negro );
+	margin-bottom: 22px;
+	width: 580px;
+	max-width: 98%;
+}
+.contactoDiv .mitad { display: flex; width: 580px; max-width: 100%; }
+.contactoDiv .mitad .campo { width: 50%; }
+.contactoDiv .mitad .campo:first-child { padding-right: 10%; box-sizing: border-box; }
+.contactoDiv .mitad .campo input, .contactoDiv .mitad .campo label { width: 100%; }
+.contactoDiv .boton {
+	display: block;
+	background-color: transparent;
+	font-family: 'Roboto Mono', monospace;
+	text-transform: uppercase;
+	width: 179px;
+	letter-spacing: 1.41px;
+	font-size: 16px;
+	box-sizing: border-box;
+	padding: 8px 22px;
+	border: 1px solid var( --negro );
+	margin-top: 15px;
+	color: var( --negro );
+}
+.linea.contacto {
+	width: 30px;
+	height: 1px;
+	background-color: var( --negro );
+	display: block;
+	margin: 45px 0;
+}
+.infoContacto { width: 100%; }
+.infoContacto h3 { font-size: 20px; letter-spacing: 1.65px; margin-bottom: 15px; }
+.infoContacto p {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 16px;
+	line-height: 2;
+	letter-spacing: 1.32px;
+}
+.imgContact {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: -75px;
+}
+body.general footer { width: 100%; margin-top: 150px; height: 1px; }
+@media screen and ( max-width: 1350px ) {
+	.textContent.contacto { max-width: 40%; }
+}
 @media screen and ( max-width: 1300px ) {
 	.aboutItem .aboutContent { width: 650px; max-width: 40%; }
 	.aboutItem .aboutImg { width: 750px; max-width: 60%; }
 }
+@media screen and ( max-width: 1250px ) {
+	.imgContact { width: 58%; }
+}
 @media screen and ( max-width: 1100px ) {
 	.pressItem .pressImg { margin-right: 25px; }
 }
-@media screen and ( max-width: 970px ) {
-	.pressItem .principal { display: block; }
-	.pressItem .pressImg { margin-right: 0; width: 100%; max-width: initial; }
-	.pressItem .pressContent { width: 100%; max-width: initial; margin-top: 40px; }
-	.busquedaDiv input { width: 280px; }
-	.aboutItem { display: block; }
-	.aboutItem .aboutContent, .aboutItem .aboutImg, .aboutItem.vertical .aboutContent, .aboutItem.vertical .aboutImg { width: 100%; max-width: initial; }
-	.aboutItem .aboutContent, .aboutItem.vertical .aboutContent {
-		margin-left: 0;
-		margin-right: 0;
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
-}
-@media screen and ( max-width: 870px ) {
+@media screen and ( max-width: 985px ) {
 	header { text-align: center; }
 	.home header:hover { background-color: transparent; }
 	header .menu {
@@ -384,6 +443,26 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	header .menu li a { font-size: 24px; }
 	.botonAgenda { right: 0; left: 0; margin: 0 auto; }
 	.bMobileCierra, .bMobile { display: block; }
+	.imgContact { display: none; }
+	.textContent.contacto {
+		width: 580px;
+		max-width: 90%;
+		margin: 0 auto;
+	}
+}
+@media screen and ( max-width: 970px ) {
+	.pressItem .principal { display: block; }
+	.pressItem .pressImg { margin-right: 0; width: 100%; max-width: initial; }
+	.pressItem .pressContent { width: 100%; max-width: initial; margin-top: 40px; }
+	.busquedaDiv input { width: 280px; }
+	.aboutItem { display: block; }
+	.aboutItem .aboutContent, .aboutItem .aboutImg, .aboutItem.vertical .aboutContent, .aboutItem.vertical .aboutImg { width: 100%; max-width: initial; }
+	.aboutItem .aboutContent, .aboutItem.vertical .aboutContent {
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
 }
 @media screen and ( max-width: 800px ) {
 	.contentText { width: 100%; max-width: 100%; }
@@ -395,6 +474,9 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	.busquedaDiv { display: none; }
 	.titulos { float: none; width: 100%; text-align: center; }
 	.pressItem .pressContent { margin-top: 20px; }
+	.contactoDiv .mitad { display: block; }
+	.contactoDiv .mitad .campo { width: 100%; }
+	.contactoDiv .mitad .campo:first-child { padding-right: 0 }
 }
 @media screen and ( max-width: 560px ) {
 	.testimonioText { font-size: 30px; margin: 120px auto; }

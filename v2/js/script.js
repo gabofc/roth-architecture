@@ -32,12 +32,14 @@ $( document ).ready( function() {
 		'.scrollAnimation',
 		{
 			delay: 200,
-			distance: '105%',
+			distance: '20%',
 			origin: 'bottom',
 			opacity: 0,
 			reset: true,
 			useDelay: 'always',
-			viewFactor: 0.1
+			viewFactor: 0.1,
+			interval: 200,
+			scale: 1.02
 		}
 	);
 	if ( archivoUsado == 'index.php' ) {
@@ -47,6 +49,13 @@ $( document ).ready( function() {
 			mode: 'fade'
 		} );
 	}
+	$( '#busquedaInput' ).keyup( function() {
+		if ( $( this ).val() != '' ) {
+			buscadorGeneralSobreHtml( $( this ).val() );
+		} else {
+			reseteaBusqueda( 'contenidoTabla' );
+		}
+	} );
 } );
 function enviar() {
 	if ( validaTodo( 'contactoForm' ) ) {
@@ -65,4 +74,31 @@ function respuestaEnviar( respuesta ) {
 	} else {
 		errorCallback();
 	}
+}
+function buscadorGeneralSobreHtml( busca ) {
+	console.log( 'Busqueda de ' + busca );
+	if ( busca != '' ) {
+		console.log( 'no vacio' );
+		$.each( $( '.awardItem' ), function( indiceTR, datoTR ) {
+			var oculta = true;
+			$.each( $( this ).find( 'div.contenido' ), function( indice, dato ) {
+				var query = dato.innerHTML;
+				query = query.toUpperCase();
+				if ( query.indexOf( busca.toUpperCase() ) != -1 ) {
+					oculta = false;
+				}
+			} ) ;
+			if ( oculta ) {
+				$( this ).hide();
+			} else {
+				$( this ).show();
+			}
+		} );
+	} else {
+		console.log( 'vacio reseteando' );
+		reseteaBusqueda( elemento );
+	}
+}
+function reseteaBusqueda( elemento ) {
+	$( '#' + elemento + ' tr' ).show();
 }

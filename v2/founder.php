@@ -1,8 +1,8 @@
 <?php include 'header.php'; ?>
 <div class="principal">
 	<div class="textContent">
-		<h1>Roth</h1>
-		<h2>Founder</h2>
+		<h1 class="scrollAnimation">Roth</h1>
+		<h2 class="scrollAnimation">Founder</h2>
 		<div class="contentText">
 			<p class="scrollAnimation italica">“...una arquitectura que contemple las forma sustentables de vida que permiten a la naturaleza respirar. Necesitamos salir de la cueva conceptual y física, integrarnos a nuestro entorno natural.”</p>
 			<p class="scrollAnimation">Fundador de AZULIK, SFER IK y Enchanting Transformation, Roth es el líder creativo de Roth Architecture. Inspirado en las formas orgánicas y el balance ecosistémico su propuesta arquitectónica desafía las estructuras convencionales y convoca al juego, a la sorpresa y a la atención.</p>
