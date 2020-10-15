@@ -1,4 +1,5 @@
 <?php include 'header.php'; ?>
+<div class="scrollBarPosition"><span></span></div>
 <div class="principal">
 	<div class="textContent">
 		<h1>The Studio</h1>
