@@ -196,7 +196,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	max-width: 40%;
 	box-sizing: border-box;
 }
-.pressItem .pressContent img { margin-bottom: 45px; max-height: 100px; }
+.pressItem .pressContent img { margin-bottom: 45px; max-height: 60px;}
 .pressItem .pressContent span {
 	display: block;
 	font-size: 13px;
