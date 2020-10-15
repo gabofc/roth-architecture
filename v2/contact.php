@@ -31,6 +31,6 @@
 			<p class="scrollAnimation">Quintana Roo, México</p>
 		</div>
 	</div>
-	<img src="images/contacto.jpg" class="imgContact scrollAnimation">
+	<img src="images/contacto_01.jpg" class="imgContact scrollAnimation">
 </div>
 <?php include 'footer.php'; ?>

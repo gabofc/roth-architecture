@@ -5,28 +5,28 @@
 		<h2>Francisco Uh May, Qroo. MX</h2>
 		<div class="scrollPosition">
 			<div class="testimonioText">
-				<p class="scrollAnimation">Creamos esdivacios bajo la divremisa que establece que la arquitectura tiene una resdivonsabilidad crítica en nuestro futuro divosible.</p>
+				<p class="scrollAnimation">We create spaces under the premise that architecture has a critical responsibility in our possible future.</p>
 				<div class="linea scrollAnimation"></div>
 			</div>
-			<img src="images/about/01.jpg" class="fullImg scrollAnimation">
+			<img src="images/about/About1.jpg" class="fullImg scrollAnimation">
 			<span class="caption scrollAnimation">Uh May</span>
 			<div class="aboutItem">
 				<div class="aboutContent">
-					<h3 class="scrollAnimation">Construimos para unir.<span></span></h3>
-					<p class="scrollAnimation">Nuestro propósito es generar los espacios de posibilidad que confirmen la coexistencia de la creación humana y la naturaleza, retomando las técnicas y conocimientos ancestrales.</p>
-					<p class="scrollAnimation">Con profunco respeto por el entorno, co-creamos espacios de convivencia y de elevación</p>
+					<h3 class="scrollAnimation">We build to unite.<span></span></h3>
+					<p class="scrollAnimation">Our purpose is to generate spaces of possibility that confirm the link of human creation and nature, taking up ancestral techniques and knowledge.</p>
+					<p class="scrollAnimation">With deep respect for the environment, we co-create spaces for coexistence and elevation.</p>
 				</div>
-				<div class="aboutImg scrollAnimation"><img src="images/about/horizontal.jpg" class="mainImg"><span class="caption">SFER IK UH MAY </span></div>
+				<div class="aboutImg scrollAnimation"><img src="images/about/About2.jpg" class="mainImg"><span class="caption">SFER IK UH MAY </span></div>
 			</div>
 			<div class="aboutItem vertical">
-				<div class="aboutImg scrollAnimation"><img src="images/about/vertical.jpg" class="mainImg"><span class="caption">Kin Toh, Tulum</span></div>
+				<div class="aboutImg scrollAnimation"><img src="images/about/About3.jpg" class="mainImg"><span class="caption">Kin Toh, Tulum</span></div>
 				<div class="aboutContent">
-					<h3 class="scrollAnimation">Nuestra arquitectura trasciende la dicotomía entre el interior y el exterior<span></span></h3>
-					<p class="scrollAnimation">Creando estructuras únicas e integrales, que abren el espacio para una conexión profunda con uno mismo, con otros y la naturaleza.</p>
+					<h3 class="scrollAnimation">Our architecture transcends the dichotomy between interior and exterior, <span></span></h3>
+					<p class="scrollAnimation">creating unique and integral structures, which open the space for a deep connection with oneself, with others and with nature.</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	
+
 </div>
 <?php include 'footer.php'; ?>
