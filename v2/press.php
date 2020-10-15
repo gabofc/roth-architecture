@@ -17,7 +17,7 @@
 	<div class="principal">
 		<div class="pressImg scrollAnimation"><img src="images/press/1.jpg" class="mainImg"></div>
 		<div class="pressContent">
-			<img src="images/press/ad.svg" class="scrollAnimation">
+			<img src="images/press/ad.png" class="scrollAnimation">
 			<span class="scrollAnimation">Architectural Digest</span>
 			<!-- <span class="scrollAnimation">Date: January 2019</span>
 				<span class="scrollAnimation">Business Unit: AZULIK Uh May</span>-->
