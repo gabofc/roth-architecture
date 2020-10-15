@@ -63,6 +63,19 @@ $( document ).ready( function() {
 			reseteaBusqueda( 'contenidoTabla' );
 		}
 	} );
+	$( '#datepicker' ).datepicker( {
+		minDate: 0,
+		onSelect: function( dateText ) {
+			$( '#fechaElegida' ).val( dateText );
+			agendaCita( 1 );
+		}
+	} );
+	$( '.horaElige' ).click( function( e ) {
+		$( '#horaElegida' ).val( $( this ).attr( 'tiempo' ) );
+		$( '.horaElige' ).removeClass( 'marcada' );
+		$( this ).addClass( 'marcada' );
+		agendaCita( 1 );
+	} );
 } );
 function enviar() {
 	if ( validaTodo( 'contactoForm' ) ) {
@@ -127,4 +140,23 @@ function reseteaBusqueda( elemento ) {
 			scale: 1.02
 		}
 	);
+}
+function agendaCita( paso ) {
+	if ( paso == 1 ) {
+		if ( $( '#fechaElegida' ).val() != '' && $( '#fechaElegida' ).val() != '' ) {
+			console.log( 'pasando a paso 2' );
+			$( '.popup .flexBox' ).slideToggle( 'fast', function() {
+				$( '.contactoDivPop' ).slideToggle();
+				$( '.popup' ).addClass( 'datos' );
+			} );
+		}
+	} else {
+		console.log( 'finalizando a paso 2' );
+	}
+}
+function regresaFecha() {
+	$( '.contactoDivPop' ).slideToggle( 'fast', function() {
+		$( '.popup .flexBox' ).slideToggle();
+		$( '.popup' ).removeClass( 'datos' );
+	} );
 }

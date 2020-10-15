@@ -133,8 +133,8 @@ function validaTodo( cual ) {
 }
 function popup( cual, status ) {
 	if ( status ) {
-		$( '#' + cual ).addClass( 'popupActivo' );
 		$( '.capaNegra' ).fadeIn( 'slow' );
+		$( '#' + cual ).addClass( 'popupActivo' );
 	} else {
 		$( '#' + cual ).removeClass( 'popupActivo' );
 		$( '.capaNegra' ).fadeOut( 'slow' );

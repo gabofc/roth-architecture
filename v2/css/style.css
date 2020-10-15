@@ -1,6 +1,6 @@
 @import url( 'https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300&display=swap' );
 @import url( 'https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap' );
-@import url( 'colores.css?v=5' );
+@import url( 'colores.css?v=6' );
 * {
 	margin: 0px;
 	padding: 0px;
@@ -362,8 +362,8 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 .awardItem .awardImg:hover > a { opacity: 1; top: 50%; }
 .awardItem .awardImg:hover > .linea { width: 100%; opacity: 1; }
 .textContent.contacto { max-width: 45%; }
-.contactoDiv { margin: 60px 0; width: 100%; }
-.contactoDiv label {
+.contactoDiv, { margin: 60px 0; width: 100%; }
+.contactoDiv label, .contactoDivPop label {
 	margin: 0;
 	display: block;
 	width: 580px;
@@ -373,7 +373,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	margin-bottom: 10px;
 	max-width: 98%;
 }
-.contactoDiv input {
+.contactoDiv input, .contactoDivPop input {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 16px;
 	letter-spacing: 1.41px;
@@ -387,11 +387,13 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	width: 580px;
 	max-width: 98%;
 }
-.contactoDiv .mitad { display: flex; width: 580px; max-width: 100%; }
-.contactoDiv .mitad .campo { width: 50%; }
-.contactoDiv .mitad .campo:first-child { padding-right: 10%; box-sizing: border-box; }
+.contactoDivPop input { border-bottom: 1px solid var( --blanco ); color: var( --blanco ); width: 190px; }
+.contactoDiv .mitad, .contactoDivPop .mitad { display: flex; width: 580px; max-width: 100%; }
+.contactoDiv .mitad .campo, .contactoDivPop .mitad .campo { width: 50%; }
+.contactoDiv .mitad .campo:first-child, .contactoDivPop .mitad .campo:first-child { padding-right: 10%; box-sizing: border-box; }
+.contactoDivPop .mitad .campo input, .contactoDivPop .mitad .campo label,
 .contactoDiv .mitad .campo input, .contactoDiv .mitad .campo label { width: 100%; }
-.contactoDiv .boton {
+.contactoDiv .boton, .contactoDivPop .boton {
 	display: block;
 	background-color: transparent;
 	font-family: 'Roboto Mono', monospace;
@@ -405,6 +407,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	margin-top: 15px;
 	color: var( --negro );
 }
+.contactoDivPop .boton { border: 1px solid var( --blanco ); color: var( --blanco ); }
 .vacio { border-bottom: 1px solid #ff0000 !important; }
 .linea.contacto {
 	width: 30px;
@@ -430,8 +433,6 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	background-position: top center !important;
 	background-size: cover !important;
 }
-.contactoMuestra { display: block; }
-.agendaDiv { display: none; text-align: center; }
 .scheduleBoton {
 	position: absolute;
 	bottom: 40px;
@@ -444,20 +445,110 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	border-bottom: 1px solid var( --letraFooter );
 	z-index: 111;
 }
-.ui-datepicker-title { text-align: left; box-sizing: border-box; padding: 20px 0; }
-.ui-datepicker-title, .ui-datepicker-calendar {
+.flexBox { display: flex; }
+.horario { width: 48%; padding-right: 40px; box-sizing: border-box; }
+div.fecha { width: 48%; padding-left: 40px; box-sizing: border-box; }
+.lineVertical { width: 1px; height: 518px; background-color: rgba(243, 243, 243, 0.37); }
+.horaElige {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 13px;
+	letter-spacing: 1.22px;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	border: 1px solid var( --blanco );
+	border-radius: 5px;
+	margin: 5px 0;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.horaElige:hover, .horaElige.marcada { background-color: var( --blanco ); color: var( --negro ); }
+.horarioScroll { height: 275px; margin: 20px 0; overflow-y: auto; }
+.ui-datepicker-title {
+	text-align: left;
+	box-sizing: border-box;
+	padding: 0 15px;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+.ui-datepicker-prev, .ui-datepicker-next { position: absolute; }
+.ui-datepicker-prev { right: 40px; }
+.ui-datepicker-prev span { display: none; }
+.ui-datepicker-prev:before { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f053"; }
+.ui-datepicker-next { right: 15px; }
+.ui-datepicker-next span { display: none; }
+.ui-datepicker-next:before { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f054"; }
+.ui-datepicker-title, .ui-datepicker-calendar, .ui-datepicker-header, #datepicker {
 	width: 350px;
 	max-width: 100%;
 	margin: 20px auto;
 }
-.ui-datepicker-calendar th { text-transform: uppercase; }
+#datepicker { position: relative; margin-top: 65px; }
+.ui-datepicker-calendar th { font-size: 15px; }
 .ui-datepicker-calendar td {
 	width: 40px;
 	height: 40px;
 	text-align: center;
 	font-family: 'Roboto Mono', monospace;
 }
-.ui-datepicker-calendar td a { color: var( --negro ); }
+.ui-datepicker-calendar td { text-align: center; }
+.ui-datepicker-calendar td a { color: var( --blanco ); }
+.ui-datepicker-calendar td span { color: var( --morado ); }
+.ui-datepicker-calendar td.ui-datepicker-today a,
+.ui-datepicker-calendar td a.ui-state-active {
+	width: 35px;
+	height: 35px;
+	display: block;
+	background-color: rgba( 255, 255, 255, 0.5 );
+	border-radius: 50%;
+	color: var( --negro );
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding-top: 5px;
+}
+.ui-datepicker-calendar td a.ui-state-active { background-color: var( --blanco ); }
+.popup {
+	width: 824px;
+	box-sizing: border-box;
+	padding: 45px;
+	background-color: var( --negro );
+	color: var( --blanco );
+	position: fixed;
+	max-width: 90%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: -1000px;
+	transition: all 0.5s;
+	z-index: 1111111;
+}
+.popup .cierra {
+	z-index: 1;
+	cursor: pointer;
+	color: var( --blanco );
+	font-size: 40px;
+	position: absolute;
+	right: 40px;
+	top: 40px;
+}
+.popup.datos { width: 600px; }
+.popup.popupActivo {
+	top: 50%;
+	transform: translateY(-50%);
+}
+.popup h1 {
+	font-size: 22px;
+	letter-spacing: 2.07px;
+}
+.popup .horario h1 { margin-top: 60px; }
+.popup div.fecha h1 { margin-top: 10px; }
+.popup h2 {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 13px;
+	letter-spacing: 1.22px;
+}
+.contactoDivPop { display: none; }
 .founderImgTmp {
 	position: absolute;
 	top: 0;
