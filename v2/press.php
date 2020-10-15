@@ -161,7 +161,7 @@
 
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/decor.jpg" class="mainImg"></div>
+		<div class="pressImg scrollAnimation"><img src="images/press/11.jpg" class="mainImg"></div>
 		<div class="pressContent">
 			<img src="images/press/cool_huntermx.png" class="scrollAnimation">
 			<span class="scrollAnimation">Coolhunter</span>
