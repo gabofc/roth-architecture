@@ -431,7 +431,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	right: 0;
 	width: 50%;
 	height: 100%;
-	background-position: top center !important;
+	background-position: bottom center !important;
 	background-size: cover !important;
 }
 .scheduleBoton {
