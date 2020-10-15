@@ -264,7 +264,8 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	width: 2px;
 	background-color: var( --negro );
 	position: absolute;
-	top: 0;
+	top: 50px;
+	margin-left: -1px;
 }
 .aboutItem { margin: 100px 0; display: flex; }
 .aboutItem.vertical { align-items: center; justify-content: center; }
