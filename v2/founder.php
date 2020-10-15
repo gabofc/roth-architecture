@@ -10,5 +10,6 @@
 			<p class="scrollAnimation">Este esfuerzo converge con la preocupación de explorar, a través del arte, un reflejo de la esencia humana y la conexión con nuestro planeta.</p>
 		</div>
 	</div>
+	<img src="images/founder.jpg" class="founderImgTmp">
 </div>
 <?php include 'footer.php'; ?>
