@@ -24,7 +24,7 @@
 		<meta name="description" content="Roth Architecture is rooted in the unique combination of three fundamental pillars: nature, ancestry and art"/>
 		<meta property="og:locale" content="en_MX" />
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Roth Architecture - AZULIK" />
+		<meta property="og:title" content="Roth Architecture" />
 		<meta property="og:description" content="Roth Architecture is rooted in the unique combination of three fundamental pillars: nature, ancestry and art" />
 		<meta property="og:url" content="<?php echo $base ?>" />
 		<meta property="og:site_name" content="Roth Architecture" />
@@ -32,7 +32,7 @@
 		<meta property="og:image:secure_url" content="images/logo.svg" />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:description" content="Roth Architecture is rooted in the unique combination of three fundamental pillars: nature, ancestry and art" />
-		<meta name="twitter:title" content="Roth Architecture - AZULIK" />
+		<meta name="twitter:title" content="Roth Architecture" />
 		<meta name="twitter:site" content="@RothArchitecture" />
 		<meta name="twitter:image" content="images/logo.svg" />
 		<meta name="twitter:creator" content="@RothArchitecture" />
