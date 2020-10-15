@@ -1,6 +1,6 @@
 @import url( 'https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300&display=swap' );
 @import url( 'https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap' );
-@import url( 'colores.css?v=4' );
+@import url( 'colores.css?v=5' );
 * {
 	margin: 0px;
 	padding: 0px;
@@ -412,7 +412,58 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	width: 45%;
 	box-sizing: border-box;
 }
-body.general footer { width: 100%; margin-top: 150px; height: 1px; }
+body.general footer {
+	margin-top: 150px;
+	background-color: var( --negro );
+	color: var( --letraFooter );
+	padding: 82px 0;
+	box-sizing: border-box;
+}
+footer .footerContent { display: flex; margin-top: 85px; }
+footer .footerContent h1 {
+	margin: 0;
+	font-size: 18px;
+	letter-spacing: 1.59px;
+}
+footer .footerContent .linea { display: block; width: 24px; height: 1px; background-color: var( --letraFooter ); margin: 15px 0; }
+footer .footerContent .primerColumna { min-width: 170px; margin-left: 100px; }
+footer .footerContent .menuFooter { list-style: none; padding-left: 0; }
+footer .footerContent .menuFooter li a {
+	font-size: 18px;
+	line-height: 1.94;
+	letter-spacing: 1.3px;
+	color: var( --letraFooter );
+}
+footer .footerContent .menuFooter.italico li a {
+	font-style: italic;
+	font-size: 16px;
+	line-height: 2.19;
+	letter-spacing: 1.41px;
+}
+footer .footerContent .segundaColumna { width: 150px; margin-left: 150px; }
+footer .footerContent h1.mTop { margin-top: 100px; margin-bottom: 24px; }
+.sociales { display: flex; }
+.sociales a {
+	border-radius: 50%;
+	color: var( --letraFooter );
+	border: 1px solid var( --letraFooter );
+	display: block;
+	width: 32px;
+	height: 32px;
+	margin-right: 20px;
+	font-size: 20px;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 3px;
+}
+footer .footerContent .tercerColumna { width: 550px; margin-left: 250px; }
+footer .footerContent p {
+	font-size: 30px;
+	line-height: 1.73;
+	letter-spacing: 2.65px;
+}
+.tCenter { text-align: center; }
+footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 @media screen and ( max-width: 1350px ) {
 	.textContent.contacto { max-width: 40%; }
 }
@@ -422,9 +473,13 @@ body.general footer { width: 100%; margin-top: 150px; height: 1px; }
 }
 @media screen and ( max-width: 1250px ) {
 	.imgContact { width: 58%; }
+	footer .footerContent .tercerColumna { margin-left: 180px; }
 }
 @media screen and ( max-width: 1100px ) {
 	.pressItem .pressImg { margin-right: 25px; }
+	footer .footerContent .primerColumna,
+	footer .footerContent .segundaColumna,
+	footer .footerContent .tercerColumna { margin-left: 80px; }
 }
 @media screen and ( max-width: 985px ) {
 	header { text-align: center; }
@@ -473,6 +528,15 @@ body.general footer { width: 100%; margin-top: 150px; height: 1px; }
 	}
 	.contentText { width: 100%; max-width: initial; }
 	.founderImgTmp { position: relative; width: 100%; margin-top: 50px; }
+	footer .footerContent .primerColumna { margin-left: 20px; }
+}
+@media screen and ( max-width: 840px ) {
+	footer { text-align: center; }
+	footer .footerContent .primerColumna, footer .footerContent .segundaColumna, footer .footerContent .tercerColumna { margin-left: 0; width: 100%; }
+	footer .footerContent { display: block; }
+	.sociales { width: 150px; margin: 0 auto; }
+	footer .footerContent .linea { margin: 15px auto; }
+	.footerContent .tercerColumna { margin-top: 20px; }
 }
 @media screen and ( max-width: 800px ) {
 	.contentText { width: 100%; max-width: 100%; }
@@ -499,7 +563,9 @@ body.general footer { width: 100%; margin-top: 150px; height: 1px; }
 	.principal { padding: 0 30px; }
 	.bMobile { right: 30px; }
 }
-@media screen and ( max-width: 410px ) { header .principal { padding-left: 5px; } }
+@media screen and ( max-width: 410px ) { header .principal { padding-left: 20px; } }
+@media screen and ( max-width: 395px ) { .logoImg { width: 250px; } }
 @media screen and ( max-width: 375px ) {
-	.logoImg { width: 250px; }
+	footer .footerContent p { font-size: 20px; }
+	h1 { font-size: 40px; }
 }

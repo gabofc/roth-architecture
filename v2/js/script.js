@@ -37,8 +37,7 @@ $( document ).ready( function() {
 			opacity: 0,
 			useDelay: 'always',
 			viewFactor: 0.1,
-			interval: 200,
-			scale: 1.02
+			interval: 200
 		}
 	);
 	if ( archivoUsado == 'index.php' ) {
