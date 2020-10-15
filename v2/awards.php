@@ -14,7 +14,7 @@
 					<b class="scrollAnimation">Category: Cultural Space</b>
 					<b class="scrollAnimation">Project: SFER IK Museion Uh May</b>
 					<span class="scrollAnimation"></span>
-					<p class="scrollAnimation">Idea-Tops aims to create the most thoughtful and influential space design award to discover and praise the best designers and design works around the world. With participants of over 50 countries, it is the most influential, international, and authoritative design award in China.</p>
+					<p class="scrollAnimation">Idea-Tops aims to create the most thoughtful and influential space design award to discover and praise the best designers and design works around the world. With participants from over 50 countries, it is the most influential, international, and authoritative design award in China.</p>
 				</div>
 			</div>
 			<div class="awardImg scrollAnimation">
@@ -26,7 +26,7 @@
 		<div class="awardItem">
 			<div class="contenido">
 				<div class="titulos">
-					<h3 class="scrollAnimation">ARCHITIZER A+A AWARDS 2019</h3>
+					<h3 class="scrollAnimation">ARCHITIZER A+ AWARDS 2019</h3>
 					<h4 class="scrollAnimation">N.Y., U.S.A.</h4>
 				</div>
 				<div class="descripcion">
