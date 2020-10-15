@@ -30,12 +30,9 @@
 					<h4 class="scrollAnimation">N.Y., U.S.A.</h4>
 				</div>
 				<div class="descripcion">
-					<b class="scrollAnimation">WINNER</b>
-					<b class="scrollAnimation">Category: Details Plus Architecture + Wood</b>
-					<b class="scrollAnimation">Project: SFER IK Museion Uh May (Jury Winner)</b>
 						<b class="scrollAnimation">WINNER</b>
-						<b class="scrollAnimation">Category: Details Plus Architecture + Wood / Residential Private House (XL > 500 sq. ft.) </b>
-						<b class="scrollAnimation">Project: SFER IK Museion Uh May (Jury Winner) / AZULIK Residence (Special Mention)</b>
+						<b class="scrollAnimation">Categories: Details Plus Architecture + Wood / Residential Private House (XL > 500 sq. ft.) </b>
+						<b class="scrollAnimation">Projects: SFER IK Museion Uh May (Jury Winner) / AZULIK Residence (Special Mention)</b>
 					<span class="scrollAnimation"></span>
 					<p class="scrollAnimation">The Architizer A+Awards is the largest awards program focused on promoting and celebrating the year’s best architecture and products. The awards bring together the largest online community of architects in the world, including the elite of world architecture, who champion meaningful design and the qualities that are integral to bringing great buildings to life.</p>
 				</div>
@@ -95,8 +92,8 @@
 				</div>
 				<div class="descripcion">
 					<b class="scrollAnimation">WINNER</b>
-					<b class="scrollAnimation">Category: House of the Year / Emerging Designer of the Year </b>
-					<b class="scrollAnimation">Project: AZULIK Residence / Roth Architecture </b>
+					<b class="scrollAnimation">Categories: House of the Year / Emerging Designer of the Year </b>
+					<b class="scrollAnimation">Projects: AZULIK Residence / Roth Architecture </b>
 					<span class="scrollAnimation"></span>
 					<p class="scrollAnimation">Established in 1997 and headquartered in Amsterdam, Frame is a global platform for all professional members and stakeholders in the interior-design industry. The Frame Awards honor outstanding architectural and design work around the world, always exploring what's next in spatial design, innovation, and creativity.</p>
 				</div>
