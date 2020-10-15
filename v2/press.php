@@ -57,7 +57,7 @@
 </div>
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/traveler.jpg" class="mainImg"></div>
+		<div class="pressImg scrollAnimation"><img src="images/press/4.jpg" class="mainImg"></div>
 		<div class="pressContent">
 			<img src="images/press/archdaily_logo.png" class="scrollAnimation">
 			<span class="scrollAnimation">Arch Daily</span>
@@ -71,7 +71,7 @@
 </div>
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/traveler.jpg" class="mainImg"></div>
+		<div class="pressImg scrollAnimation"><img src="images/press/5.jpg" class="mainImg"></div>
 		<div class="pressContent">
 			<img src="images/press/archdaily_logo.png" class="scrollAnimation">
 			<span class="scrollAnimation">Arch Daily</span>
@@ -86,7 +86,7 @@
 
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/decor.jpg" class="mainImg"></div>
+		<div class="pressImg scrollAnimation"><img src="images/press/6.jpg" class="mainImg"></div>
 		<div class="pressContent">
 			<img src="images/press/sbid_logo.png" class="scrollAnimation">
 			<span class="scrollAnimation">Society of British Interior Designers</span>
@@ -101,7 +101,7 @@
 
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/decor.jpg" class="mainImg"></div>
+		<div class="pressImg scrollAnimation"><img src="images/press/7.jpg" class="mainImg"></div>
 		<div class="pressContent">
 			<img src="images/press/interior_design.png" class="scrollAnimation">
 			<span class="scrollAnimation">ID Interior Design</span>
@@ -116,7 +116,7 @@
 
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/decor.jpg" class="mainImg"></div>
+		<div class="pressImg scrollAnimation"><img src="images/press/8.jpg" class="mainImg"></div>
 		<div class="pressContent">
 			<img src="images/press/forbes.png" class="scrollAnimation">
 			<span class="scrollAnimation">Forbes</span>
@@ -131,8 +131,9 @@
 
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/decor.jpg" class="mainImg"></div>
+		<div class="pressImg scrollAnimation"><img src="images/press/9.jpg" class="mainImg"></div>
 		<div class="pressContent">
+			<img src="images/press/milenio_logo.png" class="scrollAnimation">
 			<span class="scrollAnimation">Milenio</span>
 			<!-- <span class="scrollAnimation">Date: September 2019</span>
 			<span class="scrollAnimation">Business Unit: AZULIK Residence</span>-->
@@ -145,8 +146,9 @@
 
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/decor.jpg" class="mainImg"></div>
+		<div class="pressImg scrollAnimation"><img src="images/press/10.jpg" class="mainImg"></div>
 		<div class="pressContent">
+			<img src="images/press/wa.png" class="scrollAnimation">
 			<span class="scrollAnimation">World Architecture</span>
 			<!-- <span class="scrollAnimation">Date: September 2019</span>
 			<span class="scrollAnimation">Business Unit: AZULIK Residence</span>-->
@@ -161,7 +163,7 @@
 	<div class="principal">
 		<div class="pressImg scrollAnimation"><img src="images/press/decor.jpg" class="mainImg"></div>
 		<div class="pressContent">
-			<img src="images/press/design_hunter.png" class="scrollAnimation">
+			<img src="images/press/cool_huntermx.png" class="scrollAnimation">
 			<span class="scrollAnimation">Coolhunter</span>
 			<!-- <span class="scrollAnimation">Date: September 2019</span>
 			<span class="scrollAnimation">Business Unit: AZULIK Residence</span>-->
