@@ -577,6 +577,7 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.contactoDiv .mitad { display: block; }
 	.contactoDiv .mitad .campo { width: 100%; }
 	.contactoDiv .mitad .campo:first-child { padding-right: 0 }
+	.scrollBarPosition { display: none; }
 }
 @media screen and ( max-width: 560px ) {
 	.testimonioText { font-size: 30px; margin: 120px auto; }
