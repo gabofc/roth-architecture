@@ -8,6 +8,7 @@
 	switch ( $nombreArchivo ) {
 		case 'index.php': $bodyClass = 'home'; break;
 		case 'contact.php': $bodyClass = 'general contact'; break;
+		case 'press.php': $bodyClass = 'general press'; break;
 		default: $bodyClass = 'general'; break;
 	}
 ?>
@@ -103,7 +104,6 @@
 			<div class="principal">
 				<a href="/"><img src="images/logo.svg" class="logoImg"></a>
 				<ul class="menu">
-					<li><a href="/">Home<span></span></a></li>
 					<li><a href="about">About<span></span></a></li>
 					<li><a href="founder">Founder<span></span></a></li>
 					<li><a href="awards">Awards<span></span></a></li>

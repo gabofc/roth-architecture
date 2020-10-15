@@ -569,7 +569,7 @@ body.general footer {
 	padding: 82px 0;
 	box-sizing: border-box;
 }
-body.general.contact footer { margin-top: 0; }
+body.general.contact footer, body.general.press footer { margin-top: 0; }
 footer .footerContent { display: flex; margin-top: 85px; }
 footer .footerContent h1 {
 	margin: 0;
