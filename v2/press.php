@@ -36,7 +36,7 @@
 			<!-- <span class="scrollAnimation">Date, April 2019</span>
 			<span class="scrollAnimation">Business Unit: AZULIK Tulum</span>-->
 			<h3 class="scrollAnimation">HOTEL AZULIK, un paraíso para perderse en la JUNGLA</h3>
-			<p class="scrollAnimation">Entre las ruinas mayas de Tulum, México, el Caribe y un parque nacional de manglares y cenotes, el hotel 'Azulik' es un paraíso 'eco friendly', una manera única de perderse en una jungla de relax. La jungla y el Caribe rodean las 48 cabañas hechas con materiales naturales del hotel Azulik, un refugio solo para adultos donde degustar la mejor cocina maya, practicar meditación, dejarse mimar en su spa, comprar artesanía en su boutique y bañarse en uno de los múltiples cenotes escondidos en esta zona del litoral mexicano, muy cerca de las ruinas de Tulum. El agua es el elemento clave de este santuario enclavado en el paraíso yucateco, que está construido dejando, en parte, que los manglares se coman la construcción.</p>
+			<p class="scrollAnimation">Entre las ruinas mayas de Tulum, México, el Caribe y un parque nacional de manglares y cenotes, el hotel 'Azulik' es un paraíso 'eco friendly', una manera única de perderse en una jungla de relax.</p>
 			<a href="https://www.revistaad.es/lugares/articulos/hotel-azulik-paraiso-para-perderse-jungla/22058" class="scrollAnimation" target="_blank">Read More</a>
 		</div>
 	</div>
@@ -50,7 +50,7 @@
 			<!-- <span class="scrollAnimation">Date: November 2018</span>
 			<span class="scrollAnimation">Business Unit: AZULIK Uh May</span>-->
 			<h3 class="scrollAnimation">This Eco-Resort in Tulum Has Whimsical Architecture and a Jaw-Dropping Art Museum</h3>
-			<p class="scrollAnimation">He worked with local craftsmen to orchestrate a symphony of materials and natural elements that absorbs hotel guests into an unexpected art-viewing experience. Unlike the kinds of museums that resemble white cubes, SFER IK immerses its visitors into an architectural work of art that competes with the art on view. Plants cut through pathways made out of logs while smooth concrete walls resemble drapes flowing in the wind, contrasting the woods’ darker tones.</p>
+			<p class="scrollAnimation">Opened in 2003, Azulik offers an alternative understanding of luxury and meditation to visitors who are charmed by the hotel’s mesmerizing architecture and connections with nature.</p>
 			<a href="https://www.travelandleisure.com/attractions/museums-galleries/azulik-sfer-ik-tulum" class="scrollAnimation" target="_blank">Read More</a>
 		</div>
 	</div>
@@ -78,7 +78,7 @@
 			<!-- <span class="scrollAnimation">Date: November 2018</span>
 			<span class="scrollAnimation">Business Unit: AZULIK Uh May</span>-->
 			<h3 class="scrollAnimation">ZAK IK Store / Roth-Architecture</h3>
-			<p class="scrollAnimation">An exclusive fashion boutique at AZULIK Tulum, which combines fashion, design, architecture, jewelry, and art, within a space full of contrasts, textures, sensations and routes that invites you to discover the collections of the store. The design respects the existing trees, adapting the construction to the natural configuration of the ground inviting you to walk barefoot through the polished concrete finish, with footpaths and ramps over water mirrors, tunnels of natural leaves, spaces with nets and interior vegetation.</p>
+			<p class="scrollAnimation">An exclusive fashion boutique at AZULIK Tulum, which combines fashion, design, architecture, jewelry, and art, within a space full of contrasts, textures, sensations and routes that invites you to discover the collections of the store.</p>
 			<a href="https://www.archdaily.com/923418/zak-ik-store-roth-architecture" class="scrollAnimation" target="_blank">Read More</a>
 		</div>
 	</div>

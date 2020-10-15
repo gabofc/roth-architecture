@@ -2,7 +2,7 @@
 <div class="principal">
 	<div class="textContent">
 		<h1>Awards</h1>
-		<h2>Prices & Participation</h2>
+		<h2>Prizes & Participation</h2>
 		<div class="awardItem">
 			<div class="contenido">
 				<div class="titulos">
@@ -12,7 +12,7 @@
 				<div class="descripcion">
 					<b class="scrollAnimation">WINNER</b>
 					<b class="scrollAnimation">Category: Cultural Space</b>
-					<b class="scrollAnimation">Project: Sferik Museion Uh May</b>
+					<b class="scrollAnimation">Project: SFER IK Museion Uh May</b>
 					<span class="scrollAnimation"></span>
 					<p class="scrollAnimation">Idea-Tops aims to create the most thoughtful and influential space design award to discover and praise the best designers and design works around the world. With participants of over 50 countries, it is the most influential, international, and authoritative design award in China.</p>
 				</div>
