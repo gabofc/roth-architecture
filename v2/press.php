@@ -167,8 +167,8 @@
 			<span class="scrollAnimation">Coolhunter</span>
 			<!-- <span class="scrollAnimation">Date: September 2019</span>
 			<span class="scrollAnimation">Business Unit: AZULIK Residence</span>-->
-			<h3 class="scrollAnimation">Un Nuevo Centro De Arte Se Abre Paso En Una Pequeña Comunidad De Quintana Roo, Una Obra Que Se Mimetiza Con El Entorno.</h3>
-			<p class="scrollAnimation">AZULIK Uh May surge como un espacio en donde el arte y la artesanía, como lenguaje universal, reunirá a estudiantes internacionales, artistas residentes, académicos y a la población maya local. En su interior cada espacio está destinado para diferentes actividades como un estudio de grabación, el laboratorio dedicado al diseño y a la moda, y la residencia para los artistas.</p>
+			<h3 class="scrollAnimation">Un Nuevo Centro De Arte Se Abre Paso En Una Pequeña Comunidad De Quintana Roo</h3>
+			<p class="scrollAnimation">AZULIK Uh May surge como un espacio en donde el arte y la artesanía, como lenguaje universal, reunirá a estudiantes internacionales, artistas residentes, académicos y a la población maya local.</p>
 			<a href="https://coolhuntermx.com/azulik-uh-may-arquitectura-1218/" class="scrollAnimation" target="_blank">Read More</a>
 		</div>
 	</div>
