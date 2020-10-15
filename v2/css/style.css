@@ -68,7 +68,7 @@ header .menu li a:hover > span, header .menu li.activo a span { width: 100%; }
 .bMobileCierra.abierto { opacity: 1; }
 a { text-decoration: none; cursor: pointer; }
 img { max-width: 100%; }
-.home header { background-color: rgba( 0, 0, 0, 0.4 ); }
+.home header { background: linear-gradient( to top, transparent 0%, black 100%);; }
 .home header:hover { background-color: var( --negro ); }
 main { padding-top: 171px; position: relative; }
 .home main {
@@ -196,7 +196,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	max-width: 40%;
 	box-sizing: border-box;
 }
-.pressItem .pressContent img { margin-bottom: 45px; }
+.pressItem .pressContent img { margin-bottom: 45px; max-height: 150px; }
 .pressItem .pressContent span {
 	display: block;
 	font-size: 13px;
