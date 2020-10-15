@@ -387,7 +387,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	width: 580px;
 	max-width: 98%;
 }
-.contactoDivPop input { border-bottom: 1px solid var( --blanco ); color: var( --blanco ); width: 190px; }
+.contactoDivPop input { border-bottom: 1px solid var( --blanco ); color: var( --blanco ); }
 .contactoDiv .mitad, .contactoDivPop .mitad { display: flex; width: 580px; max-width: 100%; }
 .contactoDiv .mitad .campo, .contactoDivPop .mitad .campo { width: 50%; }
 .contactoDiv .mitad .campo:first-child, .contactoDivPop .mitad .campo:first-child { padding-right: 10%; box-sizing: border-box; }
@@ -407,7 +407,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	margin-top: 15px;
 	color: var( --negro );
 }
-.contactoDivPop .boton { border: 1px solid var( --blanco ); color: var( --blanco ); }
+.contactoDivPop .boton { border: 1px solid var( --blanco ); color: var( --blanco ); width: 190px; }
 .vacio { border-bottom: 1px solid #ff0000 !important; }
 .linea.contacto {
 	width: 30px;
@@ -416,6 +416,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	display: block;
 	margin: 45px 0;
 }
+.regresa { color: var( --blanco ); }
 .infoContacto { width: 100%; padding-bottom: 50px; }
 .infoContacto h3 { font-size: 20px; letter-spacing: 1.65px; margin-bottom: 15px; }
 .infoContacto p {

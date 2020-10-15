@@ -1,8 +1,8 @@
 <?php
 	$http = ( isset( $_SERVER[ 'HTTPS' ] ) ) ? 'https' : 'http';
 	$url = $http . '://' . $_SERVER[ 'HTTP_HOST' ] . $_SERVER[ 'REQUEST_URI' ];
-	//$base = $http . '://' . $_SERVER[ 'HTTP_HOST' ];
-	$base = $http . '://' . $_SERVER[ 'HTTP_HOST' ] . '/v2/';
+	$base = $http . '://' . $_SERVER[ 'HTTP_HOST' ];
+	//$base = $http . '://' . $_SERVER[ 'HTTP_HOST' ] . '/v2/';
 	$nombreArchivo = basename( $_SERVER[ 'PHP_SELF' ] );
 	$bodyClass = 'general';
 	switch ( $nombreArchivo ) {
@@ -50,7 +50,7 @@
 	<body class="<?php echo $bodyClass; ?>">
 		<div class="capaNegra" onclick="cierraPop()"></div>
 		<div class="popup" id="agendaPopup">
-			<a class="cierra" onclick="popup( 'agendaPopup', false )"><i class="fas fa-times"></i></a>
+			<a class="cierra" onclick="popup( 'agendaPopup', false ); regresaFecha();"><i class="fas fa-times"></i></a>
 			<div class="flexBox">
 				<div class="horario">
 					<img src="images/logo.svg">
@@ -76,7 +76,7 @@
 				</div>
 			</div>
 			<div class="contactoDivPop" id="agendaForm">
-				<h1>Enter Details</h1>
+				<h1><a href="#" class="noHref regresa" onclick="regresaFecha()"><i class="fas fa-chevron-left"></i></a> Enter Details</h1>
 				<input type="hidden" id="fechaElegida">
 				<input type="hidden" id="horaElegida">
 				<label for="nameAgenda">Name</label>
