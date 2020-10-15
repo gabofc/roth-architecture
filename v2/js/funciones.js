@@ -1,5 +1,10 @@
 function alerta( titulo, mensaje, tipo ) {
-	swal( titulo, mensaje, tipo );
+	swal( {
+		icon: tipo,
+		text: mensaje,
+		timer: 1200,
+		button: false
+	} );
 }
 function confirmacion( titulo, pregunta ) {
 	swal( {
