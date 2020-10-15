@@ -15,7 +15,7 @@
 </div>
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/ad.jpg" class="mainImg"></div>
+		<div class="pressImg scrollAnimation"><img src="images/press/1.jpg" class="mainImg"></div>
 		<div class="pressContent">
 			<img src="images/press/ad.svg" class="scrollAnimation">
 			<span class="scrollAnimation">Architectural Digest</span>
@@ -29,7 +29,7 @@
 </div>
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/decor.jpg" class="mainImg"></div>
+		<div class="pressImg scrollAnimation"><img src="images/press/2.jpg" class="mainImg"></div>
 		<div class="pressContent">
 			<img src="images/press/ad.svg" class="scrollAnimation">
 			<span class="scrollAnimation">Architectural Digest Spain</span>
@@ -43,7 +43,7 @@
 </div>
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/traveler.jpg" class="mainImg"></div>
+		<div class="pressImg scrollAnimation"><img src="images/press/3.jpg" class="mainImg"></div>
 		<div class="pressContent">
 			<img src="images/press/travel_leisure.png" class="scrollAnimation">
 			<span class="scrollAnimation">Travel and Leisure</span>
