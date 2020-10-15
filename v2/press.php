@@ -45,6 +45,7 @@
 	<div class="principal">
 		<div class="pressImg scrollAnimation"><img src="images/press/traveler.jpg" class="mainImg"></div>
 		<div class="pressContent">
+			<img src="images/press/travel_leisure.png" class="scrollAnimation">
 			<span class="scrollAnimation">Travel and Leisure</span>
 			<!-- <span class="scrollAnimation">Date: November 2018</span>
 			<span class="scrollAnimation">Business Unit: AZULIK Uh May</span>-->
@@ -87,6 +88,7 @@
 	<div class="principal">
 		<div class="pressImg scrollAnimation"><img src="images/press/decor.jpg" class="mainImg"></div>
 		<div class="pressContent">
+			<img src="images/press/sbid_logo.png" class="scrollAnimation">
 			<span class="scrollAnimation">Society of British Interior Designers</span>
 			<!-- <span class="scrollAnimation">Date: September 2019</span>
 			<span class="scrollAnimation">Business Unit: SFER IK, Roth Architecture</span>-->
@@ -116,6 +118,7 @@
 	<div class="principal">
 		<div class="pressImg scrollAnimation"><img src="images/press/decor.jpg" class="mainImg"></div>
 		<div class="pressContent">
+			<img src="images/press/forbes.png" class="scrollAnimation">
 			<span class="scrollAnimation">Forbes</span>
 			<!-- <span class="scrollAnimation">Date: October 2019</span>
 			<span class="scrollAnimation">Business Unit: Roth Architecture</span>-->
