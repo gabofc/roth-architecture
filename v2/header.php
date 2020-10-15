@@ -4,7 +4,12 @@
 	//$base = $http . '://' . $_SERVER[ 'HTTP_HOST' ];
 	$base = $http . '://' . $_SERVER[ 'HTTP_HOST' ] . '/v2/';
 	$nombreArchivo = basename( $_SERVER[ 'PHP_SELF' ] );
-	$bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general';
+	$bodyClass = 'general';
+	switch ( $nombreArchivo ) {
+		case 'index.php': $bodyClass = 'home'; break;
+		case 'contact.php': $bodyClass = 'general contact'; break;
+		default: $bodyClass = 'general'; break;
+	}
 ?>
 <!DOCTYPE html>
 <html lang="EN">

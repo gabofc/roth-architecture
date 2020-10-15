@@ -52,6 +52,8 @@ $( document ).ready( function() {
 			var alturaTotal = $( document ).height();
 			var porcentajeActual = ( posicion * 100 ) / alturaTotal;
 			$( '.scrollBarPosition span' ).css( 'top', porcentajeActual + '%' );
+			/*var alturaTope = $( document ).height() - $( document ).height();
+			if ( $())*/
 		} );
 	}
 	$( '#busquedaInput' ).keyup( function() {

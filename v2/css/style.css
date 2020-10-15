@@ -68,9 +68,9 @@ header .menu li a:hover > span, header .menu li.activo a span { width: 100%; }
 .bMobileCierra.abierto { opacity: 1; }
 a { text-decoration: none; cursor: pointer; }
 img { max-width: 100%; }
-.home header { background-color: transparent; }
+.home header { background-color: rgba( 0, 0, 0, 0.4 ); }
 .home header:hover { background-color: var( --negro ); }
-main { padding-top: 171px; }
+main { padding-top: 171px; position: relative; }
 .home main {
 	position: absolute;
 	width: 100%;
@@ -413,7 +413,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	display: block;
 	margin: 45px 0;
 }
-.infoContacto { width: 100%; }
+.infoContacto { width: 100%; padding-bottom: 50px; }
 .infoContacto h3 { font-size: 20px; letter-spacing: 1.65px; margin-bottom: 15px; }
 .infoContacto p {
 	font-family: 'Roboto Mono', monospace;
@@ -425,9 +425,39 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	position: absolute;
 	top: 0;
 	right: 0;
-	margin-top: -75px;
 	width: 50%;
+	height: 100%;
+	background-position: top center !important;
+	background-size: cover !important;
 }
+.contactoMuestra { display: block; }
+.agendaDiv { display: none; text-align: center; }
+.scheduleBoton {
+	position: absolute;
+	bottom: 40px;
+	right: 35px;
+	font-size: 21px;
+	letter-spacing: 1.85px;
+	color: var( --letraFooter );
+	padding: 8px 0;
+	text-transform: uppercase;
+	border-bottom: 1px solid var( --letraFooter );
+	z-index: 111;
+}
+.ui-datepicker-title { text-align: left; box-sizing: border-box; padding: 20px 0; }
+.ui-datepicker-title, .ui-datepicker-calendar {
+	width: 350px;
+	max-width: 100%;
+	margin: 20px auto;
+}
+.ui-datepicker-calendar th { text-transform: uppercase; }
+.ui-datepicker-calendar td {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	font-family: 'Roboto Mono', monospace;
+}
+.ui-datepicker-calendar td a { color: var( --negro ); }
 .founderImgTmp {
 	position: absolute;
 	top: 0;
@@ -442,6 +472,7 @@ body.general footer {
 	padding: 82px 0;
 	box-sizing: border-box;
 }
+body.general.contact footer { margin-top: 0; }
 footer .footerContent { display: flex; margin-top: 85px; }
 footer .footerContent h1 {
 	margin: 0;
