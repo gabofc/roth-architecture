@@ -31,7 +31,7 @@
 				</div>
 				<div class="descripcion">
 					<b class="scrollAnimation">WINNER</b>
-					<b class="scrollAnimation">Category: Details Plus Architecture + Wood (5)</b>
+					<b class="scrollAnimation">Category: Details Plus Architecture + Wood</b>
 					<b class="scrollAnimation">Project: SFER IK Museion Uh May (Jury Winner)</b>
 					<span class="scrollAnimation"></span>
 					<p class="scrollAnimation">The Architizer A+Awards is the largest awards program focused on promoting and celebrating the year’s best architecture and products. The awards bring together the largest online community of architects in the world, including the elite of world architecture, who champion meaningful design and the qualities that are integral to bringing great buildings to life.</p>
