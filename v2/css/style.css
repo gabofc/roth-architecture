@@ -79,6 +79,12 @@ main { padding-top: 171px; }
 	z-index: 1;
 	padding-top: 0;
 }
+.home .sociales {
+	position: absolute;
+	bottom: 30px;
+	left: 60px;
+	z-index: 111;
+}
 .bx-viewport, .bx-wrapper{
 	position:relative;
 	width:100%;
@@ -243,6 +249,20 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	text-transform: uppercase;
 	display: block;
 	margin-top: -20px;
+}
+.scrollBarPosition {
+	position: absolute;
+	height: 500px;
+	width: 3px;
+	border-left: 1px solid var( --negro );
+	top: 280px;
+	left: 50px;
+}
+.scrollBarPosition span {
+	display: block;
+	height: 130px;
+	width: 2px;
+	background-color: var( --negro );
 }
 .aboutItem { margin: 100px 0; display: flex; }
 .aboutItem.vertical { align-items: center; justify-content: center; }
@@ -414,7 +434,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	box-sizing: border-box;
 }
 body.general footer {
-	margin-top: 150px;
+	margin-top: 180px;
 	background-color: var( --negro );
 	color: var( --letraFooter );
 	padding: 82px 0;
@@ -465,6 +485,9 @@ footer .footerContent p {
 }
 .tCenter { text-align: center; }
 footer .footerContent .tercerColumna img { width: 350px; height: auto; }
+@media screen and ( max-width: 1650px ) {
+	.imgContact { top: 0; margin-top: 0; }
+}
 @media screen and ( max-width: 1350px ) {
 	.textContent.contacto { max-width: 40%; }
 }
@@ -561,10 +584,11 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.bMobile { top: 30px; }
 }
 @media screen and ( max-width: 450px ) {
+	.home .sociales { left: 30px; }
 	.principal { padding: 0 30px; }
 	.bMobile { right: 30px; }
 }
-@media screen and ( max-width: 410px ) { header .principal { padding-left: 20px; } }
+@media screen and ( max-width: 410px ) { header .principal { padding-left: 20px; } .home .sociales { left: 20px; } }
 @media screen and ( max-width: 395px ) { .logoImg { width: 250px; } }
 @media screen and ( max-width: 375px ) {
 	footer .footerContent p { font-size: 20px; }
