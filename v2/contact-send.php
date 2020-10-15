@@ -38,7 +38,7 @@
 		$mail->From = 'crm@azulik.com';
 		$mail->FromName = 'AZULIK Tulum';
 		//$mail->AddAddress( 'contacto@roth-architecture.com'], 'Roth Contact Form' );
-		$mail->AddAddress( 'gfernandez@azulik.com'], 'Roth Contact Form' );
+		$mail->AddAddress( 'gfernandez@azulik.com', 'Roth Contact Form' );
 		$mail->IsHTML( true );
 		$mail->CharSet = 'UTF-8';
 		$mail->AltBody = $thanks_subject;
@@ -50,11 +50,10 @@
 		} else {
 			if( $mail -> Send() ) {
 				$status = array( 'status' => 'Success' );
-				header('location: '. $_POST['retURL']);
 			} else {
-				$status = array( 'status' => 'Error' );
-				echo 'Mailer Error: ' . $mail->ErrorInfo;
+				$status = array( 'status' => 'Error', 'mensaje' => $mail->ErrorInfo );
 			}
+			echo json_encode( $status );
 		}
 		exit();
 	}

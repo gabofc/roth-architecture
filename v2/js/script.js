@@ -80,7 +80,7 @@ $( document ).ready( function() {
 function enviar() {
 	if ( validaTodo( 'contactoForm' ) ) {
 		var parametros = { 'nombre': $( '#nombre' ).val(), 'email': $( '#email' ).val(), 'telefono': $( '#telefono' ).val(), 'mensaje': $( '#mensaje' ).val() };
-		ajaxRequest( 'POST', parametros, 'panel/querys/enviar', respuestaEnviar );
+		ajaxRequest( 'POST', parametros, 'contact-send', respuestaEnviar );
 	}
 }
 function respuestaEnviar( respuesta ) {
@@ -92,7 +92,7 @@ function respuestaEnviar( respuesta ) {
 		alerta( titulo, mensaje, 'success' )
 		vacia( 'contactForm' );
 	} else {
-		errorCallback();
+		alerta( 'Error', datos.mensaje, 'error' )
 	}
 }
 function buscadorGeneralSobreHtml( busca ) {
@@ -143,7 +143,7 @@ function reseteaBusqueda( elemento ) {
 }
 function agendaCita( paso ) {
 	if ( paso == 1 ) {
-		if ( $( '#fechaElegida' ).val() != '' && $( '#fechaElegida' ).val() != '' ) {
+		if ( $( '#fechaElegida' ).val() != '' && $( '#horaElegida' ).val() != '' ) {
 			console.log( 'pasando a paso 2' );
 			$( '.popup .flexBox' ).slideToggle( 'fast', function() {
 				$( '.contactoDivPop' ).slideToggle();
@@ -158,5 +158,8 @@ function regresaFecha() {
 	$( '.contactoDivPop' ).slideToggle( 'fast', function() {
 		$( '.popup .flexBox' ).slideToggle();
 		$( '.popup' ).removeClass( 'datos' );
+		$( '#horaElegida' ).val( '' );
+		$( '#fechaElegida' ).val( '' );
+		$( '.horaElige' ).removeClass( 'marcada' );
 	} );
 }

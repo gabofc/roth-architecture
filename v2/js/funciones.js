@@ -1,5 +1,5 @@
 function alerta( titulo, mensaje, tipo ) {
-	/*swal( titulo, mensaje, tipo );*/
+	swal( titulo, mensaje, tipo );
 }
 function confirmacion( titulo, pregunta ) {
 	swal( {

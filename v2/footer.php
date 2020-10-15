@@ -46,7 +46,7 @@
 		<script src="https://unpkg.com/scrollreveal"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<script src="js/jquery.bxslider.js"></script>
-		<script src="js/funciones.js?v=1"></script>
+		<script src="js/funciones.js?v=2"></script>
 		<script src="js/script.js?v=<?php echo time(); ?>"></script>
 	</body>
 </html>
