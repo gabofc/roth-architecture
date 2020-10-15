@@ -1,7 +1,7 @@
 <?php
 	$http = ( isset( $_SERVER[ 'HTTPS' ] ) ) ? 'https' : 'http';
 	$url = $http . '://' . $_SERVER[ 'HTTP_HOST' ] . $_SERVER[ 'REQUEST_URI' ];
-	$base = $http . '://' . $_SERVER[ 'HTTP_HOST' ] . '/v2/';
+	$base = $http . '://' . $_SERVER[ 'HTTP_HOST' ];
 	$nombreArchivo = basename( $_SERVER[ 'PHP_SELF' ] );
 	$bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general';
 ?>
@@ -38,6 +38,7 @@
 		<script>
 			var urlActual = '<?php echo $url; ?>';
 			var archivoUsado = '<?php echo $nombreArchivo; ?>';
+			var idiomaActual = 'EN';
 		</script>
 	</head>
 	<body class="<?php echo $bodyClass; ?>">
