@@ -196,7 +196,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	max-width: 40%;
 	box-sizing: border-box;
 }
-.pressItem .pressContent img { margin-bottom: 45px; max-height: 150px; }
+.pressItem .pressContent img { margin-bottom: 45px; max-height: 100px; }
 .pressItem .pressContent span {
 	display: block;
 	font-size: 13px;
@@ -525,7 +525,7 @@ div.fecha { width: 48%; padding-left: 40px; box-sizing: border-box; }
 	margin: 0 auto;
 	left: 0;
 	right: 0;
-	top: -1000px;
+	top: -1800px;
 	transition: all 0.5s;
 	z-index: 1111111;
 }
@@ -661,6 +661,7 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.botonAgenda { right: 0; left: 0; margin: 0 auto; }
 	.bMobileCierra, .bMobile { display: block; }
 	.imgContact { display: none; }
+	.scheduleBoton { color: var( --negro ); border-bottom: 1px solid var( --negro ); }
 	.textContent.contacto {
 		width: 580px;
 		max-width: 90%;
@@ -683,6 +684,19 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.contentText { width: 100%; max-width: initial; }
 	.founderImgTmp { position: relative; width: 100%; margin-top: 50px; }
 	footer .footerContent .primerColumna { margin-left: 20px; }
+	div.fecha { padding-left: 20px; }
+	.horario { padding-right: 20px; }
+}
+@media screen and ( max-width: 900px ) {
+	.popup { height: 100%; overflow-y: auto; }
+	.popup .flexBox { display: block; }
+	.popup .horario, .popup .fecha { width: 100%; padding: 15px 0; }
+	.popup .lineVertical { width: 100%; height: 1px; }
+	.popup .horario h1 { margin-top: 0; }
+	.horarioScroll { height: 180px; }
+	#datepicker { margin-top: 10px; }
+	#datepicker, .ui-datepicker-title, .ui-datepicker-calendar, .ui-datepicker-header { width: 100%; }
+	.ui-datepicker-title { padding: 0; }
 }
 @media screen and ( max-width: 840px ) {
 	footer { text-align: center; }
@@ -697,13 +711,14 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.busquedaDiv input { width: 200px; }
 	.awardItem .contenido { display: block; }
 	.awardItem .contenido .titulos, .awardItem .contenido .descripcion { width: 100%; max-width: initial; }
+	.scheduleBoton { position: relative; margin: 50px auto; right: 0; left: 0; display: block; width: 220px; }
 }
 @media screen and ( max-width: 610px ) {
 	.busquedaDiv { float: none; max-width: 100%; width: 250px; margin: 0 auto; }
 	.titulos { float: none; width: 100%; text-align: center; }
 	.pressItem .pressContent { margin-top: 20px; }
-	.contactoDiv .mitad { display: block; }
-	.contactoDiv .mitad .campo { width: 100%; }
+	.contactoDiv .mitad, .popup .mitad { display: block; }
+	.contactoDiv .mitad .campo, .popup .mitad .campo { width: 100%; }
 	.contactoDiv .mitad .campo:first-child { padding-right: 0 }
 	.scrollBarPosition { display: none; }
 }
