@@ -85,7 +85,7 @@
 					</div>
 					<div class="campo">
 						<label for="companyAgenda">Company</label>
-						<input type="companyAgenda" id="name">
+						<input type="companyAgenda" id="companyAgenda">
 					</div>
 				</div>
 				<label for="messageAgenda">Your Message</label>

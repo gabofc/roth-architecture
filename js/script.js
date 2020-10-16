@@ -101,7 +101,7 @@ function respuestaEnviar( respuesta ) {
 		var titulo = ( idiomaActual == 'ES' ) ? 'Éxito' : 'Success';
 		var mensaje = ( idiomaActual == 'ES' ) ? 'Enviado con exito, en breve te contactaremos' : 'Sent successfully, we will contact you shortly';
 		alerta( titulo, mensaje, 'success' )
-		vacia( 'contactForm' );
+		vacia( 'contactoForm' );
 	} else {
 		alerta( 'Error', datos.mensaje, 'error' );
 	}
