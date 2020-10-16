@@ -75,22 +75,22 @@
 				<input type="hidden" id="fechaElegida">
 				<input type="hidden" id="horaElegida">
 				<label for="nameAgenda">Name</label>
-				<input type="text" id="nameAgenda" class="obligatorio">
+				<input type="text" id="nameAgenda" class="obligatorio" padre="agendaForm">
 				<label for="emailAgenda">Email</label>
-				<input type="text" id="emailAgenda" class="obligatorio email">
+				<input type="text" id="emailAgenda" class="obligatorio email" padre="agendaForm">
 				<div class="mitad">
 					<div class="campo">
 						<label for="phoneAgenda">Phone</label>
-						<input type="text" id="phoneAgenda" class="obligatorio telefono">
+						<input type="text" id="phoneAgenda" class="obligatorio telefono" padre="agendaForm">
 					</div>
 					<div class="campo">
 						<label for="companyAgenda">Company</label>
-						<input type="companyAgenda" id="companyAgenda">
+						<input type="companyAgenda" id="companyAgenda" padre="agendaForm">
 					</div>
 				</div>
 				<label for="messageAgenda">Your Message</label>
-				<input type="text" id="messageAgenda" class="obligatorio">
-				<a href="#" class="boton noHref" onclick="agendaCita( 2 )">Schedule Call</a>
+				<input type="text" id="messageAgenda" class="obligatorio" padre="agendaForm">
+				<a href="#" class="boton noHref submit" onclick="agendaCita( 2 )">Schedule Call</a>
 			</div>
 		</div>
 		<header>

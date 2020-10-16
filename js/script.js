@@ -87,6 +87,17 @@ $( document ).ready( function() {
 		$( this ).addClass( 'marcada' );
 		agendaCita( 1 );
 	} );
+	$( 'input, textarea' ).keypress( function( e ) {
+		var elementoPadre = $( this ).attr( 'padre' );
+		var funcionEjecuta = $( '#' + elementoPadre + ' .submit' ).attr( 'onclick' );
+		var keynum = window.event ? window.event.keyCode : e.which;
+		if ( keynum == 13 ) {
+			console.log( 'Enter' );
+			console.log( elementoPadre );
+			console.log( funcionEjecuta );
+			eval( funcionEjecuta );
+		}
+	} );
 } );
 function enviar() {
 	if ( validaTodo( 'contactoForm' ) ) {
