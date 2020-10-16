@@ -103,7 +103,7 @@ function respuestaEnviar( respuesta ) {
 		alerta( titulo, mensaje, 'success' )
 		vacia( 'contactForm' );
 	} else {
-		alerta( 'Error', datos.mensaje, 'error' )
+		alerta( 'Error', datos.mensaje, 'error' );
 	}
 }
 function buscadorGeneralSobreHtml( busca ) {
@@ -179,16 +179,17 @@ function regresaFecha() {
 	} );
 }
 function respuestaAgenda( respuesta ) {
-	cargando( false );
 	datos = JSON.parse( respuesta );
 	if ( datos.status == 'Success' ) {
-		var titulo = ( idiomaActual == 'ES' ) ? 'Éxito' : 'Success';
+		cargando( false );
 		var mensaje = ( idiomaActual == 'ES' ) ? 'Agendado con exito, en breve te contactaremos' : 'Successfully scheduled, we will contact you shortly';
-		alerta( titulo, mensaje, 'success' )
+		alerta( '', mensaje, 'success' )
 		popup( 'agendaPopup', false );
 		vacia( 'agendaForm' );
 		regresaFecha();
 	} else {
-		alerta( 'Error', datos.mensaje, 'error' )
+		$( '.cargando' ).fadeOut( "slow" );
+		console.log( 'mensaje ' + datos.mensaje );
+		alerta( 'Error', datos.mensaje, 'error' );
 	}
 }
