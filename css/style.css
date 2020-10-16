@@ -79,6 +79,8 @@ main { padding-top: 171px; position: relative; }
 	z-index: 1;
 	padding-top: 0;
 }
+.founder main { padding-top: 96px; }
+.founder #mainSection { padding-top: 70px; }
 .home .sociales {
 	position: absolute;
 	bottom: 30px;
@@ -560,7 +562,7 @@ div.fecha { width: 48%; padding-left: 40px; box-sizing: border-box; }
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 45%;
+	max-width: 45%;
 	height: 150% !important;
 	box-sizing: border-box;
 }
@@ -659,6 +661,7 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 @media screen and ( max-width: 1250px ) {
 	.imgContact { width: 58%; }
 	footer .footerContent .tercerColumna { margin-left: 180px; }
+	.founderImgTmp { height: 135% !important; }
 }
 @media screen and ( max-width: 1165px ) {
 	header { text-align: center; }
@@ -691,6 +694,7 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	footer .footerContent .primerColumna,
 	footer .footerContent .segundaColumna,
 	footer .footerContent .tercerColumna { margin-left: 80px; }
+	.founderImgTmp { height: auto !important; }
 }
 @media screen and ( max-width: 985px ) {
 	.imgContact { display: none; }
@@ -715,7 +719,9 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 		margin-bottom: 30px;
 	}
 	.contentText { width: 100%; max-width: initial; }
-	.founderImgTmp { position: relative; width: 100%; margin-top: 50px; }
+	.founderImgTmp { display: none; }
+	.founder #mainSection { padding-top: 10px; }
+	.founder .contentText p { margin: 10px 0; }
 	footer .footerContent .primerColumna { margin-left: 20px; }
 	div.fecha { padding-left: 20px; }
 	.horario { padding-right: 20px; }
