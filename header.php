@@ -29,7 +29,7 @@
 		<meta name="twitter:site" content="@RothArchitecture" />
 		<meta name="twitter:image" content="images/logo.svg" />
 		<meta name="twitter:creator" content="@RothArchitecture" />
-		<link rel="shortcut icon" href="images/logo.svg" />
+		<link rel="shortcut icon" href="images/favicon.png" />
 		<link rel="canonical" href="<?php echo $url; ?>" />
 		<link href="css/fonts/fontawesome/css/all.min.css" rel="stylesheet">
 		<link href="css/jquery.bxslider.css" rel="stylesheet" />
