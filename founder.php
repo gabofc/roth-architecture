@@ -12,14 +12,14 @@
 					<p class="scrollAnimation">For the last ten years, Roth has fostered an ongoing dialogue with indigenous and contemporary communities to promote the exchange of ideas and knowledge. With each project, he promotes the preservation of local culture and the recovery of the knowledge and values ​​of ancestral wisdom to promote different forms of interaction with the environment and its protection.</p>
 					<p class="scrollAnimation">This effort converges with the urge to explore, through art, the conceptualization of the human essence and our connection with the planet.</p>
 				</div>
-				<img src="images/founder/founder-01.jpg" class="founderImgTmp scrollAnimation">
+				<img src="images/founder/roth-01.jpg" class="founderImgTmp scrollAnimation">
 			</div>
 		</section>
 		<section class="panel tCenter">
-			<img src="images/founder/founder-02.jpg">
+			<img src="images/founder/roth-02.jpg">
 		</section>
 		<section class="panel tCenter">
-			<img src="images/founder/founder.jpg">
+			<img src="images/founder/roth-03.jpg">
 		</section>
 		<section class="panel tCenter">
 			<a href="#" class="volverContent vuelveLink"><i class="fas fa-arrow-left"></i><br>Return</a>
