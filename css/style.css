@@ -570,9 +570,6 @@ body.general footer {
 	box-sizing: border-box;
 }
 body.general.contact footer, body.general.press footer { margin-top: 0; }
-
-
-
 #pinContainer {
 	width: 100%;
 	height: 100% !important;
@@ -602,7 +599,6 @@ body.general.contact footer, body.general.press footer { margin-top: 0; }
 	margin: 50px auto;
 }
 .volverContent i { font-size: 50px; }
-
 footer .footerContent { display: flex; margin-top: 85px; }
 footer .footerContent h1 {
 	margin: 0;

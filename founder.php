@@ -1,9 +1,9 @@
 <?php include 'header.php'; ?>
 <div id="pinContainer">
 	<div id="slideContainer">
-		<section class="panel blue" id="mainSection">
+		<section class="panel blue">
 			<div class="principal">
-				<h1 class="scrollAnimation">Roth</h1>
+				<h1 class="scrollAnimation" id="mainSection">Roth</h1>
 				<h2 class="scrollAnimation">Founder</h2>
 				<div class="contentText">
 					<p class="scrollAnimation italica">"…an architecture that considers sustainable ways of life that allow nature to breathe. We must go out of our conceptual and physical cave and reintegrate with our natural environs.”</p>
@@ -22,7 +22,7 @@
 			<img src="images/founder/founder-01.jpg">
 		</section>
 		<section class="panel tCenter">
-			<a href="#mainSection" class="volverContent" ><i class="fas fa-arrow-left"></i><br>Return</a>
+			<a href="#" class="volverContent vuelveLink"><i class="fas fa-arrow-left"></i><br>Return</a>
 		</section>
 		<section class="panel tCenter"></section>
 	</div>
@@ -36,12 +36,9 @@
 	$( document ).ready( function() {
 		$( window ).scroll(function(event) {
 			var posicion = $( this ).scrollTop();
-			console.log( posicion );
 			if ( posicion > 200 && posicion < 300 ) {
 				var alturaScrollMagic = $( '.scrollmagic-pin-spacer' ).height();
 				var alturaPin = $( '#pinContainer' ).height();
-				console.log( alturaScrollMagic );
-				console.log( alturaPin );
 				$( '.scrollmagic-pin-spacer' ).css( 'max-height', alturaScrollMagic + 'px' );
 				$( '#pinContainer' ).css( 'max-height', alturaPin + 'px' );
 			}

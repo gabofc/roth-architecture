@@ -6,6 +6,12 @@ $( document ).ready( function() {
 			scrollTop: ( $( target ).offset().top ) - 50
 		}, 800 );
 	} );
+	$( '.vuelveLink' ).click( function( e ) {
+		e.preventDefault();
+		$( 'html, body' ).animate( {
+			scrollTop: ( $( 'header' ).offset().top ) - 50
+		}, 800 );
+	} );
 	$( '.noHref' ).click( function( e ) {
 		e.preventDefault();
 		e.stopPropagation();
