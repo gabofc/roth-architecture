@@ -17,6 +17,9 @@
 				</div>
 			</div>
 		</section>
+		<section class="panel tCenter movilSection">
+			<img src="images/founder/roth-01.jpg">
+		</section>
 		<section class="panel tCenter">
 			<img src="images/founder/roth-02.jpg">
 		</section>
@@ -26,7 +29,6 @@
 		<section class="panel tCenter">
 			<a href="#" class="volverContent vuelveLink"><i class="fas fa-arrow-left"></i><br>Return</a>
 		</section>
-		<section class="panel tCenter"></section>
 	</div>
 </div>
 <script type="text/javascript" src="js/modernizr.custom.min.js"></script>
