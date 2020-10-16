@@ -21,13 +21,13 @@
 		<meta property="og:description" content="Roth Architecture is rooted in the unique combination of three fundamental pillars: nature, ancestry and art" />
 		<meta property="og:url" content="<?php echo $base ?>" />
 		<meta property="og:site_name" content="Roth Architecture" />
-		<meta property="og:image" content="images/logo.svg" />
-		<meta property="og:image:secure_url" content="images/logo.svg" />
+		<meta property="og:image" content="/images/azulik-share.jpg" />
+		<meta property="og:image:secure_url" content="/images/azulik-share.jpg" />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:description" content="Roth Architecture is rooted in the unique combination of three fundamental pillars: nature, ancestry and art" />
 		<meta name="twitter:title" content="Roth Architecture" />
 		<meta name="twitter:site" content="@RothArchitecture" />
-		<meta name="twitter:image" content="images/logo.svg" />
+		<meta name="twitter:image" content="/images/azulik-share.jpg" />
 		<meta name="twitter:creator" content="@RothArchitecture" />
 		<link rel="shortcut icon" href="images/favicon.png" />
 		<link rel="canonical" href="<?php echo $url; ?>" />
