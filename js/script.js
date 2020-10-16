@@ -28,18 +28,15 @@ $( document ).ready( function() {
 			}, 500 );
 		}, 300 );
 	} );
-	ScrollReveal().reveal(
-		'.scrollAnimation',
-		{
-			delay: 200,
-			distance: '20%',
-			origin: 'bottom',
-			opacity: 0,
-			useDelay: 'always',
-			viewFactor: 0.1,
-			interval: 200
-		}
-	);
+	ScrollReveal().reveal( '.scrollAnimation', {
+		delay: 200,
+		distance: '20%',
+		origin: 'bottom',
+		opacity: 0,
+		useDelay: 'always',
+		viewFactor: 0.1,
+		interval: 200
+	} );
 	if ( archivoUsado == 'index.php' ) {
 		$( '#mainSlide' ).bxSlider( {
 			auto: true,

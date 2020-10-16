@@ -3,13 +3,7 @@
 	$url = $http . '://' . $_SERVER[ 'HTTP_HOST' ] . $_SERVER[ 'REQUEST_URI' ];
 	$base = $http . '://' . $_SERVER[ 'HTTP_HOST' ];
 	$nombreArchivo = basename( $_SERVER[ 'PHP_SELF' ] );
-	$bodyClass = 'general';
-	switch ( $nombreArchivo ) {
-		case 'index.php': $bodyClass = 'home'; break;
-		case 'contact.php': $bodyClass = 'general contact'; break;
-		case 'press.php': $bodyClass = 'general press'; break;
-		default: $bodyClass = 'general'; break;
-	}
+	$bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_replace( '.php', '', $nombreArchivo );
 ?>
 <!DOCTYPE html>
 <html lang="EN">
