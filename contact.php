@@ -15,11 +15,11 @@
 				</div>
 				<div class="campo">
 					<label for="company">Company</label>
-					<input type="company" name="company" id="name">
+					<input type="company" name="company" id="company">
 				</div>
 			</div>
 			<label for="message">Your Message</label>
-			<input type="text" id="message"  name="message" class="obligatorio">
+			<input type="text" id="message" name="message" class="obligatorio">
 			<a href="#" class="boton noHref" onclick="enviar()">Send message</a>
 		</div>
 		<span class="linea contacto"></span>

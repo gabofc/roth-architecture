@@ -560,6 +560,7 @@ div.fecha { width: 48%; padding-left: 40px; box-sizing: border-box; }
 	top: 0;
 	right: 0;
 	width: 45%;
+	height: 150% !important;
 	box-sizing: border-box;
 }
 body.general footer {
