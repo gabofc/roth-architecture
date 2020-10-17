@@ -38,6 +38,9 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 <script>
 	$( document ).ready( function() {
+		if ( $( window ).width() < 950 ) {
+			$( '.movilSection' ).show();
+		}
 		$( window ).scroll(function(event) {
 			var posicion = $( this ).scrollTop();
 			if ( posicion > 200 && posicion < 300 ) {
