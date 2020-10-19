@@ -175,7 +175,7 @@ function agendaCita( paso ) {
 	} else {
 		console.log( 'finalizando a paso 2' );
 		if ( validaTodo( 'agendaForm' ) ) {
-			var parametros = { 'date': $( '#fechaElegida' ).val(), 'time': $( '#horaElegida' ).val(), 'name': $( '#nameAgenda' ).val(), 'email': $( '#emailAgenda' ).val(), 'phone': $( '#phoneAgenda' ).val(), 'company': $( '#companyAgenda' ).val(), 'message': $( '#messageAgenda' ).val() };
+			var parametros = { 'date': $( '#fechaElegida' ).val(), 'time': $( '#horaElegida' ).val(), 'name': $( '#nameAgenda' ).val(), 'email': $( '#emailAgenda' ).val(), 'phone': $( '#phoneAgenda' ).val(), 'company': $( '#companyAgenda' ).val(), 'message': $( '#messageAgenda' ).val(), 'timezone': $( '#timezone' ).val() };
 			ajaxRequest( 'POST', parametros, 'contact-send', respuestaAgenda );
 		}
 	}

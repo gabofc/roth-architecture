@@ -610,6 +610,17 @@ body.general.contact footer, body.general.press footer { margin-top: 0; }
 	margin: 50px auto;
 }
 .volverContent i { font-size: 50px; }
+#timezone {
+	width: 50%;
+    float: right;
+    margin-top: -30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var( --blanco );
+    color: var( --blanco );
+}
+#timezone option { color: var( --negro ); }
 footer .footerContent { display: flex; margin-top: 85px; }
 footer .footerContent h1 {
 	margin: 0;
