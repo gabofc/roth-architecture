@@ -216,8 +216,6 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 .pressItem .pressContent p { font-size: 14px; line-height: 2.29; letter-spacing: 1.4px; }
 .pressItem .pressContent a {
 	font-family: 'Roboto Mono', monospace;
-	display: block;
-	width: 98px;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 1.64;
@@ -225,7 +223,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	border-bottom: 0.7px solid var( --bordePress );
 	text-transform: uppercase;
 	color: var( --negro );
-	margin-top: 18px;
+	margin-top: 25px;
 }
 .fullImg { width: 100%; height: auto; }
 .testimonioText {
