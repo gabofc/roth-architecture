@@ -51,15 +51,15 @@
 					<h1>SCHEDULE A CALL</h1>
 					<h2>30 MINUTES</h2>
 					<select id="timezone">
-						<option value="CT">Central Time zone</option>
-						<option value="ST">American Samoa, Jarvis Island, Kingman Reef, Midway Atoll and Palmyra Atoll</option>
-						<option value="HT">Hawaii, most of the Aleutian Islands, and Johnston Atoll</option>
-						<option value="AKT">most of the state of Alaska</option>
-						<option value="PT">Pacific Time zone</option>
-						<option value="MT">Mountain Time zone</option>
-						<option value="ET">Eastern Time zone</option>
-						<option value="AST">Puerto Rico, the U.S. Virgin Islands</option>
-						<option value="ChT">Guam and the Northern Mariana Islands</option>
+						<option value="ST">-11:00 - American Samoa</option>
+						<option value="HT">-10:00 - Most of the Aleutian Islands</option>
+						<option value="AKT">-09:00 - Most of the state of Alaska</option>
+						<option value="PT">-08:00 - Pacific Time zone</option>
+						<option value="MT">-07:00 - Mountain Time zone</option>
+						<option value="CT">-06:00 - Central Time zone</option>
+						<option value="ET">-05:00 - Eastern Time zone</option>
+						<option value="AST">-04:00 - The U.S. Virgin Islands</option>
+						<option value="ChT">+10:00 - Guam and the Northern Islands</option>
 					</select>
 					<div class="horarioScroll">
 						<div class="horaElige" tiempo="10:00">10:00 - 10:30 hrs</div>
