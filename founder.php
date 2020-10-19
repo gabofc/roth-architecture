@@ -17,6 +17,9 @@
 				</div>
 			</div>
 		</section>
+		<section class="panel tCenter movilSection">
+			<img src="images/founder/roth-01.jpg">
+		</section>
 		<section class="panel tCenter">
 			<img src="images/founder/roth-02.jpg">
 		</section>
@@ -26,7 +29,6 @@
 		<section class="panel tCenter">
 			<a href="#" class="volverContent vuelveLink"><i class="fas fa-arrow-left"></i><br>Return</a>
 		</section>
-		<section class="panel tCenter"></section>
 	</div>
 </div>
 <script type="text/javascript" src="js/modernizr.custom.min.js"></script>
@@ -36,6 +38,9 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 <script>
 	$( document ).ready( function() {
+		if ( $( window ).width() < 950 ) {
+			$( '.movilSection' ).show();
+		}
 		$( window ).scroll(function(event) {
 			var posicion = $( this ).scrollTop();
 			if ( posicion > 200 && posicion < 300 ) {

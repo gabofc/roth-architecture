@@ -54,6 +54,7 @@ header .menu li a:hover > span, header .menu li.activo a span { width: 100%; }
 	color: var( --blanco );
 	display: none;
 }
+.movilSection { display: none; }
 .bMobileCierra {
 	position: fixed;
 	z-index: 111;
@@ -725,6 +726,9 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	footer .footerContent .primerColumna { margin-left: 20px; }
 	div.fecha { padding-left: 20px; }
 	.horario { padding-right: 20px; }
+	.movilSection { display: flex; }
+	.founder .panel img { height: auto; max-width: 100%; max-height: 100%; }
+	.founder .panel { display: flex; align-items: center; }
 }
 @media screen and ( max-width: 900px ) {
 	.popup { height: 100%; overflow-y: auto; }
