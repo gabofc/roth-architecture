@@ -59,7 +59,7 @@
 			</div>
 			<div class="awardImg scrollAnimation">
 				<img src="images/awards/3.jpg">
-				 <a href="#" target="_blank">Read More</a>
+				 <a href="https://www.sbid.org/residential-design-uh-may-residence-19/" target="_blank">Read More</a>
 				<div class="linea"></div>
 			</div>
 		</div>
