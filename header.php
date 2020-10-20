@@ -1,9 +1,9 @@
 <?php
-	$http = ( isset( $_SERVER[ 'HTTPS' ] ) ) ? 'https' : 'http';
-	$url = $http . '://' . $_SERVER[ 'HTTP_HOST' ] . $_SERVER[ 'REQUEST_URI' ];
-	$base = $http . '://' . $_SERVER[ 'HTTP_HOST' ];
-	$nombreArchivo = basename( $_SERVER[ 'PHP_SELF' ] );
-	$bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_replace( '.php', '', $nombreArchivo );
+$http = ( isset( $_SERVER[ 'HTTPS' ] ) ) ? 'https' : 'http';
+$url = $http . '://' . $_SERVER[ 'HTTP_HOST' ] . $_SERVER[ 'REQUEST_URI' ];
+$base = $http . '://' . $_SERVER[ 'HTTP_HOST' ];
+$nombreArchivo = basename( $_SERVER[ 'PHP_SELF' ] );
+$bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_replace( '.php', '', $nombreArchivo );
 ?>
 <!DOCTYPE html>
 <html lang="EN">
