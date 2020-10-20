@@ -92,7 +92,7 @@
 				<div class="mitad">
 					<div class="campo">
 						<label for="phoneAgenda">Phone</label>
-						<input type="text" id="phoneAgenda" class="obligatorio telefono" padre="agendaForm">
+						<input type="text" id="codeAgenda" placeholder="+" class="obligatorio"><input type="text" id="phoneAgenda" class="obligatorio telefono" padre="agendaForm">
 					</div>
 					<div class="campo">
 						<label for="companyAgenda">Company</label>
