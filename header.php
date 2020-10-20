@@ -29,7 +29,7 @@
 		<meta name="twitter:site" content="@RothArchitecture" />
 		<meta name="twitter:image" content="/images/azulik-share.jpg" />
 		<meta name="twitter:creator" content="@RothArchitecture" />
-		<link rel="shortcut icon" href="images/favicon-no-bg.png" />
+		<link rel="shortcut icon" href="images/favicon-black-bg.png" />
 		<link rel="canonical" href="<?php echo $url; ?>" />
 		<link href="css/fonts/fontawesome/css/all.min.css" rel="stylesheet">
 		<link href="css/jquery.bxslider.css" rel="stylesheet" />
@@ -56,7 +56,7 @@
 						<option value="AKT">-09:00 - Most of the state of Alaska</option>
 						<option value="PT">-08:00 - Pacific Time zone</option>
 						<option value="MT">-07:00 - Mountain Time zone</option>
-						<option value="CT">-06:00 - Central Time zone</option>
+						<option value="CT" selected>-06:00 - Central Time zone</option>
 						<option value="ET">-05:00 - Eastern Time zone</option>
 						<option value="AST">-04:00 - The U.S. Virgin Islands</option>
 						<option value="ChT">+10:00 - Guam and the Northern Islands</option>
@@ -92,7 +92,7 @@
 				<div class="mitad">
 					<div class="campo">
 						<label for="phoneAgenda">Phone</label>
-						<input type="text" id="codeAgenda" placeholder="+" class="obligatorio"><input type="text" id="phoneAgenda" class="obligatorio telefono" padre="agendaForm">
+						<input type="text" id="codeAgenda" placeholder="+" maxlength="3" class="obligatorio"><input type="text" id="phoneAgenda" class="obligatorio telefono" padre="agendaForm">
 					</div>
 					<div class="campo">
 						<label for="companyAgenda">Company</label>
