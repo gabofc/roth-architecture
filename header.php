@@ -30,6 +30,7 @@ $bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_repla
 		<meta name="twitter:image" content="/images/azulik-share.jpg" />
 		<meta name="twitter:creator" content="@RothArchitecture" />
 		<link rel="shortcut icon" href="images/favicon-black-bg.png" />
+		<link rel="icon" type="image/png" href="images/favicon-black-bg.png">
 		<link rel="canonical" href="<?php echo $url; ?>" />
 		<link href="css/fonts/fontawesome/css/all.min.css" rel="stylesheet">
 		<link href="css/jquery.bxslider.css" rel="stylesheet" />
