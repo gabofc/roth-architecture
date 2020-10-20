@@ -11,7 +11,7 @@
 			<div class="mitad">
 				<div class="campo">
 					<label for="phone">Phone</label>
-					<input type="text" id="code" placeholder="+" class="obligatorio"><input type="text" id="phone" name="phone" class="obligatorio telefono" padre="contactoForm">
+					<input type="text" id="code" placeholder="+" class="obligatorio" maxlength="3"><input type="text" id="phone" name="phone" class="obligatorio telefono" padre="contactoForm">
 				</div>
 				<div class="campo">
 					<label for="company">Company</label>
