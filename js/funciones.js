@@ -70,7 +70,7 @@ function validaRfc( rfcStr ) {
 function validaTodo( cual ) {
 	desmarca( cual );
 	var mal = 0;
-	var lleno = false;
+	var lleno = true;
 	var errorAcumulado = '';
 	$( '#' + cual + ' .obligatorio' ).each( function() {
 		var clase = $( this ).attr( 'class' );
@@ -86,8 +86,8 @@ function validaTodo( cual ) {
 				}
 			}
 			mal++;
+			lleno = false;
 		} else {
-			lleno = true;
 			if ( clase.indexOf( 'email' ) != -1 ) {
 				if ( !validaEmail( $( this ).val() ) ) {
 					$( this ).addClass( 'vacio' );
