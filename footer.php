@@ -42,11 +42,11 @@
 			</div>
 			<?php endif; ?>
 		</footer>
-		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 		<script src="https://unpkg.com/scrollreveal"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<script src="js/jquery.bxslider.js"></script>
-		<script src="js/funciones.js?v=6"></script>
+		<script src="js/funciones.js?v=8"></script>
 		<script src="js/script.js?v=<?php echo time(); ?>"></script>
 	</body>
 </html>
