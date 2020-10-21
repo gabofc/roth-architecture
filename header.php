@@ -45,7 +45,7 @@ $bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_repla
 	<body class="<?php echo $bodyClass; ?>">
 		<div class="cargando">
 			<i class="fas fa-spinner fa-spin"></i><br>
-			<h3>S E N D I N G</h3>
+			<h3>SENDING</h3>
 		</div>
 		<div class="capaNegra" onclick="cierraPop()"></div>
 		<div class="popup" id="agendaPopup">
