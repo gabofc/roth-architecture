@@ -10,7 +10,7 @@
 				<div class="linea scrollAnimation"></div>
 			</div>
 			<img src="images/about/About1.jpg" class="fullImg scrollAnimation">
-			<span class="caption scrollAnimation">SFER IK - Uh May</span>
+			<span class="caption scrollAnimation">Entrance to AZULIK Uh May</span>
 			<div class="aboutItem">
 				<div class="aboutContent">
 					<h3 class="scrollAnimation">We build to unite.<span></span></h3>
