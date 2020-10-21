@@ -3,7 +3,7 @@
 	<div id="slideContainer">
 		<section class="panel blue">
 			<div class="principal">
-				<img src="images/founder/roth-01.jpg" class="founderImgTmp scrollAnimation">
+				<img src="images/founder/roth-1.jpg" class="founderImgTmp scrollAnimation">
 				<div class="pTop">
 					<h1 class="scrollAnimation" id="mainSection">Roth</h1>
 					<h2 class="scrollAnimation">Founder</h2>
@@ -18,13 +18,13 @@
 			</div>
 		</section>
 		<section class="panel tCenter movilSection">
-			<img src="images/founder/roth-01.jpg">
+			<img src="images/founder/roth-1.jpg">
 		</section>
 		<section class="panel tCenter">
-			<img src="images/founder/roth-02.jpg">
+			<img src="images/founder/roth-2.jpg">
 		</section>
 		<section class="panel tCenter">
-			<img src="images/founder/roth-03.jpg">
+			<img src="images/founder/roth-3.jpg">
 		</section>
 		<section class="panel tCenter">
 			<a href="#" class="volverContent vuelveLink"><i class="fas fa-arrow-left"></i><br>Return</a>
