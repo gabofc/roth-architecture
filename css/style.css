@@ -584,9 +584,11 @@ div.fecha { width: 48%; padding-left: 40px; box-sizing: border-box; }
 	position: absolute;
 	top: 0;
 	right: 0;
-	max-width: 45%;
+	width: 48%;
 	height: 150% !important;
 	box-sizing: border-box;
+	background-size: cover !important;
+	background-position: center center !important;
 }
 body.general footer {
 	margin-top: 180px;

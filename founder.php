@@ -3,7 +3,7 @@
 	<div id="slideContainer">
 		<section class="panel blue">
 			<div class="principal">
-				<img src="images/founder/roth-1.jpg" class="founderImgTmp scrollAnimation">
+				<div class="founderImgTmp scrollAnimation" style="background-image: url( 'images/founder/roth-1.jpg' );"></div>
 				<div class="pTop">
 					<h1 class="scrollAnimation" id="mainSection">Roth</h1>
 					<h2 class="scrollAnimation">Founder</h2>
