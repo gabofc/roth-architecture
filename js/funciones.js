@@ -1,17 +1,19 @@
 function alerta( titulo, mensaje, tipo ) {
-	swal( {
-		icon: tipo,
+	Swal.fire( {
 		text: mensaje,
+		icon: tipo,
 		timer: 1200,
-		button: false
-	} );
+		showConfirmButton: false
+	} )
 }
 function confirmacion( titulo, pregunta ) {
-	swal( {
+	Swal.fire( {
 		title: titulo,
 		text: pregunta,
 		icon: 'warning',
-		buttons: [ 'NO', 'SI' ],
+		showConfirmButton: true,
+		showCancelButton: true,
+		confirmButtonText: 'Yes',
 		dangerMode: true
 	} ).then( ( desicion ) => {
 		if ( desicion ) {

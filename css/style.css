@@ -180,6 +180,19 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	display: none;
 }
 .swal-overlay { z-index: 1002222201; }
+.cargando {
+	z-index: 1002222202;
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	top: 40%;
+	left: 0;
+	display: none;
+	text-align: center;
+	color: var( --blanco );
+}
+.cargando i { font-size: 65px; }
+.cargando h3 { color: var( --blanco ); margin-top: 20px; }
 .pressItem {
 	width: 100%;
 	box-sizing: border-box;

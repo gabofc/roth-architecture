@@ -43,6 +43,10 @@ $bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_repla
 		</script>
 	</head>
 	<body class="<?php echo $bodyClass; ?>">
+		<div class="cargando">
+			<i class="fas fa-spinner fa-spin"></i><br>
+			<h3>S E N D I N G</h3>
+		</div>
 		<div class="capaNegra" onclick="cierraPop()"></div>
 		<div class="popup" id="agendaPopup">
 			<a class="cierra" onclick="popup( 'agendaPopup', false ); regresaFecha();"><i class="fas fa-times"></i></a>
