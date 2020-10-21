@@ -10,8 +10,8 @@
 ?>
 </ul>
 <div class="sociales">
-	<a href="https://www.facebook.com/Azulikofficial/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-	<a href="https://www.instagram.com/azulikofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+	<a href="https://www.facebook.com/rotharch" target="_blank"><i class="fab fa-facebook-f"></i></a>
+	<a href="https://www.instagram.com/roth_architecture/" target="_blank"><i class="fab fa-instagram"></i></a>
 	<a href="https://www.linkedin.com/company/rotharchitecture" target="_blank"><i class="fab fa-linkedin"></i></a>
 </div>
 <?php include 'footer.php'; ?>
