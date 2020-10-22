@@ -13,22 +13,7 @@ $bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_repla
 		<base href="<?php echo $base; ?>" />
 		<meta name="viewport" content="width=device-width">
 		<meta name="author" content="Roth Architecture">
-		<meta name="keywords" content="">
-		<meta name="description" content="Roth Architecture is rooted in the unique combination of three fundamental pillars: nature, ancestry and art"/>
-		<meta property="og:locale" content="en_MX" />
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Roth Architecture" />
-		<meta property="og:description" content="Roth Architecture is rooted in the unique combination of three fundamental pillars: nature, ancestry and art" />
-		<meta property="og:url" content="<?php echo $base ?>" />
-		<meta property="og:site_name" content="Roth Architecture" />
-		<meta property="og:image" content="/images/azulik-share.jpg" />
-		<meta property="og:image:secure_url" content="/images/azulik-share.jpg" />
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:description" content="Roth Architecture is rooted in the unique combination of three fundamental pillars: nature, ancestry and art" />
-		<meta name="twitter:title" content="Roth Architecture" />
-		<meta name="twitter:site" content="@RothArchitecture" />
-		<meta name="twitter:image" content="/images/azulik-share.jpg" />
-		<meta name="twitter:creator" content="@RothArchitecture" />
+		<?php include('lib/opengraph.php'); ?>
 		<link rel="shortcut icon" href="images/favicon-black-bg.png" />
 		<link rel="icon" type="image/png" href="images/favicon-black-bg.png">
 		<link rel="canonical" href="<?php echo $url; ?>" />
