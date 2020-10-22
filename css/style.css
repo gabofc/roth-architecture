@@ -125,7 +125,7 @@ main { padding-top: 171px; position: relative; }
 }
 .botonAgenda:hover { background-color: transparent; border: 1px solid var( --blanco ); }
 .scrollAnimation { visibility: hidden; }
-h1 { font-size: 50px; letter-spacing: 4.41px; font-weight: 700; text-transform: uppercase; margin: 0;}
+h1 { font-size: 45px; letter-spacing: 4.41px; font-weight: 700; text-transform: uppercase; margin: 0;}
 h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; font-size: 16px; text-transform: uppercase; }
 .contentText { margin-top: 20px; width: 534px; max-width: 50%; }
 .contentText p { margin: 30px 0; }
@@ -216,7 +216,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 .pressItem .pressContent img { margin-bottom: 45px; max-height: 60px;}
 .pressItem .pressContent span {
 	display: block;
-	font-size: 13px;
+	font-size: 16px;
 	line-height: 1.92;
 	letter-spacing: 1.14px;
 }
@@ -226,10 +226,10 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	line-height: 1.18;
 	letter-spacing: 3.2px;
 }
-.pressItem .pressContent p { font-size: 14px; line-height: 2.29; letter-spacing: 1.4px; margin-bottom: 20px}
+.pressItem .pressContent p { font-size: 16px; line-height: 2.29; letter-spacing: 1.4px; margin-bottom: 20px}
 .pressItem .pressContent a {
 	font-family: 'Roboto Mono', monospace;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 300;
 	line-height: 1.64;
 	letter-spacing: 1.32px;
@@ -257,7 +257,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	margin-top: 92px;
 }
 .caption {
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: 300;
 	line-height: 4.6;
 	letter-spacing: 1.41px;
@@ -287,7 +287,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 .aboutItem { margin: 100px 0; display: flex; }
 .aboutItem.vertical { align-items: center; justify-content: center; }
 .aboutItem h3 {
-	font-size: 50px;
+	font-size: 45px;
 	line-height: 1.38;
 	letter-spacing: 4.71px;
 	margin: 0;
@@ -584,7 +584,7 @@ div.fecha { width: 48%; padding-left: 40px; box-sizing: border-box; }
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 48%;
+	max-width: 45%;
 	height: 150% !important;
 	box-sizing: border-box;
 	background-size: cover !important;
@@ -648,7 +648,7 @@ footer .footerContent .linea { display: block; width: 24px; height: 1px; backgro
 footer .footerContent .primerColumna { min-width: 170px; margin-left: 100px; }
 footer .footerContent .menuFooter { list-style: none; padding-left: 0; }
 footer .footerContent .menuFooter li a {
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.94;
 	letter-spacing: 1.3px;
 	color: var( --letraFooter );
