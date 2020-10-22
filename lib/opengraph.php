@@ -37,21 +37,57 @@
   		'title' => 'Contact Us',
       'image' => 'azulik-share.jpg'
 		),
+		'projects.php' => array(
+			'keywords' => '',
+			'description' => 'These are the projects where our vision comes to life. We create spaces that integrate with the environment and that can host a wide range of initiatives.',
+  		'title' => 'Projects',
+      'image' => 'azulik-share.jpg'
+		),
+		'philosophy.php' => array(
+			'keywords' => '',
+			'description' => 'Three axes support our philosophy: nature, art and ancestry. We reconnect the inhabitants of our spaces with themselves, with others and with the environment. ',
+  		'title' => 'Philosophy',
+      'image' => 'azulik-share.jpg'
+		),
+		'creative-process.php' => array(
+			'keywords' => '',
+			'description' => 'Our architecture is a confirmation of the organic systems present in nature. We integrate the environment to our creative process and adapt to the ecosystem.',
+  		'title' => 'Creative Process',
+      'image' => 'azulik-share.jpg'
+		),
+		'careers.php' => array(
+			'keywords' => '',
+			'description' => 'Career opportunities at Roth Architecture. Get in touch and be part of a creative team that reconnects people with themselves, with nature and with the environment.',
+  		'title' => 'Careers',
+      'image' => 'azulik-share.jpg'
+		),
+		'news.php' => array(
+			'keywords' => '',
+			'description' => 'News and the latest from Roth Architecture. Stay tuned to the cutting edge of architecture and get the latest developments of all our projects.',
+  		'title' => 'News',
+      'image' => 'azulik-share.jpg'
+		),
+		'services.php' => array(
+			'keywords' => '',
+			'description' => 'Roth Architecture provides a wide range of services for a variety of clients. Our creative proposals can host all kinds of projects and adapt to any number of environments. ',
+  		'title' => 'Services',
+      'image' => 'azulik-share.jpg'
+		),
 	);
 ?>
 <meta name="keywords" content="">
-    <meta name="description" content="<?php echo $og[$og_page]['description']; ?>"/>
-    <meta property="og:locale" content="en_MX" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Roth Architecture<?php echo $og_page == 'index.php' ? '' : ' - ' . $og[$og_page]['title']; ?>" />
-    <meta property="og:description" content="<?php echo $og[$og_page]['description']; ?>" />
-    <meta property="og:url" content="<?php echo $base ?>" />
-    <meta property="og:site_name" content="Roth Architecture<?php echo $og_page == 'index.php' ? '' : ' - ' . $og[$og_page]['title']; ?>" />
-    <meta property="og:image" content="<?php echo $base.'/images/og/'.$og[$og_page]['image']; ?>" />
-    <meta property="og:image:secure_url" content="<?php echo $base.'/images/og/'.$og[$og_page]['image']; ?>" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:description" content="<?php echo $og[$og_page]['description']; ?>" />
-    <meta name="twitter:title" content="<?php echo $og[$og_page]['title']; ?>" />
-    <meta name="twitter:site" content="@RothArchitecture" />
-    <meta name="twitter:image" content="<?php echo $base.'/images/og/'.$og[$og_page]['image']; ?>" />
-    <meta name="twitter:creator" content="@RothArchitecture" />
+<meta name="description" content="<?php echo $og[$og_page]['description']; ?>"/>
+<meta property="og:locale" content="en_MX" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Roth Architecture<?php echo $og_page == 'index.php' ? '' : ' - ' . $og[$og_page]['title']; ?>" />
+<meta property="og:description" content="<?php echo $og[$og_page]['description']; ?>" />
+<meta property="og:url" content="<?php echo $base ?>" />
+<meta property="og:site_name" content="Roth Architecture<?php echo $og_page == 'index.php' ? '' : ' - ' . $og[$og_page]['title']; ?>" />
+<meta property="og:image" content="<?php echo $base.'/images/og/'.$og[$og_page]['image']; ?>" />
+<meta property="og:image:secure_url" content="<?php echo $base.'/images/og/'.$og[$og_page]['image']; ?>" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="<?php echo $og[$og_page]['description']; ?>" />
+<meta name="twitter:title" content="<?php echo $og[$og_page]['title']; ?>" />
+<meta name="twitter:site" content="@RothArchitecture" />
+<meta name="twitter:image" content="<?php echo $base.'/images/og/'.$og[$og_page]['image']; ?>" />
+<meta name="twitter:creator" content="@RothArchitecture" />
