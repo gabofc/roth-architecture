@@ -466,9 +466,9 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 }
 .scheduleBoton {
 	position: absolute;
-	bottom: 40px;
+	top: 180px;
 	right: 35px;
-	font-size: 21px;
+	font-size: 18px;
 	letter-spacing: 1.85px;
 	color: var( --letraFooter );
 	padding: 8px 0;
@@ -788,7 +788,7 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.busquedaDiv input { width: 200px; }
 	.awardItem .contenido { display: block; }
 	.awardItem .contenido .titulos, .awardItem .contenido .descripcion { width: 100%; max-width: initial; }
-	.scheduleBoton { position: relative; margin: 50px auto; right: 0; left: 0; display: block; width: 220px; }
+	.scheduleBoton { position: relative; margin: 50px auto; right: 0; left: 0; top: 0; display: block; width: 220px; }
 }
 @media screen and ( max-width: 610px ) {
 	.busquedaDiv { float: none; max-width: 100%; width: 250px; margin: 0 auto; }
