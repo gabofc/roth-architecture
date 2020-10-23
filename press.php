@@ -31,7 +31,7 @@
 	<div class="principal">
 		<div class="pressImg scrollAnimation"><img src="images/press/2.jpg" class="mainImg"></div>
 		<div class="pressContent">
-			<img src="images/press/ad.svg" class="scrollAnimation">
+			<img src="images/press/ad.png" class="scrollAnimation">
 			<span class="scrollAnimation">Architectural Digest Spain</span>
 			<!-- <span class="scrollAnimation">Date, April 2019</span>
 			<span class="scrollAnimation">Business Unit: AZULIK Tulum</span>-->
