@@ -5,37 +5,37 @@
 			'keywords' => '',
 			'description' => 'Roth Architecture is a studio that confirms the link between human creation and nature, taking up ancestral knowledge to generate spaces for coexistence en elevation.',
   		'title' => 'Roth Architecture',
-      'image' => 'azulik-share.jpg'
+      'image' => 'azulik.jpg'
 		),
 		'about.php' => array(
 			'keywords' => '',
 			'description' => 'Roth Architecture creates organic structures that open our understanding to a deep connection with oneself, with others and with nature.',
   		'title' => 'About Us',
-      'image' => 'azulik-share.jpg'
+      'image' => 'about.jpg'
 		),
 		'founder.php' => array(
 			'keywords' => '',
 			'description' => 'Founder of AZULIK, SFER IK, and Enchanting Transformation, Roth creates architecture that challenges conventions and calls for play, surprise, and attention.',
   		'title' => 'Founder',
-      'image' => 'azulik-share.jpg'
+      'image' => 'founder.jpg'
 		),
 		'awards.php' => array(
 			'keywords' => '',
 			'description' => 'Roth Architecture has received many awards for its groundbreaking design, recognized by some of the top publications and organizations around the world. ',
   		'title' => 'Awards',
-      'image' => 'azulik-share.jpg'
+      'image' => 'awards.jpg'
 		),
 		'press.php' => array(
 			'keywords' => '',
 			'description' => 'Media coverage about Roth Architecture’s groundbreaking design. Articles, press releases and commentary in some of the world’s most prominent media outlets.',
   		'title' => 'Press',
-      'image' => 'azulik-share.jpg'
+      'image' => 'press.jpg'
 		),
 		'contact.php' => array(
 			'keywords' => '',
 			'description' => 'Get in touch. At Roth Architecture we want to hear from you and together keep creating spaces that link ancestral knowledge, art, and nature.',
   		'title' => 'Contact Us',
-      'image' => 'azulik-share.jpg'
+      'image' => 'contact.jpg'
 		),
 		'projects.php' => array(
 			'keywords' => '',
