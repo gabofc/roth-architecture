@@ -38,7 +38,7 @@ header .menu li a {
 	box-sizing: border-box;
 	text-transform: uppercase;
 }
-.logoImg { margin: 24px 0; }
+.logoImg { margin: 24px 0; width: 300px;}
 .menu li a span {
 	display: block;
 	width: 0;
@@ -213,7 +213,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	max-width: 40%;
 	box-sizing: border-box;
 }
-.pressItem .pressContent img { margin-bottom: 45px;}
+.pressItem .pressContent img { margin-bottom: 10px;}
 .pressItem .pressContent span {
 	display: block;
 	font-size: 16px;

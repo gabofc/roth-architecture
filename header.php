@@ -37,7 +37,7 @@ $bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_repla
 			<a class="cierra" onclick="popup( 'agendaPopup', false ); regresaFecha();"><i class="fas fa-times"></i></a>
 			<div class="flexBox">
 				<div class="horario">
-					<img src="images/logo.svg">
+					<img src="images/logo.png">
 					<h1>SCHEDULE A CALL</h1>
 					<h2>30 MINUTES</h2>
 					<select id="timezone">
@@ -96,7 +96,7 @@ $bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_repla
 		</div>
 		<header>
 			<div class="principal">
-				<a href="/"><img src="images/logo.svg" class="logoImg"></a>
+				<a href="/"><img src="images/logo.png" class="logoImg"></a>
 				<ul class="menu">
 					<li><a href="/">Home<span></span></a></li>
 					<li><a href="about">About<span></span></a></li>
