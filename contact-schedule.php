@@ -68,7 +68,7 @@
 			margin: 34px auto;
 		}
 		.email-thanks{
-			width: 430px;
+			width: 90%;
 			font-size: 19px;
   		letter-spacing: 2.17px;
 		  font-weight: 300;
@@ -119,7 +119,7 @@
 			<img src="https://www.roth-architecture.com/images/mail/logo-white.png" class="logo-azulik" title="Roth Architecrure" />
 		</div>
 		<div class="email-h1">
-			Dear <?php echo $_REQUEST['name']; ?>,
+			Dear <?php echo isset($_REQUEST['name']) ? $_REQUEST['name'] : 'name'; ?>,
 		</div>
 		<div class="email-thanks">
 			Thank you for getting in touch.<br>
