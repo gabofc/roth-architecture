@@ -117,7 +117,7 @@
 			<img src="https://www.roth-architecture.com/images/mail/azulik-image.jpg" class="img-azulik" title="Roth Architecture" />
 		</div>
 		<div class="email-h1">
-			Dear <?php echo isset($_REQUEST['name']) ? $_REQUEST['name'] : 'name'; ?>,<br>Thank you for getting in touch.
+			Dear <?php echo isset($_REQUEST['name']) ? ucwords($_REQUEST['name']) : 'name'; ?>,<br>Thank you for getting in touch.
 		</div>
 		<div class="email-line"></div>
 		<div class="email-thanks">

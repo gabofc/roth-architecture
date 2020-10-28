@@ -119,7 +119,7 @@
 			<img src="https://www.roth-architecture.com/images/mail/logo-white.png" class="logo-azulik" title="Roth Architecrure" />
 		</div>
 		<div class="email-h1">
-			Dear <?php echo isset($_REQUEST['name']) ? $_REQUEST['name'] : 'name'; ?>,
+			Dear <?php echo isset($_REQUEST['name']) ? ucwords($_REQUEST['name']) : 'name'; ?>,
 		</div>
 		<div class="email-thanks">
 			Thank you for getting in touch.<br>
