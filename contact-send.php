@@ -37,7 +37,7 @@
 		$mail->Subject = $subject;
 		$mail->addCustomHeader( 'X-Mailer: ' . $form_values['host'] . '/ PHP/' . phpversion(), 'Message-ID: <' . gmdate( 'YmdHs' ) . '@' . $form_values['host'] . '/>', 'Sender: ' . $form_values['host'] . '/', 'Sent: ' . date( 'd-m-Y' ) );
 		$mail->From = 'crm@azulik.com';
-		$mail->FromName = 'AZULIK Tulum';
+		$mail->FromName = 'Roth Architecture';
 		//$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Contact Form' );
 		$mail->AddAddress( 'gfernandez@azulik.com', 'Roth Contact Form' );
 		//$mail->AddAddress( 'fpires@azulik.com', 'Roth Contact Form' );
@@ -68,7 +68,7 @@
 		$mail->Host       = "smtp.gmail.com";
 		$mail->Username   = "crm@azulik.com";
 		$mail->Password   = "Cancun70";
-		$mail->Subject = $subject;
+		$mail->Subject = $subject_thanks;
 		$mail->addCustomHeader( 'X-Mailer: ' . $form_values['host'] . '/ PHP/' . phpversion(), 'Message-ID: <' . gmdate( 'YmdHs' ) . '@' . $form_values['host'] . '/>', 'Sender: ' . $form_values['host'] . '/', 'Sent: ' . date( 'd-m-Y' ) );
 		$mail->From = 'crm@azulik.com';
 		$mail->FromName = 'Roth Architecture';
