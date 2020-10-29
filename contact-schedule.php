@@ -5,7 +5,8 @@
 	<meta name="robots" content="noindex" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
+	<meta name="color-scheme" content="Light only">
+	<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet" type="text/css" >
 	<style>
 		*{
 		padding:0;
@@ -43,10 +44,13 @@
 		text-decoration: none;
 		}
 		.email-header{
+			width: 250px;
 			padding: 70px 0;
+			margin: 0 auto;
+			text-align: center;
 		}
 		.email-header .logo-azulik{
-			width: 250px;
+			width: 100%;
 			margin-bottom: 70px;
 		}
 		.email-header .img-azulik{
@@ -55,7 +59,7 @@
 		.email-h1{
 			font-family: 'Averia Serif Libre', Verdana;
 			font-size: 26px;
-			font-weight: bold;
+			font-weight: normal;
 			font-stretch: normal;
 			font-style: normal;
 			letter-spacing: 2.08px;
@@ -93,50 +97,74 @@
 			margin-bottom: 80px;
 		}
 		.email-ball{
-			margin: 0 auto 100px 0;
-		}
-		.email-ball img {
+			margin: 0 auto 100px auto;
 			width: 200px;
 		}
+		.email-ball img {
+			width: 100%;
+		}
 		.email-social{
-			margin: 130px auto 34px;
+			margin: 130px auto 34px auto;
+			text-align: center;
 		}
 		.email-social img {
 			width: 25px;
+		}
+		.email-social a {
+			width: 25px;
 			margin: 0 15px;
 		}
-		@media screen and (max-width: 600px){
+		@media screen and (max-width: 700px){
 			.email-container{
+				width: 100%;
+				background-color: #000;
+			}
+			.email-header{
+				padding: 40px 0;
+			}
+			.email-header .logo-azulik{
+				width: 90%;
+			}
+			.email-thanks{
 				width: 98%;
+			}
+			.email-h1{
+				font-size: 20px;
+			}
+			.email-thanks,
+			.email-regards{
+				font-size: 18px;
 			}
 		}
 	</style>
 </head>
 
-<body paddingwidth="0" paddingheight="0" bgcolor="#FFF" style="padding-top: 0; padding-bottom: 0; padding-top: 0; padding-bottom: 0; background-repeat: repeat; width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased;" offset="0" toppadding="0" leftpadding="0">
-	<div class="email-container">
-		<div class="email-header">
-			<img src="https://www.roth-architecture.com/images/mail/logo-white.png" class="logo-azulik" title="Roth Architecrure" />
-		</div>
-		<div class="email-h1">
-			Dear <?php echo isset($_REQUEST['name']) ? ucwords($_REQUEST['name']) : 'name'; ?>,
-		</div>
-		<div class="email-thanks">
-			Thank you for getting in touch.<br>
-			<span class="italic">Your call is now scheduled.</span><br>
-			We look forward to talking with you and we’ll contact you shortly with further details.
-		</div>
-		<div class="email-line"></div>
-		<div class="email-regards">
-			Warm regards,
-		</div>
-		<div class="email-ball">
-			<img src="https://www.roth-architecture.com/images/mail/estambre-white.png" />
-		</div>
-		<div class="email-social">
-			<a href="https://www.linkedin.com/company/rotharchitecture"><img src="https://www.roth-architecture.com/images/mail/in-white.png" /></a>
-			<a href="https://www.facebook.com/rotharch"><img src="https://www.roth-architecture.com/images/mail/fb-white.png" /></a>
-			<a href="https://www.instagram.com/roth_architecture/"><img src="https://www.roth-architecture.com/images/mail/ig-white.png" /></a>
+<body paddingwidth="0" paddingheight="0" bgcolor="#d1d3d4" style="padding-top: 0; padding-bottom: 0; padding-top: 0; padding-bottom: 0; background-repeat: repeat; width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased;" offset="0" toppadding="0" leftpadding="0">
+	<div style="background-color:#FFF; width:100%;">
+		<div class="email-container">
+			<div class="email-header">
+				<img src="https://www.roth-architecture.com/images/mail/logo-white.png" class="logo-azulik" title="Roth Architecrure" />
+			</div>
+			<div class="email-h1">
+				Dear <?php echo isset($_REQUEST['name']) ? ucwords($_REQUEST['name']) : 'name'; ?>,
+			</div>
+			<div class="email-thanks">
+				Thank you for getting in touch.<br>
+				<span class="italic">Your call is now scheduled.</span><br>
+				We look forward to talking with you and we’ll contact you shortly with further details.
+			</div>
+			<div class="email-line"></div>
+			<div class="email-regards">
+				Warm regards,
+			</div>
+			<div class="email-ball">
+				<img src="https://www.roth-architecture.com/images/mail/estambre-white.png" />
+			</div>
+			<div class="email-social">
+				<a href="https://www.linkedin.com/company/rotharchitecture"><img src="https://www.roth-architecture.com/images/mail/in-white.png" /></a>
+				<a href="https://www.facebook.com/rotharch"><img src="https://www.roth-architecture.com/images/mail/fb-white.png"/></a>
+				<a href="https://www.instagram.com/roth_architecture/"><img src="https://www.roth-architecture.com/images/mail/ig-white.png" /></a>
+			</div>
 		</div>
 	</div>
 </body>

@@ -5,7 +5,8 @@
 	<meta name="robots" content="noindex" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+	<meta name="color-scheme" content="Light only">
+	<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet" type="text/css" >
 	<style>
 		*{
 		padding:0;
@@ -21,7 +22,7 @@
 		-webkit-text-size-adjust: 100% !important;
 		-ms-text-size-adjust: 100% !important;
 		-webkit-font-smoothing: antialiased !important;
-		font-family: 'Roboto', sans-serif;
+		font-family: 'Roboto Mono', Verdana;
 		background-color: #FFF;
 		}
 		.email-container{
@@ -99,18 +100,39 @@
 			width: 25px;
 			margin: 0 15px;
 		}
-		@media screen and (max-width: 600px){
+		@media screen and (max-width: 700px){
 			.email-container{
-				width: 98%;
+				width: 100%;
 			}
 			.email-thanks{
-				width: 90%;
+				width: 95%;
+			}
+			.email-header{
+				padding: 40px 0;
+			}
+			.email-header .logo-azulik{
+				margin-bottom: 40px;
+			}
+			.email-header .img-azulik{
+				width: 80%;
+			}
+			.email-header .logo-azulik{
+				width: 200px;
+			}
+			.email-h1{
+				font-size: 20px;
+			}
+			.email-thanks{
+			  font-size: 13px;
+			}
+			.email-regards{
+				font-size: 15px;
 			}
 		}
 	</style>
 </head>
 
-<body paddingwidth="0" paddingheight="0" bgcolor="#FFF" style="padding-top: 0; padding-bottom: 0; padding-top: 0; padding-bottom: 0; background-repeat: repeat; width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased;" offset="0" toppadding="0" leftpadding="0">
+<body paddingwidth="0" paddingheight="0" bgcolor="#d1d3d4" style="padding-top: 0; padding-bottom: 0; padding-top: 0; padding-bottom: 0; background-repeat: repeat; width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased;" offset="0" toppadding="0" leftpadding="0">
 	<div class="email-container">
 		<div class="email-header">
 			<img src="https://www.roth-architecture.com/images/mail/logo-black.png" class="logo-azulik" title="Roth Architecrure" />

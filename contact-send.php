@@ -20,7 +20,7 @@
 		//Contact data send
 		$include_mail = 'contact-mail.php';
 		include( $include_mail );
-		$subject = 'Contacto desde Roth Architecture';
+		$subject = $_REQUEST['formType'] == 'contact' ? 'Contacto desde Roth Architecture' : 'New scheduled call request from Roth Architecture';
 		$bodyContent = ob_get_contents();
 		ob_end_clean();
 		$form_values['subject'] = $subject;
@@ -38,7 +38,7 @@
 		$mail->addCustomHeader( 'X-Mailer: ' . $form_values['host'] . '/ PHP/' . phpversion(), 'Message-ID: <' . gmdate( 'YmdHs' ) . '@' . $form_values['host'] . '/>', 'Sender: ' . $form_values['host'] . '/', 'Sent: ' . date( 'd-m-Y' ) );
 		$mail->From = 'crm@azulik.com';
 		$mail->FromName = 'Roth Architecture';
-		$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Contact Form' );
+		//$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Contact Form' );
 		$mail->AddAddress( 'gfernandez@azulik.com', 'Roth Contact Form' );
 		//$mail->AddAddress( 'fpires@azulik.com', 'Roth Contact Form' );
 		$mail->IsHTML( true );
@@ -54,10 +54,9 @@
 		//Thanks page sending
 		$include_thanks = $_REQUEST['formType'] == 'contact' ? 'contact-thanks.php' : 'contact-schedule.php';
 		include( $include_thanks );
-		$subject_thanks = 'Thanks for contact us';
 		$bodyContent = ob_get_contents();
 		ob_end_clean();
-		$form_values['subject'] = $subject_thanks;
+		$subject_thanks = $_REQUEST['formType'] == 'contact' ? 'Thank you for getting in touch' : 'Thank you for request a call with us';
 		$mail = new PHPMailer();
 		$mail->isSMTP(true);
 		$mail->Mailer = "smtp";
@@ -73,6 +72,8 @@
 		$mail->From = 'crm@azulik.com';
 		$mail->FromName = 'Roth Architecture';
 		$mail->AddAddress( $_REQUEST['email'], $_REQUEST['name'] );
+		//$mail->AddAddress( 'rfadanelli@azulik.com', 'Rox' );
+		//$mail->AddAddress( 'fadanelli.artdesign@gmail.com', 'Rox' );
 		$mail->IsHTML( true );
 		$mail->CharSet = 'UTF-8';
 		$mail->AltBody = $subject_thanks;
