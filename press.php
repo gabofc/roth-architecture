@@ -15,9 +15,9 @@
 </div>
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/1.jpg" class="mainImg lazyload"></div>
+		<div class="pressImg scrollAnimation"><img src="" data-src="images/press/1.jpg" class="mainImg lazyload"></div>
 		<div class="pressContent">
-			<img src="images/press/ad.png" class="scrollAnimation lazyload">
+			<img src="" data-src="images/press/ad.png" class="scrollAnimation lazyload">
 			<span class="scrollAnimation">Architectural Digest</span>
 			<!-- <span class="scrollAnimation">Date: January 2019</span>
 				<span class="scrollAnimation">Business Unit: AZULIK Uh May</span>-->
@@ -29,9 +29,9 @@
 </div>
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/2.jpg" class="mainImg lazyload"></div>
+		<div class="pressImg scrollAnimation"><img src="" data-src="images/press/2.jpg" class="mainImg lazyload"></div>
 		<div class="pressContent">
-			<img src="images/press/ad.png" class="scrollAnimation lazyload">
+			<img src="" data-src="images/press/ad.png" class="scrollAnimation lazyload">
 			<span class="scrollAnimation">Architectural Digest Spain</span>
 			<!-- <span class="scrollAnimation">Date, April 2019</span>
 			<span class="scrollAnimation">Business Unit: AZULIK Tulum</span>-->
@@ -43,9 +43,9 @@
 </div>
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/3.jpg" class="mainImg lazyload"></div>
+		<div class="pressImg scrollAnimation"><img src="" data-src="images/press/3.jpg" class="mainImg lazyload"></div>
 		<div class="pressContent">
-			<img src="images/press/travel_leisure.png" class="scrollAnimation lazyload">
+			<img src="" data-src="images/press/travel_leisure.png" class="scrollAnimation lazyload">
 			<span class="scrollAnimation">Travel and Leisure</span>
 			<!-- <span class="scrollAnimation">Date: November 2018</span>
 			<span class="scrollAnimation">Business Unit: AZULIK Uh May</span>-->
@@ -57,9 +57,9 @@
 </div>
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/4.jpg" class="mainImg lazyload"></div>
+		<div class="pressImg scrollAnimation"><img src="" data-src="images/press/4.jpg" class="mainImg lazyload"></div>
 		<div class="pressContent">
-			<img src="images/press/archdaily_logo.png" class="scrollAnimation lazyload">
+			<img src="" data-src="images/press/archdaily_logo.png" class="scrollAnimation lazyload">
 			<span class="scrollAnimation">Arch Daily</span>
 			<!-- <span class="scrollAnimation">Date: November 2018</span>
 			<span class="scrollAnimation">Business Unit: AZULIK Uh May</span>-->
@@ -71,9 +71,9 @@
 </div>
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/5.jpg" class="mainImg lazyload"></div>
+		<div class="pressImg scrollAnimation"><img src="" data-src="images/press/5.jpg" class="mainImg lazyload"></div>
 		<div class="pressContent">
-			<img src="images/press/archdaily_logo.png" class="scrollAnimation lazyload">
+			<img src="" data-src="images/press/archdaily_logo.png" class="scrollAnimation lazyload">
 			<span class="scrollAnimation">Arch Daily</span>
 			<!-- <span class="scrollAnimation">Date: November 2018</span>
 			<span class="scrollAnimation">Business Unit: AZULIK Uh May</span>-->
@@ -86,9 +86,9 @@
 
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/6.jpg" class="mainImg lazyload"></div>
+		<div class="pressImg scrollAnimation"><img src="" data-src="images/press/6.jpg" class="mainImg lazyload"></div>
 		<div class="pressContent">
-			<img src="images/press/sbid_logo.png" class="scrollAnimation lazyload">
+			<img src="" data-src="images/press/sbid_logo.png" class="scrollAnimation lazyload">
 			<span class="scrollAnimation">Society of British Interior Designers</span>
 			<!-- <span class="scrollAnimation">Date: September 2019</span>
 			<span class="scrollAnimation">Business Unit: SFER IK, Roth Architecture</span>-->
@@ -101,9 +101,9 @@
 
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/7.jpg" class="mainImg lazyload"></div>
+		<div class="pressImg scrollAnimation"><img src="" data-src="images/press/7.jpg" class="mainImg lazyload"></div>
 		<div class="pressContent">
-			<img src="images/press/interior_design.png" class="scrollAnimation lazyload">
+			<img src="" data-src="images/press/interior_design.png" class="scrollAnimation lazyload">
 			<span class="scrollAnimation">ID Interior Design</span>
 			<!-- <span class="scrollAnimation">Date: October 2019</span>
 			<span class="scrollAnimation">Business Unit: Roth Architecture</span>-->
@@ -116,9 +116,9 @@
 
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/8.jpg" class="mainImg lazyload"></div>
+		<div class="pressImg scrollAnimation"><img src="" data-src="images/press/8.jpg" class="mainImg lazyload"></div>
 		<div class="pressContent">
-			<img src="images/press/forbes.png" class="scrollAnimation lazyload">
+			<img src="" data-src="images/press/forbes.png" class="scrollAnimation lazyload">
 			<span class="scrollAnimation">Forbes</span>
 			<!-- <span class="scrollAnimation">Date: October 2019</span>
 			<span class="scrollAnimation">Business Unit: Roth Architecture</span>-->
@@ -131,9 +131,9 @@
 
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/9.jpg" class="mainImg lazyload"></div>
+		<div class="pressImg scrollAnimation"><img src="" data-src="images/press/9.jpg" class="mainImg lazyload"></div>
 		<div class="pressContent">
-			<img src="images/press/milenio_logo.png" class="scrollAnimation lazyload">
+			<img src="" data-src="images/press/milenio_logo.png" class="scrollAnimation lazyload">
 			<span class="scrollAnimation">Milenio</span>
 			<!-- <span class="scrollAnimation">Date: September 2019</span>
 			<span class="scrollAnimation">Business Unit: AZULIK Residence</span>-->
@@ -146,9 +146,9 @@
 
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/10.jpg" class="mainImg lazyload"></div>
+		<div class="pressImg scrollAnimation"><img src="" data-src="images/press/10.jpg" class="mainImg lazyload"></div>
 		<div class="pressContent">
-			<img src="images/press/wa.png" class="scrollAnimation lazyload">
+			<img src="" data-src="images/press/wa.png" class="scrollAnimation lazyload">
 			<span class="scrollAnimation">World Architecture</span>
 			<!-- <span class="scrollAnimation">Date: September 2019</span>
 			<span class="scrollAnimation">Business Unit: AZULIK Residence</span>-->
@@ -161,9 +161,9 @@
 
 <div class="pressItem">
 	<div class="principal">
-		<div class="pressImg scrollAnimation"><img src="images/press/11.jpg" class="mainImg lazyload"></div>
+		<div class="pressImg scrollAnimation"><img src="" data-src="images/press/11.jpg" class="mainImg lazyload"></div>
 		<div class="pressContent">
-			<img src="images/press/cool_huntermx.png" class="scrollAnimation lazyload">
+			<img src="" data-src="images/press/cool_huntermx.png" class="scrollAnimation lazyload">
 			<span class="scrollAnimation">Coolhunter</span>
 			<!-- <span class="scrollAnimation">Date: September 2019</span>
 			<span class="scrollAnimation">Business Unit: AZULIK Residence</span>-->

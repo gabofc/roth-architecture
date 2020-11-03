@@ -21,11 +21,9 @@ $bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_repla
 		<link href="css/jquery.bxslider.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.min.js"></script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.plugins.min.js"></script>
 		<script>
-			$( document ).ready(function() {
-				lazyload();
-			});
 			var urlActual = '<?php echo $url; ?>';
 			var archivoUsado = '<?php echo $nombreArchivo; ?>';
 			var idiomaActual = 'EN';

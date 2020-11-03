@@ -18,7 +18,7 @@
 				</div>
 			</div>
 			<div class="awardImg scrollAnimation">
-				<img src="images/awards/idea-tops.jpg" class="lazyload">
+				<img src="" data-src="images/awards/idea-tops.jpg" class="lazyload">
 				 <a href="https://www.a963.com/index.php?m=idea_tops&c=ztshow&a=win_works_show_en&year=2019&pcat=1&cat=46" target="_blank">Read More</a>
 				<div class="linea"></div>
 			</div>
@@ -38,7 +38,7 @@
 				</div>
 			</div>
 			<div class="awardImg scrollAnimation">
-				<img src="images/awards/architizer-01.jpg" class="lazyload">
+				<img src="" data-src="images/awards/architizer-01.jpg" class="lazyload">
 				 <a href="https://architizer.com/projects/iklab-uh-may/?_ga=2.231018783.1274494379.1576182360-433655417.1576182360" target="_blank">Read More</a>
 				<div class="linea"></div>
 			</div>
@@ -57,7 +57,7 @@
 				</div>
 			</div>
 			<div class="awardImg scrollAnimation">
-				<img src="images/awards/architizer-02.jpg" class="lazyload">
+				<img src="" data-src="images/awards/architizer-02.jpg" class="lazyload">
 				 <a href="https://awards.architizer.com/winners-gallery/#ResidentialPrivateHouseXL5000sqft" target="_blank">Read More</a>
 				<div class="linea"></div>
 			</div>
@@ -77,7 +77,7 @@
 				</div>
 			</div>
 			<div class="awardImg scrollAnimation">
-				<img src="images/awards/sbid.jpg" class="lazyload">
+				<img src="" data-src="images/awards/sbid.jpg" class="lazyload">
 				 <a href="https://www.sbid.org/residential-design-uh-may-residence-19/" target="_blank">Read More</a>
 				<div class="linea"></div>
 			</div>
@@ -97,7 +97,7 @@
 				</div>
 			</div>
 			<div class="awardImg scrollAnimation">
-				<img src="images/awards/idm-01.jpg" class="lazyload">
+				<img src="" data-src="images/awards/idm-01.jpg" class="lazyload">
 				 <a href="http://www.interiordesign.net/award/9-best-of-year-awards-winners-2019/#Small-Museum-Art-Gallery" target="_blank">Read More</a>
 				<div class="linea"></div>
 			</div>
@@ -118,7 +118,7 @@
 				</div>
 			</div>
 			<div class="awardImg scrollAnimation">
-				<img src="images/awards/frame-awards-01.jpg" class="lazyload">
+				<img src="" data-src="images/awards/frame-awards-01.jpg" class="lazyload">
 				 <a href="https://frameweb.com/article/proudly-announcing-the-full-list-of-frame-awards-winners" target="_blank">Read More</a>
 				<div class="linea"></div>
 			</div>
@@ -138,7 +138,7 @@
 				</div>
 			</div>
 			<div class="awardImg scrollAnimation">
-				<img src="images/awards/frame-awards-02.jpg" class="lazyload">
+				<img src="" data-src="images/awards/frame-awards-02.jpg" class="lazyload">
 				 <a href="https://frameweb.com/article/proudly-announcing-the-full-list-of-frame-awards-winners " target="_blank">Read More</a>
 				<div class="linea"></div>
 			</div>
@@ -159,7 +159,7 @@
 				</div>
 			</div>
 			<div class="awardImg scrollAnimation">
-				<img src="images/awards/lcd.jpg" class="lazyload">
+				<img src="" data-src="images/awards/lcd.jpg" class="lazyload">
 				 <a href="https://www.leadingculturedestinations.com/awards-1" target="_blank">Read More</a>
 				<div class="linea"></div>
 			</div>
@@ -181,7 +181,7 @@
 			</div>
 		</div>
 		<div class="awardImg scrollAnimation">
-			<img src="images/awards/build-arch-01.jpg">
+			<img src="" data-src="images/awards/build-arch-01.jpg" class="lazyload">
 			 <a href="https://www.build-review.com/issues/architecture-awards-2020/48/" target="_blank">Read More</a>
 			<div class="linea"></div>
 		</div>
@@ -201,7 +201,7 @@
 			</div>
 		</div>
 		<div class="awardImg scrollAnimation">
-			<img src="images/awards/build-arch-02.jpg" class="lazyload">
+			<img src="" data-src="images/awards/build-arch-02.jpg" class="lazyload">
 			 <a href="https://www.build-review.com/issues/architecture-awards-2020/48/" target="_blank">Read More</a>
 			<div class="linea"></div>
 		</div>

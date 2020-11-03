@@ -98,6 +98,7 @@ $( document ).ready( function() {
 			eval( funcionEjecuta );
 		}
 	} );
+	$( '.lazyload' ).Lazy();
 } );
 function enviar() {
 	if ( validaTodo( 'contactoForm' ) ) {
