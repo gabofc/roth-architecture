@@ -4,7 +4,7 @@
 	$archivos = scandir( 'images/home/' );
 	foreach ( $archivos as $archivo ) {
 		if ( $archivo != '.' && $archivo != '..' && $archivo != '...') {
-			echo '<li style="background-image: url( \'images/home/' . $archivo . '\' );"></li>';
+			echo '<li style="background-image: url( \'images/home/' . $archivo . '\' );" class="lazyload"></li>';
 		}
 	}
 ?>

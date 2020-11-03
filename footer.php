@@ -2,7 +2,7 @@
 		<footer class="fila">
 			<?php if ( $nombreArchivo != 'index.php' ) : ?>
 			<div class="principal">
-				<div><img src="images/logo.svg"></div>
+				<div><img src="images/logo.svg" class="lazyload"></div>
 				<div class="footerContent">
 					<div class="primerColumna">
 						<h1>Projects</h1>
