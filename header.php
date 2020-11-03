@@ -23,7 +23,9 @@ $bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_repla
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
 		<script>
-			lazyload();
+			$( document ).ready(function() {
+				lazyload();
+			});
 			var urlActual = '<?php echo $url; ?>';
 			var archivoUsado = '<?php echo $nombreArchivo; ?>';
 			var idiomaActual = 'EN';
