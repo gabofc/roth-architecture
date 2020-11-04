@@ -48,5 +48,6 @@
 		<script src="js/jquery.bxslider.js"></script>
 		<script src="js/funciones.js?v=8"></script>
 		<script src="js/script.js?v=<?php echo time(); ?>"></script>
+		<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8173743.js"></script>
 	</body>
 </html>
