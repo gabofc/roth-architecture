@@ -35,8 +35,8 @@
 		$mail->addCustomHeader( 'X-Mailer: ' . $form_values['host'] . '/ PHP/' . phpversion(), 'Message-ID: <' . gmdate( 'YmdHs' ) . '@' . $form_values['host'] . '/>', 'Sender: ' . $form_values['host'] . '/', 'Sent: ' . date( 'd-m-Y' ) );
 		$mail->From = 'crm@azulik.com';
 		$mail->FromName = 'Roth Architecture';
-		$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Contact Form' );
-		//$mail->AddAddress( 'gfernandez@azulik.com', 'Roth Contact Form' );
+		//$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Contact Form' );
+		$mail->AddAddress( 'gfernandez@azulik.com', 'Roth Contact Form' );
 		//$mail->AddAddress( 'fpires@azulik.com', 'Roth Contact Form' );
 		$mail->IsHTML( true );
 		$mail->CharSet = 'UTF-8';
@@ -79,8 +79,8 @@
 		if( $mail -> Send() ) {
 			echo
 			'<div class="principal">
-				<h1 class="scrollAnimation">Sent successfully</h1>
-				<h2 class="scrollAnimation">We will contact you shortly</h2>
+				<h1 class="scrollAnimation">Thank you!</h1>
+				<h2 class="scrollAnimation">Your message was sent successfully, we will contact you shortly</h2>
 			</div>';
 		} else {
 			echo
