@@ -72,7 +72,7 @@ $bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_repla
 					<div id="datepicker"></div>
 				</div>
 			</div>
-			<form id="agendaForm" action="contact-send" method="POST">
+			<form id="agendaForm" action="contact-send" method="POST" name="scheduleForm">
 				<div class="contactoDivPop">
 					<h1><a href="#" class="noHref regresa" onclick="regresaFecha()"><i class="fas fa-chevron-left"></i></a> Change Date and Time</h1>
 					<br>

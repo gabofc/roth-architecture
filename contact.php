@@ -3,7 +3,7 @@
 	<div class="textContent contacto">
 		<h1 class="scrollAnimation">Contact</h1>
 		<h2 class="scrollAnimation">Let's Talk</h2>
-		<form id="contactoForm" action="contact-send" method="POST">
+		<form id="contactoForm" action="contact-send" method="POST" name="contactForm">
 			<div class="contactoDiv scrollAnimation">
 				<input type="hidden" name="formType" value="contact">
 				<label for="name">Name</label>
