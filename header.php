@@ -72,29 +72,33 @@ $bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_repla
 					<div id="datepicker"></div>
 				</div>
 			</div>
-			<div class="contactoDivPop" id="agendaForm">
-				<h1><a href="#" class="noHref regresa" onclick="regresaFecha()"><i class="fas fa-chevron-left"></i></a> Change Date and Time</h1>
-				<br>
-				<input type="hidden" id="fechaElegida">
-				<input type="hidden" id="horaElegida">
-				<label for="nameAgenda">Name</label>
-				<input type="text" id="nameAgenda" class="obligatorio" padre="agendaForm">
-				<label for="emailAgenda">Email</label>
-				<input type="text" id="emailAgenda" class="obligatorio email" padre="agendaForm">
-				<div class="mitad">
-					<div class="campo">
-						<label for="phoneAgenda">Phone</label>
-						<input type="number" id="codeAgenda" placeholder="+" maxlength="3" class="obligatorio"><input type="number" id="phoneAgenda" class="obligatorio telefono" padre="agendaForm" maxlength="10">
+			<form id="agendaForm" action="contact-send" method="POST">
+				<div class="contactoDivPop">
+					<h1><a href="#" class="noHref regresa" onclick="regresaFecha()"><i class="fas fa-chevron-left"></i></a> Change Date and Time</h1>
+					<br>
+					<input type="hidden" value="schedule" name="formType">
+					<input type="hidden" id="fechaElegida" name="fecha">
+					<input type="hidden" id="horaElegida" name="hora">
+					<input type="hidden" value="" id="timeZoneHidden" name="timezone">
+					<label for="nameAgenda">Name</label>
+					<input type="text" id="nameAgenda" name="name" class="obligatorio" padre="agendaForm">
+					<label for="emailAgenda">Email</label>
+					<input type="text" id="emailAgenda" name="email" class="obligatorio email" padre="agendaForm">
+					<div class="mitad">
+						<div class="campo">
+							<label for="phoneAgenda">Phone</label>
+							<input type="number" id="codeAgenda" name="code" placeholder="+" maxlength="3" class="obligatorio"><input type="number" id="phoneAgenda" class="obligatorio telefono" padre="agendaForm" maxlength="10">
+						</div>
+						<div class="campo">
+							<label for="companyAgenda">Company</label>
+							<input type="companyAgenda" id="companyAgenda" name="company" padre="agendaForm">
+						</div>
 					</div>
-					<div class="campo">
-						<label for="companyAgenda">Company</label>
-						<input type="companyAgenda" id="companyAgenda" padre="agendaForm">
-					</div>
+					<label for="messageAgenda">Your Message</label>
+					<input type="text" id="messageAgenda" name="message" class="obligatorio" padre="agendaForm">
+					<a href="#" class="boton noHref submit" onclick="agendaCita( 2 )">Schedule Call</a>
 				</div>
-				<label for="messageAgenda">Your Message</label>
-				<input type="text" id="messageAgenda" class="obligatorio" padre="agendaForm">
-				<a href="#" class="boton noHref submit" onclick="agendaCita( 2 )">Schedule Call</a>
-			</div>
+			</form>
 		</div>
 		<header>
 			<div class="principal">

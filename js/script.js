@@ -102,8 +102,9 @@ $( document ).ready( function() {
 } );
 function enviar() {
 	if ( validaTodo( 'contactoForm' ) ) {
-		var parametros = { 'name': $( '#name' ).val(), 'email': $( '#email' ).val(), 'countryCode': $( '#code' ).val(), 'phone': $( '#phone' ).val(), 'company': $( '#company' ).val(), 'message': $( '#message' ).val(), 'formType': 'contact' };
-		ajaxRequest( 'POST', parametros, 'contact-send', respuestaEnviar );
+		/*var parametros = { 'name': $( '#name' ).val(), 'email': $( '#email' ).val(), 'countryCode': $( '#code' ).val(), 'phone': $( '#phone' ).val(), 'company': $( '#company' ).val(), 'message': $( '#message' ).val(), 'formType': 'contact' };
+		ajaxRequest( 'POST', parametros, 'contact-send', respuestaEnviar );*/
+		$( '#contactoForm' ).submit();
 	}
 }
 function respuestaEnviar( respuesta ) {
@@ -176,8 +177,10 @@ function agendaCita( paso ) {
 	} else {
 		console.log( 'finalizando a paso 2' );
 		if ( validaTodo( 'agendaForm' ) ) {
-			var parametros = { 'date': $( '#fechaElegida' ).val(), 'time': $( '#horaElegida' ).val(), 'name': $( '#nameAgenda' ).val(), 'email': $( '#emailAgenda' ).val(), 'countryCode': $( '#codeAgenda' ).val(), 'phone': $( '#phoneAgenda' ).val(), 'company': $( '#companyAgenda' ).val(), 'message': $( '#messageAgenda' ).val(), 'timezone': $( '#timezone' ).val(), 'formType':'schedule' };
-			ajaxRequest( 'POST', parametros, 'contact-send', respuestaAgenda );
+			$( '#timeZoneHidden' ).val( $( '#timezone' ).val() );
+			/*var parametros = { 'date': $( '#fechaElegida' ).val(), 'time': $( '#horaElegida' ).val(), 'name': $( '#nameAgenda' ).val(), 'email': $( '#emailAgenda' ).val(), 'countryCode': $( '#codeAgenda' ).val(), 'phone': $( '#phoneAgenda' ).val(), 'company': $( '#companyAgenda' ).val(), 'message': $( '#messageAgenda' ).val(), 'timezone': $( '#timezone' ).val(), 'formType':'schedule' };
+			ajaxRequest( 'POST', parametros, 'contact-send', respuestaAgenda );*/
+			$( '#agendaForm' ).submit();
 		}
 	}
 }

@@ -74,6 +74,7 @@
       'image' => 'azulik-share.jpg'
 		),
 	);
+	$og_page = isset( $og[ $og_page ] ) ? $og_page : 'index.php';
 ?>
 <meta name="keywords" content="">
 <meta name="description" content="<?php echo $og[$og_page]['description']; ?>"/>

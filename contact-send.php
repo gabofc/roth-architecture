@@ -1,7 +1,4 @@
 <?php
-	/*ini_set('display_errors', 1);
-	ini_set('display_startup_errors', 1);
-	error_reporting(E_ALL);*/
 	use PHPMailer\PHPMailer\PHPMailer;
 	use PHPMailer\PHPMailer\SMTP;
 	use PHPMailer\PHPMailer\OAuth;
@@ -78,13 +75,20 @@
 		$mail->CharSet = 'UTF-8';
 		$mail->AltBody = $subject_thanks;
 		$mail->Body = $bodyContent;
+		include 'header.php';
 		if( $mail -> Send() ) {
-			$status = array( 'status' => 'Success' );
+			echo
+			'<div class="principal">
+				<h1 class="scrollAnimation">Sent successfully</h1>
+				<h2 class="scrollAnimation">We will contact you shortly</h2>
+			</div>';
 		} else {
-			$status = array( 'status' => 'Error', 'mensaje' => $mail->ErrorInfo );
+			echo
+			'<div class="principal">
+				<h1 class="scrollAnimation">Error</h1>
+				<h2 class="scrollAnimation">' . $mail->ErrorInfo . '</h2>
+			</div>';
 		}
-		echo json_encode( $status );
-		exit();
+		include 'footer.php';
 	}
-v
 ?>
