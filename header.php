@@ -42,7 +42,7 @@ $bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_repla
 					<img src="images/logo.png">
 					<h1>SCHEDULE A CALL</h1>
 					<h2>30 MINUTES</h2>
-					<select id="timezone">
+					<select id="timezone" onchange="setTimeZone()">
 						<option value="ST -11:00 - American Samoa">-11:00 - American Samoa</option>
 						<option value="HT -10:00 - Most of the Aleutian Islands">-10:00 - Most of the Aleutian Islands</option>
 						<option value="AKT -09:00 - Most of the state of Alaska">-09:00 - Most of the state of Alaska</option>
@@ -79,15 +79,15 @@ $bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_repla
 					<input type="hidden" value="schedule" name="formType">
 					<input type="hidden" id="fechaElegida" name="fecha">
 					<input type="hidden" id="horaElegida" name="hora">
-					<input type="hidden" value="" id="timeZoneHidden" name="timezone">
+					<input type="hidden" value="ST -11:00 - American Samoa" id="timeZoneHidden" name="timezone">
 					<label for="nameAgenda">Name</label>
-					<input type="text" id="nameAgenda" name="name" class="obligatorio" padre="agendaForm">
+					<input type="text" id="nameAgenda" name="name" class="obligatorio" padre="agendaForm" required>
 					<label for="emailAgenda">Email</label>
-					<input type="text" id="emailAgenda" name="email" class="obligatorio email" padre="agendaForm">
+					<input type="text" id="emailAgenda" name="email" class="obligatorio email" padre="agendaForm" required>
 					<div class="mitad">
 						<div class="campo">
 							<label for="phoneAgenda">Phone</label>
-							<input type="number" id="codeAgenda" name="code" placeholder="+" maxlength="3" class="obligatorio"><input type="number" id="phoneAgenda" class="obligatorio telefono" padre="agendaForm" maxlength="10">
+							<input type="number" id="codeAgenda" name="code" placeholder="+" maxlength="3" class="obligatorio" required><input type="number" id="phoneAgenda" class="obligatorio telefono" padre="agendaForm" maxlength="10" required>
 						</div>
 						<div class="campo">
 							<label for="companyAgenda">Company</label>
@@ -95,8 +95,8 @@ $bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_repla
 						</div>
 					</div>
 					<label for="messageAgenda">Your Message</label>
-					<input type="text" id="messageAgenda" name="message" class="obligatorio" padre="agendaForm">
-					<a href="#" class="boton noHref submit" onclick="agendaCita( 2 )">Schedule Call</a>
+					<input type="text" id="messageAgenda" name="message" class="obligatorio" padre="agendaForm" required>
+					<input type="submit" value="Schedule Call" class="boton">
 				</div>
 			</form>
 		</div>

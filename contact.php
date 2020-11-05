@@ -23,7 +23,6 @@
 				<label for="message">Your Message</label>
 				<input type="text" id="message" name="message" class="obligatorio" padre="contactoForm" required>
 				<input type="submit" value="Send message" class="boton">
-				<!-- <a href="#" class="boton noHref submit" onclick="enviar()">Send message</a> -->
 			</div>
 		</form>
 		<span class="linea contacto"></span>

@@ -178,9 +178,8 @@ function agendaCita( paso ) {
 		console.log( 'finalizando a paso 2' );
 		if ( validaTodo( 'agendaForm' ) ) {
 			$( '#timeZoneHidden' ).val( $( '#timezone' ).val() );
-			/*var parametros = { 'date': $( '#fechaElegida' ).val(), 'time': $( '#horaElegida' ).val(), 'name': $( '#nameAgenda' ).val(), 'email': $( '#emailAgenda' ).val(), 'countryCode': $( '#codeAgenda' ).val(), 'phone': $( '#phoneAgenda' ).val(), 'company': $( '#companyAgenda' ).val(), 'message': $( '#messageAgenda' ).val(), 'timezone': $( '#timezone' ).val(), 'formType':'schedule' };
-			ajaxRequest( 'POST', parametros, 'contact-send', respuestaAgenda );*/
-			$( '#agendaForm' ).submit();
+			var parametros = { 'date': $( '#fechaElegida' ).val(), 'time': $( '#horaElegida' ).val(), 'name': $( '#nameAgenda' ).val(), 'email': $( '#emailAgenda' ).val(), 'countryCode': $( '#codeAgenda' ).val(), 'phone': $( '#phoneAgenda' ).val(), 'company': $( '#companyAgenda' ).val(), 'message': $( '#messageAgenda' ).val(), 'timezone': $( '#timezone' ).val(), 'formType':'schedule' };
+			ajaxRequest( 'POST', parametros, 'contact-send', respuestaAgenda );
 		}
 	}
 }
@@ -207,4 +206,7 @@ function respuestaAgenda( respuesta ) {
 		console.log( 'mensaje ' + datos.mensaje );
 		alerta( 'Error', datos.mensaje, 'error' );
 	}
+}
+function setTimeZone() {
+	$( '#timeZoneHidden' ).val( $( '#timezone' ).val() );
 }
