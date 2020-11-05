@@ -7,13 +7,13 @@
 			<div class="contactoDiv scrollAnimation">
 				<input type="hidden" name="formType" value="contact">
 				<label for="name">Name</label>
-				<input type="text" id="name" name="name" class="obligatorio" padre="contactoForm">
+				<input type="text" id="name" name="name" class="obligatorio" padre="contactoForm" required>
 				<label for="email">Email</label>
-				<input type="text" id="email" name="email" class="obligatorio email" padre="contactoForm">
+				<input type="text" id="email" name="email" class="obligatorio email" padre="contactoForm" required>
 				<div class="mitad">
 					<div class="campo">
 						<label for="phone">Phone</label>
-						<input type="text" id="code" name="code" placeholder="+" class="obligatorio" maxlength="3"><input type="number" id="phone" name="phone" class="obligatorio telefono" padre="contactoForm" maxlength="10">
+						<input type="text" id="code" name="code" placeholder="+" class="obligatorio" maxlength="3" required><input type="number" id="phone" name="phone" class="obligatorio telefono" padre="contactoForm" maxlength="10" required>
 					</div>
 					<div class="campo">
 						<label for="company">Company</label>
@@ -21,8 +21,9 @@
 					</div>
 				</div>
 				<label for="message">Your Message</label>
-				<input type="text" id="message" name="message" class="obligatorio" padre="contactoForm">
-				<a href="#" class="boton noHref submit" onclick="enviar()">Send message</a>
+				<input type="text" id="message" name="message" class="obligatorio" padre="contactoForm" required>
+				<input type="submit" value="Send message" class="boton">
+				<!-- <a href="#" class="boton noHref submit" onclick="enviar()">Send message</a> -->
 			</div>
 		</form>
 		<span class="linea contacto"></span>
