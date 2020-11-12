@@ -747,27 +747,29 @@ video { width: 100%; height: auto; margin: 50px 0; }
 .cretiveContent h3 {
 	margin: 0 auto;
 	margin-bottom: 20px;
-	width: 1000px;
+	width: 1150px;
 	max-width: 100%;
 	text-align: center;
-	font-size: 30px;
-    line-height: 1.38;
-    letter-spacing: 2px;
+	font-size: 40px;
+	font-weight: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
     font-family: 'Averia Serif Libre', cursive;
 }
 .cretiveContent h3 span {
 	background-color: var( --negro );
-	height: 2px;
-	width: 50px;
+	height: 1px;
+	width: 42px;
 	display: block;
-	margin: 50px auto;
+	margin: 60px auto;
 }
 .cincuenta { float: left; width: 50%; box-sizing: border-box; }
 .cretiveContent .fila .cincuenta:first-child { padding-right: 20px; }
 .cretiveContent h4 {
-	font-size: 25px;
-    line-height: 1.38;
-    letter-spacing: 2px;
+	font-size: 35px;
+    line-height: 1.37;
+    letter-spacing: normal;
+    font-weight: normal;
     font-family: 'Averia Serif Libre', cursive;
     margin-bottom: 30px;
 }
@@ -784,25 +786,34 @@ video { width: 100%; height: auto; margin: 50px 0; }
 }
 .cretiveContent p {
 	font-family: 'Roboto Mono', monospace;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
+	line-height: 1.69;
+	letter-spacing: normal;
     margin-bottom: 20px;
 }
 .projectDetail {
 	margin: 50px 0;
 	font-family: 'Roboto Mono', monospace;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300;
+	line-height: 1.6;
+	letter-spacing: 1.21px;
 }
 .projectDetail b { font-family: 'Averia Serif Libre', cursive; font-weight: bold; }
 .projectDetail span {
 	display: block;
 	margin-top: 30px;
-	height: 3px;
+	height: 1px;
 	background-color: var( --negro );
-	width: 30px;
+	width: 25px;
 }
-.contentText.project p { font-family: 'Averia Serif Libre', cursive; line-height: 1.30; letter-spacing: 1.8px; }
+.contentText.project p {
+	font-family: 'Averia Serif Libre', cursive;
+	line-height: 1.81;
+	letter-spacing: 1.29px;
+	font-size: 16px;
+}
 footer .footerContent { display: flex; margin-top: 85px; }
 footer .footerContent h1 {
 	margin: 0;
