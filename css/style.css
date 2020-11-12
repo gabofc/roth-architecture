@@ -1082,6 +1082,9 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.cretiveContent .cincuenta { float: none; width: 100%; padding-right: 0; }
 	.cretiveContent h5 { margin-bottom: 30px; }
 }
+@media screen and ( max-width: 720px ) {
+	.proyectos .proyecto { width: 100%; }
+}
 @media screen and ( max-width: 610px ) {
 	.busquedaDiv { float: none; max-width: 100%; width: 250px; margin: 0 auto; }
 	.titulos { float: none; width: 100%; text-align: center; }
