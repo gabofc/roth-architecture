@@ -66,6 +66,29 @@ $( document ).ready( function() {
 				$( '.scrollBarPosition' ).css( 'top', '280px' );
 			}
 		} );
+	} else if ( archivoUsado == 'philosophy.php' ) {
+		if ( $( window ).width() <= 903 ) {
+			if ( $( '.prePhilUno' ).length == 0 ) {
+				var html = $( '.philImgUno' ).html();
+				$( '.barraNegra .fila' ).prepend( '<div class="prePhilUno">' + html + '</div>')
+			}
+		} else {
+			if ( $( '.prePhilUno' ).length > 0 ) {
+				$( '.prePhilUno' ).remove();
+			}
+		}
+		$( window ).resize( function () {
+			if ( $( window ).width() <= 903 ) {
+				if ( $( '.prePhilUno' ).length == 0 ) {
+					var html = $( '.philImgUno' ).html();
+					$( '.barraNegra .fila' ).prepend( '<div class="prePhilUno">' + html + '</div>')
+				}
+			} else {
+				if ( $( '.prePhilUno' ).length > 0 ) {
+					$( '.prePhilUno' ).remove();
+				}
+			}
+		} );
 	}
 	$( '#busquedaInput' ).keyup( function() {
 		if ( $( this ).val() != '' ) {
@@ -99,6 +122,7 @@ $( document ).ready( function() {
 		}
 	} );
 	$( '.lazyload' ).Lazy();
+
 } );
 function enviar() {
 	if ( validaTodo( 'contactoForm' ) ) {
