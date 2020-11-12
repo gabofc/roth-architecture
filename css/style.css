@@ -28,7 +28,7 @@ header .menu {
 	display: flex;
 	list-style: none;
 	font-size: 16px;
-	width: 880px;
+	width: 898px;
 	float: right;
 	margin: 39px 0;
 }
@@ -788,6 +788,21 @@ video { width: 100%; height: auto; margin: 50px 0; }
     font-weight: 300;
     margin-bottom: 20px;
 }
+.projectDetail {
+	margin: 50px 0;
+	font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    font-weight: 300;
+}
+.projectDetail b { font-family: 'Averia Serif Libre', cursive; font-weight: bold; }
+.projectDetail span {
+	display: block;
+	margin-top: 30px;
+	height: 3px;
+	background-color: var( --negro );
+	width: 30px;
+}
+.contentText.project p { font-family: 'Averia Serif Libre', cursive; line-height: 1.30; letter-spacing: 1.8px; }
 footer .footerContent { display: flex; margin-top: 85px; }
 footer .footerContent h1 {
 	margin: 0;
@@ -845,14 +860,12 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.otraImagen { margin-top: 120px; max-width: 55%; }
 	.philImgDos { margin-top: -650px; }
 	.philImgDos h4 { margin-left: 38%; }
+	header .menu { font-size: 14px; width: 720px; margin: 42px 0; }
+	header .menu li { padding: 0 9px; }
 }
 @media screen and ( max-width: 1300px ) {
 	.aboutItem .aboutContent { width: 650px; max-width: 40%; }
 	.aboutItem .aboutImg { width: 750px; max-width: 60%; }
-}
-@media screen and ( max-width: 1299px ) {
-	header .menu { font-size: 14px; width: 720px; margin: 42px 0; }
-	header .menu li { padding: 0 10px; }
 }
 @media screen and ( max-width: 1250px ) {
 	.imgContact { width: 58%; }
