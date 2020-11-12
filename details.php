@@ -4,7 +4,10 @@
 	$proyecto = $project[ $_REQUEST[ 'nombre' ] ];
 	$rutaImg = 'images/projects/' . $_REQUEST[ 'nombre' ] . '/';
 	$keys = array_keys( $project );
-	$nextProject = $keys[ array_search( $_REQUEST[ 'nombre' ], $keys ) + 1 ];
+	$nextProject = null;
+	if ( end( $project ) != $project[ $_REQUEST[ 'nombre' ] ] ) {
+		$nextProject = $keys[ array_search( $_REQUEST[ 'nombre' ], $keys ) + 1 ];
+	}
 ?>
 <div id="pinContainer">
 	<div id="slideContainer">
@@ -12,7 +15,7 @@
 			<div class="principal">
 				<div class="founderImgTmp scrollAnimation" style="background-image: url( '<?php echo $rutaImg; ?><?php echo $proyecto[ 'image' ]; ?>' );"></div>
 				<div class="pTop">
-					<h1 class="scrollAnimation" id="mainSection"><?php echo $proyecto[ 'name' ]; ?>, <?php echo $proyecto[ 'year' ]; ?></h1>
+					<h1 class="scrollAnimation" id="mainSection"><?php echo $proyecto[ 'name' ]; ?></h1>
 					<div class="projectDetail">
 						<p class="scrollAnimation"><b>Type:</b> <?php echo $proyecto[ 'type' ]; ?></p>
 						<p class="scrollAnimation"><b>Location:</b> <?php echo $proyecto[ 'location' ]; ?></p>
@@ -48,9 +51,11 @@
 				}
 			}
 		?>
+		<?php if ( !is_null( $nextProject ) ) :?>
 		<section class="panel tCenter">
 			<a href="project/<?php echo $nextProject; ?>" class="volverContent"><i class="fas fa-arrow-right"></i><br>Next Project</a>
 		</section>
+		<?php endif; ?>
 	</div>
 </div>
 <script type="text/javascript" src="js/modernizr.custom.min.js"></script>
