@@ -1,39 +1,55 @@
-<?php include 'header.php'; ?>
+<?php
+	include 'header.php';
+	include 'lib/project-list.php';
+	$proyecto = $project[ $_REQUEST[ 'nombre' ] ];
+	$rutaImg = 'images/projects/' . $_REQUEST[ 'nombre' ] . '/';
+	$keys = array_keys( $project );
+	$nextProject = $keys[ array_search( $_REQUEST[ 'nombre' ], $keys ) + 1 ];
+?>
 <div id="pinContainer">
 	<div id="slideContainer">
 		<section class="panel blue">
 			<div class="principal">
-				<div class="founderImgTmp scrollAnimation" style="background-image: url( 'images/projects/project.jpg' );"></div>
+				<div class="founderImgTmp scrollAnimation" style="background-image: url( '<?php echo $rutaImg; ?><?php echo $proyecto[ 'image' ]; ?>' );"></div>
 				<div class="pTop">
-					<h1 class="scrollAnimation" id="mainSection">Azulik, 2014</h1>
+					<h1 class="scrollAnimation" id="mainSection"><?php echo $proyecto[ 'name' ]; ?>, <?php echo $proyecto[ 'year' ]; ?></h1>
 					<div class="projectDetail">
-						<p class="scrollAnimation"><b>Type:</b> Hotel</p>
-						<p class="scrollAnimation"><b>Location:</b> Tulum, Quintana Roo, México</p>
-						<p class="scrollAnimation"><b>Size:</b> 19700 m2</p>
-						<p class="scrollAnimation"><b>Status:</b> Completed</p>
-						<p class="scrollAnimation"><b>Year:</b> 2014</p>
-						<p class="scrollAnimation"><b>Architect:</b> ROTH ARCHITECTURE</p>
+						<p class="scrollAnimation"><b>Type:</b> <?php echo $proyecto[ 'type' ]; ?></p>
+						<p class="scrollAnimation"><b>Location:</b> <?php echo $proyecto[ 'location' ]; ?></p>
+						<p class="scrollAnimation"><b>Size:</b> <?php echo $proyecto[ 'size' ]; ?></p>
+						<p class="scrollAnimation"><b>Status:</b> <?php echo $proyecto[ 'status' ]; ?></p>
+						<p class="scrollAnimation"><b>Year:</b> <?php echo $proyecto[ 'year' ]; ?></p>
+						<p class="scrollAnimation"><b>Architect:</b> <?php echo $proyecto[ 'architect' ]; ?></p>
 						<span class="scrollAnimation"></span>
 					</div>
 					<div class="contentText project">
-						<p class="scrollAnimation"><b>AZULIK</b> es en la primera obra de Roth Architecture. Este espacio se convirtió en la manifestación material de una travesía creativa inspirada por el intercambio con distintos grupos étnicos que se revela en la priorización del vinculo con la naturaleza</p>
-						<p class="scrollAnimation">En su propósito convergen lo comercial y lo cultural, onceptos condensados en un paisajismo que combina vistas al mar con el contacto con la selva y que se asume al cielo como protagonista. Un programa de construcción elevada, desarrollado con la intención de no tocar el suelo o alterar el ecosistema, alojas iniciativas que comprenden propuestas gastronómicas, de wellness y lifestyle</p>
-						<p class="scrollAnimation">La estructura fue conceptualizada como una casa del árbol que convoca al juego y al autodescubrimiento. Sus distintos niveles se entretejen en circulaciones suspendidas que genera una experiencia lúdica, la cual se nutre además de los materiales endémicos usados para su construcción</p>
+					<?php
+						foreach ( $proyecto[ 'description' ] as $descripcion ) {
+							echo '<p class="scrollAnimation">' . $descripcion . '</p>';
+						}
+					?>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="panel tCenter movilSection">
-			<img src="" data-src="images/projects/project.jpg" class="lazyload">
+			<img src="" data-src="<?php echo $rutaImg; ?><?php echo $proyecto[ 'image' ]; ?>" class="lazyload">
 		</section>
+		<?php
+			$slideCuantos = 2;
+			$archivos = scandir( $rutaImg );
+			foreach ( $archivos as $imagen ) {
+				if ( $imagen != '.' && $imagen != '..' && $imagen != $proyecto[ 'image' ] && $slideCuantos < 5 ) {
+					echo
+					'<section class="panel tCenter">
+						<img src="" data-src="' . $rutaImg . $imagen . '" class="lazyload">
+					</section>';
+					$slideCuantos++;
+				}
+			}
+		?>
 		<section class="panel tCenter">
-			<img src="" data-src="images/projects/roth-3.jpg" class="lazyload">
-		</section>
-		<section class="panel tCenter">
-			<img src="" data-src="images/projects/roth-1.jpg" class="lazyload">
-		</section>
-		<section class="panel tCenter">
-			<a href="#" class="volverContent vuelveLink"><i class="fas fa-arrow-right"></i><br>Next Project</a>
+			<a href="project/<?php echo $nextProject; ?>" class="volverContent"><i class="fas fa-arrow-right"></i><br>Next Project</a>
 		</section>
 	</div>
 </div>

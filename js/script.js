@@ -234,3 +234,32 @@ function respuestaAgenda( respuesta ) {
 function setTimeZone() {
 	$( '#timeZoneHidden' ).val( $( '#timezone' ).val() );
 }
+function valoresFiltro( filtro ) {
+	ajaxRequest( 'POST', { 'filtro': filtro }, 'lib/filtros', respuestaFiltros );
+}
+function respuestaFiltros( respuesta ) {
+	cargando( false );
+	datos = JSON.parse( respuesta );
+	if ( datos.status == 'Success' ) {
+		var filtroList = '<a class="noHref" onclick="filtra( \'all\', \'all\' )">All</a>';
+		$.each( datos.valores, function( indice, valor ) {
+			filtroList += '<a class="noHref" onclick="filtra( \'' + datos.filtro + '\', \'' + valor.valor + '\' )">' + valor.nombre + '</a>';
+		} );
+		$( '.selectorFiltro' ).html( filtroList );
+		if ( !$( '.selectorFiltro' ).is( ':visible' ) ) {
+			$( '.selectorFiltro' ).slideToggle();
+		}
+		$( '.filtro ' ).removeClass( 'activo' );
+		$( '.filtro[filtro="' + datos.filtro + '"]' ).addClass( 'activo' );
+	} else {
+		alerta( '', 'The selected filter doesn\'t have values', 'error' );
+	}
+}
+function filtra( filtro, valor ) {
+	if ( filtro != 'all' ) {
+		$( '.proyecto[' + filtro + '="' + valor + '"]' ).show();
+		$( '.proyecto[' + filtro + '!="' + valor + '"]' ).hide();
+	} else {
+		$( '.proyecto' ).show();
+	}
+}
