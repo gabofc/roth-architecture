@@ -967,6 +967,7 @@ video { width: 100%; height: auto; margin: 50px 0; }
 .verticalTitle h2 {
 	writing-mode: tb-rl;
 	transform: rotate( -180deg );
+	min-height: 531px;
 }
 .carreraDiv {
 	width: 48%;
@@ -1139,6 +1140,7 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 }
 @media screen and ( max-width: 1386px ) {
 	.servicioDetalle .imageService { width: 600px; }
+	.verticalTitle h2 { font-size: 30px; min-height: 400px; }
 }
 @media screen and ( max-width: 1350px ) {
 	.textContent.contacto { max-width: 40%; }
@@ -1198,7 +1200,7 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.servicioDetalle .servicioContent { display: block; width: 600px; margin: 0 auto; max-width: 100%; padding: 27px 0; }
 	.servicioDetalle .imageService { margin: 0 auto; max-width: 100%; }
 	.verticalTitle { width: 100%; }
-	.verticalTitle h2 { writing-mode: initial; width: 100%; text-align: center; transform: rotate( 0 );  }
+	.verticalTitle h2 { writing-mode: initial; width: 100%; text-align: center; transform: rotate( 0 ); min-height: initial; }
 }
 @media screen and ( max-width: 1105px ) {
 	.pressItem .pressImg { margin-right: 25px; }
