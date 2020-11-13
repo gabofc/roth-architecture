@@ -104,6 +104,7 @@ $bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_repla
 			<div class="principal">
 				<a href="/"><img src="images/logo.png" class="logoImg"></a>
 				<ul class="menu">
+					<li><a href="services">Services<span></span></a></li>
 					<li><a href="creative-process">Creative Process<span></span></a></li>
 					<li><a href="philosophy">Philosophy<span></span></a></li>
 					<li><a href="projects">Project<span></span></a></li>

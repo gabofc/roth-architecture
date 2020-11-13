@@ -47,6 +47,7 @@ $( document ).ready( function() {
 		$( '#mainSlide' ).bxSlider( {
 			auto: true,
 			pager: false,
+			controls: false,
 			mode: 'fade'
 		} );
 	} else if ( archivoUsado == 'about.php' ) {
@@ -88,6 +89,14 @@ $( document ).ready( function() {
 					$( '.prePhilUno' ).remove();
 				}
 			}
+		} );
+	} else if ( archivoUsado == 'services.php' ) {
+		$( '#serviceSlide' ).bxSlider( {
+			auto: false,
+			pager: false,
+			mode: 'horizontal',
+			nextText: 'NXT',
+			prevText: 'PRV'
 		} );
 	}
 	$( '#busquedaInput' ).keyup( function() {
