@@ -133,6 +133,9 @@ $( document ).ready( function() {
 		}
 	} );
 	$( '.lazyload' ).Lazy();
+	$( '.campoDescarga' ).click( function() {
+		$( '#' + $( this ).attr( 'campo' ) ).click();
+	} );
 
 } );
 function enviar() {

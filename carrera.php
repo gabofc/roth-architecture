@@ -78,13 +78,13 @@
 		</div>
 		<div class="campo">
 			<label for="letter">Covering Letter</label>
-			<a href="#" class="campoDescarga">Select a file <i class="fas fa-download"></i></a>
+			<a class="campoDescarga" campo="letter">Select a file <i class="fas fa-download"></i></a>
 			<input type="file" id="letter" name="letter" required>
 			<span>File size should be no more than 8Mb</span>
 		</div>
 		<div class="campo">
 			<label for="curriculum">CV upload</label>
-			<a href="#" class="campoDescarga">Select a file <i class="fas fa-download"></i></a>
+			<a class="campoDescarga" campo="curriculum">Select a file <i class="fas fa-download"></i></a>
 			<input type="file" id="curriculum" name="curriculum" required>
 			<span>File size should be no more than 8Mb</span>
 		</div>
