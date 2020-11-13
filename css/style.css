@@ -905,23 +905,23 @@ video { width: 100%; height: auto; margin: 50px 0; }
 	color: var( --negro );
 	font-family: 'Roboto Mono', monospace;
 	font-size: 14px;
-	font-weight: bold;
 	box-sizing: border-box;
 	padding: 20px 9px;
 }
 .bx-wrapper .bx-prev { left: initial; right: 55px; border-right: 1px solid var( --negro ); }
+.bx-wrapper .bx-next { font-weight: bolder}
 .bx-wrapper .bx-controls-direction a.disabled { display: block; font-weight: 300; }
 .lineaSepara { display: inline-block; width: 1px; height: 50px; background-color: var( --negro ); margin-left: 9px; }
 .servicioDetalle {
 	display: flex;
 }
 .servicioDetalle h2 {
-	writing-mode: vertical-lr;
+	writing-mode:  sideways-lr;
 	font-family: 'Averia Serif Libre', cursive;
 	text-transform: uppercase;
-	font-size: 30px;
+	font-size: 35px;
 	letter-spacing: 2.75px;
-	margin: 20px;
+	margin: 0 20px 0 0;
 }
 .servicioDetalle .imageService { width: 796px; max-width: 65%; flex-shrink: 0; }
 .servicioDetalle .servicioContent {
@@ -934,12 +934,13 @@ video { width: 100%; height: auto; margin: 50px 0; }
 	line-height: 1.63;
 	letter-spacing: 0.83px;
 	margin-bottom: 20px;
+	margin-top:-30px;
 	display: flex;
 	align-items: center;
 }
-.servicioDetalle .servicioContent h3 .fraccion { width: 21px; text-align: center; margin-right: 15px; }
-.servicioDetalle .servicioContent h3 .fraccion span { display: block; }
-.servicioDetalle .servicioContent h3 .fraccion span:first-child { border-bottom: 1px solid var( --negro ); }
+.servicioDetalle .servicioContent h3 .fraccion { width: 21px; text-align: center; margin-right: 15px;}
+.servicioDetalle .servicioContent h3 .fraccion span { display: block;}
+.servicioDetalle .servicioContent h3 .fraccion span:first-child { border-bottom: 1px solid var( --negro );  padding-top:25px;}
 .servicioDetalle .servicioContent p {
 	font-family: 'Averia Serif Libre', cursive;
 	font-size: 16px;
