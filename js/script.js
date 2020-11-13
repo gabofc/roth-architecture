@@ -277,3 +277,24 @@ function filtra( filtro, valor ) {
 		$( '.proyecto' ).show();
 	}
 }
+function validaArchivo( campo ) {
+	var formatosPermitidos = [ 'doc', 'pdf', 'docx', 'xls', 'xlsx' ];
+	var file = $( '#' + campo ).prop( 'files' );
+	console.log( file[0][ 'name' ] );
+	var fileName = file[0][ 'name' ];
+	var filePart = fileName.split( '.' );
+	var extension = filePart[ filePart.length - 1 ];
+	var continua = false;
+	for ( var i = 0; i < formatosPermitidos.length; i++ ) {
+		if ( formatosPermitidos[ i ] == extension ) {
+			continua = true;
+			break;
+		}
+	}
+	if ( continua ) {
+		$( '.campoDescarga[campo="' + campo + '"] span' ).html( fileName );
+	} else {
+		alerta( '', 'The file must to be a PDF or Word file', 'error' );
+		$( '#' + campo ).val( '' );
+	}
+}

@@ -45,7 +45,7 @@
 	<?php if ( isset( $carrera[ 'apply' ] ) ) : ?>
 	<p class="scrollAnimation"><?php echo $carrera[ 'apply' ]; ?></p>
 	<?php endif; ?>
-	<form class="fila carreraForm" id="carreraForm" action="contact-send" method="POST">
+	<form class="fila carreraForm" id="carreraForm" action="contact-send" method="POST" enctype="multipart/form-data">
 	<input type="hidden" name="job_position" value="<?php echo $carrera[ 'title' ]; ?>">
 		<div class="fila">
 			<div class="campo">
@@ -79,20 +79,20 @@
 		</div>
 		<div class="campo">
 			<label for="letter">Covering Letter</label>
-			<a class="campoDescarga" campo="letter">Select a file <i class="fas fa-download"></i></a>
-			<input type="file" id="letter" name="letter" required>
-			<span>File size should be no more than 8Mb</span>
+			<a class="campoDescarga" campo="letter"><span>Select a file</span> <i class="fas fa-download"></i></a>
+			<input type="file" id="letter" name="letter" required onchange="validaArchivo( 'letter' )">
+			<span class="comentario">File size should be no more than 8Mb</span>
 		</div>
 		<div class="campo">
 			<label for="curriculum">CV upload</label>
-			<a class="campoDescarga" campo="curriculum">Select a file <i class="fas fa-download"></i></a>
-			<input type="file" id="curriculum" name="curriculum" required>
-			<span>File size should be no more than 8Mb</span>
+			<a class="campoDescarga" campo="curriculum"><span>Select a file</span> <i class="fas fa-download"></i></a>
+			<input type="file" id="curriculum" name="curriculum" required onchange="validaArchivo( 'curriculum' )">
+			<span class="comentario">File size should be no more than 8Mb</span>
 		</div>
 		<div class="campo">
 			<label for="portfolio">Portfolio link </label>
 			<input type="text" id="portfolio" name="portfolio" required>
-			<span>You can upload your portfolio through a service like WeTransfer, Dropbox or Drive.</span>
+			<span class="comentario">You can upload your portfolio through a service like WeTransfer, Dropbox or Drive.</span>
 		</div>
 		<div class="full">
 			<input type="submit" value="Submit Application">

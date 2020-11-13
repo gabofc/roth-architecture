@@ -1055,7 +1055,7 @@ video { width: 100%; height: auto; margin: 50px 0; }
 	outline: none;
 	font-size: 14px;
 }
-.carreraForm .campo span {
+.carreraForm .campo span.comentario {
 	position: absolute;
 	font-family: 'Averia Serif Libre', cursive;
 	font-size: 12px;
@@ -1065,6 +1065,7 @@ video { width: 100%; height: auto; margin: 50px 0; }
 }
 .campoDescarga { color: rgba( 0, 0, 0, 0.44 ); cursor: pointer; }
 .campoDescarga i { float: right; }
+.campoDescarga span { display: inline-block; width: 90%; overflow: hidden; }
 .carreraForm .campo input[type="file"] { display: none; }
 .full { width: 100%; display: block; float: left; margin-top: 100px; text-align: center; }
 .full input[type="submit"] {
