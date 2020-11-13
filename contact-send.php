@@ -43,6 +43,7 @@
 		$mail->FromName = 'Roth Architecture';
 		//$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Contact Form' );
 		$mail->AddAddress( 'gfernandez@azulik.com', 'Roth Contact Form' );
+		$mail->AddAddress( 'elopez@junkyard.mx', 'Roth Contact Form' );
 		//$mail->AddAddress( 'fpires@azulik.com', 'Roth Contact Form' );
 		$mail->IsHTML( true );
 		$mail->CharSet = 'UTF-8';
