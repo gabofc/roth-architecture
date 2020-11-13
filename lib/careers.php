@@ -1,0 +1,110 @@
+<?php
+$careers = array(
+  '3d-modeling' => array(
+    'title' => '3D Modeling Architect',
+    'description' => 'We are looking for a 3D Modeling Architect with the skills to lead architectural and executive projects in compliance with local codes. Our studio works with an organic process, designing through physical and digital modeling to achieve formal concepts and solutions. One of the most important parts of our process is developed through 3D modelings and client presentations incorporating Virtual Reality. Therefore we are looking for talented 3D modeling Architects with design skills to join our team.',
+    'requirements' => array(
+      1 => 'Architecture degree.',
+      2 => '5 years minimum experience working in 3D modelings and renderings for Architectural firms.',
+      3 => 'Capability to analyze with the working teams new projects and design opportunities.',
+      4 => 'Design capabilities due to our kind of architecture that leans over organic projects and creative solutions',
+      5 => 'Graphic design skills for presentations.',
+      6 => 'Softwares such as Rhino, 3D max, Grasshopper, Adobe, Autodesk, Office and 3D objects libraries.',
+    ),
+    'apply' => 'For immediate consideration, please email your resume, salary requirements, availability to join the team if selected, and a portfolio of your work to contacto@roth-architecture.com with "3D Modeling Architect" in the subject line. Applications will not be considered without a resume, availability, portfolio, and salary requirements.',
+  ),
+  'intermediate-architect' => array(
+    'title' => 'Intermediate Architect',
+    'description' => 'Our studio is engaged in a rapid growth stage with several new opportunities to develop significant international projects, due to the international awards and publications we have recently garnered. Our projects include museums, hotels, villas, boutiques, building design, interiors, fixture, and furniture design. Looking forward to our expansion, we will integrate an Intermediate Architect with experience in all phases of project development from site selection to occupancy, and the creation architectural drawings (and sometimes physical models) for presentation, bidding, and construction.',
+    'requirements' => array(
+      1 => 'Architecture degree.',
+      2 => 'Minimum 3-5 years of experience with different scale developments and working in teams.',
+      3 => 'Capability to analyze, with the working teams, new projects, and design opportunities.',
+      4 => 'Follow direction of Team Leader to comply with the project contract, scope, and other requirements.',
+      5 => 'Design capabilities consistent with our kind of architecture that creates organic non-linear structures using innovative methodologies and construction techniques.',
+      6 => 'Software such as. BIM, Revit, AutoCAD, In Design, Adobe.',
+      7 => 'Spanish fluency + English skills.  Our international project documentation will be executed in English. Domestic projects in Mexico will be executed in Spanish.',
+    ),
+    'details' => array(
+      1 => 'Seniority Level',
+      2 => 'Mid-level',
+      3 => 'Employment Type',
+      4 => 'Full-time',
+      5 => 'Important to send CV & Portfolio if you want to be considered. If the file is too heavy to upload, please send your full CV & Portfolio to reclutamiento@azulik.com',
+    )
+  ),
+  'junior-architect' => array(
+    'title' => 'Junior Architect',
+    'description' => 'Our studio is engaged in a rapid growth stage with several new opportunities to develop significant international projects, due to the international awards and publications we have recently garnered. Our projects include museums, hotels, villas, boutiques, building design, interiors, fixture, and furniture design. Looking forward to our expansion, we will integrate a Junior Architect into all our phases of project development from design to occupancy, and the creation of architectural drawings for presentation, bidding, and construction.',
+    'requirements' => array(
+      1 => 'Architecture degree.',
+      2 => 'Minimum 0-3 years of experience working in a professional architecture office.',
+      3 => 'Have the ability to create presentations that are suitable for both internal review and client presentations.',
+      4 => 'Have the ability to quickly and efficiently create presentation level renderings.',
+      5 => 'Design interests consistent with our kind of architecture that creates organic non-linear structures using innovative green methodologies and construction techniques.',
+      6 => 'Possess a personal interest and understanding of the design process / have a belief that the entire project timeline, from conception to delivery, is the design process.',
+      7 => 'Software such as Revit, AutoCAD, MS Office (Outlook, Word, Excel, PowerPoint, Outlook), Adobe Creative Suite, SketchUp, Rhino, BIM.',
+      8 => 'Be a self-motivated individual that has the ability to prioritize and be detail oriented.',
+      9 => 'Be able to multi-task, establish priorities and communicate clearly, and work independently.',
+      10 => 'Be comfortable in a fast-paced environment, be resourceful, and able to work under deadlines.',
+      11 => 'Get along well with others, have a good sense of humor and appreciate suggestions and constructive criticism.',
+      12 => 'Spanish fluency + English skills.  Our international project documentation will be executed in English. Domestic projects in Mexico will be executed in Spanish.'
+    ),
+    'details' => array(
+      1 => 'Seniority Level',
+      2 => 'Mid-level',
+      3 => 'Employment Type',
+      4 => 'Full-time',
+      5 => 'Important to send CV & Portfolio if you want to be considered. If the file is too heavy to upload, please send your full CV & Portfolio to reclutamiento@azulik.com',
+    ),
+  ),
+  'project-manager' => array(
+    'title' => 'Project Manager',
+    'description' => 'Our studio is engaged in a rapid growth stage with several new opportunities to develop significant international projects, due to the international awards and publications we have recently garnered. Our projects include museums, hotels, villas, boutiques, architectural design, interiors, fixture, and furniture design. Looking forward to this expansion, we will integrate a Project Manager Architect with experience in all project development aspects, such as design, team coordination, architectural drawing, presentations, design review, construction detailing, construction, and engineering preliminary solutions.',
+    'requirements' => array(
+      1 => 'Architecture degree.',
+      2 => 'Architecture License preferred, but not required.',
+      3 => '10 years professional experience in the Architecture field.',
+      4 => 'Minimum 5 years of experience coordinating different scale development working teams',
+      5 => 'Design capabilities consistent with our kind of architecture that creates organic non-linear structures using innovative methodologies and construction techniques.',
+      6 => 'Capability to lead internal teams and outside consultants, to analyze new projects and design opportunities.',
+      7 => 'Lead different working teams simultaneously to comply with projects contract, schedule, and deliverables in the management and development fields.',
+      8 => 'Lead the management and development of your project groups in national and international projects complying with the local restrictions and normative coordination with the design and consultant teams.',
+      9 => 'Software such as. BIM, Revit, AutoCAD, In Design, Adobe. It will be important to work with the BIM 360 management process.',
+      10 => 'Experience with project management software such as MS-Project or Primavera preferred, but not required.',
+      11 => 'Spanish fluency + English skills.  Our international project documentation will be executed in English. Domestic projects in Mexico will be executed in Spanish.'
+    ),
+    'details' => array(
+      1 => 'Seniority Level',
+      2 => 'Employment Type',
+      3 => 'Full-time',
+      4 => 'Important to send CV & Portfolio if you want to be considered. If the file is too heavy to upload, please send your full CV & Portfolio to reclutamiento@azulik.com'
+    )
+  ),
+  'interior-designers' => array(
+    'title' => 'Interior Designers – All Levels',
+    'description' => array(
+      1 => 'We are seeking talented, creative, interior designers who have the ability to conceive of new forms and then generate the documentation to take these ideas through construction. You must also be capable of creating the presentation boards to present these ideas internally and to our clients.',
+      2 => 'In addition to interior design and material selections, our interior design team will design the light fixtures, furniture, and sometimes bathroom fixtures for all the architecture projects we do.  These interior fittings are extensions and part of our architecture.',
+      3 => 'We have ultra-high-end project types in the fields of hospitality, residential estates, museums, boutiques, restaurants, and others.',
+      4 => 'We are hiring interior designers at all levels.'
+    ),
+    'requirements' => array(
+      1 => 'Design capabilities consistent with our kind of architecture that creates organic non-linear structures using innovative methodologies and construction techniques.',
+      2 => 'Familiarity with our work at roth-architecture.com and Azulik.com',
+      3 => 'Software such as. BIM, Revit, AutoCAD, In Design, Adobe Suite.',
+      4 => 'Hand sketching ability',
+      5 => 'Microsoft Office',
+      6 => 'Hands-on physical model and/or furniture building experience a plus',
+      7 => 'Spanish fluency and high-level English skills. Our international project documentation will be executed in English. Domestic projects in Mexico will be executed in Spanish. In-house office discussions will be conducted in Spanish and English.',
+      8 => 'YOU MUST SUBMIT A CV AND PORTFOLIO IF YOU ARE APPLYING. If the file too heavy to upload, please send CV and Portfolio to reclutamiento@azulik.com'
+    ),
+    'details' => array(
+      1 => 'Seniority Level',
+      2 => 'All-levels',
+      3 => 'Employment Type',
+      4 => 'Full-time'
+    )
+  ),
+);
+?>
