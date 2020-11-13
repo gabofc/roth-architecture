@@ -28,7 +28,7 @@ header .menu {
 	display: flex;
 	list-style: none;
 	font-size: 15px;
-	width: 967px;
+	width: 1070px;
 	float: right;
 	margin: 43px 0;
 }
@@ -1124,13 +1124,15 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 @media screen and ( max-width: 1650px ) {
 	.imgContact { top: 0; margin-top: 0; }
 }
+@media screen and ( max-width: 1506px ) {
+	header .menu { font-size: 14px; width: 912px; margin: 42px 0; }
+	header .menu li { padding: 0 9px; }
+}
 @media screen and ( max-width: 1425px ) {
 	.philImgDos { max-width: 50%; }
 	.philImgDos h4 { margin-left: 39%; }
 }
 @media screen and ( max-width: 1386px ) {
-	header .menu { font-size: 14px; width: 812px; margin: 42px 0; }
-	header .menu li { padding: 0 9px; }
 	.servicioDetalle .imageService { width: 600px; }
 }
 @media screen and ( max-width: 1350px ) {
@@ -1138,22 +1140,28 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.otraImagen { margin-top: 120px; max-width: 55%; }
 	.philImgDos { margin-top: -650px; }
 	.philImgDos h4 { margin-left: 38%; }
+	header .menu { width: 830px; font-size: 13px; }
+	header .menu li { padding: 0 8px; }
 }
 @media screen and ( max-width: 1300px ) {
 	.aboutItem .aboutContent { width: 650px; max-width: 40%; }
 	.aboutItem .aboutImg { width: 750px; max-width: 60%; }
+}
+@media screen and ( max-width: 1270px ) {
+	header .menu { width: 760px; font-size: 12px; }
+	header .menu li { padding: 0 7px; }
 }
 @media screen and ( max-width: 1250px ) {
 	.imgContact { width: 58%; }
 	footer .footerContent .tercerColumna { margin-left: 180px; }
 	.founderImgTmp { height: 135% !important; }
 	.philImgDos h4 { margin-left: 37%; }
-	header .menu { width: 748px; font-size: 13px; }
-	header .menu li { padding: 0 8px; }
 }
-@media screen and ( max-width: 1192px ) {
+@media screen and ( max-width: 1197px ) {
 	.philImgUno h4 { margin-top: 40px; }
 	.philImgDos h4 { margin-left: 36%; }
+	header .menu { width: 690px; font-size: 11px; }
+	header .menu li { padding: 0 6px; }
 }
 @media screen and ( max-width: 1165px ) {
 	.philImgDos h4 { margin-left: 35%; }
