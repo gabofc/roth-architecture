@@ -41,14 +41,18 @@
 		$mail->addCustomHeader( 'X-Mailer: ' . $form_values['host'] . '/ PHP/' . phpversion(), 'Message-ID: <' . gmdate( 'YmdHs' ) . '@' . $form_values['host'] . '/>', 'Sender: ' . $form_values['host'] . '/', 'Sent: ' . date( 'd-m-Y' ) );
 		$mail->From = 'crm@azulik.com';
 		$mail->FromName = 'Roth Architecture';
-		//$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Contact Form' );
+		$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Contact Form' );
 		$mail->AddAddress( 'gfernandez@azulik.com', 'Roth Contact Form' );
-		$mail->AddAddress( 'elopez@junkyard.mx', 'Roth Contact Form' );
 		//$mail->AddAddress( 'fpires@azulik.com', 'Roth Contact Form' );
 		$mail->IsHTML( true );
 		$mail->CharSet = 'UTF-8';
 		$mail->AltBody = $subject;
 		$mail->Body = $bodyContent;
+		if ( $_FILES ) {
+			foreach ( $_FILES as $file => $array ) {
+				$mail->AddAttachment( $_FILES[ $file ][ 'tmp_name' ], $_FILES[ $file ][ 'name' ] );
+			}
+		}
 		if( $mail -> Send() ) {
 			$status = array( 'status' => 'Success' );
 		} else {
