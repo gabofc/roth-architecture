@@ -45,9 +45,8 @@
 			'architect' => 'ROTH ARCHITECTURE',
 			'image' => 'main-image.jpg',
 			'description' => array(
-				1 => 'AZULIK es en la primera obra de Roth Architecture. Este espacio sezconvirtió en la manifestación material de una travesía creativa inspirada por el intercambio con distintos grupos étnicos que se revela en la priorización del vínculo con la naturaleza.',
-				2 => 'En su propósito convergen lo comercial y lo cultural, conceptos condensados en un paisajismo que combina vistas al mar con el contacto con la selva y que asume al cielo como protagonista. Un programa de construcción elevada, desarrollado con la intención de no tocar el suelo o alterar el ecosistema, alojas iniciativas que comprenden propuestas gastronómicas, de wellness y lifestyle.',
-				3 => 'La estructura fue conceptualizada como una casa del árbol que convoca al juego y al autodescubrimiento. Sus distintos niveles se entretejen en circulaciones suspendidas que generan una experiencia lúdica, la cual se nutre además de los materiales endémicos usados para su construcción.'
+				1 => 'AZULIK, Roth Architecture\'s first project, is the manifestation of a creative journey inspired by different ethnic groups and the prioritization of the bond between humans and nature.',
+				2 => 'Its commercial and cultural purposes are condensed in a landscape design that combines views of the sea and contact with the surrounding jungle. The construction plan, elevated not to disturb the ground ecosystem, houses gastronomic, wellness, and lifestyle initiatives. Conceptualized as a treehouse that invites play and self-discovery, the different levels generate a ludic experience nourished by the endemic materials used for its construction.'
 			),
 		),
 		'kin-toh' => array(
@@ -60,10 +59,9 @@
 			'architect' => 'ROTH ARCHITECTURE',
 			'image' => 'main-image.jpg',
 			'description' => array(
-				1 => 'Uno de los espacios icónicos gracias a su diseño que apela a la experiencia en las alturas por medio de una atmósfera suspendida y una travesía de elevación para el usuario.',
-				2 => 'La propuesta replica los nidos de las aves y con base en esa idea, genera la sensorialidad del vuelo, adaptándola a la escala humana.',
-				3 => 'Los espacios privados, son al mismo tiempo un centro de reunión y de contemplación, las redes suspendidas incitan a la interacción con el espacio y las escaleras obligan al usuario a prestar atención.',
-				4 => 'Con vistas compartidas a la selva y el mar, la calidez de las estructuras de madera, el diseño icónico de los accesos y la ambientación nocturna a media luz han hecho de Kin Toh, un referente del diseño de Roth Architecture.'
+				1 => 'One of Azulik\'s most iconic spaces, this restaurant takes guests literally to new heights through wooden structures that tower above the canopy of the forest, creating an atmosphere where we feel like we are floating over the trees.',
+				2 => 'The design of the private booths imitates that of birds’ nests and generates the illusion of flight. These private spaces are meant to encourage gatherings and to provide opportunities for contemplation. ',
+				3 => 'The spectacular views, the warmth of the wooden structures, and the dim-lit night setting have made Kin Toh a benchmark in Roth Architecture’s design.'
 			)
 		),
 		'zak-ik' => array(
@@ -76,8 +74,8 @@
 			'architect' => 'ROTH ARCHITECTURE',
 			'image' => 'main-image.jpg',
 			'description' => array(
-				1 => 'Buscando desafiar la experiencia del retail, la propuesta consistió en generar recorridos por medio de juegos de diferentes alturas al interior. Las luces artificiales y naturales empatan con la travesía del usuario que va descubriendo el espacio progresivamente y encontrando en él distintos elementos que le permiten interactuar: ya sea un columpio o una pared que invita a ser escalada. Los elementos naturales: agua, árboles y luz natural, son protagónicos en la construcción de la experiencia y la configuración del espacio, nutriendo de más estímulos.',
-				2 => 'ZAK IK se presenta como un espacio en el que los límites de lo privado y lo público son difusos, con una dualidad flexible entre lo que acota y lo que permite la expansión visual.'
+				1 => 'Aiming to challenge the paradigms of retail, the store’s design proposal plays with different heights to create a journey inside the salon. Artificial and natural lighting complement the experience of the visitors who progressively discover the space and find different elements that prompt them to interact with their surroundings. ',
+				2 => 'Natural elements are the protagonists in the construction of an immersive experience, while they nourish the space with different stimuli. ZAK IK is a space where the boundaries between private and public blur, while it makes us aware of the duality in the limits and possibilities of visual expansion.'
 			)
 		),
 		'sfer-ik' => array(
@@ -90,8 +88,8 @@
 			'architect' => 'ROTH ARCHITECTURE',
 			'image' => 'main-image.jpg',
 			'description' => array(
-				1 => 'Nacido como un espacio convocado al arte, SFER IK es un museïon que desafía todas las convenciones en la experiencia contemplativa del espectador. Contrario a la forma tradicional de exponer el arte, en la cual los estímulos paralelos a las piezas son prácticamente nulos, en SFER IK la experiencia es envolvente e integral: participan todos los sentidos.',
-				2 => 'El movimiento topográfico del suelo, ofrece un relieve natural que permite una trayectoria de elevación y descenso al recorrer el espacio. Las vistas a la naturaleza por medio de ventanas juegan como lienzos verdes que circulan al lugar y proveen de luz, además de ser un estímulo compartido con el contraste que genera el concreto junto al bejuco tanto en lo visual como en lo sensorial al caminar el suelo.'
+				1 => 'Born as a space for interdisciplinary creation, SFER IK is a museum that defies the conventions of contemplative exercises. Contrary to the traditional way of exhibiting art, where stimuli parallel to the artworks are almost entirely absent, SFER IK is an integral experience where all our senses are active.',
+				2 => 'The natural contour of the ground creates a sinuous journey that takes us literally up and down as we transit through space. Windows act like canvases, while they provide the galleries with natural light and become an additional stimulus to the contrast, both visual and tactile, generated by the concrete and the bejuco.'
 			)
 		),
 		'tseen-ja' => array(
@@ -104,8 +102,8 @@
 			'architect' => 'ROTH ARCHITECTURE',
 			'image' => 'main-image.jpg',
 			'description' => array(
-				1 => 'Inspirados en la estética Japonesa, Tseen Ja incorpora a su atmósfera mesas bajas, presencia de elementos naturales como el agua, y la calidez de la madera en forma de bejuco.',
-				2 => 'Ofreciendo áreas para un ambiente más privado, cuenta con nidos que además de servir como puntos de contemplación, fungen como juegos geométricos que visualmente enriquecen la experiencia desde las alturas. La dualidad entre la penumbra y la luz se hace presente gracias a los juegos de luces artificiales y la parte lúdica se expresa por medio de puentes colgantes. Los recorridos que marcan el inicio de la experiencia - como el tunel de ingreso- juegan con la divergencia entre el exterior e interior, haciendo muy perceptible la atmósfera envolvente del lugar.'
+				1 => 'Inspired by Japanese aesthetics, Tseen Ja incorporates low tables, natural elements, and the warmth of bejuco wood into its atmosphere. The restaurant also features nests, private areas that, in addition to serving as points of contemplation, form geometric patterns that visually enrich the experience from above. ',
+				2 => 'Lighting installations show us the duality between clarity and darkness while hanging bridges add a playful touch to the expression of the structure. The routes that mark the beginning of the experience play with the divergence between the exterior and interior, accentuating the immersive atmosphere of the space.'
 			)
 		),
 		'kuboraum' => array(
@@ -118,7 +116,8 @@
 			'architect' => 'ROTH ARCHITECTURE',
 			'image' => 'main-image.jpg',
 			'description' => array(
-				1 => 'Un espacio que exigía la fusión de dos propuestas creativas muy fuertes: el punto de exhibición y venta de una de las marcas de eyewear más originales del mundo. La atmósfera se generó desde una propuesta monocromática con luces tenues, en la que los objetos se encuentran suspendidos, de esta forma el usuario tiene una perspectiva panorámica y una comprensión inmediata del espacio. Hay un juego de penumbras intencional para volver a las piezas exhibidas son las protagonistas por medio de una dinámica de profundidad visual.'
+				1 => 'This space is the conclusion of a creative proposal that was put together as the point of sale of one of the most original eyewear brands in the world. The monochromatic color palette and soft lighting create an atmosphere in which objects are seemingly suspended in their displays.',
+				2 => 'The light-and-shadow play turns the pieces exhibited into the protagonists of the composition, while it gives dynamism and visual depth to the gallery. Also, the shape of the space, built as a kind of dome, provides visitors with a panoramic perspective and an immediate understanding of the room.'
 			)
 		),
 		'uh-may' => array(
@@ -131,9 +130,8 @@
 			'architect' => 'ROTH ARCHITECTURE',
 			'image' => 'main-image.jpg',
 			'description' => array(
-				1 => 'Al caminar sobre las formas preexistentes de la naturaleza entramos en resonancia con los patrones. La energía sigue a la forma y la forma determina la función. Así, entramos en sinergia con el modelo de desarollo que la naturaleza creó para ese lugar.',
-				2 => 'El Museiön se realizó sin planos. Sin una idea previa al construir, de forma tal que sucede espontáneamente en el lugar. El diseño del piso sigue la forma de la naturaleza, es todo ondulado, se recorre de forma descalza y las texturas cambian en representación de los cuatro elementos: aire, fuego, tierra y agua. Los materiales de la construcción exigieron diseñar una técnica de uso del cemento.',
-				3 => 'Sin columnas, todo se trabajó siguiendo la lógica de la forma, como se construye un cesto.'
+				1 => 'Respectful of the pre-existing relief of the ground and the energy of the environment, the museum was constructed without blueprints or any prior conception of the building. Thus, everything was put together spontaneously on site. ',
+				2 => 'The corrugated floor design is intended for barefoot walking, which allows us to get in touch with the changing textures that represent the four elements: air, fire, earth, and water. The fluidity of the construction required developing a special technique for the use of cement that allowed us to create a structure without columns that is, rather, woven like a basket.'
 			)
 		),
 		'azulik-residence' => array(
@@ -146,23 +144,8 @@
 			'architect' => 'ROTH ARCHITECTURE',
 			'image' => 'main-image.jpg',
 			'description' => array(
-				1 => 'El entendimiento de AZULIK Residence, como proyecto arquitectónico y conceptualmente, está fundamentalmente vinculado a la noción de la arquitectura textil. La edificación desde la premisa del tejido, es decir, la comprensión de cada parte para lograr la integración en la totalidad. Elaborada en un símil de la creación de una cesta, la estructura se mantiene por la forma. No hay una estructura portante; es gracias a la forma que se confiere esa cualidad.',
-				2 => 'Para la gestación de AZULIK Residence no hubo planos, ni croquis, ni dibujos previos de ningún tipo. Esa libertad es indudablemente una de las características que revelan su originalidad y también la esencia de sus desafíos más significativos: el respeto a los que llegaron antes – la flora, la fauna y el suelo.',
-				3 => 'Dentro de los desafíos técnicos más visibles se encuentra el impedimento a usar maquinaria pesada, ya que está implicaba la tala de árboles. El resultado derivó en un trabajo manual y una ligera modificación al proceso de hacer concreto. La ubicación absolutamente inmersa en la selva ha exigido encontrar formas creativas que aligeren y vuelvan más resistente al concreto dentro de una estructura no convencional que no es sostenida por columnas ni vigas, sino tejida como un cesto: una evocación a la arquitectura textil.'
-			)
-		),
-		'azulik-uh-may' => array(
-			'name' => 'AZULIK UH MAY HOTEL',
-			'type' => 'Hotel',
-			'location' => 'UH MAY',
-			'year' => '2019',
-			'size' => '10 Has',
-			'status' => 'In progress',
-			'architect' => 'ROTH ARCHITECTURE',
-			'image' => 'main-image.jpg',
-			'description' => array(
-				1 => 'El proyecto ubicado en la comunidad de Francisco Uh May, comenzó en el año 2018, con la construcción de SFER IK y una vivienda privada. Actualmente en proceso de construcción, contempla la realización de 42 villas, un espacio gastronómico y un centro de diseño que comprende áreas de exposición, workshops y oficinas. Desafiando y buscando innovar en la experiencia recreativa y el sector turístico, reafirma los principios de reconexión con la naturaleza incorporando nuevas tecnologías como drones, controles inteligentes de espacios, entre otros.',
-				2 => 'Recorridos dinámicos y descubrimiento del espacio de forma progresiva comparten el propósito con la sustentabilidad, el arte y las experiencias memorables fuera de lo predecible.'
+				1 => 'AZULIK Residence was developed with no blueprints or previous drawings of any kind. This freedom reveals its originality and the essence of its most significant challenge: to honor those who came before –the flora, the fauna, and the soil. Its location, completely immersed in the jungle, required finding creative ways to work with concrete and manual labor to avoid destructive heavy machinery.',
+				2 => 'Furthermore, we developed an unconventional structure that is not supported by columns or beams but is rather woven like a basket. Thus, the building was planned as a fabric, where interweaving elements are integrated to make up the entire edifice.'
 			)
 		),
 		'nests-selva-zama' => array(
@@ -175,7 +158,22 @@
 			'architect' => 'ROTH ARCHITECTURE',
 			'image' => 'main-image.jpg',
 			'description' => array(
-				1 => 'Nest\'s es un complejo habitacional que busca la vida en comunidad, la convivencia de los habitantes mediante el uso de espacios comunes vinculados a partir del entorno natural. La distribución radial del programa supone un mirador principal en el centro, amenidades en la primer circunferencia, y módulos habitacionales en la periferia. Las construcciones residenciales son dinámicas gracias a la rotación de la planta y al tratamiento topográfico de las losas horizontales. Todas las unidades de vivienda son flexibles, permiten ensamblarse entre sí o dividirse en unidades de menor tamaño con acceso individual. En las azoteas se comparten espacios de uso común que actúan como nidos. El respeto hacia el entorno no sólo consiste en preservar la selva endémica, sino en fomentar la vida al aire libre mediante un planeamiento paisajístico sustentable, que incluye espejos de agua que unifican al espacio.'
+				1 => 'Nest\'s is a housing complex that seeks community life and the coexistence of inhabitants with the natural environment. The radial distribution of the program involves a main viewpoint at the center, amenities in the first circumference, and housing modules in the periphery. All housing units are flexible and can be assembled or divided into smaller units with individual access.',
+				2 => 'Shared rooftops build common spaces that resemble nests, while sustainable landscape planning, which includes ponds and water mirrors that unify the space, encourages life in contact with the outdoors.'
+			)
+		),
+		'azulik-uh-may' => array(
+			'name' => 'AZULIK UH MAY HOTEL',
+			'type' => 'Hotel',
+			'location' => 'UH MAY',
+			'year' => '2019',
+			'size' => '10 Has',
+			'status' => 'In progress',
+			'architect' => 'ROTH ARCHITECTURE',
+			'image' => 'main-image.jpg',
+			'description' => array(
+				1 => 'The project located in the community of Francisco Uh May began in 2018 with the construction of SFER IK and a private home, AZULIK Residence. Currently under construction, it contemplates 42 villas, a gastronomic space, and a design center that with exhibition areas, workshops, and offices.',
+				2 => 'The complex reaffirms the principles of reconnection with nature by incorporating new green technologies. Meanwhile, its dynamic paths through the jungle are an invitation to discover the space in a progressive way with the purpose of approaching sustainability and art in an unpredictable and memorable fashion.'
 			)
 		)
 	);
