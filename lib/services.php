@@ -1,4 +1,4 @@
-<?php 
+<?php
 $servicios = array(
   'planning' => array(
     'nombre' => 'Planning',
@@ -17,10 +17,10 @@ $servicios = array(
       2 => 'Furthermore, we design integral experiences that go beyond the form or technique and through which people generate intimate bonds with their surroundings. Our spaces are not meant to be used, but felt.'
     )
   ),
-  'architectural -design' => array(
+  'architectural-design' => array(
     'nombre' => 'Architectural Design',
     'nombreVertical' => 'Architectural Design',
-    'imagen' => 'concept-experience.jpg',
+    'imagen' => 'achitectural-design.jpg',
     'descripcion' => array(
       1 => 'We engage with architectural design from a singular creative perspective. At the beginning of the process, we forgo established conventions in order to find unexpected solutions. We ask questions, explore ideas and develop proposals that grow from the location where a project is set, thus giving it a potent identity rooted in the land with which it coexists.',
       2 => 'We take a project through every stage of design, from preliminary sketches and physical models to high-end photorealistic rendering, working closely with clients to co-create exceptional spaces.'
