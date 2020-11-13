@@ -95,6 +95,7 @@
 		</div>
 		<div class="full">
 			<input type="submit" value="Submit Application">
+			<input type="hidden" name="formType" value="career">
 		</div>
 	</form>
 </div>

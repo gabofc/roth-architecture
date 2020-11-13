@@ -17,7 +17,13 @@
 		//Contact data send
 		$include_mail = 'contact-mail.php';
 		include( $include_mail );
-		$subject = $_REQUEST['formType'] == 'contact' ? 'Contacto desde Roth Architecture' : 'New scheduled call request from Roth Architecture';
+		if( $_REQUEST['formType']=='contact' ){
+			$subject = 'Contacto desde Roth Architecture';
+		} else if( $_REQUEST['formType']=='schedule' ){
+			$subject = 'New scheduled call request from Roth Architecture';
+		} else if( $_REQUEST['formType']=='career' ){
+			$subject = 'New job position submitted';
+		}
 		$bodyContent = ob_get_contents();
 		ob_end_clean();
 		$form_values['subject'] = $subject;
@@ -35,8 +41,8 @@
 		$mail->addCustomHeader( 'X-Mailer: ' . $form_values['host'] . '/ PHP/' . phpversion(), 'Message-ID: <' . gmdate( 'YmdHs' ) . '@' . $form_values['host'] . '/>', 'Sender: ' . $form_values['host'] . '/', 'Sent: ' . date( 'd-m-Y' ) );
 		$mail->From = 'crm@azulik.com';
 		$mail->FromName = 'Roth Architecture';
-		$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Contact Form' );
-		//$mail->AddAddress( 'gfernandez@azulik.com', 'Roth Contact Form' );
+		//$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Contact Form' );
+		$mail->AddAddress( 'gfernandez@azulik.com', 'Roth Contact Form' );
 		//$mail->AddAddress( 'fpires@azulik.com', 'Roth Contact Form' );
 		$mail->IsHTML( true );
 		$mail->CharSet = 'UTF-8';
@@ -50,10 +56,23 @@
 
 		//Thanks page sending
 		$include_thanks = $_REQUEST['formType'] == 'contact' ? 'contact-thanks.php' : 'contact-schedule.php';
+		if( $_REQUEST['formType']=='contact' ){
+			$include_thanks = 'contact-thanks.php';
+		} else if( $_REQUEST['formType']=='schedule' ){
+			$include_thanks = 'contact-schedule.php';
+		} else if( $_REQUEST['formType']=='career' ){
+			$include_thanks = 'contact-thanks.php';
+		}
 		include( $include_thanks );
 		$bodyContent = ob_get_contents();
 		ob_end_clean();
-		$subject_thanks = $_REQUEST['formType'] == 'contact' ? 'Thank you for getting in touch' : 'Thank you for request a call with us';
+		if( $_REQUEST['formType']=='contact' ){
+			$subject_thanks = 'Thank you for getting in touch';
+		} else if( $_REQUEST['formType']=='schedule' ){
+			$subject_thanks = 'Thank you for request a call with us';
+		} else if( $_REQUEST['formType']=='career' ){
+			$subject_thanks = 'Thank you for getting in touch';
+		}
 		$mail = new PHPMailer();
 		$mail->isSMTP(true);
 		$mail->Mailer = "smtp";
