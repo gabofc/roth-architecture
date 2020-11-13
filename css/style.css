@@ -1015,7 +1015,7 @@ video { width: 100%; height: auto; margin: 50px 0; }
 	margin-bottom: 20px;
 }
 .carreraDetalle p {
-	font-family: AveriaSerifLibre;
+	font-family: 'Averia Serif Libre', cursive;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 1.63;
@@ -1023,6 +1023,59 @@ video { width: 100%; height: auto; margin: 50px 0; }
 	margin-bottom: 20px;
 }
 .carreraDetalle .linea { display: block; height: 3px; width: 20px; background-color: var( --negro ); margin: 20px 0; }
+.padCar { padding: 0 20px; box-sizing: border-box; }
+.carreraForm .campo {
+	width: 288px;
+	margin-left: 140px;
+	margin-top: 76px;
+	float: left;
+	position: relative;
+}
+.carreraForm .campo label {
+	display: block;
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+.carreraForm .campo input[type="text"], .campoDescarga {
+	display: block;
+	background-color: var( --grisCampo );
+	width: 100%;
+	height: 45px;
+	border-radius: 21px;
+	box-sizing: border-box;
+	padding: 15px 23px;
+	border: none;
+	outline: none;
+	font-size: 14px;
+}
+.carreraForm .campo span {
+	position: absolute;
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.5;
+	color: #323030;
+}
+.campoDescarga { color: rgba( 0, 0, 0, 0.44 ); }
+.campoDescarga i { float: right; }
+.carreraForm .campo input[type="file"] { display: none; }
+.full { width: 100%; display: block; float: left; margin-top: 100px; text-align: center; }
+.full input[type="submit"] {
+	width: 273px;
+	height: 68px;
+	padding: 20px 0;
+	border-radius: 38.5px;
+	background-color: var( --negro );
+	color: var( --blanco );
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 18px;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	border: none;
+	outline: none;
+}
 footer .footerContent { display: flex; margin-top: 85px; }
 footer .footerContent h1 {
 	margin: 0;
@@ -1186,6 +1239,7 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.otraImagen { width: 100%; max-width: 100%; margin-top: 50px; text-align: center; }
 	.barraNegra { margin-bottom: 0; }
 	.philImgDos h4, .otraImagen h4 { display: none; }
+	.carreraForm .campo { margin-left: 70px; }
 }
 @media screen and ( max-width: 900px ) {
 	.popup { height: 100%; overflow-y: auto; }
@@ -1215,14 +1269,17 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.cretiveContent .cincuenta { float: none; width: 100%; padding-right: 0; }
 	.cretiveContent h5 { margin-bottom: 30px; }
 }
-@media screen and ( max-width: 768px ) {
+@media screen and ( max-width: 773px ) {
 	.carrera h3 { font-size: 20px; }
+	.carreraForm .campo { margin-left: 45px; }
 }
-@media screen and ( max-width: 720px ) {
+@media screen and ( max-width: 725px ) {
 	.proyectos .proyecto { width: 100%; }
+	.carreraForm .campo { margin-left: 0; box-sizing: border-box; padding: 0 15px; }
 }
 @media screen and ( max-width: 655px ) {
 	.carrera { width: 98%; float: none; }
+	.carreraForm .campo { width: 50%; }
 }
 @media screen and ( max-width: 610px ) {
 	.busquedaDiv { float: none; max-width: 100%; width: 250px; margin: 0 auto; }
@@ -1232,6 +1289,9 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.contactoDiv .mitad .campo, .popup .mitad .campo { width: 100%; }
 	.contactoDiv .mitad .campo:first-child { padding-right: 0 }
 	.scrollBarPosition { display: none; }
+}
+@media screen and ( max-width: 580px ) {
+	.carreraForm .campo { width: 100%; float: none; margin-top: 50px; }
 }
 @media screen and ( max-width: 560px ) {
 	.testimonioText { font-size: 30px; margin: 120px auto; }
