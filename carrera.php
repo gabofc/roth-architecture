@@ -46,6 +46,7 @@
 	<p class="scrollAnimation"><?php echo $carrera[ 'apply' ]; ?></p>
 	<?php endif; ?>
 	<form class="fila carreraForm" id="carreraForm" action="contact-send" method="POST">
+	<input type="hidden" name="job_position" value="<?php echo $carrera[ 'title' ]; ?>">
 		<div class="fila">
 			<div class="campo">
 				<label for="email">Email</label>
@@ -95,6 +96,7 @@
 		</div>
 		<div class="full">
 			<input type="submit" value="Submit Application">
+			<input type="hidden" name="formType" value="career">
 		</div>
 	</form>
 </div>
