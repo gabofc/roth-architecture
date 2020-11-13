@@ -11,6 +11,7 @@ ErrorDocument 404 /
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
 Rewriterule ^project/(.+) details.php?nombre=$1
+Rewriterule ^career/(.+) carrera.php?nombre=$1
 <ifModule mod_gzip.c>
 	mod_gzip_on Yes
 	mod_gzip_dechunk Yes

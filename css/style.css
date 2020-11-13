@@ -650,6 +650,7 @@ body.general.contact footer, body.general.press footer { margin-top: 0; }
 	color: var( --blanco );
 	margin: 50px 0;
 }
+.banner.block { display: block; min-height: 390px; background-position: center center !important; }
 .banner h2 {
 	font-size: 37px;
 	font-weight: bold;
@@ -680,6 +681,19 @@ body.general.contact footer, body.general.press footer { margin-top: 0; }
 	width: 519px;
 	max-width: 100%;
 	margin: 27px auto;
+}
+.banner .parrafo {
+	width: 1010px;
+	max-width: 80%;
+	margin: 0 auto;
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 1.33;
+	letter-spacing: 1.56px;
+	text-align: center;
+	color: var( --grisFondo );
+	margin-bottom: 30px;
 }
 .shortMain { max-width: 100%; width: 910px; margin: 0 auto; }
 .philH {
@@ -916,7 +930,7 @@ video { width: 100%; height: auto; margin: 50px 0; }
 	display: flex;
 }
 .servicioDetalle h2 {
-	writing-mode:  sideways-lr;
+	writing-mode: sideways-lr;
 	font-family: 'Averia Serif Libre', cursive;
 	text-transform: uppercase;
 	font-size: 35px;
@@ -949,6 +963,66 @@ video { width: 100%; height: auto; margin: 50px 0; }
 	margin-bottom: 15px;
 }
 .servicioDetalle .servicioContent .linea { display: block; height: 3px; width: 20px; background-color: var( --negro ); margin: 20px 0; }
+.carreraDiv {
+	width: 48%;
+	margin: 1%;
+	padding: 60px 30px;
+	box-sizing: border-box;
+	background-color: var( --negro );
+	float: left;
+}
+.carreraDiv h3 {
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 1.3px;
+	color: var( --blanco );
+	margin-bottom: 30px;
+}
+.carreraDiv a.carreraBoton {
+	width: 101px;
+	height: 32px;
+	background-color: var( --blanco );
+	color: var( --negro );
+	text-align: center;
+	padding: 6px 27px 7px;
+	border-radius: 16px;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 14px;
+	letter-spacing: 0.73px;
+	text-transform: uppercase;
+}
+.listaRequerimientos { list-style: none; padding-left: 0; margin-bottom: 20px; }
+.listaRequerimientos li {
+	font-family: AveriaSerifLibre;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.63;
+	letter-spacing: 0.83px;
+}
+.carreraDetalle h3 {
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 1.3px;
+	margin-bottom: 20px;
+}
+.carreraDetalle h4 {
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 1.3px;
+	margin-bottom: 20px;
+}
+.carreraDetalle p {
+	font-family: AveriaSerifLibre;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.63;
+	letter-spacing: 0.83px;
+	margin-bottom: 20px;
+}
+.carreraDetalle .linea { display: block; height: 3px; width: 20px; background-color: var( --negro ); margin: 20px 0; }
 footer .footerContent { display: flex; margin-top: 85px; }
 footer .footerContent h1 {
 	margin: 0;
@@ -1141,8 +1215,14 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.cretiveContent .cincuenta { float: none; width: 100%; padding-right: 0; }
 	.cretiveContent h5 { margin-bottom: 30px; }
 }
+@media screen and ( max-width: 768px ) {
+	.carrera h3 { font-size: 20px; }
+}
 @media screen and ( max-width: 720px ) {
 	.proyectos .proyecto { width: 100%; }
+}
+@media screen and ( max-width: 655px ) {
+	.carrera { width: 98%; float: none; }
 }
 @media screen and ( max-width: 610px ) {
 	.busquedaDiv { float: none; max-width: 100%; width: 250px; margin: 0 auto; }
