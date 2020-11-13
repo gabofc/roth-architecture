@@ -963,6 +963,11 @@ video { width: 100%; height: auto; margin: 50px 0; }
 	margin-bottom: 15px;
 }
 .servicioDetalle .servicioContent .linea { display: block; height: 3px; width: 20px; background-color: var( --negro ); margin: 20px 0; }
+.verticalTitle { width: 100px; }
+.verticalTitle h2 {
+	writing-mode: tb-rl;
+	transform: rotate( -180deg );
+}
 .carreraDiv {
 	width: 48%;
 	margin: 1%;
@@ -1191,8 +1196,9 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.bMobileCierra, .bMobile { display: block; }
 	.servicioDetalle { display: initial; }
 	.servicioDetalle .servicioContent { display: block; width: 600px; margin: 0 auto; max-width: 100%; padding: 27px 0; }
-	.servicioDetalle h2 { writing-mode: initial; width: 100%; text-align: center; }
 	.servicioDetalle .imageService { margin: 0 auto; max-width: 100%; }
+	.verticalTitle { width: 100%; }
+	.verticalTitle h2 { writing-mode: initial; width: 100%; text-align: center; transform: rotate( 0 );  }
 }
 @media screen and ( max-width: 1105px ) {
 	.pressItem .pressImg { margin-right: 25px; }
