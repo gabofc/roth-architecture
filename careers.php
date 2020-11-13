@@ -21,7 +21,7 @@
 	<?php
 		foreach ( $careers as $indice => $carrera ) {
 			echo
-			'<div class="carreraDiv">
+			'<div class="carreraDiv scrollAnimation">
 				<h3>' . $carrera[ 'title' ] . '</h3>
 				<a href="career/' . $indice . '" class="carreraBoton">Apply</a>
 			</div>';
