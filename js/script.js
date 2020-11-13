@@ -94,6 +94,8 @@ $( document ).ready( function() {
 		$( '#serviceSlide' ).bxSlider( {
 			auto: false,
 			pager: false,
+			infiniteLoop: false,
+			hideControlOnEnd: true,
 			mode: 'horizontal',
 			nextText: 'NXT',
 			prevText: 'PRV'

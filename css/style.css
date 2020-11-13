@@ -28,7 +28,7 @@ header .menu {
 	display: flex;
 	list-style: none;
 	font-size: 15px;
-	width: 958px;
+	width: 967px;
 	float: right;
 	margin: 43px 0;
 }
@@ -823,7 +823,7 @@ video { width: 100%; height: auto; margin: 50px 0; }
 }
 .filtros .filtro {
 	text-transform: uppercase;
-	margin-right: 20px;
+	margin-right: 30px;
 	width: 250px;
 	transition: all 0.4s;
 	cursor: pointer;
@@ -899,14 +899,19 @@ video { width: 100%; height: auto; margin: 50px 0; }
 	transform: scale( 1.05 );
 }
 .bx-wrapper .bx-controls-direction a {
-	bottom: 10px;
+	bottom: 0;
 	top: initial;
 	text-transform: uppercase;
 	color: var( --negro );
 	font-family: 'Roboto Mono', monospace;
 	font-size: 14px;
+	font-weight: bold;
+	box-sizing: border-box;
+	padding: 20px 9px;
 }
-.bx-wrapper .bx-prev { left: initial; right: 60px; }
+.bx-wrapper .bx-prev { left: initial; right: 55px; border-right: 1px solid var( --negro ); }
+.bx-wrapper .bx-controls-direction a.disabled { display: block; font-weight: 300; }
+.lineaSepara { display: inline-block; width: 1px; height: 50px; background-color: var( --negro ); margin-left: 9px; }
 .servicioDetalle {
 	display: flex;
 }
@@ -918,7 +923,7 @@ video { width: 100%; height: auto; margin: 50px 0; }
 	letter-spacing: 2.75px;
 	margin: 20px;
 }
-.servicioDetalle img { width: 796px; max-width: 65%; height: auto; }
+.servicioDetalle .imageService { width: 796px; max-width: 65%; flex-shrink: 0; }
 .servicioDetalle .servicioContent {
 	box-sizing: border-box;
 	padding: 27px;
@@ -995,9 +1000,10 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.philImgDos { max-width: 50%; }
 	.philImgDos h4 { margin-left: 39%; }
 }
-@media screen and ( max-width: 1380px ) {
-	header .menu { font-size: 14px; width: 805px; margin: 42px 0; }
+@media screen and ( max-width: 1386px ) {
+	header .menu { font-size: 14px; width: 812px; margin: 42px 0; }
 	header .menu li { padding: 0 9px; }
+	.servicioDetalle .imageService { width: 600px; }
 }
 @media screen and ( max-width: 1350px ) {
 	.textContent.contacto { max-width: 40%; }
@@ -1014,7 +1020,7 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	footer .footerContent .tercerColumna { margin-left: 180px; }
 	.founderImgTmp { height: 135% !important; }
 	.philImgDos h4 { margin-left: 37%; }
-	header .menu { width: 741px; font-size: 13px; }
+	header .menu { width: 748px; font-size: 13px; }
 	header .menu li { padding: 0 8px; }
 }
 @media screen and ( max-width: 1192px ) {
@@ -1047,6 +1053,10 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	header .menu li a { font-size: 24px; }
 	.botonAgenda { right: 0; left: 0; margin: 0 auto; }
 	.bMobileCierra, .bMobile { display: block; }
+	.servicioDetalle { display: initial; }
+	.servicioDetalle .servicioContent { display: block; width: 600px; margin: 0 auto; max-width: 100%; padding: 27px 0; }
+	.servicioDetalle h2 { writing-mode: initial; width: 100%; text-align: center; }
+	.servicioDetalle .imageService { margin: 0 auto; max-width: 100%; }
 }
 @media screen and ( max-width: 1105px ) {
 	.pressItem .pressImg { margin-right: 25px; }
