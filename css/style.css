@@ -941,8 +941,9 @@ video { width: 100%; height: auto; margin: 50px 0; }
 .servicioDetalle .servicioContent {
 	box-sizing: border-box;
 	padding: 27px;
-	max-width: 40%;
 }
+.servicioDetalle .servicioContent.unaLinea { max-width: 43%; }
+.servicioDetalle .servicioContent.dosLineas { max-width: 40%; }
 .servicioDetalle .servicioContent h3 {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 16px;
