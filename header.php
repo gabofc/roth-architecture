@@ -104,15 +104,15 @@ $bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_repla
 			<div class="principal">
 				<a href="/"><img src="images/logo.png" class="logoImg"></a>
 				<ul class="menu">
-					<li><a href="careers">Careers<span></span></a></li>
+					<li><a href="about">About<span></span></a></li>
+					<li><a href="founder">Founder<span></span></a></li>
+					<li><a href="awards">Awards<span></span></a></li>
 					<li><a href="services">Services<span></span></a></li>
 					<li><a href="creative-process">Creative Process<span></span></a></li>
 					<li><a href="philosophy">Philosophy<span></span></a></li>
 					<li><a href="projects">Projects<span></span></a></li>
-					<li><a href="about">About<span></span></a></li>
-					<li><a href="founder">Founder<span></span></a></li>
-					<li><a href="awards">Awards<span></span></a></li>
 					<li><a href="press">Press<span></span></a></li>
+					<li><a href="careers">Careers<span></span></a></li>
 					<li><a href="contact">Contact<span></span></a></li>
 				</ul>
 				<a href="#" class="bMobileCierra"><i class="fas fa-times"></i></a>
