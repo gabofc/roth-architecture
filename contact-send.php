@@ -48,12 +48,16 @@
 		$mail->CharSet = 'UTF-8';
 		$mail->AltBody = $subject;
 		$mail->Body = $bodyContent;
+		if ( $_FILES ) {
+			foreach ( $_FILES as $file => $array ) {
+				$mail->AddAttachment( $_FILES[ $file ][ 'tmp_name' ], $_FILES[ $file ][ 'name' ] );
+			}
+		}
 		if( $mail -> Send() ) {
 			$status = array( 'status' => 'Success' );
 		} else {
 			$status = array( 'status' => 'Error', 'mensaje' => $mail->ErrorInfo );
 		}
-
 		//Thanks page sending
 		$include_thanks = $_REQUEST['formType'] == 'contact' ? 'contact-thanks.php' : 'contact-schedule.php';
 		if( $_REQUEST['formType']=='contact' ){
