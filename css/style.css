@@ -698,7 +698,7 @@ body.general.contact footer, body.general.press footer { margin-top: 0; }
 .shortMain { max-width: 100%; width: 910px; margin: 0 auto; }
 .philH {
 	font-family: 'Averia Serif Libre', cursive;
-	font-size: 36px;
+	font-size: 33px;
 	line-height: normal;
 	letter-spacing: 2.9px;
 	margin: 50px 0;
@@ -763,7 +763,7 @@ video { width: 100%; height: auto; margin: 50px 0; }
 	width: 1150px;
 	max-width: 100%;
 	text-align: center;
-	font-size: 40px;
+	font-size: 35px;
 	font-weight: normal;
     line-height: 1.43;
     letter-spacing: normal;
@@ -779,7 +779,7 @@ video { width: 100%; height: auto; margin: 50px 0; }
 .cincuenta { float: left; width: 50%; box-sizing: border-box; }
 .cretiveContent .fila .cincuenta:first-child { padding-right: 20px; }
 .cretiveContent h4 {
-	font-size: 35px;
+	font-size: 30px;
     line-height: 1.37;
     letter-spacing: normal;
     font-weight: normal;
@@ -787,7 +787,7 @@ video { width: 100%; height: auto; margin: 50px 0; }
     margin-bottom: 30px;
 }
 .cretiveContent h5 {
-	font-size: 18px;
+	font-size: 28px;
     line-height: 1.38;
     letter-spacing: 2px;
     font-style: italic;
@@ -830,7 +830,7 @@ video { width: 100%; height: auto; margin: 50px 0; }
 .filtros {
 	display: flex;
 	font-family: 'Roboto Mono', monospace;
-	font-size: 20px;
+	font-size: 16px;
 	letter-spacing: 1.61px;
 	width: 550px;
 	margin: 50px auto;
@@ -838,7 +838,7 @@ video { width: 100%; height: auto; margin: 50px 0; }
 .filtros .filtro {
 	text-transform: uppercase;
 	margin-right: 30px;
-	width: 250px;
+	width: 130px;
 	transition: all 0.4s;
 	cursor: pointer;
 }
