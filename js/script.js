@@ -255,9 +255,11 @@ function respuestaFiltros( respuesta ) {
 	cargando( false );
 	datos = JSON.parse( respuesta );
 	if ( datos.status == 'Success' ) {
-		var filtroList = '<a class="noHref" onclick="filtra( \'all\', \'all\' )">All</a>';
+		var i = 1;
+		var filtroList = '<a class="noHref filtrosLinks" id="filtroSelector-' + i + '" onclick="filtra( \'all\', \'all\', ' + i + ' )">All</a>';
 		$.each( datos.valores, function( indice, valor ) {
-			filtroList += '<a class="noHref" onclick="filtra( \'' + datos.filtro + '\', \'' + valor.valor + '\' )">' + valor.nombre + '</a>';
+			i++;
+			filtroList += '<a class="noHref filtrosLinks" id="filtroSelector-' + i + '" onclick="filtra( \'' + datos.filtro + '\', \'' + valor.valor + '\', ' + i + ' )">' + valor.nombre + '</a>';
 		} );
 		$( '.selectorFiltro' ).html( filtroList );
 		if ( !$( '.selectorFiltro' ).is( ':visible' ) ) {
@@ -269,7 +271,9 @@ function respuestaFiltros( respuesta ) {
 		alerta( '', 'The selected filter doesn\'t have values', 'error' );
 	}
 }
-function filtra( filtro, valor ) {
+function filtra( filtro, valor, indice ) {
+	$( '.filtrosLinks' ).removeClass( 'marcado' );
+	$( '#filtroSelector-' + indice ).addClass( 'marcado' );
 	if ( filtro != 'all' ) {
 		$( '.proyecto[' + filtro + '="' + valor + '"]' ).show();
 		$( '.proyecto[' + filtro + '!="' + valor + '"]' ).hide();
