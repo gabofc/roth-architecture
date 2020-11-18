@@ -51,7 +51,7 @@ $servicios = array(
     'nombre' => 'International Hospitality Development',
     'nombreVertical' => 'International<br>Hospitality Development',
     'class' => 'dosLineas',
-    'imagen' => 'international-hospitality.jpg',
+    'imagen' => 'international-hospitality-development.jpg',
     'descripcion' => array(
       1 => 'Given our long history of working in the hospitality industry in several parts of the world, we offer abundant knowledge on how to create cutting-edge, organic spaces that people will travel the world to see. We strive to construct not only spaces for rest, but new features of a destination that become central parts of the journey itself. Using local materials and capturing cultural and natural identities, we develop multi-sensory experiences that become landmarks in the most coveted destinations on the planet. '
     )
