@@ -381,12 +381,33 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 .awardItem .awardImg:hover > img { opacity: 0.4; }
 .awardItem .awardImg:hover > a { opacity: 1; top: 50%; }
 .awardItem .awardImg:hover > .linea { width: 100%; opacity: 1; }
-.textContent.contacto { max-width: 45%; }
-.contactoDiv { margin: 60px 0; width: 100%; }
+.textContent.contacto { max-width: 50%; }
+.contactoDiv {
+	margin: 90px auto;
+	width: 600px;
+	max-width: 90%;
+}
+.contactoDiv h3 {
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 15px;
+	letter-spacing: 1.4px;
+	text-align: center;
+	color: var( --negro );
+	margin: 0;
+	margin-bottom: 24px;
+	text-transform: uppercase;
+}
+.contactoDiv .linea {
+	width: 19px;
+	height: 2px;
+	background-color: var( --negro );
+	margin: 0 auto;
+	margin-bottom: 75px;
+}
 .contactoDiv label, .contactoDivPop label {
 	margin: 0;
 	display: block;
-	width: 580px;
+	width: 100%;
 	text-transform: uppercase;
 	font-size: 18px;
 	letter-spacing: 1.59px;
@@ -397,15 +418,19 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	font-family: 'Roboto Mono', monospace;
 	font-size: 16px;
 	letter-spacing: 1.41px;
-	padding: 4px 0;
-	text-transform: uppercase;
+	padding: 5px 0;
 	background-color: transparent;
 	outline: none;
 	border: none;
 	border-bottom: 1px solid var( --negro );
-	margin-bottom: 22px;
-	width: 580px;
+	margin-bottom: 40px;
+	width: 100%;
 	max-width: 98%;
+}
+.contactoDiv input::-webkit-input-placeholder {
+	font-family: 'Averia Serif Libre', cursive;
+	color: var( --negro );
+	letter-spacing: 1.49px;
 }
 .contactoDivPop input { border-bottom: 1px solid var( --blanco ); color: var( --blanco ); }
 .contactoDiv .mitad, .contactoDivPop .mitad { display: flex; width: 580px; max-width: 100%; }
@@ -417,20 +442,22 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 .contactoDiv .mitad .campo input#phone, .contactoDivPop .mitad .campo input#phoneAgenda { width: 70%; }
 .contactoDiv .boton, .contactoDivPop .boton {
 	display: block;
-	background-color: transparent;
+	background-color: var( --negro );
 	font-family: 'Roboto Mono', monospace;
 	text-transform: uppercase;
-	width: 179px;
-	letter-spacing: 1.41px;
-	font-size: 16px;
+	border-radius: 38.5px;
+	width: 249px;
+	font-size: 18px;
 	box-sizing: border-box;
-	padding: 8px 22px;
+	padding: 21px 0;
+	text-align: center;
 	border: 1px solid var( --negro );
-	margin-top: 15px;
+	margin: 0 auto;
+	margin-top: 60px;
 	transition: all 0.5s;
-	color: var( --negro );
+	color: var( --letraFooter );
 }
-.contactoDiv .boton:hover { background-color: var( --negro ); color: var( --blanco ); }
+.contactoDiv .boton:hover { background-color: transparent; color: var( --negro ); }
 .contactoDivPop .boton { border: 1px solid var( --blanco ); color: var( --blanco ); width: 190px; }
 .vacio { border-bottom: 1px solid #ff0000 !important; }
 .linea.contacto {
@@ -441,7 +468,15 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	margin: 45px 0;
 }
 .regresa { color: var( --blanco ); }
-.infoContacto { width: 100%; padding-bottom: 50px; }
+.infoContacto {
+	position: absolute;
+	left: 60%;
+	bottom: 50px;
+	width: 300px;
+	max-width: 100%;
+	color: var( --blanco );
+	z-index: 111;
+}
 .infoContacto h3 { font-size: 20px; letter-spacing: 1.65px; margin-bottom: 15px; text-transform: uppercase; }
 .infoContacto p {
 	font-family: 'Roboto Mono', monospace;
@@ -451,9 +486,9 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 }
 .imgContact {
 	position: absolute;
-	top: 0;
+	top: 96px;
 	right: 0;
-	width: 50%;
+	width: 45%;
 	height: 100%;
 	background-position: top center !important;
 	background-size: cover !important;
@@ -1136,9 +1171,7 @@ footer .footerContent p {
 }
 .tCenter { text-align: center; }
 footer .footerContent .tercerColumna img { width: 350px; height: auto; }
-@media screen and ( max-width: 1650px ) {
-	.imgContact { top: 0; margin-top: 0; }
-}
+
 @media screen and ( max-width: 1506px ) {
 	header .menu { font-size: 14px; width: 912px; margin: 42px 0; }
 	header .menu li { padding: 0 9px; }
@@ -1152,7 +1185,7 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.verticalTitle h2 { font-size: 30px; min-height: 400px; }
 }
 @media screen and ( max-width: 1350px ) {
-	.textContent.contacto { max-width: 40%; }
+	.textContent.contacto { max-width: 45%; }
 	.otraImagen { margin-top: 120px; max-width: 55%; }
 	.philImgDos { margin-top: -650px; }
 	.philImgDos h4 { margin-left: 38%; }
@@ -1168,10 +1201,11 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	header .menu li { padding: 0 7px; }
 }
 @media screen and ( max-width: 1250px ) {
-	.imgContact { width: 58%; }
+	.imgContact { width: 50%; }
 	footer .footerContent .tercerColumna { margin-left: 180px; }
 	.founderImgTmp { height: 135% !important; }
 	.philImgDos h4 { margin-left: 37%; }
+	.infoContacto { left: 55%; }
 }
 @media screen and ( max-width: 1197px ) {
 	.philImgUno h4 { margin-top: 40px; }
@@ -1224,12 +1258,26 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.philImgDos h4 { margin-left: 33%; }
 }
 @media screen and ( max-width: 985px ) {
-	.imgContact { display: none; }
-	.scheduleBoton { color: var( --negro ); border-bottom: 1px solid var( --negro ); }
+	.imgContact {
+		display: block;
+		position: relative;
+		top: initial;
+		right: initial;
+		width: 100%;
+		height: 800px;
+		background-position: center center;
+	}
 	.textContent.contacto {
-		width: 580px;
-		max-width: 90%;
+		width: 100%;
 		margin: 0 auto;
+		max-width: initial;
+	}
+	.contactoDiv { width: 100%; }
+	.scheduleBoton { top: initial; margin-top: 50px; }
+	.infoContacto {
+		left: 50px;
+		bottom: initial;
+		margin-top: 600px;
 	}
 }
 @media screen and ( max-width: 970px ) {
@@ -1290,7 +1338,6 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.busquedaDiv input { width: 200px; }
 	.awardItem .contenido { display: block; }
 	.awardItem .contenido .titulos, .awardItem .contenido .descripcion { width: 100%; max-width: initial; }
-	.scheduleBoton { position: relative; margin: 50px auto; right: 0; left: 0; top: 0; display: block; width: 220px; }
 	.cretiveContent .cincuenta { float: none; width: 100%; padding-right: 0; }
 	.cretiveContent h5 { margin-bottom: 30px; }
 }
@@ -1305,10 +1352,8 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 @media screen and ( max-width: 655px ) {
 	.carrera { width: 98%; float: none; }
 	.carreraForm .campo { width: 50%; }
-	.textContent.contacto { margin-top: -20px; }
 	.contacto h1 { font-size: 40px; }
 	.contacto h2 { margin: 10px 0; }
-	.contactoDiv { margin: 30px 0; }
 }
 @media screen and ( max-width: 610px ) {
 	.busquedaDiv { float: none; max-width: 100%; width: 250px; margin: 0 auto; }

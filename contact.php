@@ -5,27 +5,23 @@
 		<h2 class="scrollAnimation">Let's Talk</h2>
 		<form id="contactoForm" action="contact-send" method="POST" name="contactForm">
 			<div class="contactoDiv scrollAnimation">
+				<h3>Fill out the form</h3>
+				<div class="linea"></div>
 				<input type="hidden" name="formType" value="contact">
-				<label for="name">Name</label>
-				<input type="text" id="name" name="name" class="obligatorio" padre="contactoForm" required>
-				<label for="email">Email</label>
-				<input type="text" id="email" name="email" class="obligatorio email" padre="contactoForm" required>
+				<input type="text" id="name" name="name" class="obligatorio" padre="contactoForm" placeholder="Name" required>
+				<input type="text" id="email" name="email" placeholder="Email" class="obligatorio email" padre="contactoForm" required>
 				<div class="mitad">
 					<div class="campo">
-						<label for="phone">Phone</label>
-						<input type="text" id="code" name="code" placeholder="+" class="obligatorio" maxlength="3" required><input type="number" id="phone" name="phone" class="obligatorio telefono" padre="contactoForm" maxlength="10" required>
+						<input type="text" id="code" name="code" placeholder="Code" placeholder="+" class="obligatorio" maxlength="3" required><input type="number" id="phone" name="phone" placeholder="Phone" class="obligatorio telefono" padre="contactoForm" maxlength="10" required>
 					</div>
 					<div class="campo">
-						<label for="company">Company</label>
-						<input type="company" name="company" id="company" padre="contactoForm">
+						<input type="company" name="company" id="company" placeholder="Company" padre="contactoForm">
 					</div>
 				</div>
-				<label for="message">Your Message</label>
-				<input type="text" id="message" name="message" class="obligatorio" padre="contactoForm" required>
-				<input type="submit" value="Send message" class="boton">
+				<input type="text" id="message" name="message" placeholder="Your Message" class="obligatorio" padre="contactoForm" required>
+				<input type="submit" value="Submit" class="boton">
 			</div>
 		</form>
-		<span class="linea contacto"></span>
 		<div class="infoContacto">
 			<h3 class="scrollAnimation">Office</h3>
 			<p class="scrollAnimation">Grulla 23</p>
