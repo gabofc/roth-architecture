@@ -26,9 +26,9 @@
 		<section class="panel tCenter">
 			<img src="" data-src="images/founder/roth-3.jpg" class="lazyload">
 		</section>
-		<section class="panel tCenter">
+		<!-- <section class="panel tCenter">
 			<a href="#" class="volverContent vuelveLink"><i class="fas fa-arrow-left"></i><br>Return</a>
-		</section>
+		</section> -->
 	</div>
 </div>
 <script type="text/javascript" src="js/modernizr.custom.min.js"></script>

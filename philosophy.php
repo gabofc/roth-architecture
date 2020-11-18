@@ -9,7 +9,7 @@
 		</div>
 	</div>
 </div>
-<div class="banner" style="background-image: url( 'images/philosophy/temporal-philosofy.jpg' )">
+<div class="banner scrollAnimation" style="background-image: url( 'images/philosophy/temporal-philosofy.jpg' )">
 	<div class="shortMain">
 		<h2 class="scrollAnimation">Three axes<br>support our creations:</h2>
 		<h1 class="scrollAnimation">NATURE, ART & ANCESTRY</h1>
@@ -21,7 +21,7 @@
 	<h3 class="philH scrollAnimation">To honor primary architecture, that of nature, our structures are made with local materials and serve as an extension of the Earth itself.</h3>
 	<p class="philP scrollAnimation">Furthermore, we engage with local communities to learn from their ancient traditions and usher a process of co-creation, where our philosophies fuse to develop projects that are culturally attuned to the places where we are invited to build. By integrating these materials, techniques and knowledge, we reveal the endemic potentialities of the natural, the cultural and the human dimensions of a project, committing ourselves to sustainability and a reinterpretation of ancestral knowledge.</p>
 </div>
-<div class="barraNegra">
+<div class="barraNegra scrollAnimation">
 	<div class="principal">
 		<div class="fila">
 			<div class="contenidoDerecha">
@@ -34,18 +34,18 @@
 <div class="fila">
 	<div class="principal">
 		<div class="philImgUno">
-			<h4>01<br>Kin Toh ___</h4>
-			<img src="images/philosophy/kintoh.jpg" class="lazyload">
+			<h4 class="scrollAnimation">01<br>Kin Toh ___</h4>
+			<img src="images/philosophy/kintoh.jpg" class="lazyload scrollAnimation">
 		</div>
 	</div>
 	<div class="principal">
 		<div class="otraImagen">
-			<img src="images/philosophy/sferik.jpg" class="lazyload">
-			<h4>03<br>Sfer ik ___</h4>
+			<img src="images/philosophy/sferik.jpg" class="lazyload scrollAnimation">
+			<h4 class="scrollAnimation">03<br>Sfer ik ___</h4>
 		</div>
 		<div class="philImgDos">
-			<h4>02<br>Sfer ik, Uh <span>May ___</span></h4>
-			<img src="images/philosophy/uhmay.jpg" class="lazyload">
+			<h4 class="scrollAnimation">02<br>Sfer ik, Uh <span>May ___</span></h4>
+			<img src="images/philosophy/uhmay.jpg" class="lazyload scrollAnimation">
 		</div>
 	</div>
 </div>
