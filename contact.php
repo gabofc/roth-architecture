@@ -32,7 +32,7 @@
 	</div>
 </div>
 <a href="#" class="noHref scheduleBoton" onclick="popup( 'agendaPopup', true )">Schedule a Call</a>
-<div class="imgContact scrollAnimation" style="background-image: url( 'images/contact/contacto-1.jpg' )">
+<div class="imgContact scrollAnimation" style="background-image: url( 'images/contact/contact-main.jpg' )">
 	<div class="negroGradiente"></div>
 </div>
 <?php include 'footer.php'; ?>
