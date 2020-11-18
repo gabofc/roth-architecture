@@ -3,8 +3,8 @@
 <?php
 	$archivos = scandir( 'images/home/' );
 	foreach ( $archivos as $archivo ) {
-		$extention = explode('.', $archivo );
-		if( !is_dir($archivo) && (end($extention) == 'jpg' || end($extention) == 'jpeg') ){
+		$extention = explode( '.', $archivo );
+		if ( !is_dir( $archivo ) && ( end( $extention ) == 'jpg' || end( $extention ) == 'jpeg' ) ) {
 			echo '<li style="background-image: url( \'images/home/' . $archivo . '\' );"></li>';
 		}
 	}
