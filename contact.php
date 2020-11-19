@@ -24,6 +24,7 @@
 		</form>
 		<div class="infoContacto">
 			<h3 class="scrollAnimation">Office</h3>
+			<div class="linea contacto"></div>
 			<p class="scrollAnimation">Grulla 23</p>
 			<p class="scrollAnimation">Codigo Postal 77796</p>
 			<p class="scrollAnimation">Francisco Uh May,</p>
