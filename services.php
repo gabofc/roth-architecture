@@ -22,12 +22,14 @@
 			}
 			echo
 			'<li class="servicioDetalle">
-				<div class="verticalTitle"><h2>0' . $i . ' ' . $servicio[ 'nombreVertical' ] . '</h2></div>
-				<div class="imageService"><img src="images/services/' . $servicio[ 'imagen' ] . '" alt="' . $servicio[ 'nombre' ] . '"></div>
-				<div class="servicioContent ' . $servicio[ 'class' ] . '">
-					<h3><div class="fraccion"><span>0' . $i . '</span><span>0' . sizeof( $servicios ) . '</span></div> ' . $servicio[ 'nombre' ] . '</h3>
-					<span class="linea"></span>
-					' . $descripionText . '
+				<div class="flexBox">
+					<div class="verticalTitle"><h2>0' . $i . ' ' . $servicio[ 'nombreVertical' ] . '</h2></div>
+					<div class="imageService"><img src="images/services/' . $servicio[ 'imagen' ] . '" alt="' . $servicio[ 'nombre' ] . '"></div>
+					<div class="servicioContent ' . $servicio[ 'class' ] . '">
+						<h3><div class="fraccion"><span>0' . $i . '</span><span>0' . sizeof( $servicios ) . '</span></div> ' . $servicio[ 'nombre' ] . '</h3>
+						<span class="linea"></span>
+						' . $descripionText . '
+					</div>
 				</div>
 			</li>';
 			$i++;

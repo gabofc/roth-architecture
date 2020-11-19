@@ -96,7 +96,7 @@ $( document ).ready( function() {
 			pager: false,
 			infiniteLoop: false,
 			hideControlOnEnd: true,
-			mode: 'horizontal',
+			mode: 'fade',
 			nextText: 'NXT',
 			prevText: 'PRV'
 		} );
