@@ -107,7 +107,7 @@ main { padding-top: 171px; position: relative; }
 }
 .home .bx-wrapper .bx-viewport { border: none !important; }
 .services .bxslider li { display: flex; }
-
+.services .bx-viewport { height: 600px !important; }
 .botonAgenda {
 	position: absolute;
 	bottom: 35px;
