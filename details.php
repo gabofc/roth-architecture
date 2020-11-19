@@ -42,7 +42,9 @@
 			$slideCuantos = 2;
 			$archivos = scandir( $rutaImg );
 			foreach ( $archivos as $imagen ) {
-				if ( $imagen != '.' && $imagen != '..' && $imagen != $proyecto[ 'image' ] && $slideCuantos < 5 ) {
+				$extention = explode( '.', $imagen );
+				if ( !is_dir( $imagen ) && ( end( $extention ) == 'jpg' || end( $extention ) == 'jpeg' )  && $slideCuantos < 5 ) {
+				//if ( $imagen != '.' && $imagen != '..' && $imagen != $proyecto[ 'image' ]) {
 					echo
 					'<section class="panel tCenter">
 						<img src="" data-src="' . $rutaImg . $imagen . '" class="lazyload">
