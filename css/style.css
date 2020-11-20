@@ -1299,6 +1299,10 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	#serviceSlide .flexBox { display: block; }
 	.verticalTitle { position: relative; padding-left: 0 !important; width: auto; min-height: initial; height: 80px; }
 	.verticalTitle.unaLinea { margin-bottom: -30px; }
+	.servicioDetalle .servicioContent, .servicioDetalle .servicioContent.activo {
+		padding: 27px;
+		opacity: 1;
+	}
 }
 @media screen and ( max-width: 1105px ) {
 	.pressItem .pressImg { margin-right: 25px; }
