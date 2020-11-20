@@ -878,11 +878,11 @@ video { width: 100%; height: auto; margin: 50px 0; }
 .filtros .filtro {
 	text-transform: uppercase;
 	margin-right: 30px;
-	width: 130px;
+	width: auto;
 	transition: all 0.4s;
 	cursor: pointer;
 }
-.filtros .filtro i { float: right; margin-right: 5px; margin-top: 5px; }
+.filtros .filtro i { float: right; margin-right: 5px; margin-top: 5px; margin-left: 20px }
 .filtros .filtro:hover, .filtros .filtro.activo { font-weight: bold; }
 .selectorFiltro {
 	width: 100%;
