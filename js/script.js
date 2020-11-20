@@ -98,7 +98,15 @@ $( document ).ready( function() {
 			hideControlOnEnd: true,
 			mode: 'fade',
 			nextText: 'NXT',
-			prevText: 'PRV'
+			prevText: 'PRV',
+			onSlideAfter: function( slideElement, oldElement, newElement ) {
+				console.log( oldElement + ' ' + newElement );
+				console.log( $( window ).width() );
+				if ( $( window ).width() > 1148 ) {
+					$( '#slideService-' + newElement + ' .verticalTitle h2' ).addClass( 'activo' );
+					$( '#slideService-' + oldElement + ' .verticalTitle h2' ).removeClass( 'activo' );
+				}
+			}
 		} );
 	}
 	$( '#busquedaInput' ).keyup( function() {
