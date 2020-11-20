@@ -1065,7 +1065,7 @@ video { width: 100%; height: auto; margin: 50px 0; }
 }
 .carreraDiv h3 {
 	font-family: 'Averia Serif Libre', cursive;
-	font-size: 25px;
+	font-size: 22px;
 	font-weight: bold;
 	letter-spacing: 1.3px;
 	color: var( --blanco );
