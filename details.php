@@ -12,6 +12,7 @@
 <ul class="bxslider" id="proyectoSlide">
 	<li>
 		<div class="principal">
+			<div class="founderImgTmp scrollAnimation" style="background-image: url( '<?php echo $rutaImg; ?><?php echo $proyecto[ 'image' ]; ?>' );"></div>
 			<div class="pTop">
 				<h1 class="scrollAnimation" id="mainSection"><?php echo $proyecto[ 'name' ]; ?></h1>
 				<div class="projectDetail">
@@ -38,7 +39,7 @@
 		$archivos = scandir( $rutaImg );
 		foreach ( $archivos as $imagen ) {
 			$extention = explode( '.', $imagen );
-			if ( !is_dir( $imagen ) && ( end( $extention ) == 'jpg' || end( $extention ) == 'jpeg' ) ) {
+			if ( !is_dir( $imagen ) && ( end( $extention ) == 'jpg' || end( $extention ) == 'jpeg' ) && $imagen != $proyecto[ 'image' ] ) {
 				$sizes = list( $width, $height ) = getimagesize( $rutaImg . $imagen );
 				$classImg = ( $sizes[ 0 ] >= $sizes[ 1 ] ) ? 'ancho' : 'alto';
 				echo '<li id="slide-' . $i . '"><div class="imgSlide"><img src="" data-src="' . $rutaImg . $imagen . '" class="lazyload ' . $classImg . '"></div></li>';
