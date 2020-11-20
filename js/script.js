@@ -105,6 +105,8 @@ $( document ).ready( function() {
 				if ( $( window ).width() > 1148 ) {
 					$( '#slideService-' + newElement + ' .verticalTitle h2' ).addClass( 'activo' );
 					$( '#slideService-' + oldElement + ' .verticalTitle h2' ).removeClass( 'activo' );
+					$( '#slideService-' + newElement + ' .servicioContent' ).addClass( 'activo' );
+					$( '#slideService-' + oldElement + ' .servicioContent' ).removeClass( 'activo' );
 				}
 			}
 		} );

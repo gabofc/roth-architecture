@@ -21,12 +21,13 @@
 				$descripionText .= '<p>' . $descripcion . '</p>';
 			}
 			$classH = ( $i == 1 ) ? ' class="activo"' : '';
+			$classContent = ( $i == 1 ) ? ' activo' : '';
 			echo
 			'<li class="servicioDetalle" id="slideService-' . ( $i - 1 ) . '">
 				<div class="flexBox">
 					<div class="verticalTitle ' . $servicio[ 'class' ] . '"><h2' . $classH . '>0' . $i . ' ' . $servicio[ 'nombreVertical' ] . '</h2></div>
 					<div class="imageService"><img src="images/services/' . $servicio[ 'imagen' ] . '" alt="' . $servicio[ 'nombre' ] . '"></div>
-					<div class="servicioContent">
+					<div class="servicioContent' . $classContent . '">
 						<h3><div class="fraccion"><span>0' . $i . '</span><span>0' . sizeof( $servicios ) . '</span></div> ' . $servicio[ 'nombre' ] . '</h3>
 						<span class="linea"></span>
 						' . $descripionText . '
