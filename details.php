@@ -52,6 +52,7 @@
 	<?php endif; ?>
 </ul>
 <script>
+	var activaMovimiento = true;
 	var slideInicio = true;
 	var slideFinal = false;
 	var scrollActivo = false;
@@ -86,11 +87,19 @@
 		$( window ).scroll( function( e ) {
 			if ( $( this ).scrollTop() >= 167 && statusScroll == 1 && !slideFinal ) {
 				$( this ).scrollTop( 167 );
-				slide.goToNextSlide();
+				if ( activaMovimiento ) {
+					activaMovimiento = false;
+					slide.goToNextSlide();
+					setTimeout( function() { activaMovimiento = true; }, 1800 );
+				}
 			}
 			if ( $( this ).scrollTop() < 167 && statusScroll == 0 && !slideInicio ) {
 				$( this ).scrollTop( 167 );
-				slide.goToPrevSlide();
+				if ( activaMovimiento ) {
+					activaMovimiento = false;
+					slide.goToPrevSlide();
+					setTimeout( function() { activaMovimiento = true; }, 1800 );
+				}
 			}
 		} );
 	} );
