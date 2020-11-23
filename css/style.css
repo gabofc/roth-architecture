@@ -1446,6 +1446,10 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	header { text-align: left; }
 	.logoImg { width: 300px; height: auto; }
 	.bMobile { top: 30px; }
+	.filtros {width: 100%;}
+	.filtros .filtro {
+	margin-right: 20px;
+}
 }
 @media screen and ( max-width: 450px ) {
 	.home .sociales { left: 30px; }
