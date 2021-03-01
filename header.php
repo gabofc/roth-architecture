@@ -87,7 +87,8 @@ $bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_repla
 					<div class="mitad">
 						<div class="campo">
 							<label for="phoneAgenda">Phone</label>
-							<input type="number" id="codeAgenda" name="code" placeholder="+" maxlength="3" class="obligatorio" required><input type="number" name="phone" id="phone" class="obligatorio telefono" padre="agendaForm" maxlength="10" required>
+							<input type="number" id="codeAgenda" name="code" placeholder="+" maxlength="3" class="obligatorio" required>
+							<input type="number" name="phone" id="phoneAgenda" class="obligatorio telefono" padre="agendaForm" maxlength="10" required>
 						</div>
 						<div class="campo">
 							<label for="companyAgenda">Company</label>
