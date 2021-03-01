@@ -1,4 +1,5 @@
 <?php
+include 'timezones.php';
 $http = ( isset( $_SERVER[ 'HTTPS' ] ) ) ? 'https' : 'http';
 $url = $http . '://' . $_SERVER[ 'HTTP_HOST' ] . $_SERVER[ 'REQUEST_URI' ];
 $base = $http . '://' . $_SERVER[ 'HTTP_HOST' ];
@@ -43,15 +44,12 @@ $bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_repla
 					<h1>SCHEDULE A CALL</h1>
 					<h2>30 MINUTES</h2>
 					<select id="timezone" onchange="setTimeZone()">
-						<option value="ST -11:00 - American Samoa">-11:00 - American Samoa</option>
-						<option value="HT -10:00 - Most of the Aleutian Islands">-10:00 - Most of the Aleutian Islands</option>
-						<option value="AKT -09:00 - Most of the state of Alaska">-09:00 - Most of the state of Alaska</option>
-						<option value="PT -08:00 - Pacific Time zone">-08:00 - Pacific Time zone</option>
-						<option value="MT -07:00 - Mountain Time zone">-07:00 - Mountain Time zone</option>
-						<option value="CT -06:00 - Central Time zone" selected>-06:00 - Central Time zone</option>
-						<option value="ET -05:00 - Eastern Time zone">-05:00 - Eastern Time zone</option>
-						<option value="AST -04:00 - The U.S. Virgin Islands">-04:00 - The U.S. Virgin Islands</option>
-						<option value="ChT +10:00 - Guam and the Northern Islands">+10:00 - Guam and the Northern Islands</option>
+					<?php
+						foreach ( $timeZoneList as $timeZone ) {
+							$timeZoneText = str_replace( '_', ' ', $timeZone );
+							echo '<option value="' . $timeZone . '">' . $timeZoneText . '</option>';
+						}
+					?>
 					</select>
 					<div class="horarioScroll">
 						<div class="horaElige" tiempo="10:00">10:00 - 10:30 hrs</div>

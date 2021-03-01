@@ -46,6 +46,7 @@
 <?php
 if( isset($_REQUEST) && is_array($_REQUEST) ){
   include 'lib/ics.php';
+  date_default_timezone_set($_REQUEST['timezone']);
   function format_date( $date ){
     $formated_date = explode("/", $date);
     return $formated_date[2].$formated_date[0].$formated_date[1];

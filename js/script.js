@@ -34,6 +34,7 @@ $( document ).ready( function() {
 			}, 500 );
 		}, 300 );
 	} );
+	$( '#timezone' ).val( 'America/Cancun' ).trigger( 'change' );
 	ScrollReveal().reveal( '.scrollAnimation', {
 		delay: 200,
 		distance: '20%',
