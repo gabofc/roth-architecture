@@ -109,7 +109,7 @@
 					}?>
 					<?php if( $_REQUEST['formType'] == 'schedule' ){
 						$url = '?location='.$_REQUEST['code'].$_REQUEST['phone'].'&description='.$_REQUEST['message'].'&dtstart='.$_REQUEST['fecha'].'&tstart='.$_REQUEST['hora'].'&summary=Scheduled call with '.$_REQUEST['name'] . '&timezone=' . $_REQUEST[ 'timezone' ];
-						echo '<br><a href="https://roth-architecture.com/download-schedule'.$url.'">DOWNLOAD ICS CALENDAR</a>';
+						echo '<br><a href="https://www.roth-architecture.com/download-schedule'.$url.'">DOWNLOAD ICS CALENDAR</a>';
 					}?>
 				</div>
 			</div>
