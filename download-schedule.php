@@ -13,6 +13,13 @@ if( isset($_REQUEST) && is_array($_REQUEST) ){
   $end_time = format_time(date( "H:i", strtotime($start_time)+(60*30) ));
   var_dump($_REQUEST);
   echo $start_date." ** ".$start_time." ** ".$end_time;
+  var_dump($start_date);
+  var_dump($end_time);
+  $objetoFecha = strtotime($_REQUEST['dtstart'] . ' ' . $_REQUEST['tstart']);
+  var_dump($objetoFecha);
+  var_dump(date( 'Y-m-d H:i:s', $objetoFecha ));
+  var_dump(date( 'Ymd\THis', $objetoFecha ));
+
   // I know there are probably better ways to do this, but this accomplishes what I needed it to do.
 
   // Convert times to iCalendar format. They require a block for yyyymmdd and then another block
@@ -26,7 +33,7 @@ if( isset($_REQUEST) && is_array($_REQUEST) ){
     var_dump($time);
     return date('Ymd\THis', $time) . 'Z';
   }
-
+  
   // Build the ics file
   $ical = 'BEGIN:VCALENDAR
   VERSION:2.0
