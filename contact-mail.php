@@ -107,6 +107,12 @@
 					<?php foreach ($_REQUEST as $key => $post) {
 						echo '<span id="'. $key .'">'. $key .'</span> '. $post .'<br>';
 					}?>
+					<?php if( $_REQUEST['formType'] == 'schedule' ){
+						$formated_date = explode("/", $_REQUEST['fecha']);
+						$new_date = $formated_date[2]."-".$formated_date[0]."-".$formated_date[1]." ".$_REQUEST['hora'];
+						$url = '?location='.$_REQUEST['code'].' '.$_REQUEST['phone'].'&description='.$_REQUEST['message'].'&dtstart='.$new_date.'&summary=Scheduled call with '.$_REQUEST['name'];
+						//echo '<br><a href="https://roth-architecture.com/download-schedule'.$url.'">DOWNLOAD ICS CALENDAR</a>';
+					}?>
 				</div>
 			</div>
 		</div>
