@@ -11,14 +11,9 @@ if( isset($_REQUEST) && is_array($_REQUEST) ){
   $start_date = format_date($_REQUEST['dtstart']);
   $start_time = format_time($_REQUEST['tstart']);
   $end_time = format_time(date( "H:i", strtotime($start_time)+(60*30) ));
-  var_dump($_REQUEST);
-  echo $start_date." ** ".$start_time." ** ".$end_time;
-  var_dump($start_date);
-  var_dump($end_time);
-  $objetoFecha = strtotime($_REQUEST['dtstart'] . ' ' . $_REQUEST['tstart']);
-  var_dump($objetoFecha);
-  var_dump(date( 'Y-m-d H:i:s', $objetoFecha ));
-  var_dump(date( 'Ymd\THis', $objetoFecha ));
+  
+  $objetoFecha = strtotime( $_REQUEST['dtstart'] . ' ' . $_REQUEST['tstart'] );
+  
 
   // I know there are probably better ways to do this, but this accomplishes what I needed it to do.
 
@@ -30,7 +25,6 @@ if( isset($_REQUEST) && is_array($_REQUEST) ){
   // PHP equiv format: Ymd\This
 
   function dateToCal($time) {
-    var_dump($time);
     return date('Ymd\THis', $time) . 'Z';
   }
   
@@ -40,14 +34,14 @@ if( isset($_REQUEST) && is_array($_REQUEST) ){
   PRODID:-//azulik/handcal//NONSGML v1.0//EN
   CALSCALE:GREGORIAN
   BEGIN:VEVENT
-  DTEND:' . dateToCal($start_date.'\T'.$end_time) . '
+  DTEND:' . dateToCal($objetoFecha) . '
   UID:' . md5($_REQUEST['summary']) . '
   DTSTAMP:' . time() . '
   LOCATION:' . addslashes('+'.$_REQUEST['location']) . '
   DESCRIPTION:' . addslashes($_REQUEST['description']) . '
   URL;VALUE=URI:
   SUMMARY:' . addslashes($_REQUEST['summary']) . '
-  DTSTART:' . dateToCal($start_date.'\T'.$start_time) . '
+  DTSTART:' . dateToCal($objetoFecha) . '
   END:VEVENT
   END:VCALENDAR';
   var_dump($ical);exit();
