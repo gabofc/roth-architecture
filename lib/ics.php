@@ -75,7 +75,7 @@ class ICS {
     $ics_props = array(
       'BEGIN:VCALENDAR',
       'VERSION:2.0',
-      'PRODID:-//hacksw/handcal//NONSGML v1.0//EN',
+      'PRODID:-//azulik/handcal//NONSGML v1.0//EN',
       'CALSCALE:GREGORIAN',
       'BEGIN:VEVENT'
     );
