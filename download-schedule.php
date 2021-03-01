@@ -13,7 +13,7 @@ if( isset($_REQUEST) && is_array($_REQUEST) ){
   $end_time = format_time(date( "H:i", strtotime($start_time)+(60*30) ));
 
   function dateToCal($time) {
-    return date('Ymd\THis', $time) . 'Z';
+    return date('Ymd\THis', strtotime($time)) . 'Z';
   }
 
   // Build the ics file
@@ -22,14 +22,14 @@ if( isset($_REQUEST) && is_array($_REQUEST) ){
   PRODID:-//azulik/handcal//NONSGML v1.0//EN
   CALSCALE:GREGORIAN
   BEGIN:VEVENT
-  DTEND:' . dateToCal( strtotime($start_date.' '.$end_time) ) . '
+  DTEND:' . dateToCal( $start_date.' '.$end_time ) . '
   UID:' . md5($_REQUEST['summary']) . '
   DTSTAMP:' . time() . '
   LOCATION:' . addslashes('+'.$_REQUEST['location']) . '
   DESCRIPTION:' . addslashes($_REQUEST['description']) . '
   URL;VALUE=URI:
   SUMMARY:' . addslashes($_REQUEST['summary']) . '
-  DTSTART:' . dateToCal( strtotime($start_date.' '.$start_time) ) . '
+  DTSTART:' . dateToCal( $start_date.' '.$start_time ) . '
   END:VEVENT
   END:VCALENDAR';
 
