@@ -440,7 +440,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 .contactoDivPop .mitad .campo input, .contactoDivPop .mitad .campo label,
 .contactoDiv .mitad .campo input, .contactoDiv .mitad .campo label { width: 100%; }
 .contactoDiv .mitad .campo input#code, .contactoDivPop .mitad .campo input#codeAgenda { width: 28%; margin-right: 2%; }
-.contactoDiv .mitad .campo input#phone, .contactoDivPop .mitad .campo input#phoneAgenda { width: 70%; }
+.contactoDiv .mitad .campo input#phone, .contactoDivPop .mitad .campo input#phoneAgenda { width: 68%; }
 .contactoDiv .boton, .contactoDivPop .boton {
 	display: block;
 	background-color: var( --negro );
