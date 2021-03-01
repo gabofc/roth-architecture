@@ -54,16 +54,16 @@ $bodyClass = ( $nombreArchivo == 'index.php' ) ? 'home' : 'general ' . str_repla
 						<option value="ChT +10:00 - Guam and the Northern Islands">+10:00 - Guam and the Northern Islands</option>
 					</select>
 					<div class="horarioScroll">
-						<div class="horaElige" tiempo="10:00AM">10:00 - 10:30 hrs</div>
-						<div class="horaElige" tiempo="10:30AM">10:30 - 11:00 hrs</div>
-						<div class="horaElige" tiempo="11:00AM">11:00 - 11:30 hrs</div>
-						<div class="horaElige" tiempo="11:30AM">11:30 - 12:00 hrs</div>
-						<div class="horaElige" tiempo="12:00PM">12:00 - 12:30 hrs</div>
-						<div class="horaElige" tiempo="12:30PM">12:30 - 13:00 hrs</div>
-						<div class="horaElige" tiempo="1:00PM">13:00 - 13:30 hrs</div>
-						<div class="horaElige" tiempo="1:30PM">13:30 - 14:00 hrs</div>
-						<div class="horaElige" tiempo="2:00PM">14:00 - 14:30 hrs</div>
-						<div class="horaElige" tiempo="2:30PM">14:30 - 15:00 hrs</div>
+						<div class="horaElige" tiempo="10:00">10:00 - 10:30 hrs</div>
+						<div class="horaElige" tiempo="10:30">10:30 - 11:00 hrs</div>
+						<div class="horaElige" tiempo="11:00">11:00 - 11:30 hrs</div>
+						<div class="horaElige" tiempo="11:30">11:30 - 12:00 hrs</div>
+						<div class="horaElige" tiempo="12:00">12:00 - 12:30 hrs</div>
+						<div class="horaElige" tiempo="12:30">12:30 - 13:00 hrs</div>
+						<div class="horaElige" tiempo="13:00">13:00 - 13:30 hrs</div>
+						<div class="horaElige" tiempo="13:30">13:30 - 14:00 hrs</div>
+						<div class="horaElige" tiempo="14:00">14:00 - 14:30 hrs</div>
+						<div class="horaElige" tiempo="14:30">14:30 - 15:00 hrs</div>
 					</div>
 				</div>
 				<div class="lineVertical"></div>

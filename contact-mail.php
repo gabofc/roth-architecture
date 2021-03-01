@@ -108,10 +108,14 @@
 						echo '<span id="'. $key .'">'. $key .'</span> '. $post .'<br>';
 					}?>
 					<?php if( $_REQUEST['formType'] == 'schedule' ){
+						$start_date = $_REQUEST['fecha'];
+						$start_time = $_REQUEST['hora'];
+
+						echo date( "H:i:s", strtotime("15:00:00")+(60*30) ); // 15:30:00
 						$formated_date = explode("/", $_REQUEST['fecha']);
 						$new_date = $formated_date[2]."-".$formated_date[0]."-".$formated_date[1]." ".$_REQUEST['hora'];
 						$url = '?location='.$_REQUEST['code'].' '.$_REQUEST['phone'].'&description='.$_REQUEST['message'].'&dtstart='.$new_date.'&summary=Scheduled call with '.$_REQUEST['name'];
-						//echo '<br><a href="https://roth-architecture.com/download-schedule'.$url.'">DOWNLOAD ICS CALENDAR</a>';
+						echo '<br><a href="https://roth-architecture.com/download-schedule'.$url.'">DOWNLOAD ICS CALENDAR</a>';
 					}?>
 				</div>
 			</div>
