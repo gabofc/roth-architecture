@@ -48,7 +48,7 @@ if( isset($_REQUEST) && is_array($_REQUEST) ){
   include 'lib/ics.php';
   function format_date( $date ){
     $formated_date = explode("/", $date);
-    return $formated_date[2].$formated_date[1].$formated_date[0];
+    return $formated_date[2].$formated_date[0].$formated_date[1];
   }
   function format_time( $time ){
     $formated_time = explode(":", $time);
@@ -67,13 +67,12 @@ if( isset($_REQUEST) && is_array($_REQUEST) ){
 
   $ics = new ICS(array(
     'location' => '+'.$_REQUEST['location'],
-    'description' => addslashes($_REQUEST['description']),
+    'description' => strip_tags($_REQUEST['description']),
     'dtstart' => dateToCal( $start_date.' '.$start_time ),
     'dtend' => dateToCal( $start_date.' '.$end_time ),
-    'summary' => addslashes($_REQUEST['summary']),
+    'summary' => strip_tags($_REQUEST['summary']),
     //'url' => $_REQUEST['url']
   ));
-
   echo $ics->to_string();
 } else {
   header('Location: ./');
