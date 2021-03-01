@@ -4,7 +4,7 @@
 	use PHPMailer\PHPMailer\OAuth;
 	use League\OAuth2\Client\Provider\Google;
 	header( 'Access-Control-Allow-Origin: *' );
-	if( !isset( $_REQUEST ) || empty( $_REQUEST ) || ($_SERVER[ 'HTTP_HOST' ] != 'roth.local' && $_SERVER[ 'HTTP_HOST' ] != 'roth-architecture.com') ){
+	if( !isset( $_REQUEST ) || empty( $_REQUEST ) || ($_SERVER[ 'HTTP_HOST' ] != 'roth.local' && $_SERVER[ 'HTTP_HOST' ] != 'roth.architecture' && $_SERVER[ 'HTTP_HOST' ] != 'roth-architecture.com') ){
 		header('location: /');
 		exit();
 	} else {
