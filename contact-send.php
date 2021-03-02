@@ -5,7 +5,7 @@
 	use League\OAuth2\Client\Provider\Google;
 	header( 'Access-Control-Allow-Origin: *' );
 
-	if( !isset( $_REQUEST ) || empty( $_REQUEST ) || ($_SERVER[ 'HTTP_HOST' ] != 'roth.local' && $_SERVER[ 'HTTP_HOST' ] != 'roth.architecture' && $_SERVER[ 'HTTP_HOST' ] != 'roth-architecture.com' && $_SERVER[ 'HTTP_HOST' ] != 'www.roth-architecture.com') ){
+	if( !isset( $_REQUEST ) || empty( $_REQUEST ) || ($_SERVER[ 'HTTP_REFERER' ] != 'http://roth.local/contact' && $_SERVER[ 'HTTP_REFERER' ] != 'http://roth.architecture/contact' && $_SERVER[ 'HTTP_REFERER' ] != 'https://roth-architecture.com/contact' && $_SERVER[ 'HTTP_REFERER' ] != 'https://www.roth-architecture.com/contact') ){
 		header('location: /');
 		exit();
 	} else {
@@ -44,7 +44,7 @@
 		$mail->FromName = 'Roth Architecture';
 		$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Contact Form' );
 		$mail->AddAddress( 'gfernandez@azulik.com', 'Roth Contact Form' );
-		$mail->AddAddress( 'mrodriguez@azulik.com', 'Roth Contact Form' );
+		//$mail->AddAddress( 'mrodriguez@azulik.com', 'Roth Contact Form' );
 		//$mail->AddAddress( 'fpires@azulik.com', 'Roth Contact Form' );
 		$mail->IsHTML( true );
 		$mail->CharSet = 'UTF-8';
