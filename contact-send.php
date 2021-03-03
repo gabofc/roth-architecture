@@ -5,7 +5,7 @@
 	use League\OAuth2\Client\Provider\Google;
 	header( 'Access-Control-Allow-Origin: *' );
 
-	if( !isset( $_REQUEST ) || empty( $_REQUEST ) || ($_SERVER[ 'HTTP_REFERER' ] != 'http://roth.local/contact' && $_SERVER[ 'HTTP_REFERER' ] != 'http://roth.architecture/contact' && $_SERVER[ 'HTTP_REFERER' ] != 'https://roth-architecture.com/contact' && $_SERVER[ 'HTTP_REFERER' ] != 'https://www.roth-architecture.com/contact') ){
+	if( !isset( $_POST ) || empty( $_POST ) || ($_SERVER[ 'HTTP_REFERER' ] != 'http://roth.local/contact' && $_SERVER[ 'HTTP_REFERER' ] != 'http://roth.architecture/contact' && $_SERVER[ 'HTTP_REFERER' ] != 'https://roth-architecture.com/contact' && $_SERVER[ 'HTTP_REFERER' ] != 'https://www.roth-architecture.com/contact') ){
 		header('location: /');
 		exit();
 	} else {
@@ -18,11 +18,11 @@
 		//Contact data send
 		$include_mail = 'contact-mail.php';
 		include( $include_mail );
-		if( $_REQUEST['formType']=='contact' ){
+		if( $_POST['formType']=='contact' ){
 			$subject = 'Contacto desde Roth Architecture';
-		} else if( $_REQUEST['formType']=='schedule' ){
+		} else if( $_POST['formType']=='schedule' ){
 			$subject = 'New scheduled call request from Roth Architecture';
-		} else if( $_REQUEST['formType']=='career' ){
+		} else if( $_POST['formType']=='career' ){
 			$subject = 'New job position submitted';
 		}
 		$bodyContent = ob_get_contents();
@@ -42,10 +42,14 @@
 		$mail->addCustomHeader( 'X-Mailer: ' . $form_values['host'] . '/ PHP/' . phpversion(), 'Message-ID: <' . gmdate( 'YmdHs' ) . '@' . $form_values['host'] . '/>', 'Sender: ' . $form_values['host'] . '/', 'Sent: ' . date( 'd-m-Y' ) );
 		$mail->From = 'crm@azulik.com';
 		$mail->FromName = 'Roth Architecture';
-		//$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Contact Form' );
+		if( $_POST['formType']=='contact' ){
+			$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Contact Form' );
+		} else if( $_POST['formType']=='schedule' ){
+			$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Schedule Form' );
+		} else if( $_POST['formType']=='career' ){
+			$mail->AddAddress( 'careers@roth-architecture.com', 'Roth Carrers Form' );
+		}
 		$mail->AddAddress( 'gfernandez@azulik.com', 'Roth Contact Form' );
-		//$mail->AddAddress( 'mrodriguez@azulik.com', 'Roth Contact Form' );
-		//$mail->AddAddress( 'fpires@azulik.com', 'Roth Contact Form' );
 		$mail->IsHTML( true );
 		$mail->CharSet = 'UTF-8';
 		$mail->AltBody = $subject;
@@ -61,22 +65,22 @@
 			$status = array( 'status' => 'Error', 'mensaje' => $mail->ErrorInfo );
 		}
 		//Thanks page sending
-		$include_thanks = $_REQUEST['formType'] == 'contact' ? 'contact-thanks.php' : 'contact-schedule.php';
-		if( $_REQUEST['formType']=='contact' ){
+		$include_thanks = $_POST['formType'] == 'contact' ? 'contact-thanks.php' : 'contact-schedule.php';
+		if( $_POST['formType']=='contact' ){
 			$include_thanks = 'contact-thanks.php';
-		} else if( $_REQUEST['formType']=='schedule' ){
+		} else if( $_POST['formType']=='schedule' ){
 			$include_thanks = 'contact-schedule.php';
-		} else if( $_REQUEST['formType']=='career' ){
+		} else if( $_POST['formType']=='career' ){
 			$include_thanks = 'contact-thanks.php';
 		}
 		include( $include_thanks );
 		$bodyContent = ob_get_contents();
 		ob_end_clean();
-		if( $_REQUEST['formType']=='contact' ){
+		if( $_POST['formType']=='contact' ){
 			$subject_thanks = 'Thank you for getting in touch';
-		} else if( $_REQUEST['formType']=='schedule' ){
+		} else if( $_POST['formType']=='schedule' ){
 			$subject_thanks = 'Thank you for request a call with us';
-		} else if( $_REQUEST['formType']=='career' ){
+		} else if( $_POST['formType']=='career' ){
 			$subject_thanks = 'Thank you for getting in touch';
 		}
 		$mail = new PHPMailer();
@@ -93,9 +97,7 @@
 		$mail->addCustomHeader( 'X-Mailer: ' . $form_values['host'] . '/ PHP/' . phpversion(), 'Message-ID: <' . gmdate( 'YmdHs' ) . '@' . $form_values['host'] . '/>', 'Sender: ' . $form_values['host'] . '/', 'Sent: ' . date( 'd-m-Y' ) );
 		$mail->From = 'crm@azulik.com';
 		$mail->FromName = 'Roth Architecture';
-		$mail->AddAddress( $_REQUEST['email'], $_REQUEST['name'] );
-		//$mail->AddAddress( 'rfadanelli@azulik.com', 'Rox' );
-		//$mail->AddAddress( 'fadanelli.artdesign@gmail.com', 'Rox' );
+		$mail->AddAddress( $_POST['email'], $_POST['name'] );
 		$mail->IsHTML( true );
 		$mail->CharSet = 'UTF-8';
 		$mail->AltBody = $subject_thanks;
