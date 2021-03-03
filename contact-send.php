@@ -59,9 +59,9 @@
 		$mail->From = 'crm@azulik.com';
 		$mail->FromName = 'Roth Architecture';
 		if( $_POST['formType']=='contact' ){
-			//$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Contact Form' );
+			$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Contact Form' );
 		} else if( $_POST['formType']=='schedule' ){
-			//$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Schedule Form' );
+			$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Schedule Form' );
 		} else if( $_POST['formType']=='career' ){
 			$mail->AddAddress( 'careers@roth-architecture.com', 'Roth Carrers Form' );
 		}
