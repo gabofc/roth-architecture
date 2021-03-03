@@ -104,11 +104,11 @@
 			<div class="email-content">
 				<p class="email-destinatario"><strong>Contacto de Roth</strong>:</p>
 				<div class="email-mensaje">
-					<?php foreach ($_REQUEST as $key => $post) {
+					<?php foreach ($_POST as $key => $post) {
 						echo '<span id="'. $key .'">'. $key .'</span> '. $post .'<br>';
 					}?>
-					<?php if( $_REQUEST['formType'] == 'schedule' ){
-						$url = '?location='.$_REQUEST['code'].$_REQUEST['phone'].'&description='.$_REQUEST['message'].'&dtstart='.$_REQUEST['fecha'].'&tstart='.$_REQUEST['hora'].'&summary=Scheduled call with '.$_REQUEST['name'] . '&timezone=' . $_REQUEST[ 'timezone' ];
+					<?php if( $_POST['formType'] == 'schedule' ){
+						$url = '?location='.$_POST['code'].$_POST['phone'].'&description='.$_POST['message'].'&dtstart='.$_POST['fecha'].'&tstart='.$_POST['hora'].'&summary=Scheduled call with '.$_POST['name'] . '&timezone=' . $_POST[ 'timezone' ];
 						echo '<br><a href="https://www.roth-architecture.com/download-schedule'.$url.'">DOWNLOAD ICS CALENDAR</a>';
 					}?>
 				</div>

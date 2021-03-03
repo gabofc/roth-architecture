@@ -20,11 +20,27 @@
 		include( $include_mail );
 		if( $_POST['formType']=='contact' ){
 			$subject = 'Contacto desde Roth Architecture';
+			$fields = array('name', 'email','code', 'phone', 'company', 'message');
 		} else if( $_POST['formType']=='schedule' ){
 			$subject = 'New scheduled call request from Roth Architecture';
+			$fields = array('fecha', 'hora','timezone', 'name', 'email','code', 'phone', 'company', 'message');
 		} else if( $_POST['formType']=='career' ){
 			$subject = 'New job position submitted';
+			$fields = array('email', 'name', 'apellido', 'country', 'mobile', 'salary', 'currency', 'portfolio');
 		}
+
+		$verified_fields = TRUE;
+		foreach($fields as $values) {
+		   if(!isset($_POST[$values]) || empty($_POST[$values])) {
+		      $verified_fields = FALSE;
+		   }
+		}
+
+		if( !$verified_fields ){
+			header('location: /');
+			exit();
+		}
+
 		$bodyContent = ob_get_contents();
 		ob_end_clean();
 		$form_values['subject'] = $subject;
@@ -43,9 +59,9 @@
 		$mail->From = 'crm@azulik.com';
 		$mail->FromName = 'Roth Architecture';
 		if( $_POST['formType']=='contact' ){
-			$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Contact Form' );
+			//$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Contact Form' );
 		} else if( $_POST['formType']=='schedule' ){
-			$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Schedule Form' );
+			//$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Schedule Form' );
 		} else if( $_POST['formType']=='career' ){
 			$mail->AddAddress( 'careers@roth-architecture.com', 'Roth Carrers Form' );
 		}
