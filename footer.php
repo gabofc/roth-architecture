@@ -49,5 +49,14 @@
 		<script src="js/funciones.js?v=8"></script>
 		<script src="js/script.js?v=<?php echo time(); ?>"></script>
 		<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8173743.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNEJ9SKB7P"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-ZNEJ9SKB7P');
+		</script>
 	</body>
 </html>
