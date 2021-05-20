@@ -312,7 +312,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 .awardItem {
 	max-width: 1090px;
 	width: 100%;
-	margin: 100px auto;
+	margin: 100px auto 160px;
 	display: flex;
 }
 .awardItem.right { flex-direction: row-reverse; }
@@ -338,7 +338,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	margin-top: 12px;
 	width: 100%;
 }
-.awardItem .contenido .descripcion { width: 100%; max-width: 520px; box-sizing: border-box; margin-top: 30px; }
+.awardItem .contenido .descripcion {width: 100%;max-width: 520px;box-sizing: border-box;margin-top: 30px;text-align: justify;}
 .awardItem .contenido .descripcion span { display: block; width: 25px; height: 2px; background-color: var( --negro ); margin-bottom: 30px; }
 .awardItem .contenido .descripcion b { display: block; font-size: 16px; margin: 8px 0; }
 .awardItem .contenido .descripcion p {
