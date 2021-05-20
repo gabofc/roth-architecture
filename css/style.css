@@ -310,26 +310,39 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 .aboutItem .caption { text-align: right; }
 .aboutItem.vertical .caption { text-align: left; }
 .awardItem {
-	width: 1216px;
-	max-width: 100%;
+	max-width: 1090px;
+	width: 100%;
 	margin: 100px auto;
+	display: flex;
 }
-.awardItem .contenido { display: flex; margin-bottom: 50px; }
-.awardItem .contenido .titulos { width: 350px; max-width: 40%; box-sizing: border-box; margin-right: 50px; }
-.awardItem .contenido .titulos h3 { font-size: 40px; text-transform: uppercase; line-height: 1.25; letter-spacing: -0.09px; }
+.awardItem.right { flex-direction: row-reverse; }
+.awardItem .contenido {
+	margin-bottom: 50px;
+	align-items: flex-start;
+	width: 520px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+.awardItem.right .contenido { align-items: flex-end; }
+.awardItem .contenido .titulos { display: block; width: 100%; box-sizing: border-box; line-height: 1.44; letter-spacing: 1.45px; float: none; }
+.awardItem .contenido .titulos h3 { width: 100%; max-width: 300px; font-size: 32px; text-transform: uppercase; line-height: 1.25; letter-spacing: -0.09px; width: 100% }
 .awardItem .contenido .titulos h4 {
+	width: 100%;
+	max-width: 300px;
 	font-family: 'Roboto Mono', monospace;
-	font-size: 20px;
+	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 300;
 	line-height: normal;
-	letter-spacing: 1.32px;
-	margin-top: 11px;
+	letter-spacing: 0.63px;
+	margin-top: 12px;
+	width: 100%;
 }
-.awardItem .contenido .descripcion { width: 700px; max-width: 60%; box-sizing: border-box; }
+.awardItem .contenido .descripcion { width: 100%; max-width: 520px; box-sizing: border-box; margin-top: 30px; }
+.awardItem .contenido .descripcion span { display: block; width: 25px; height: 2px; background-color: var( --negro ); margin-bottom: 30px; }
 .awardItem .contenido .descripcion b { display: block; font-size: 16px; margin: 8px 0; }
-.awardItem .contenido .descripcion span { display: block; width: 25px; height: 2px; background-color: var( --negro ); margin: 20px 0; }
 .awardItem .contenido .descripcion p {
+	margin-top: 35px;
 	font-family: 'Roboto Mono', monospace;
 	font-size: 16px;
 	font-weight: 300;
@@ -337,13 +350,19 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	letter-spacing: 1.4px;
 }
 .awardItem .awardImg {
-	display: block;
-	width: 100%;
+	text-align: center;
+	justify-content: center;
+	width: 348px;
 	position: relative;
 	background-color: var( --negro );
 	text-align: center;
 	position: relative;
+	align-items: flex-end;
+	margin-right: 106px;
+	margin-left: 106px;
+	overflow: hidden;
 }
+.awardItem.right .awardImg { align-items: flex-start; }
 .awardItem .awardImg img {
 	transition: all 0.3s;
 	opacity: 1;
@@ -351,6 +370,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	height: auto;
 	margin: 0;
 	margin-bottom: -5px;
+	min-height: 100%;
 }
 .awardItem .awardImg a {
 	position: absolute;
@@ -1271,6 +1291,7 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.philImgDos h4 { margin-left: 36%; }
 	header .menu { width: 690px; font-size: 11px; }
 	header .menu li { padding: 0 6px; }
+	.awardItem .awardImg { margin-right: 50px; margin-left: 50px; }
 }
 @media screen and ( max-width: 1165px ) {
 	.philImgDos h4 { margin-left: 35%; }
@@ -1327,6 +1348,7 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.philImgDos { margin-top: -600px; }
 }
 @media screen and ( max-width: 1015px ) {
+	.awardItem .awardImg { margin-right: 10px; margin-left: 10px; }
 	.barraNegra { padding: 50px 0; }
 	.philImgDos h4 { margin-left: 33%; }
 }
@@ -1386,6 +1408,9 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.barraNegra { margin-bottom: 0; }
 	.philImgDos h4, .otraImagen h4 { display: none; }
 	.carreraForm .campo { margin-left: 70px; }
+	.awardItem { display: block; }
+	.awardItem .contenido { margin: 20px auto; max-width: 90%; }
+	.awardItem .awardImg { margin: 0 auto; max-width: 90%; }
 }
 @media screen and ( max-width: 900px ) {
 	.popup { height: 100%; overflow-y: auto; }
@@ -1409,8 +1434,6 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 @media screen and ( max-width: 800px ) {
 	.contentText { width: 100%; max-width: 100%; }
 	.busquedaDiv input { width: 200px; }
-	.awardItem .contenido { display: block; }
-	.awardItem .contenido .titulos, .awardItem .contenido .descripcion { width: 100%; max-width: initial; }
 	.cretiveContent .cincuenta { float: none; width: 100%; padding-right: 0; }
 	.cretiveContent h5 { margin-bottom: 30px; }
 }
@@ -1427,6 +1450,7 @@ footer .footerContent .tercerColumna img { width: 350px; height: auto; }
 	.carreraForm .campo { width: 50%; }
 	.contacto h1 { font-size: 40px; }
 	.contacto h2 { margin: 10px 0; }
+	.textContent.movil { width: 100%; }
 }
 @media screen and ( max-width: 610px ) {
 	.busquedaDiv { float: none; max-width: 100%; width: 250px; margin: 0 auto; }
