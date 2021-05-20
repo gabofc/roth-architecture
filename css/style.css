@@ -345,7 +345,7 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 1.75;
-	letter-spacing: 1.4px;
+	letter-spacing: 0.63px;
 }
 .awardItem .awardImg {
 	text-align: center;
