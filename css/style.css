@@ -318,12 +318,10 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 .awardItem.right { flex-direction: row-reverse; }
 .awardItem .contenido {
 	margin-bottom: 50px;
-	align-items: flex-start;
 	width: 520px;
 	margin-right: 20px;
 	margin-left: 20px;
 }
-.awardItem.right .contenido { align-items: flex-end; }
 .awardItem .contenido .titulos { display: block; width: 100%; box-sizing: border-box; line-height: 1.44; letter-spacing: 1.45px; float: none; }
 .awardItem .contenido .titulos h3 { width: 100%; max-width: 300px; font-size: 32px; text-transform: uppercase; line-height: 1.25; letter-spacing: -0.09px; width: 100% }
 .awardItem .contenido .titulos h4 {
@@ -357,12 +355,11 @@ h2 { font-family: 'Roboto Mono', monospace; font-weight: 300; margin: 13px 0; fo
 	background-color: var( --negro );
 	text-align: center;
 	position: relative;
-	align-items: flex-end;
 	margin-right: 106px;
 	margin-left: 106px;
 	overflow: hidden;
+	max-height: 500px;
 }
-.awardItem.right .awardImg { align-items: flex-start; }
 .awardItem .awardImg img {
 	transition: all 0.3s;
 	opacity: 1;
