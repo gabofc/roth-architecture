@@ -7,7 +7,7 @@
 			'project' => 'SFER IK Museion Uh May',
 			'description' => 'Idea-Tops aims to create the most thoughtful and influential space design award to discover and praise the best designers and design works around the world. With participants of over 50 countries, it is the most influential, international, and authoritative design award in China.',
 			'link' => 'https://www.a963.com/index.php?m=idea_tops&c=ztshow&a=win_works_show_en&year=2019&pcat=1&cat=46',
-			'image' => 'idea-tops.jpg'
+			'image' => 'idea-tops-award.jpg'
 		),
 		array(
 			'title' => 'ARCHITIZER A+ AWARDS 2019',
