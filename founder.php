@@ -38,6 +38,7 @@
 		if ( $( window ).width() < 950 ) {
 			$( '.movilSection' ).show();
 		}
+		$( '.founder main, #pinContainer' ).css( 'min-height', $( window ).height() + 'px' )
 		$( window ).scroll(function(event) {
 			var posicion = $( this ).scrollTop();
 			if ( posicion > 200 && posicion < 300 ) {
@@ -56,16 +57,13 @@
 			.to( '#slideContainer', 1, { x: '-40%' } )
 			.to( '#slideContainer', 0.5, { z: 0 } )
 			.to( '#slideContainer', 0.5, { z: -150, delay: 1 } )
-			.to( '#slideContainer', 1, { x: '-60%' } )
-			.to( '#slideContainer', 0.5, { z: 0 } )
-			.to( '#slideContainer', 0.5, { z: -150, delay: 1 } )
 			.to( '#slideContainer', 1, { x: '-80%' } )
 			.to( '#slideContainer', 0.5, { z: 0 } );
 		new ScrollMagic.Scene( {
 			container: 'main',
 			triggerElement: '#pinContainer',
 			triggerHook: 'onLeave',
-			duration: '500%'
+			duration: '400%'
 		} ).setPin( '#pinContainer' ).setTween( wipeAnimation ).addTo( controller );
 	} );
 </script>

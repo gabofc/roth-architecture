@@ -82,7 +82,7 @@ main { padding-top: 171px; position: relative; }
 	z-index: 1;
 	padding-top: 0;
 }
-.founder main { padding-top: 96px; }
+.founder main { padding-top: 96px; min-height: 100%; }
 .founder #mainSection { padding-top: 70px; }
 .home .sociales {
 	position: absolute;
