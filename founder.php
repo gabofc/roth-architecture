@@ -18,13 +18,10 @@
 			</div>
 		</section>
 		<section class="panel tCenter movilSection">
-			<img src="" data-src="images/founder/roth-1.jpg" class="lazyload">
+			<img src="" data-src="images/founder/roth-1.jpg" class="lazyload" alt="Roth">
 		</section>
 		<section class="panel tCenter">
-			<img src="" data-src="images/founder/roth-2.jpg" class="lazyload">
-		</section>
-		<section class="panel tCenter">
-			<img src="" data-src="images/founder/roth-3.jpg" class="lazyload">
+			<img src="" data-src="images/founder/roth-3.jpg" class="lazyload" alt="Roth">
 		</section>
 		<!-- <section class="panel tCenter">
 			<a href="#" class="volverContent vuelveLink"><i class="fas fa-arrow-left"></i><br>Return</a>
