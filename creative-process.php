@@ -12,7 +12,7 @@
 		<source src="images/creative-process/creative-process.mp4" type="video/mp4">
 	</video>
 	<div class="cretiveContent">
-		<h3 class="scrollAnimation">We build to unite what was separeted and propose new ways of inhabiting spaces. Hence, our architecture is a confirmation of the organic systems present in nature.<br><span></span></h3>
+		<h3 class="scrollAnimation">We build to unite what was separated and propose new ways of inhabiting spaces. Hence, our architecture is a confirmation of the organic systems present in nature.<br><span></span></h3>
 		<div class="fila">
 			<div class="cincuenta">
 				<h4 class="scrollAnimation">With this in mind, we respect the natural environment from the beginning of our creative process, adapting to the ancient wisdom of nature that is revealed in its ecosystems:</h4>
