@@ -41,6 +41,16 @@
 		}
 	?>
 	<?php endif; ?>
+	<?php if ( isset( $carrera[ 'skills' ] ) ) : ?>
+	<h4 class="scrollAnimation">Technical and representation skills</h4>
+	<ul class="listaRequerimientos">
+	<?php
+		foreach ( $carrera[ 'skills' ] as $skills ) {
+			echo '<li class="scrollAnimation"><i class="fas fa-check"></i> ' . $skills . '</li>';
+		}
+	?>
+	</ul>
+	<?php endif; ?>
 	<p class="scrollAnimation">To Apply:</p>
 	<?php if ( isset( $carrera[ 'apply' ] ) ) : ?>
 	<p class="scrollAnimation"><?php echo $carrera[ 'apply' ]; ?></p>
