@@ -42,7 +42,7 @@
 			if ( !is_dir( $imagen ) && ( end( $extention ) == 'jpg' || end( $extention ) == 'jpeg' ) && $imagen != $proyecto[ 'image' ] ) {
 				$sizes = list( $width, $height ) = getimagesize( $rutaImg . $imagen );
 				$classImg = ( $sizes[ 0 ] >= $sizes[ 1 ] ) ? 'ancho' : 'alto';
-				echo '<li id="slide-' . $i . '"><div class="imgSlide"><img src="" data-src="' . $rutaImg . $imagen . '" class="lazyload ' . $classImg . '"></div></li>';
+				echo '<li id="slide-' . $i . '"><div class="imgSlide"><img src="" data-src="' . $rutaImg . $imagen . '" class="lazyload ' . $classImg . '" loading="lazy"></div></li>';
 				$i++;
 			}
 		}

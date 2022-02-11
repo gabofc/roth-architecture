@@ -27,7 +27,7 @@
 						</div>
 					</div>
 					<div class="awardImg scrollAnimation">
-						<img src="" data-src="images/awards/' . $award[ 'image' ] . '" class="lazyload">
+						<img src="" data-src="images/awards/' . $award[ 'image' ] . '" class="lazyload" loading="lazy">
 						 <a href="' . $award[ 'link' ] . '" target="_blank">Read More</a>
 						<div class="linea"></div>
 					</div>

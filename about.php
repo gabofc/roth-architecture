@@ -9,7 +9,7 @@
 				<p class="scrollAnimation">We create spaces under the premise that architecture has a critical responsibility in our possible future.</p>
 				<div class="linea scrollAnimation"></div>
 			</div>
-			<img src="" data-src="images/about/About1.jpg" class="fullImg scrollAnimation lazyload">
+			<img src="" data-src="images/about/About1.jpg" loading="lazy" class="fullImg scrollAnimation lazyload">
 			<span class="caption scrollAnimation">Entrance to AZULIK Uh May</span>
 			<div class="aboutItem">
 				<div class="aboutContent">

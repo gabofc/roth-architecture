@@ -26,7 +26,7 @@
 			$style = ( $proyecto[ 'initial' ] ) ? '' : 'style="display: none;"';
 			echo
 			'<div class="proyecto scrollAnimation" status="' . limpialo( $proyecto[ 'status' ] ) . '" location="' . limpialo( $proyecto[ 'location' ] ) . '" type="' . limpialo( $proyecto[ 'type' ] ) . '" onclick="manda( \'project/' . $indice . '\' )" ' . $style . '>
-				<img src="' . $rutaImg . '" alt="' . $proyecto[ 'name' ] . '">
+				<img src="' . $rutaImg . '" alt="' . $proyecto[ 'name' ] . '" loading="lazy">
 				<div class="proyectoInfo">
 					<h2>' . $proyecto[ 'name' ] . '</h2>
 					<p>' . $proyecto[ 'location' ] . ', ' . $proyecto[ 'year' ] . '</p>
