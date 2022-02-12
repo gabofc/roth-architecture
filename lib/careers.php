@@ -33,10 +33,11 @@ $careers = array(
       7 => 'Microsoft 365 Suite (Office, Excel, Teams, Sharepoint, etc.)',
       8 => 'Lumion or other fast rendering software of choice',
     ),
-    'apply' => 'International project experience and language diversity (Spanish and English are required for the position, a third language will be a plus).<br><br>
-                Openness to alternative ways of designing, working, and living. Our offices are unique.<br><br>
-                Exceptional time management and communication skills. Must be able to self-direct as well as take instruction. Will be working under two key staff members. Must be a team player.',
-  ),
+    'extra_description' => 'International project experience and language diversity (Spanish and English are required for the position, a third language will be a plus).<br><br>
+            Openness to alternative ways of designing, working, and living. Our offices are unique.<br><br>
+            Exceptional time management and communication skills. Must be able to self-direct as well as take instruction. Will be working under two key staff members. Must be a team player.<br><br>
+            To Apply:',
+    ),
   '3d-modeling' => array(
     'title' => '3D Modeling Architect',
     'description' => array(

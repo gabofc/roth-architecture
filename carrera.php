@@ -51,8 +51,11 @@
 	?>
 	</ul>
 	<?php endif; ?>
-	<p class="scrollAnimation">To Apply:</p>
+	<?php if ( isset( $carrera[ 'extra_description' ] ) ) : ?>
+	<p class="scrollAnimation"><?php echo $carrera[ 'extra_description' ]; ?></p>
+	<?php endif; ?>
 	<?php if ( isset( $carrera[ 'apply' ] ) ) : ?>
+	<p class="scrollAnimation">To Apply:</p>
 	<p class="scrollAnimation"><?php echo $carrera[ 'apply' ]; ?></p>
 	<?php endif; ?>
 	<form class="fila carreraForm" id="carreraForm" action="contact-send" method="POST" enctype="multipart/form-data">
