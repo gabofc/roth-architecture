@@ -25,7 +25,7 @@
 			echo '<p class="scrollAnimation">' . $description . '</p>';
 		}
 	?>
-	<h4 class="scrollAnimation">Requirements and abilities for the position</h4>
+	<h4 class="scrollAnimation"><?php echo ( isset( $carrera[ 'requirements_title' ] ) ) ? $carrera[ 'requirements_title' ] : 'Requirements and abilities for the position'; ?></h4>
 	<ul class="listaRequerimientos">
 	<?php
 		foreach ( $carrera[ 'requirements' ] as $requirements ) {
@@ -42,7 +42,7 @@
 	?>
 	<?php endif; ?>
 	<?php if ( isset( $carrera[ 'skills' ] ) ) : ?>
-	<h4 class="scrollAnimation">Technical and representation skills</h4>
+	<h4 class="scrollAnimation"><?php echo ( isset( $carrera[ 'skills_title' ] ) ) ? $carrera[ 'skills_title' ] : 'Technical and representation skills'; ?></h4>
 	<ul class="listaRequerimientos">
 	<?php
 		foreach ( $carrera[ 'skills' ] as $skills ) {
