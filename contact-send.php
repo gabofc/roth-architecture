@@ -63,7 +63,8 @@
 		} else if( $_POST['formType']=='schedule' ){
 			$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Schedule Form' );
 		} else if( $_POST['formType']=='career' ){
-			$mail->AddAddress( 'yamila.lamonaco@hrperformance.com.ar', 'Roth Carrers Form' );
+			$form_to = $_POST['form_to'] == 'yamila.lamonaco' ? 'yamila.lamonaco@hrperformance.com.ar' : 'careers@roth-architecture.com';
+			$mail->AddAddress( $form_to, 'Roth Carrers Form' );
 		}
 		$mail->IsHTML( true );
 		$mail->CharSet = 'UTF-8';

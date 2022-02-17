@@ -1,35 +1,68 @@
 <?php
+/*
+Array (
+  form_to
+  title
+  description
+  requirements_title
+  requirements
+  skills_title
+  skills
+  extra_description
+)
+*/
 $careers = array(
-    'fablab-manager' => array(
-      'title' => 'Fablab Manager',
-      'description' => array(
-        1 => 'This profile is for someone who considers themselves a “constructor”. We are interested in someone who can take an architectural design proposal (conceptual or built), a technical detail or a model designed by the architecture team and build this item using digital and analog manufacturing techniques. Additionally, the candidate will need to provide information on the appropriate or "best" materials for the job and details of how the proposed system will be constructed. The key requirement for this person would be to operate and maintain all the machinery and heavy equipment used in the FabLab.',
-        2 => 'This person will lead the Roth Architecture “FabLab” and receive direction and support from the R&D, Architecture & Computational design teams. Eventually he/she will direct and co-manage a small staff. He/she will need to effectively receive and execute work requests and monitor material usage, generate reports and invoices, and coordinate the overall operation of a high-demand manufacturing facility.'
+      'senior-architect' => array(
+        'form_to' => 'careers',
+        'title' => 'Senior Architect',
+        'description' => array(
+          1 => 'We are looking forward to incorporating to our team a Senior Architect with skills to participate in architectural and executive projects in compliance with local codes.',
+          2 => 'Our studio is in the search for a Senior architect with 6 to 9 years experience with different scale developments and with experience in all phases of project development, from site selection to occupancy and with the creation of architectural drawings for presentations, bidding and construction.'
+        ),
+        'requirements_title' => 'Requirements',
+        'requirements' => array(
+          1 => 'Architectural degree',
+          2 => 'Capability to analyze with the working teams, new projects and design opportunities.',
+          3 => 'Ability to coordinate and lead junior staff.',
+          4 => 'Design capabilities consistent with our kind of architecture that creates organic , non linear structures using innovative methodologies and construction techniques.',
+          5 => 'Software such as BIM , Revit, AutoCAD, Rhyno, InDesign, Adobe.',
+          6 => 'Spanish fluency',
+          7 => 'English Skills',
+        ),
+        'extra_description' => 'To Apply:',
       ),
-      'requirements_title' => 'Manufacturing workshop technician with 5 to 10 years of professional experience plus a degree or bachelor\'s degree in the fields of:',
-      'requirements' => array(
-        1 => 'Manufacturing (digital and analog) and construction for architectural applications and/or BArch or MArch',
-        2 => 'Mechanical engineering and/or industrial design and engineering',
-        3 => 'Construction site management and administration',
-        4 => 'Experience constructing environments that vary in scale including, among others, the following: furniture design, FF&E (Furniture, Fixtures & Equipment) specific interior design, and construction. Installing works of art inside galleries: interior and exterior spaces. Architectural details: windows, doors, handrails, accessories, etc. Architectural models: 1:1 scale process and final models.',
-        5 => 'Mandatory – Digital fabrication: May include design work translated into 3D printing, plasma and water jet cutting, CNC routing, vacuum forming, robot assembly (design work isn’t required but considered an advantage if the candidate has this experience) ',
-        6 => 'Required – Analog fabrication: Must include carpentry and fine carpentry: metal, glass or ceramic work background.',
-        7 => 'Architectural design and/or an engineering field, such as structural, mechanic or industrial engineering.',
-        8 => 'Research in advanced construction systems',
-      ),
-      'skills_title' => 'Software',
-      'skills' => array(
-        1 => 'Required - Microsoft 365 Suite (Office, Excel, Teams, Sharepoint, etc.)',
-        2 => 'Required - Rhino 3D / Rhino CAM and/or CAD CAM and/or Fusion 360',
-        3 => 'Saltamontes and/or Python',
-        4 => 'Revit and/or AutoCAD',
-        5 => 'Strong hand drawing skills.',
-      ),
-      'extra_description' => 'International project experience and language diversity (Spanish and English are required for the position, a third language will be a plus).<br><br>
-                              Openness to alternative ways of designing, working, and living. Our offices are unique.<br><br>
-                              To Apply:',
-      ),
+      'fablab-manager' => array(
+        'form_to' => 'yamila.lamonaco',
+        'title' => 'Fablab Manager',
+        'description' => array(
+          1 => 'This profile is for someone who considers themselves a “constructor”. We are interested in someone who can take an architectural design proposal (conceptual or built), a technical detail or a model designed by the architecture team and build this item using digital and analog manufacturing techniques. Additionally, the candidate will need to provide information on the appropriate or "best" materials for the job and details of how the proposed system will be constructed. The key requirement for this person would be to operate and maintain all the machinery and heavy equipment used in the FabLab.',
+          2 => 'This person will lead the Roth Architecture “FabLab” and receive direction and support from the R&D, Architecture & Computational design teams. Eventually he/she will direct and co-manage a small staff. He/she will need to effectively receive and execute work requests and monitor material usage, generate reports and invoices, and coordinate the overall operation of a high-demand manufacturing facility.'
+        ),
+        'requirements_title' => 'Manufacturing workshop technician with 5 to 10 years of professional experience plus a degree or bachelor\'s degree in the fields of:',
+        'requirements' => array(
+          1 => 'Manufacturing (digital and analog) and construction for architectural applications and/or BArch or MArch',
+          2 => 'Mechanical engineering and/or industrial design and engineering',
+          3 => 'Construction site management and administration',
+          4 => 'Experience constructing environments that vary in scale including, among others, the following: furniture design, FF&E (Furniture, Fixtures & Equipment) specific interior design, and construction. Installing works of art inside galleries: interior and exterior spaces. Architectural details: windows, doors, handrails, accessories, etc. Architectural models: 1:1 scale process and final models.',
+          5 => 'Mandatory – Digital fabrication: May include design work translated into 3D printing, plasma and water jet cutting, CNC routing, vacuum forming, robot assembly (design work isn’t required but considered an advantage if the candidate has this experience) ',
+          6 => 'Required – Analog fabrication: Must include carpentry and fine carpentry: metal, glass or ceramic work background.',
+          7 => 'Architectural design and/or an engineering field, such as structural, mechanic or industrial engineering.',
+          8 => 'Research in advanced construction systems',
+        ),
+        'skills_title' => 'Software',
+        'skills' => array(
+          1 => 'Required - Microsoft 365 Suite (Office, Excel, Teams, Sharepoint, etc.)',
+          2 => 'Required - Rhino 3D / Rhino CAM and/or CAD CAM and/or Fusion 360',
+          3 => 'Saltamontes and/or Python',
+          4 => 'Revit and/or AutoCAD',
+          5 => 'Strong hand drawing skills.',
+        ),
+        'extra_description' => 'International project experience and language diversity (Spanish and English are required for the position, a third language will be a plus).<br><br>
+                                Openness to alternative ways of designing, working, and living. Our offices are unique.<br><br>
+                                To Apply:',
+        ),
       'research-and-development-architect' => array(
+        'form_to' => 'yamila.lamonaco',
         'title' => 'Research and Dev Architect',
         'description' => array(
           1 => 'This position will have four primary functions: coordination and communication, documentation, design development, and research. The position requires a high level of organizational skill and design thinking combined with the ability to visually communicate ideas and findings creatively and effectively. This person will be staffed within the Research and Development department of Roth Architecture and will be offering “design assist” services to the architectural team that includes developing constructive systems and advising on material choices. Additionally, this person will be supporting within the R&D team to help actively develop materials, coordinate international project submissions and communication, develop internal resources such as biomaterials libraries, and support with educational and outreach activities.'
@@ -68,6 +101,7 @@ $careers = array(
                 To Apply:',
         ),
   '3d-modeling' => array(
+    'form_to' => 'careers',
     'title' => '3D Modeling Architect',
     'description' => array(
       1 => 'We are looking for a 3D Modeling Architect with the skills to lead architectural and executive projects in compliance with local codes. Our studio works with an organic process, designing through physical and digital modeling to achieve formal concepts and solutions. One of the most important parts of our process is developed through 3D modelings and client presentations incorporating Virtual Reality. Therefore we are looking for talented 3D modeling Architects with design skills to join our team.'
@@ -105,6 +139,7 @@ $careers = array(
     )
   ),
   'junior-architect' => array(
+    'form_to' => 'careers',
     'title' => 'Junior Architect',
     'description' => array(
       1 => 'Our studio is engaged in a rapid growth stage with several new opportunities to develop significant international projects, due to the international awards and publications we have recently garnered. Our projects include museums, hotels, villas, boutiques, building design, interiors, fixture, and furniture design. Looking forward to our expansion, we will integrate a Junior Architect into all our phases of project development from design to occupancy, and the creation of architectural drawings for presentation, bidding, and construction.'
@@ -132,6 +167,7 @@ $careers = array(
     ),
   ),
   'project-manager' => array(
+    'form_to' => 'careers',
     'title' => 'Project Manager',
     'description' => array(
       1 => 'Our studio is engaged in a rapid growth stage with several new opportunities to develop significant international projects, due to the international awards and publications we have recently garnered. Our projects include museums, hotels, villas, boutiques, architectural design, interiors, fixture, and furniture design. Looking forward to this expansion, we will integrate a Project Manager Architect with experience in all project development aspects, such as design, team coordination, architectural drawing, presentations, design review, construction detailing, construction, and engineering preliminary solutions.'
@@ -158,6 +194,7 @@ $careers = array(
     )
   ),
   'interior-designers' => array(
+    'form_to' => 'careers',
     'title' => 'Interior Designers – All Levels',
     'description' => array(
       1 => 'We are seeking talented, creative, interior designers who have the ability to conceive of new forms and then generate the documentation to take these ideas through construction. You must also be capable of creating the presentation boards to present these ideas internally and to our clients.',
