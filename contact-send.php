@@ -4,8 +4,7 @@
 	use PHPMailer\PHPMailer\OAuth;
 	use League\OAuth2\Client\Provider\Google;
 	header( 'Access-Control-Allow-Origin: *' );
-
-	if( !isset( $_POST ) || empty( $_POST ) || ($_SERVER[ 'HTTP_REFERER' ] != 'http://roth.local/contact' && $_SERVER[ 'HTTP_REFERER' ] != 'http://roth.architecture/contact' && $_SERVER[ 'HTTP_REFERER' ] != 'https://roth-architecture.com/contact' && $_SERVER[ 'HTTP_REFERER' ] != 'https://www.roth-architecture.com/contact') ){
+	if( !isset( $_POST ) || empty( $_POST ) || ($_SERVER[ 'HTTP_ORIGIN' ] != 'http://roth.local' && $_SERVER[ 'HTTP_ORIGIN' ] != 'http://roth.architecture' && $_SERVER[ 'HTTP_ORIGIN' ] != 'https://roth-architecture.com' && $_SERVER[ 'HTTP_ORIGIN' ] != 'https://www.roth-architecture.com') ){
 		header('location: /');
 		exit();
 	} else {
@@ -26,7 +25,7 @@
 			$fields = array('fecha', 'hora','timezone', 'name', 'email','code', 'phone', 'company', 'message');
 		} else if( $_POST['formType']=='career' ){
 			$subject = 'New job position submitted';
-			$fields = array('email', 'name', 'apellido', 'country', 'mobile', 'salary', 'currency', 'portfolio');
+			$fields = array('job_position', 'email', 'name', 'apellido', 'country', 'mobile', 'salary', 'currency', 'portfolio');
 		}
 
 		$verified_fields = TRUE;
