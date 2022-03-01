@@ -58,6 +58,13 @@
 		$mail->addCustomHeader( 'X-Mailer: ' . $form_values['host'] . '/ PHP/' . phpversion(), 'Message-ID: <' . gmdate( 'YmdHs' ) . '@' . $form_values['host'] . '/>', 'Sender: ' . $form_values['host'] . '/', 'Sent: ' . date( 'd-m-Y' ) );
 		$mail->From = 'crm@azulik.com';
 		$mail->FromName = 'Roth Architecture';
+		/*if( $_POST['formType']=='contact' ){
+			$mail->AddAddress( 'gfernandez@azulik.com', 'Roth Contact Form' );
+		} else if( $_POST['formType']=='schedule' ){
+			$mail->AddAddress( 'gfernandez@azulik.com', 'Roth Schedule Form' );
+		} else if( $_POST['formType']=='career' ){
+			$mail->AddAddress( 'gfernandez@azulik.com', 'Roth Carrers Form' );
+		}*/
 		if( $_POST['formType']=='contact' ){
 			$mail->AddAddress( 'contacto@roth-architecture.com', 'Roth Contact Form' );
 		} else if( $_POST['formType']=='schedule' ){
