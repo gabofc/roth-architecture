@@ -116,28 +116,6 @@ $careers = array(
     ),
     'apply' => 'For immediate consideration, please email your resume, salary requirements, availability to join the team if selected, and a portfolio of your work to contacto@roth-architecture.com with "3D Modeling Architect" in the subject line. Applications will not be considered without a resume, availability, portfolio, and salary requirements.',
   ),
-  'intermediate-architect' => array(
-    'title' => 'Intermediate Architect',
-    'description' => array(
-      1 => 'Our studio is engaged in a rapid growth stage with several new opportunities to develop significant international projects, due to the international awards and publications we have recently garnered. Our projects include museums, hotels, villas, boutiques, building design, interiors, fixture, and furniture design. Looking forward to our expansion, we will integrate an Intermediate Architect with experience in all phases of project development from site selection to occupancy, and the creation architectural drawings (and sometimes physical models) for presentation, bidding, and construction.'
-    ),
-    'requirements' => array(
-      1 => 'Architecture degree.',
-      2 => 'Minimum 3-5 years of experience with different scale developments and working in teams.',
-      3 => 'Capability to analyze, with the working teams, new projects, and design opportunities.',
-      4 => 'Follow direction of Team Leader to comply with the project contract, scope, and other requirements.',
-      5 => 'Design capabilities consistent with our kind of architecture that creates organic non-linear structures using innovative methodologies and construction techniques.',
-      6 => 'Software such as. BIM, Revit, AutoCAD, In Design, Adobe.',
-      7 => 'Spanish fluency + English skills. Our international project documentation will be executed in English. Domestic projects in Mexico will be executed in Spanish.',
-    ),
-    'details' => array(
-      1 => '<b>Seniority Level</b>',
-      2 => 'Mid-level',
-      3 => '<b>Employment Type</b>',
-      4 => 'Full-time',
-      5 => 'Important to send CV & Portfolio if you want to be considered. If the file is too heavy to upload, please send your full CV & Portfolio to reclutamiento@azulik.com',
-    )
-  ),
   'junior-architect' => array(
     'form_to' => 'careers',
     'title' => 'Junior Architect',
