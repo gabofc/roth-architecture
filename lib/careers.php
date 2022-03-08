@@ -12,94 +12,55 @@ Array (
 )
 */
 $careers = array(
-      'senior-architect' => array(
-        'form_to' => 'careers',
-        'title' => 'Senior Architect',
-        'description' => array(
-          1 => 'We are looking forward to incorporating to our team a Senior Architect with skills to participate in architectural and executive projects in compliance with local codes.',
-          2 => 'Our studio is in the search for a Senior architect with 6 to 9 years experience with different scale developments and with experience in all phases of project development, from site selection to occupancy and with the creation of architectural drawings for presentations, bidding and construction.'
-        ),
-        'requirements_title' => 'Requirements',
-        'requirements' => array(
-          1 => 'Architectural degree',
-          2 => 'Capability to analyze with the working teams, new projects and design opportunities.',
-          3 => 'Ability to coordinate and lead junior staff.',
-          4 => 'Design capabilities consistent with our kind of architecture that creates organic , non linear structures using innovative methodologies and construction techniques.',
-          5 => 'Software such as BIM , Revit, AutoCAD, Rhyno, InDesign, Adobe.',
-          6 => 'Spanish fluency',
-          7 => 'English Skills',
-        ),
-        'extra_description' => 'To Apply:',
-      ),
-      'fablab-manager' => array(
-        'form_to' => 'yamila.lamonaco',
-        'title' => 'Fablab Manager',
-        'description' => array(
-          1 => 'This profile is for someone who considers themselves a “constructor”. We are interested in someone who can take an architectural design proposal (conceptual or built), a technical detail or a model designed by the architecture team and build this item using digital and analog manufacturing techniques. Additionally, the candidate will need to provide information on the appropriate or "best" materials for the job and details of how the proposed system will be constructed. The key requirement for this person would be to operate and maintain all the machinery and heavy equipment used in the FabLab.',
-          2 => 'This person will lead the Roth Architecture “FabLab” and receive direction and support from the R&D, Architecture & Computational design teams. Eventually he/she will direct and co-manage a small staff. He/she will need to effectively receive and execute work requests and monitor material usage, generate reports and invoices, and coordinate the overall operation of a high-demand manufacturing facility.'
-        ),
-        'requirements_title' => 'Manufacturing workshop technician with 5 to 10 years of professional experience plus a degree or bachelor\'s degree in the fields of:',
-        'requirements' => array(
-          1 => 'Manufacturing (digital and analog) and construction for architectural applications and/or BArch or MArch',
-          2 => 'Mechanical engineering and/or industrial design and engineering',
-          3 => 'Construction site management and administration',
-          4 => 'Experience constructing environments that vary in scale including, among others, the following: furniture design, FF&E (Furniture, Fixtures & Equipment) specific interior design, and construction. Installing works of art inside galleries: interior and exterior spaces. Architectural details: windows, doors, handrails, accessories, etc. Architectural models: 1:1 scale process and final models.',
-          5 => 'Mandatory – Digital fabrication: May include design work translated into 3D printing, plasma and water jet cutting, CNC routing, vacuum forming, robot assembly (design work isn’t required but considered an advantage if the candidate has this experience) ',
-          6 => 'Required – Analog fabrication: Must include carpentry and fine carpentry: metal, glass or ceramic work background.',
-          7 => 'Architectural design and/or an engineering field, such as structural, mechanic or industrial engineering.',
-          8 => 'Research in advanced construction systems',
-        ),
-        'skills_title' => 'Software',
-        'skills' => array(
-          1 => 'Required - Microsoft 365 Suite (Office, Excel, Teams, Sharepoint, etc.)',
-          2 => 'Required - Rhino 3D / Rhino CAM and/or CAD CAM and/or Fusion 360',
-          3 => 'Saltamontes and/or Python',
-          4 => 'Revit and/or AutoCAD',
-          5 => 'Strong hand drawing skills.',
-        ),
-        'extra_description' => 'International project experience and language diversity (Spanish and English are required for the position, a third language will be a plus).<br><br>
-                                Openness to alternative ways of designing, working, and living. Our offices are unique.<br><br>
-                                To Apply:',
-        ),
-      'research-and-development-architect' => array(
-        'form_to' => 'yamila.lamonaco',
-        'title' => 'Research and Dev Architect',
-        'description' => array(
-          1 => 'This position will have four primary functions: coordination and communication, documentation, design development, and research. The position requires a high level of organizational skill and design thinking combined with the ability to visually communicate ideas and findings creatively and effectively. This person will be staffed within the Research and Development department of Roth Architecture and will be offering “design assist” services to the architectural team that includes developing constructive systems and advising on material choices. Additionally, this person will be supporting within the R&D team to help actively develop materials, coordinate international project submissions and communication, develop internal resources such as biomaterials libraries, and support with educational and outreach activities.'
-        ),
-        'requirements' => array(
-          1 => 'Intermediate architect experience level: 2-5 years of professional experience plus a graduate degree in the fields of<ul class="listaRequerimientos">
-                <li>· Architecture and/ or Environmental Engineering</li>
-                <li>· Material Science with a focus on natural or biobased materials</li>
-                <li>· Sustainable Design and Advanced Building Systems</li>
-                <li>· Advanced Fabrication for Architectural Applications</li></ul>',
-          2 => 'Experienced in (ideally, we are looking for a profile that can demonstrate half or more of these skill areas)<ul class="listaRequerimientos">
-                <li>· Architectural design and/ or environmental engineering</li>
-                <li>· Material development of new and future focused materials</li>
-                <li>· Research and application of materials in various project scales</li>
-                <li>· Biobased and/ or ecosystem focused materials and systems of construction</li>
-                <li>· Sustainable design at various scales (building scale is necessary, master-planning scale and experience with green infrastructure will be helpful for future growth of the company)</li>
-                <li>· LCA and Embodied Carbon analysis</li>
-                <li>· GIS, data analytics, map making</li>
-                <li>· Fabrication: Can include carpentry and fine wood working, metal work, glass or ceramics background, 3D printing, plasma cutting, CNC routing, fabric related work, etc. Ideally, here, we are interested in someone who can take a conceptual architectural design proposal for a building element and support with specifying materials and detailing out how the proposed system would be built</li>
-                <li>· Advanced research - can be professional or academic research experience</li>
-                <li>· Biophilic design and/ or biomimicry</li></ul>',
-        ),
-        'skills' => array(
-          1 => 'Adobe Suit',
-          2 => 'Rhino 3D',
-          3 => 'Grasshopper',
-          4 => 'Python',
-          5 => 'Revit',
-          6 => 'ArcMAP (all extensions)',
-          7 => 'Microsoft 365 Suite (Office, Excel, Teams, Sharepoint, etc.)',
-          8 => 'Lumion or other fast rendering software of choice',
-        ),
-        'extra_description' => 'International project experience and language diversity (Spanish and English are required for the position, a third language will be a plus).<br><br>
-                Openness to alternative ways of designing, working, and living. Our offices are unique.<br><br>
-                Exceptional time management and communication skills. Must be able to self-direct as well as take instruction. Will be working under two key staff members. Must be a team player.<br><br>
-                To Apply:',
-        ),
+  'senior-architect' => array(
+    'form_to' => 'careers',
+    'title' => 'Senior Architect',
+    'description' => array(
+      1 => 'We are looking forward to incorporating to our team a Senior Architect with skills to participate in architectural and executive projects in compliance with local codes.',
+      2 => 'Our studio is in the search for a Senior architect with 6 to 9 years experience with different scale developments and with experience in all phases of project development, from site selection to occupancy and with the creation of architectural drawings for presentations, bidding and construction.'
+    ),
+    'requirements_title' => 'Requirements',
+    'requirements' => array(
+      1 => 'Architectural degree',
+      2 => 'Capability to analyze with the working teams, new projects and design opportunities.',
+      3 => 'Ability to coordinate and lead junior staff.',
+      4 => 'Design capabilities consistent with our kind of architecture that creates organic , non linear structures using innovative methodologies and construction techniques.',
+      5 => 'Software such as BIM , Revit, AutoCAD, Rhyno, InDesign, Adobe.',
+      6 => 'Spanish fluency',
+      7 => 'English Skills',
+    ),
+    'extra_description' => 'To Apply:',
+  ),
+  'fablab-manager' => array(
+    'form_to' => 'yamila.lamonaco',
+    'title' => 'Fablab Manager',
+    'description' => array(
+      1 => 'This profile is for someone who considers themselves a “constructor”. We are interested in someone who can take an architectural design proposal (conceptual or built), a technical detail or a model designed by the architecture team and build this item using digital and analog manufacturing techniques. Additionally, the candidate will need to provide information on the appropriate or "best" materials for the job and details of how the proposed system will be constructed. The key requirement for this person would be to operate and maintain all the machinery and heavy equipment used in the FabLab.',
+      2 => 'This person will lead the Roth Architecture “FabLab” and receive direction and support from the R&D, Architecture & Computational design teams. Eventually he/she will direct and co-manage a small staff. He/she will need to effectively receive and execute work requests and monitor material usage, generate reports and invoices, and coordinate the overall operation of a high-demand manufacturing facility.'
+    ),
+    'requirements_title' => 'Manufacturing workshop technician with 5 to 10 years of professional experience plus a degree or bachelor\'s degree in the fields of:',
+    'requirements' => array(
+      1 => 'Manufacturing (digital and analog) and construction for architectural applications and/or BArch or MArch',
+      2 => 'Mechanical engineering and/or industrial design and engineering',
+      3 => 'Construction site management and administration',
+      4 => 'Experience constructing environments that vary in scale including, among others, the following: furniture design, FF&E (Furniture, Fixtures & Equipment) specific interior design, and construction. Installing works of art inside galleries: interior and exterior spaces. Architectural details: windows, doors, handrails, accessories, etc. Architectural models: 1:1 scale process and final models.',
+      5 => 'Mandatory – Digital fabrication: May include design work translated into 3D printing, plasma and water jet cutting, CNC routing, vacuum forming, robot assembly (design work isn’t required but considered an advantage if the candidate has this experience) ',
+      6 => 'Required – Analog fabrication: Must include carpentry and fine carpentry: metal, glass or ceramic work background.',
+      7 => 'Architectural design and/or an engineering field, such as structural, mechanic or industrial engineering.',
+      8 => 'Research in advanced construction systems',
+    ),
+    'skills_title' => 'Software',
+    'skills' => array(
+      1 => 'Required - Microsoft 365 Suite (Office, Excel, Teams, Sharepoint, etc.)',
+      2 => 'Required - Rhino 3D / Rhino CAM and/or CAD CAM and/or Fusion 360',
+      3 => 'Saltamontes and/or Python',
+      4 => 'Revit and/or AutoCAD',
+      5 => 'Strong hand drawing skills.',
+    ),
+    'extra_description' => 'International project experience and language diversity (Spanish and English are required for the position, a third language will be a plus).<br><br>
+                            Openness to alternative ways of designing, working, and living. Our offices are unique.<br><br>
+                            To Apply:',
+    ),
   '3d-modeling' => array(
     'form_to' => 'careers',
     'title' => '3D Modeling Architect',
