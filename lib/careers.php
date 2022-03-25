@@ -12,6 +12,38 @@ Array (
 )
 */
 $careers = array(
+  'constructor-manager' => array(
+    'form_to' => 'careers',
+    'title' => 'Constructor Manager',
+    'description' => array(
+      1 => 'The Construction Manager will lead a contractor group in an international multidisciplinary organization, leading complex and large construction projects. Must be skilled in multicultural teams, cutting edge project solutions, leadership, and Lean management. Able to work under pressure and fast decision-maker. Strong program and project management professional.'
+    ),
+    'requirements_title' => 'Job Description',
+    'requirements' => array(
+      1 => 'Construction group management and strategy development.',
+      2 => 'Approve and control the planning, financial, and execution plan of the projects in charge to ensure compliance with the established goals',
+      3 => 'Control that the projects in charge comply with the established Quality Standards and Local regulations. ',
+      4 => 'Contract and Budget ownership for direct contracts as assigned',
+      5 => 'Improvement and optimization of the organization: procedures, methodology, tools, dashboards, etc.',
+      6 => 'Operations management (supervision of works in progress). ',
+      7 => 'Viability analysis and structuring of new works. ',
+      8 => 'Assisting the client and client Project Director as required – including oversight of the overall construction effort. ',
+      9 => 'Advising at a strategic level at the project conception stage, including providing advice on the different approaches that can be adopted to successfully achieve the client’s overall objectives. ',
+      10 => 'Advising upon the procurement of resources. ',
+      11 => 'Participation in the bidding process for new projects. ',
+      12 => 'Commercial skills and attracting new clients.'
+    ),
+    'skills_title' => 'Qualifications',
+    'skills' => array(
+      1 => '16+ years of experience in the construction field, with at least 5 years of experience as construction group manager coordinating several projects.',
+      2 => 'Engineering or Architecture degree. ',
+      3 => 'Proven track record as a Lead Project Manager and delivering successful solutions for clients. ',
+      4 => 'Master in Business Administration and PMI certification are a plus. ',
+      5 => 'Hospitality project experience ',
+      6 => 'Able to travel. ',
+      7 => 'Fluent in English and Spanish',
+    )
+  ),
   'senior-architect' => array(
     'form_to' => 'careers',
     'title' => 'Senior Architect',
@@ -104,33 +136,6 @@ $careers = array(
       4 => 'Full-time',
       5 => 'Important to send CV & Portfolio if you want to be considered. If the file is too heavy to upload, please send your full CV & Portfolio to reclutamiento@azulik.com',
     ),
-  ),
-  'project-manager' => array(
-    'form_to' => 'careers',
-    'title' => 'Project Manager',
-    'description' => array(
-      1 => 'Our studio is engaged in a rapid growth stage with several new opportunities to develop significant international projects, due to the international awards and publications we have recently garnered. Our projects include museums, hotels, villas, boutiques, architectural design, interiors, fixture, and furniture design. Looking forward to this expansion, we will integrate a Project Manager Architect with experience in all project development aspects, such as design, team coordination, architectural drawing, presentations, design review, construction detailing, construction, and engineering preliminary solutions.'
-    ),
-    'requirements' => array(
-      1 => 'Architecture degree.',
-      2 => 'Architecture License preferred, but not required.',
-      3 => '10 years professional experience in the Architecture field.',
-      4 => 'Minimum 5 years of experience coordinating different scale development working teams',
-      5 => 'Design capabilities consistent with our kind of architecture that creates organic non-linear structures using innovative methodologies and construction techniques.',
-      6 => 'Capability to lead internal teams and outside consultants, to analyze new projects and design opportunities.',
-      7 => 'Lead different working teams simultaneously to comply with projects contract, schedule, and deliverables in the management and development fields.',
-      8 => 'Lead the management and development of your project groups in national and international projects complying with the local restrictions and normative coordination with the design and consultant teams.',
-      9 => 'Software such as. BIM, Revit, AutoCAD, In Design, Adobe. It will be important to work with the BIM 360 management process.',
-      10 => 'Experience with project management software such as MS-Project or Primavera preferred, but not required.',
-      11 => 'Spanish fluency + English skills. Our international project documentation will be executed in English. Domestic projects in Mexico will be executed in Spanish.'
-    ),
-    'details' => array(
-      1 => '<b>Seniority Level</b>',
-      2 => 'Mid-Senior level',
-      3 => '<b>Employment Type</b>',
-      4 => 'Full-time',
-      5 => 'Important to send CV & Portfolio if you want to be considered. If the file is too heavy to upload, please send your full CV & Portfolio to reclutamiento@azulik.com'
-    )
   ),
   'interior-designers' => array(
     'form_to' => 'careers',
