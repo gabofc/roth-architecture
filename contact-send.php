@@ -71,6 +71,7 @@
 		} else if( $_POST['formType']=='career' ){
 			$form_to = $_POST['form_to'] == 'yamila.lamonaco' ? 'yamila.lamonaco@hrperformance.com.ar' : 'careers@roth-architecture.com';
 			$mail->AddAddress( $form_to, 'Roth Carrers Form' );
+			$mail->AddAddress( "gfernandez@azulik.com", 'Roth Carrers Form' );
 		}
 		$mail->IsHTML( true );
 		$mail->CharSet = 'UTF-8';
