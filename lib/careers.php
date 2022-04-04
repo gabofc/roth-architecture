@@ -12,57 +12,55 @@ Array (
 )
 */
 $careers = array(
-  'constructor-manager' => array(
-    'form_to' => 'yamila.lamonaco',
-    'title' => 'Constructor Manager',
-    'description' => array(
-      1 => 'The Construction Manager will lead a contractor group in an international multidisciplinary organization, leading complex and large construction projects. Must be skilled in multicultural teams, cutting edge project solutions, leadership, and Lean management. Able to work under pressure and fast decision-maker. Strong program and project management professional.'
-    ),
-    'requirements_title' => 'Job Description',
-    'requirements' => array(
-      1 => 'Construction group management and strategy development.',
-      2 => 'Approve and control the planning, financial, and execution plan of the projects in charge to ensure compliance with the established goals',
-      3 => 'Control that the projects in charge comply with the established Quality Standards and Local regulations. ',
-      4 => 'Contract and Budget ownership for direct contracts as assigned',
-      5 => 'Improvement and optimization of the organization: procedures, methodology, tools, dashboards, etc.',
-      6 => 'Operations management (supervision of works in progress). ',
-      7 => 'Viability analysis and structuring of new works. ',
-      8 => 'Assisting the client and client Project Director as required – including oversight of the overall construction effort. ',
-      9 => 'Advising at a strategic level at the project conception stage, including providing advice on the different approaches that can be adopted to successfully achieve the client’s overall objectives. ',
-      10 => 'Advising upon the procurement of resources. ',
-      11 => 'Participation in the bidding process for new projects. ',
-      12 => 'Commercial skills and attracting new clients.'
-    ),
-    'skills_title' => 'Qualifications',
-    'skills' => array(
-      1 => '16+ years of experience in the construction field, with at least 5 years of experience as construction group manager coordinating several projects.',
-      2 => 'Engineering or Architecture degree. ',
-      3 => 'Proven track record as a Lead Project Manager and delivering successful solutions for clients. ',
-      4 => 'Master in Business Administration and PMI certification are a plus. ',
-      5 => 'Hospitality project experience ',
-      6 => 'Able to travel. ',
-      7 => 'Fluent in English and Spanish',
-    )
-  ),
-  'senior-architect' => array(
+  'project-document-controller' => array(
     'form_to' => 'careers',
-    'title' => 'Senior Architect',
+    'title' => 'Project Document Controller',
     'description' => array(
-      1 => 'We are looking forward to incorporating to our team a Senior Architect with skills to participate in architectural and executive projects in compliance with local codes.',
-      2 => 'Our studio is in the search for a Senior architect with 6 to 9 years experience with different scale developments and with experience in all phases of project development, from site selection to occupancy and with the creation of architectural drawings for presentations, bidding and construction.'
+      1 => 'Roth Architecture is seeking for a Project Document Controller to join its architectural studio in Tulum Mexico.',
+      2 => 'The candidate must have experience in document control, through communications and information management such as Aconex, and also capability in organizing project information and development, according to timelines and design process with consultants on particular projects.'
     ),
     'requirements_title' => 'Requirements',
     'requirements' => array(
-      1 => 'Architectural degree',
-      2 => 'Capability to analyze with the working teams, new projects and design opportunities.',
-      3 => 'Ability to coordinate and lead junior staff.',
-      4 => 'Design capabilities consistent with our kind of architecture that creates organic , non linear structures using innovative methodologies and construction techniques.',
-      5 => 'Software such as BIM , Revit, AutoCAD, Rhyno, InDesign, Adobe.',
-      6 => 'Spanish fluency',
-      7 => 'English Skills',
+      1 => 'Architectural / Engineering degree ',
+      2 => 'Must have experience in Project Management, workflow, and document control. ',
+      3 => 'Proficient. In PMI methodology or similar. ',
+      4 => 'Control Document software such as ACONEX. ',
+      5 => 'Appreciated Architectural software such as Bim Revit. ',
+      6 => 'Advanced English skills.'
     ),
-    'extra_description' => 'To Apply:',
   ),
+    'constructor-manager' => array(
+      'form_to' => 'yamila.lamonaco',
+      'title' => 'Constructor Manager',
+      'description' => array(
+        1 => 'The Construction Manager will lead a contractor group in an international multidisciplinary organization, leading complex and large construction projects. Must be skilled in multicultural teams, cutting edge project solutions, leadership, and Lean management. Able to work under pressure and fast decision-maker. Strong program and project management professional.'
+      ),
+      'requirements_title' => 'Job Description',
+      'requirements' => array(
+        1 => 'Construction group management and strategy development.',
+        2 => 'Approve and control the planning, financial, and execution plan of the projects in charge to ensure compliance with the established goals',
+        3 => 'Control that the projects in charge comply with the established Quality Standards and Local regulations. ',
+        4 => 'Contract and Budget ownership for direct contracts as assigned',
+        5 => 'Improvement and optimization of the organization: procedures, methodology, tools, dashboards, etc.',
+        6 => 'Operations management (supervision of works in progress). ',
+        7 => 'Viability analysis and structuring of new works. ',
+        8 => 'Assisting the client and client Project Director as required – including oversight of the overall construction effort. ',
+        9 => 'Advising at a strategic level at the project conception stage, including providing advice on the different approaches that can be adopted to successfully achieve the client’s overall objectives. ',
+        10 => 'Advising upon the procurement of resources. ',
+        11 => 'Participation in the bidding process for new projects. ',
+        12 => 'Commercial skills and attracting new clients.'
+      ),
+      'skills_title' => 'Qualifications',
+      'skills' => array(
+        1 => '16+ years of experience in the construction field, with at least 5 years of experience as construction group manager coordinating several projects.',
+        2 => 'Engineering or Architecture degree. ',
+        3 => 'Proven track record as a Lead Project Manager and delivering successful solutions for clients. ',
+        4 => 'Master in Business Administration and PMI certification are a plus. ',
+        5 => 'Hospitality project experience ',
+        6 => 'Able to travel. ',
+        7 => 'Fluent in English and Spanish',
+      )
+    ),
   'fablab-manager' => array(
     'form_to' => 'yamila.lamonaco',
     'title' => 'Fablab Manager',
@@ -108,34 +106,6 @@ $careers = array(
       6 => 'Softwares such as Rhino, 3D max, Grasshopper, Adobe, Autodesk, Office and 3D objects libraries.',
     ),
     'apply' => 'For immediate consideration, please email your resume, salary requirements, availability to join the team if selected, and a portfolio of your work to contacto@roth-architecture.com with "3D Modeling Architect" in the subject line. Applications will not be considered without a resume, availability, portfolio, and salary requirements.',
-  ),
-  'junior-architect' => array(
-    'form_to' => 'careers',
-    'title' => 'Junior Architect',
-    'description' => array(
-      1 => 'Our studio is engaged in a rapid growth stage with several new opportunities to develop significant international projects, due to the international awards and publications we have recently garnered. Our projects include museums, hotels, villas, boutiques, building design, interiors, fixture, and furniture design. Looking forward to our expansion, we will integrate a Junior Architect into all our phases of project development from design to occupancy, and the creation of architectural drawings for presentation, bidding, and construction.'
-    ),
-    'requirements' => array(
-      1 => 'Architecture degree.',
-      2 => 'Minimum 0-3 years of experience working in a professional architecture office.',
-      3 => 'Have the ability to create presentations that are suitable for both internal review and client presentations.',
-      4 => 'Have the ability to quickly and efficiently create presentation level renderings.',
-      5 => 'Design interests consistent with our kind of architecture that creates organic non-linear structures using innovative green methodologies and construction techniques.',
-      6 => 'Possess a personal interest and understanding of the design process / have a belief that the entire project timeline, from conception to delivery, is the design process.',
-      7 => 'Software such as Revit, AutoCAD, MS Office (Outlook, Word, Excel, PowerPoint, Outlook), Adobe Creative Suite, SketchUp, Rhino, BIM.',
-      8 => 'Be a self-motivated individual that has the ability to prioritize and be detail oriented.',
-      9 => 'Be able to multi-task, establish priorities and communicate clearly, and work independently.',
-      10 => 'Be comfortable in a fast-paced environment, be resourceful, and able to work under deadlines.',
-      11 => 'Get along well with others, have a good sense of humor and appreciate suggestions and constructive criticism.',
-      12 => 'Spanish fluency + English skills. Our international project documentation will be executed in English. Domestic projects in Mexico will be executed in Spanish.'
-    ),
-    'details' => array(
-      1 => '<b>Seniority Level</b>',
-      2 => 'Mid-level',
-      3 => '<b>Employment Type</b>',
-      4 => 'Full-time',
-      5 => 'Important to send CV & Portfolio if you want to be considered. If the file is too heavy to upload, please send your full CV & Portfolio to reclutamiento@azulik.com',
-    ),
   ),
   'interior-designers' => array(
     'form_to' => 'careers',
