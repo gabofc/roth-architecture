@@ -61,7 +61,7 @@ $careers = array(
         7 => 'Fluent in English and Spanish',
       )
     ),
-  'fablab-manager' => array(
+  /*'fablab-manager' => array(
     'form_to' => 'yamila.lamonaco',
     'title' => 'Fablab Manager',
     'description' => array(
@@ -90,7 +90,7 @@ $careers = array(
     'extra_description' => 'International project experience and language diversity (Spanish and English are required for the position, a third language will be a plus).<br><br>
                             Openness to alternative ways of designing, working, and living. Our offices are unique.<br><br>
                             To Apply:',
-    ),
+    ),*/
   '3d-modeling' => array(
     'form_to' => 'careers',
     'title' => '3D Modeling Architect',
