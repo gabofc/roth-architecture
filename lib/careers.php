@@ -107,9 +107,9 @@ $careers = array(
     ),
     'apply' => 'For immediate consideration, please email your resume, salary requirements, availability to join the team if selected, and a portfolio of your work to contacto@roth-architecture.com with "3D Modeling Architect" in the subject line. Applications will not be considered without a resume, availability, portfolio, and salary requirements.',
   ),
-  'interior-designers' => array(
+  'senior-interior-designer' => array(
     'form_to' => 'careers',
-    'title' => 'Interior Designers – All Levels',
+    'title' => 'Senior Interior Designer',
     'description' => array(
       1 => 'We are seeking talented, creative, interior designers who have the ability to conceive of new forms and then generate the documentation to take these ideas through construction. You must also be capable of creating the presentation boards to present these ideas internally and to our clients.',
       2 => 'In addition to interior design and material selections, our interior design team will design the light fixtures, furniture, and sometimes bathroom fixtures for all the architecture projects we do.  These interior fittings are extensions and part of our architecture.',
@@ -128,7 +128,7 @@ $careers = array(
     ),
     'details' => array(
       1 => '<b>Seniority Level</b>',
-      2 => 'All-levels',
+      2 => 'Senior',
       3 => '<b>Employment Type</b>',
       4 => 'Full-time'
     )
