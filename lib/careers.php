@@ -29,39 +29,39 @@ $careers = array(
       6 => 'Advanced English skills.'
     ),
   ),
-    'constructor-manager' => array(
-      'form_to' => 'yamila.lamonaco',
-      'title' => 'Constructor Manager',
-      'description' => array(
-        1 => 'The Construction Manager will lead a contractor group in an international multidisciplinary organization, leading complex and large construction projects. Must be skilled in multicultural teams, cutting edge project solutions, leadership, and Lean management. Able to work under pressure and fast decision-maker. Strong program and project management professional.'
-      ),
-      'requirements_title' => 'Job Description',
-      'requirements' => array(
-        1 => 'Construction group management and strategy development.',
-        2 => 'Approve and control the planning, financial, and execution plan of the projects in charge to ensure compliance with the established goals',
-        3 => 'Control that the projects in charge comply with the established Quality Standards and Local regulations. ',
-        4 => 'Contract and Budget ownership for direct contracts as assigned',
-        5 => 'Improvement and optimization of the organization: procedures, methodology, tools, dashboards, etc.',
-        6 => 'Operations management (supervision of works in progress). ',
-        7 => 'Viability analysis and structuring of new works. ',
-        8 => 'Assisting the client and client Project Director as required – including oversight of the overall construction effort. ',
-        9 => 'Advising at a strategic level at the project conception stage, including providing advice on the different approaches that can be adopted to successfully achieve the client’s overall objectives. ',
-        10 => 'Advising upon the procurement of resources. ',
-        11 => 'Participation in the bidding process for new projects. ',
-        12 => 'Commercial skills and attracting new clients.'
-      ),
-      'skills_title' => 'Qualifications',
-      'skills' => array(
-        1 => '16+ years of experience in the construction field, with at least 5 years of experience as construction group manager coordinating several projects.',
-        2 => 'Engineering or Architecture degree. ',
-        3 => 'Proven track record as a Lead Project Manager and delivering successful solutions for clients. ',
-        4 => 'Master in Business Administration and PMI certification are a plus. ',
-        5 => 'Hospitality project experience ',
-        6 => 'Able to travel. ',
-        7 => 'Fluent in English and Spanish',
-      )
+  /*'constructor-manager' => array(
+    'form_to' => 'yamila.lamonaco',
+    'title' => 'Constructor Manager',
+    'description' => array(
+      1 => 'The Construction Manager will lead a contractor group in an international multidisciplinary organization, leading complex and large construction projects. Must be skilled in multicultural teams, cutting edge project solutions, leadership, and Lean management. Able to work under pressure and fast decision-maker. Strong program and project management professional.'
     ),
-  /*'fablab-manager' => array(
+    'requirements_title' => 'Job Description',
+    'requirements' => array(
+      1 => 'Construction group management and strategy development.',
+      2 => 'Approve and control the planning, financial, and execution plan of the projects in charge to ensure compliance with the established goals',
+      3 => 'Control that the projects in charge comply with the established Quality Standards and Local regulations. ',
+      4 => 'Contract and Budget ownership for direct contracts as assigned',
+      5 => 'Improvement and optimization of the organization: procedures, methodology, tools, dashboards, etc.',
+      6 => 'Operations management (supervision of works in progress). ',
+      7 => 'Viability analysis and structuring of new works. ',
+      8 => 'Assisting the client and client Project Director as required – including oversight of the overall construction effort. ',
+      9 => 'Advising at a strategic level at the project conception stage, including providing advice on the different approaches that can be adopted to successfully achieve the client’s overall objectives. ',
+      10 => 'Advising upon the procurement of resources. ',
+      11 => 'Participation in the bidding process for new projects. ',
+      12 => 'Commercial skills and attracting new clients.'
+    ),
+    'skills_title' => 'Qualifications',
+    'skills' => array(
+      1 => '16+ years of experience in the construction field, with at least 5 years of experience as construction group manager coordinating several projects.',
+      2 => 'Engineering or Architecture degree. ',
+      3 => 'Proven track record as a Lead Project Manager and delivering successful solutions for clients. ',
+      4 => 'Master in Business Administration and PMI certification are a plus. ',
+      5 => 'Hospitality project experience ',
+      6 => 'Able to travel. ',
+      7 => 'Fluent in English and Spanish',
+    )
+  ),
+  'fablab-manager' => array(
     'form_to' => 'yamila.lamonaco',
     'title' => 'Fablab Manager',
     'description' => array(
@@ -90,7 +90,7 @@ $careers = array(
     'extra_description' => 'International project experience and language diversity (Spanish and English are required for the position, a third language will be a plus).<br><br>
                             Openness to alternative ways of designing, working, and living. Our offices are unique.<br><br>
                             To Apply:',
-    ),*/
+    ),
   '3d-modeling' => array(
     'form_to' => 'careers',
     'title' => '3D Modeling Architect',
@@ -106,7 +106,7 @@ $careers = array(
       6 => 'Softwares such as Rhino, 3D max, Grasshopper, Adobe, Autodesk, Office and 3D objects libraries.',
     ),
     'apply' => 'For immediate consideration, please email your resume, salary requirements, availability to join the team if selected, and a portfolio of your work to contacto@roth-architecture.com with "3D Modeling Architect" in the subject line. Applications will not be considered without a resume, availability, portfolio, and salary requirements.',
-  ),
+  ),*/
   'senior-interior-designer' => array(
     'form_to' => 'careers',
     'title' => 'Senior Interior Designer',
