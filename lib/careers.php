@@ -133,5 +133,16 @@ $careers = array(
       4 => 'Full-time'
     )
   ),
+  'design-architects' => array(
+    'form_to' => 'careers',
+    'title' => 'Design Architects',
+    'description' => array(
+      1 => 'We are looking for Design Architects of all levels to join our architectural studio in Tulum, Mexico.'
+    ),
+    'requirements' => array(
+      1 => 'Strong design skills and technical knowledge.',
+      2 => 'Proficiency in Rhino and Revit software. ',
+    ),
+  ),
 );
 ?>
