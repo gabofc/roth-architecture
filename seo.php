@@ -1,7 +1,8 @@
-<?php	
+<?php
 $folde = basename(__DIR__);
 //$dire = 'https://'.$_SERVER['HTTP_HOST'].'/';
-$dire = 'https://'.$_SERVER['HTTP_HOST'].'/test/roth/'.$folde.'/';
+//$dire = 'https://'.$_SERVER['HTTP_HOST'].'/test/roth/'.$folde.'/';
+$dire = '/';
 ?>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -12,7 +13,7 @@ $dire = 'https://'.$_SERVER['HTTP_HOST'].'/test/roth/'.$folde.'/';
 		  gtag('js', new Date());
 
 		  gtag('config', 'G-ZNEJ9SKB7P');
-			
+
 		</script>
 
 <!-- Google Tag Manager -->
