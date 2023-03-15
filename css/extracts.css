@@ -1,0 +1,62 @@
+
+/* efecto para posts excerpt */
+
+
+.tab-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.tab-text h2 {
+color:#fff;
+	padding-bottom: 15px;
+}
+
+
+.extpost h2:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background-color: #a58e20;
+	transform: translate3d(-110%, 0, 0);
+	transition: all .35s;
+	-webkit-transform: translate3d(-110%, 0, 0);
+	-webkit-transition: all .35s
+}
+
+.extpost:hover h2:after {
+	transform: translate3d(0, 0, 0)
+}
+
+.extpost {
+	background-color: #000;
+}
+
+.extpost img {
+	max-width: none;
+	opacity: 1;
+	transform: translate3d(0%, 0%, 0);
+	transition: all .35s;
+	-webkit-transform: translate3d(0%, 0%, 0);
+	-webkit-transition: all .35s
+
+}
+
+.extpost:hover img {
+	transform: translate3d(0%, -2%, 0);
+	-webkit-transform: translate3d(0%, -2%, 0);;
+	transform: scale(1.1);
+	opacity: .6
+}
+
+
+
+
+
+
+
+
