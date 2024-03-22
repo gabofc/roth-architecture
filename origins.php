@@ -10,34 +10,34 @@
 
   <!-- Open Graph-->
   <meta property="og:title" content="Roth Architecture - Origins">
-  <meta property="og:description" content="Roth Architecture emerges in 2017 from the AZULIK brand as a creative team that consists of designers, engineers, and researchers dedicated to creating architectural and interior spaces that enhance the user exposure to a holistic experience"> 
+  <meta property="og:description" content="Roth Architecture emerges in 2017 from the AZULIK brand as a creative team that consists of designers, engineers, and researchers dedicated to creating architectural and interior spaces that enhance the user exposure to a holistic experience">
   <meta property="og:site_name" content="Roth Architecture">
-  <meta property="og:locale" content="en"> 
+  <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://roth-architecture.com">
-  <meta property="og:image" content=<?php echo ($dire."images/og-cover.webp")?>> 
+  <meta property="og:image" content=<?php echo ($dire."images/og-cover.webp")?>>
 
   <link rel="canonical" href="https://roth-architecture.com/" />
 
-        <!-- <link rel="manifest" href="site.webmanifest"> --> 
+        <!-- <link rel="manifest" href="site.webmanifest"> -->
         <link rel="apple-touch-icon" href=<?php echo ($dire."icon.png")?>>
         <!-- Place favicon.ico in the root directory -->
         <link rel="shortcut icon" href=<?php echo ($dire."images/favicon-black-bg.png")?>>
         <link rel="icon" type="image/png" href=<?php echo ($dire."images/favicon-black-bg.png")?>>
-	
-	
+
+
             <link defer rel="stylesheet" href=<?php echo ($dire."css/main.css")?>>
 <link rel="stylesheet" href=<?php echo ($dire."css/normalize.css")?>>
 		<link rel="stylesheet" type="text/css" href=<?php echo ($dire."css/slick-theme.css")?>>
 	  	<link rel="stylesheet" href=<?php echo ($dire."css/slickp.css")?>>
-    
+
         <link defer href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        
-	
-	
+
+
+
 </head>
 <body>
-	
+
   <div class="loading-container">
       <div class="loading-screen">
       </div>
@@ -46,17 +46,17 @@
   <div data-barba="wrapper">
 
       <div data-barba="container" data-barba-namespace="origins">
-		  
+
 		  <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src=https://www.googletagmanager.com/ns.html?id=GTM-PRX75J7
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->	
-		  
- <?php include 'header.php';?>	
+<!-- End Google Tag Manager (noscript) -->
+
+ <?php include 'header.php';?>
         <div id="smooth-wrapper">
             <div id="smooth-content">
 <div class="backnav"></div>
-                
+
 
 
                <div class="sections overflow-hidden">
@@ -90,7 +90,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                   <div class="text-center px-5 py-5 mx-auto p75">
                     <p class="vish txt-bigger">
-                      Roth Architecture emerges in 2017 from the AZULIK brand as a creative team that consists of designers, engineers, and researchers dedicated to creating architectural and interior spaces that enhance the user exposure to a holistic experience, through the conception of places that take on account the critical responsibility of the practice of architecture in our possible future, basing its creation on three guiding pillars: 
+                      Roth Architecture emerges in 2017 from the AZULIK brand as a creative team that consists of designers, engineers, and researchers dedicated to creating architectural and interior spaces that enhance the user exposure to a holistic experience, through the conception of places that take on account the critical responsibility of the practice of architecture in our possible future, basing its creation on three guiding pillars:
                   </p>
 
                   <h2 class="origins-pillars">Ancestry, Nature & Art.</h2>
@@ -125,13 +125,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p>The AZULIK group has been at the forefront of innovations in hospitality design since the AZULIK Tulum project was completed in 2014.</p>
 
             <p>
-              Its unique architecture and interiors provided an unprecedented sustainable luxury lifestyle, detonating the brand’s expansion into a multidisciplinary universe, which is integrated by a wide range of areas of expertise that include the brands and disciplines: 
+              Its unique architecture and interiors provided an unprecedented sustainable luxury lifestyle, detonating the brand’s expansion into a multidisciplinary universe, which is integrated by a wide range of areas of expertise that include the brands and disciplines:
 
 
           </p>
 
           <p> Hospitality, Cuisine, Wellness, Sfer Ik Art, Anikena fashion brand, Roth Productions, Marketing, and the arts and crafts workshops of Furniture, Ceramic, Glass, and Macrame.</p>
-          
+
       </div>
   </div>
 
@@ -208,7 +208,7 @@ Roth Architecture
 Roth Architecture
 </p>
 
-       
+
 
 
 </div>
@@ -254,7 +254,7 @@ Roth Architecture
     </p>
 
 
-      
+
 
 </div>
 <div class="col-md-3 " >
@@ -274,7 +274,7 @@ Roth Architecture
 <i>Project:</i> <a href="projects/sfer-ik-uh-may.php">SFER IK Museion Uh May (Jury Winner)</a>
     </p>
 
-   
+
 
 
 </div>
@@ -295,7 +295,7 @@ Roth Architecture
 
 </p>
 
- 
+
 
 </div>
 
@@ -316,7 +316,7 @@ Roth Architecture
 
 </p>
 
-   
+
 
 
 </div>
@@ -339,7 +339,7 @@ Roth Architecture
 </p>
 
 
- 
+
 
 
 </div>
@@ -351,15 +351,15 @@ Roth Architecture
 
 
 
-<section class="container py-5 instafeed">
+<!--section class="container py-5 instafeed">
     <div class="row pt-5 d-flex justify-content-center">
         <img alt="instagram" src="images/origins/logo-insta-full.svg">
         <script class="main-script" src="https://apps.elfsight.com/p/platform.js" defer></script>
         <div class="elfsight-app-ddb756fe-7f49-4a0a-b3f1-e9f4ded42612"></div>
     </div>
-</section> 
+</section-->
 
-<?php include 'footer.php';?>	
+<?php include 'footer.php';?>
 
 </div>
 </div>
@@ -377,7 +377,7 @@ Roth Architecture
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Observer.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.8.3/TweenMax.min.js"></script>
-<script src=<?php echo ($dire."js/DrawSVGPlugin.min.js")?>></script>	
+<script src=<?php echo ($dire."js/DrawSVGPlugin.min.js")?>></script>
 <script src=<?php echo ($dire."js/SplitText.min.js")?>></script>
 <script src=<?php echo ($dire."js/ScrollSmoother.min.js")?>></script>
 <script src=<?php echo ($dire."js/slick.js")?>></script>

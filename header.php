@@ -6,8 +6,8 @@
           <div class="col logo "> <a href=<?php echo ($dire."index.php")?>><img alt="Roth Architecture Logo" src=<?php echo ($dire."images/logo-roth-arq.png") ?>></a> </div>
           <div class="col menutrigger2">
             <div class="menutrigger text-white justify-content-end"> <span>Menu</span>
-              <div class="menudots"> 
-				  <img alt="menu" class="menu-dot-hover" src=<?php echo ($dire."images/SVG/menu-all-alt.svg")?>> 
+              <div class="menudots">
+				  <img alt="menu" class="menu-dot-hover" src=<?php echo ($dire."images/SVG/menu-all-alt.svg")?>>
 				  <img alt="menu-2" class="menu-dot-reg" src=<?php echo ($dire."images/SVG/menu-all.svg")?>> </div>
             </div>
           </div>
@@ -36,10 +36,11 @@
 					 </div>
                 </li>
                 <li class="bsm2">Studio <img alt="arrow" class="arrow" src=<?php echo ($dire."images/SVG/arrow.svg")?>>
-                  <div class="sm2"> <a class="botper" href=<?php echo ($dire."tribe.php")?>>PEOPLE <img alt="dash" class="linesm" src=<?php echo ($dire."images/SVG/guion-topheader.svg")?>> </a> <br>
+                  <div class="sm2">
+                    <!--a class="botper" href=<?php echo ($dire."tribe.php")?>>PEOPLE <img alt="dash" class="linesm" src=<?php echo ($dire."images/SVG/guion-topheader.svg")?>> </a> <br-->
                     <a class="botper" href=<?php echo ($dire."expertise.php")?>>EXPERTISE <img alt="dash" class="linesm" src=<?php echo ($dire."images/SVG/guion-topheader.svg")?>> </a> </div>
                 </li>
-				  
+
                 <!--<li><a class="botper" href="news.php">News</a></li>-->
                 <li><a class="botper" href=<?php echo ($dire."contact.php")?>>Contact</a></li>
               </ul>
